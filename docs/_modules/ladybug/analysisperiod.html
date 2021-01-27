@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.analysisperiod &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.analysisperiod</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Ladybug analysis period class.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">.dt</span> <span class="kn">import</span> <span class="n">DateTime</span>
+
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span>
+    <span class="n">xrange</span> <span class="o">=</span> <span class="nb">range</span>
+
+
+<div class="viewcode-block" id="AnalysisPeriod"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod">[docs]</a><span class="k">class</span> <span class="nc">AnalysisPeriod</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;An analysis period between two dates of the year and between certain hours.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        st_month: An integer between 1-12 for starting month (default = 1)</span>
+<span class="sd">        st_day: An integer between 1-31 for starting day (default = 1).</span>
+<span class="sd">                Note that some months are shorter than 31 days.</span>
+<span class="sd">        st_hour: An integer between 0-23 for starting hour (default = 0)</span>
+<span class="sd">        end_month: An integer between 1-12 for ending month (default = 12)</span>
+<span class="sd">        end_day: An integer between 1-31 for ending day (default = 31)</span>
+<span class="sd">                Note that some months are shorter than 31 days.</span>
+<span class="sd">        end_hour: An integer between 0-23 for ending hour (default = 23)</span>
+<span class="sd">        timestep: An integer for the number of timesteps per hour. (Default: 1).</span>
+<span class="sd">                Choose from: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60</span>
+<span class="sd">        is_leap_year: A boolean to indicate whether the AnalysisPeriod represents</span>
+<span class="sd">            a leap year. (Default: False)</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * st_month</span>
+<span class="sd">        * st_day</span>
+<span class="sd">        * end_hour</span>
+<span class="sd">        * end_month</span>
+<span class="sd">        * end_day</span>
+<span class="sd">        * end_hour</span>
+<span class="sd">        * timestep</span>
+<span class="sd">        * is_leap_year</span>
+<span class="sd">        * st_time</span>
+<span class="sd">        * end_time</span>
+<span class="sd">        * datetimes</span>
+<span class="sd">        * moys</span>
+<span class="sd">        * hoys</span>
+<span class="sd">        * hoys_int</span>
+<span class="sd">        * doys_int</span>
+<span class="sd">        * months_int</span>
+<span class="sd">        * months_per_hour</span>
+<span class="sd">        * minute_intervals</span>
+<span class="sd">        * is_annual</span>
+<span class="sd">        * is_overnight</span>
+<span class="sd">        * is_reversed</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">VALIDTIMESTEPS</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+                      <span class="mi">6</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">20</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">30</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">60</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+    <span class="n">NUMOFDAYSEACHMONTH</span> <span class="o">=</span> <span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+    <span class="n">NUMOFDAYSEACHMONTHLEAP</span> <span class="o">=</span> <span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+    <span class="n">MONTHNAMES</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span>
+                  <span class="mi">7</span><span class="p">:</span> <span class="s1">&#39;Jul&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="s1">&#39;Dec&#39;</span><span class="p">}</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="s1">&#39;_is_leap_year&#39;</span><span class="p">,</span> <span class="s1">&#39;_st_time&#39;</span><span class="p">,</span> <span class="s1">&#39;_num_of_days_each_month&#39;</span><span class="p">,</span> <span class="s1">&#39;_is_overnight&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;_is_reversed&#39;</span><span class="p">,</span> <span class="s1">&#39;_timestep&#39;</span><span class="p">,</span> <span class="s1">&#39;_minute_intervals&#39;</span><span class="p">,</span> <span class="s1">&#39;_end_time&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;_timestamps_data&#39;</span><span class="p">,</span> <span class="s1">&#39;_datetimes&#39;</span>
+    <span class="p">)</span>
+
+    <span class="c1"># TODO: handle timestep between 1-60</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">st_month</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">st_day</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">st_hour</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">end_month</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+                 <span class="n">end_day</span><span class="o">=</span><span class="mi">31</span><span class="p">,</span> <span class="n">end_hour</span><span class="o">=</span><span class="mi">23</span><span class="p">,</span> <span class="n">timestep</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">is_leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Init an analysis period.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">st_month</span> <span class="o">=</span> <span class="n">st_month</span> <span class="ow">or</span> <span class="mi">1</span>
+        <span class="n">st_day</span> <span class="o">=</span> <span class="n">st_day</span> <span class="ow">or</span> <span class="mi">1</span>
+        <span class="n">st_hour</span> <span class="o">=</span> <span class="n">st_hour</span> <span class="ow">or</span> <span class="mi">0</span>
+        <span class="n">end_month</span> <span class="o">=</span> <span class="n">end_month</span> <span class="ow">or</span> <span class="mi">12</span>
+        <span class="n">end_day</span> <span class="o">=</span> <span class="n">end_day</span> <span class="ow">or</span> <span class="mi">31</span>
+        <span class="n">end_hour</span> <span class="o">=</span> <span class="mi">23</span> <span class="k">if</span> <span class="n">end_hour</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">end_hour</span>
+        <span class="n">timestep</span> <span class="o">=</span> <span class="n">timestep</span> <span class="ow">or</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_leap_year</span> <span class="o">=</span> <span class="n">is_leap_year</span> <span class="ow">or</span> <span class="kc">False</span>
+
+        <span class="c1"># calculate start time and end time</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_st_time</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">st_month</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">st_day</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">st_hour</span><span class="p">),</span>
+                                 <span class="n">leap_year</span><span class="o">=</span><span class="n">is_leap_year</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_of_days_each_month</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">NUMOFDAYSEACHMONTH</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span> \
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">NUMOFDAYSEACHMONTHLEAP</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">end_day</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_of_days_each_month</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">end_month</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]:</span>
+            <span class="n">end</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_of_days_each_month</span><span class="p">[</span><span class="n">end_month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Updated end_day from </span><span class="si">{}</span><span class="s2"> to </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">end_day</span><span class="p">,</span> <span class="n">end</span><span class="p">))</span>
+            <span class="n">end_day</span> <span class="o">=</span> <span class="n">end</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_end_time</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">end_month</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">end_day</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">end_hour</span><span class="p">),</span>
+                                  <span class="n">leap_year</span><span class="o">=</span><span class="n">is_leap_year</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">hour</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">hour</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_is_overnight</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># each segments of hours will be in a single day</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_is_overnight</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="c1"># A reversed analysis period defines a period that starting month is after</span>
+        <span class="c1"># ending month (e.g DEC to JUN)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">hoy</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">hoy</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_is_reversed</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_is_reversed</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># check time step</span>
+        <span class="k">if</span> <span class="n">timestep</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">VALIDTIMESTEPS</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Invalid timestep.&quot;</span>
+                             <span class="s2">&quot;Valid values are </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">VALIDTIMESTEPS</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_timestep</span> <span class="o">=</span> <span class="n">timestep</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_minute_intervals</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mf">24.0</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">))</span>
+
+        <span class="c1"># _timestamps_data is a dictionary for datetimes.</span>
+        <span class="c1"># key values will be minute of year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># set to None for now and calculate upon request</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_datetimes</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="AnalysisPeriod.from_dict"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create an analysis period from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;st_month&quot;: 1  # An integer between 1-12 for starting month (default = 1)</span>
+<span class="sd">            &quot;st_day&quot;: 1  # An integer between 1-31 for starting day (default = 1).</span>
+<span class="sd">                       # Note that some months are shorter than 31 days.</span>
+<span class="sd">            &quot;st_hour&quot;: 0  # An integer between 0-23 for starting hour (default = 0)</span>
+<span class="sd">            &quot;end_month&quot;: 12  # An integer between 1-12 for ending month (default = 12)</span>
+<span class="sd">            &quot;end_day&quot;: 31  # An integer between 1-31 for ending day (default = 31)</span>
+<span class="sd">                         #Note that some months are shorter than 31 days.</span>
+<span class="sd">            &quot;end_hour&quot;: 23  # An integer between 0-23 for ending hour (default = 23)</span>
+<span class="sd">            &quot;timestep&quot;: 1 # An integer number from 1, 2, 3, 4, 5, 6, 10, 12, 15,</span>
+<span class="sd">                          #20, 30, 60</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">keys</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;st_month&#39;</span><span class="p">,</span> <span class="s1">&#39;st_day&#39;</span><span class="p">,</span> <span class="s1">&#39;st_hour&#39;</span><span class="p">,</span> <span class="s1">&#39;end_month&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;end_day&#39;</span><span class="p">,</span> <span class="s1">&#39;end_hour&#39;</span><span class="p">,</span> <span class="s1">&#39;timestep&#39;</span><span class="p">,</span> <span class="s1">&#39;is_leap_year&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">data</span><span class="p">[</span><span class="s1">&#39;st_month&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;st_day&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;st_hour&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;end_month&#39;</span><span class="p">],</span>
+            <span class="n">data</span><span class="p">[</span><span class="s1">&#39;end_day&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;end_hour&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;timestep&#39;</span><span class="p">],</span>
+            <span class="n">data</span><span class="p">[</span><span class="s1">&#39;is_leap_year&#39;</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="AnalysisPeriod.from_string"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.from_string">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_string</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">analysis_period_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create an Analysis Period object from an analysis period string.</span>
+
+<span class="sd">        Format is: %s/%s to %s/%s between %s and %s @%s</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># %s/%s to %s/%s between %s to %s @%s*</span>
+        <span class="n">is_leap_year</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">analysis_period_string</span><span class="o">.</span><span class="n">strip</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;*&#39;</span> <span class="k">else</span> <span class="kc">False</span>
+        <span class="n">ap</span> <span class="o">=</span> <span class="n">analysis_period_string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;to&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;and&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;between&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;@&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">st_month</span><span class="p">,</span> <span class="n">st_day</span><span class="p">,</span> <span class="n">end_month</span><span class="p">,</span> <span class="n">end_day</span><span class="p">,</span> \
+                <span class="n">st_hour</span><span class="p">,</span> <span class="n">end_hour</span><span class="p">,</span> <span class="n">timestep</span> <span class="o">=</span> <span class="n">ap</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">st_month</span><span class="p">,</span> <span class="n">st_day</span><span class="p">,</span> <span class="n">st_hour</span><span class="p">,</span> <span class="n">end_month</span><span class="p">,</span>
+                       <span class="n">end_day</span><span class="p">,</span> <span class="n">end_hour</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">timestep</span><span class="p">),</span> <span class="n">is_leap_year</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="AnalysisPeriod.from_start_end_datetime"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.from_start_end_datetime">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_start_end_datetime</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">start_datetime</span><span class="p">,</span> <span class="n">end_datetime</span><span class="p">,</span> <span class="n">timestep</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create and AnalysisPeriod from start and end date objects.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            start_datetime: A Ladybug DateTime object for the start of the period.</span>
+<span class="sd">            end_datetime: A Ladybug DateTime object for the end of the period.</span>
+<span class="sd">            timestep: An integer for the number of timesteps per hour. (Default: 1).</span>
+<span class="sd">                Choose from: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">start_datetime</span><span class="o">.</span><span class="n">leap_year</span> <span class="o">==</span> <span class="n">end_datetime</span><span class="o">.</span><span class="n">leap_year</span><span class="p">,</span> \
+            <span class="s1">&#39;Period start_datetime and end_datetime leap_year property must match&#39;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">start_datetime</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">start_datetime</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">start_datetime</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+                   <span class="n">end_datetime</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">end_datetime</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">end_datetime</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+                   <span class="nb">int</span><span class="p">(</span><span class="n">timestep</span><span class="p">),</span> <span class="n">start_datetime</span><span class="o">.</span><span class="n">leap_year</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">st_month</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Start month.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">month</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">st_day</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Start day.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">day</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">st_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Start hour.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">hour</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">end_month</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;End month.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">month</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">end_day</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;End day.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">day</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">end_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;End hour.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">hour</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Timestep.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestep</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_leap_year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A boolean to indicate if analysis period is for a leap year.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_leap_year</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">st_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Start datetime.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_st_time</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">end_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;End datetime.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_end_time</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">datetimes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A sorted list of hourly datetimes in this analysis period.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calculate_timestamps</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_datetimes</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">moys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A sorted list of hourly minutes of year in this analysis period as integers.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calculate_timestamps</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hoys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A sorted list of hours of year in this analysis period.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calculate_timestamps</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">moy</span> <span class="o">/</span> <span class="mf">60.0</span> <span class="k">for</span> <span class="n">moy</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hoys_int</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A sorted list of hours of year in this analysis period as integers.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calculate_timestamps</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">moy</span> <span class="o">/</span> <span class="mf">60.0</span><span class="p">)</span> <span class="k">for</span> <span class="n">moy</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">doys_int</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A sorted list of days of the year in this analysis period as integers.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_reversed</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_daystamps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">doys_st</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_daystamps</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="p">,</span> <span class="n">DateTime</span><span class="o">.</span><span class="n">from_last_hour</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">))</span>
+            <span class="n">doys_end</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_daystamps</span><span class="p">(</span>
+                <span class="n">DateTime</span><span class="o">.</span><span class="n">from_first_hour</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">doys_st</span> <span class="o">+</span> <span class="n">doys_end</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">months_int</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A sorted list of months of the year in this analysis period as integers.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_reversed</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">xrange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">months_st</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">xrange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="mi">13</span><span class="p">))</span>
+            <span class="n">months_end</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="k">return</span> <span class="n">months_st</span> <span class="o">+</span> <span class="n">months_end</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">months_per_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of tuples representing months per hour in this analysis period.&quot;&quot;&quot;</span>
+        <span class="n">month_hour</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">hour_range</span> <span class="o">=</span> <span class="n">xrange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_hour</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">end_hour</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">month</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">months_int</span><span class="p">:</span>
+            <span class="n">month_hour</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
+                <span class="p">[(</span><span class="n">month</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">hr</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">),</span>
+                  <span class="nb">int</span><span class="p">((</span><span class="n">hr</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">60</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">)))</span>
+                 <span class="k">for</span> <span class="n">hr</span> <span class="ow">in</span> <span class="n">hour_range</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">month_hour</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">minute_intervals</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The number of minutes between each of the timesteps of the analysis period.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minute_intervals</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_annual</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if an analysis period is annual.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_month</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">end_day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_hour</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_reversed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return True if the analysis period is reversed.</span>
+
+<span class="sd">        A reversed analysis period defines a period that starting month is after</span>
+<span class="sd">        ending month (e.g DEC to JUN).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_reversed</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_overnight</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return True if the analysis period is overnight.</span>
+
+<span class="sd">        If an analysis period is overnight each segments of hours</span>
+<span class="sd">        will be in two different days (e.g. from 9pm to 2am).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_overnight</span>
+
+<div class="viewcode-block" id="AnalysisPeriod.is_possible_hour"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.is_possible_hour">[docs]</a>    <span class="k">def</span> <span class="nf">is_possible_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hour</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if a float hour is a possible hour for this analysis period.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">hour</span> <span class="o">&gt;</span> <span class="mi">23</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_possible_hour</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span>
+            <span class="n">hour</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">hour</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_overnight</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">hour</span> <span class="o">&lt;=</span> <span class="n">hour</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">hour</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">hour</span> <span class="o">&lt;=</span> <span class="n">hour</span> <span class="o">&lt;=</span> <span class="mi">23</span> <span class="ow">or</span> \
+                <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">hour</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">hour</span></div>
+
+<div class="viewcode-block" id="AnalysisPeriod.is_time_included"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.is_time_included">[docs]</a>    <span class="k">def</span> <span class="nf">is_time_included</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if time is included in analysis period.</span>
+
+<span class="sd">        Note that time filtering in Ladybug Tools is slightly different than &quot;normal&quot;</span>
+<span class="sd">        filtering since start hour and end hour will be applied for every day.</span>
+<span class="sd">        For instance 2/20 9am to 2/22 5pm means hour between 9-17 during 20, 21</span>
+<span class="sd">        and 22 of Feb.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            time: A DateTime to be tested</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A boolean. True if time is included in analysis period</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calculate_timestamps</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">moy</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span></div>
+
+<div class="viewcode-block" id="AnalysisPeriod.duplicate"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.duplicate">[docs]</a>    <span class="k">def</span> <span class="nf">duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a copy of the analysis period.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">AnalysisPeriod</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_hour</span><span class="p">,</span>
+                              <span class="bp">self</span><span class="o">.</span><span class="n">end_month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_hour</span><span class="p">,</span>
+                              <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnalysisPeriod.to_dict"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Convert the analysis period to a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;st_month&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_month</span><span class="p">,</span>
+            <span class="s1">&#39;st_day&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_day</span><span class="p">,</span>
+            <span class="s1">&#39;st_hour&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_hour</span><span class="p">,</span>
+            <span class="s1">&#39;end_month&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_month</span><span class="p">,</span>
+            <span class="s1">&#39;end_day&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_day</span><span class="p">,</span>
+            <span class="s1">&#39;end_hour&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_hour</span><span class="p">,</span>
+            <span class="s1">&#39;timestep&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">,</span>
+            <span class="s1">&#39;is_leap_year&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">,</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;AnalysisPeriod&#39;</span>
+        <span class="p">}</span></div>
+
+    <span class="k">def</span> <span class="nf">_calc_timestamps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">st_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate timesteps between start time and end time.</span>
+
+<span class="sd">        Use this method only when start time month is before end time month.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># calculate based on minutes</span>
+        <span class="c1"># I have to convert the object to DateTime because of how Dynamo</span>
+        <span class="c1"># works: https://github.com/DynamoDS/Dynamo/issues/6683</span>
+        <span class="c1"># Do not modify this line to datetime</span>
+        <span class="n">curr</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="n">st_time</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">st_time</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">st_time</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">st_time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+                        <span class="n">st_time</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span>
+        <span class="n">end_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="n">end_time</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">end_time</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">end_time</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+                            <span class="n">end_time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">end_time</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span>
+
+        <span class="k">while</span> <span class="n">curr</span> <span class="o">&lt;=</span> <span class="n">end_time</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_possible_hour</span><span class="p">(</span><span class="n">curr</span><span class="o">.</span><span class="n">hour</span> <span class="o">+</span> <span class="p">(</span><span class="n">curr</span><span class="o">.</span><span class="n">minute</span> <span class="o">/</span> <span class="mf">60.0</span><span class="p">)):</span>
+                <span class="n">time</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">curr</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">curr</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">curr</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">curr</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">moy</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_datetimes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+            <span class="n">curr</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute_intervals</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">curr</span><span class="o">.</span><span class="n">hour</span> <span class="o">==</span> <span class="mi">23</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_possible_hour</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span>
+            <span class="c1"># This is for cases that timestep is more than one</span>
+            <span class="c1"># and last hour of the day is part of the calculation</span>
+            <span class="n">curr</span> <span class="o">=</span> <span class="n">end_time</span>
+            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">xrange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">))[</span><span class="mi">1</span><span class="p">:]:</span>
+                <span class="n">curr</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute_intervals</span>
+                <span class="n">time</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">curr</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">curr</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">curr</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">curr</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">moy</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_datetimes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_calculate_timestamps</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a list of Ladybug DateTimes in this analysis period.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_datetimes</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_reversed</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calc_timestamps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calc_timestamps</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="p">,</span> <span class="n">DateTime</span><span class="o">.</span><span class="n">from_last_hour</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calc_timestamps</span><span class="p">(</span>
+                <span class="n">DateTime</span><span class="o">.</span><span class="n">from_first_hour</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_calc_daystamps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">st_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate days of the year between start time and end time.</span>
+
+<span class="sd">        Use this method only when start time month is before end time month.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">start_doy</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_num_of_days_each_month</span><span class="p">[:</span><span class="n">st_time</span><span class="o">.</span><span class="n">month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="o">+</span> \
+            <span class="n">st_time</span><span class="o">.</span><span class="n">day</span>
+        <span class="n">end_doy</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_num_of_days_each_month</span><span class="p">[:</span><span class="n">end_time</span><span class="o">.</span><span class="n">month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="o">+</span> \
+            <span class="n">end_time</span><span class="o">.</span><span class="n">day</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">start_doy</span><span class="p">,</span> <span class="n">end_doy</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Number of steps in the analysis period.</span>
+
+<span class="sd">        The length will be number of hours * timestep.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_hour</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_hour</span> <span class="o">==</span> <span class="mi">23</span><span class="p">:</span>  <span class="c1"># use fast method</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_reversed</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">int_hoy</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">int_hoy</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">first</span> <span class="o">=</span> <span class="n">DateTime</span><span class="o">.</span><span class="n">from_last_hour</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span><span class="o">.</span><span class="n">int_hoy</span> <span class="o">-</span> \
+                    <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">int_hoy</span>
+                <span class="n">second</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">int_hoy</span> <span class="o">-</span> \
+                    <span class="n">DateTime</span><span class="o">.</span><span class="n">from_first_hour</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span><span class="o">.</span><span class="n">int_hoy</span>
+                <span class="k">return</span> <span class="p">((</span><span class="n">first</span> <span class="o">+</span> <span class="n">second</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_calculate_timestamps</span><span class="p">()</span>
+            <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_timestamps_data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return analysis period as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span>
+
+<div class="viewcode-block" id="AnalysisPeriod.ToString"><a class="viewcode-back" href="../../ladybug.analysisperiod.html#ladybug.analysisperiod.AnalysisPeriod.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return analysis period as a string.&quot;&quot;&quot;</span>
+        <span class="n">base_string</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">/</span><span class="si">%s</span><span class="s2"> to </span><span class="si">%s</span><span class="s2">/</span><span class="si">%s</span><span class="s2"> between </span><span class="si">%s</span><span class="s2"> and </span><span class="si">%s</span><span class="s2"> @</span><span class="si">%d</span><span class="s2">&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">:</span>
+            <span class="n">base_string</span> <span class="o">+=</span> <span class="s1">&#39;*&#39;</span>
+
+        <span class="k">return</span> <span class="n">base_string</span> <span class="o">%</span> \
+            <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+             <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+             <span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+             <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__key</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">st_time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timestep</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__key</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">AnalysisPeriod</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

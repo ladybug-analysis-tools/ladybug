@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.compass &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.compass</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Module for computing geometry for the compass used by a variety of graphics.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.pointvector</span> <span class="kn">import</span> <span class="n">Point2D</span><span class="p">,</span> <span class="n">Vector2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.line</span> <span class="kn">import</span> <span class="n">LineSegment2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.arc</span> <span class="kn">import</span> <span class="n">Arc2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.pointvector</span> <span class="kn">import</span> <span class="n">Point3D</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+
+
+<div class="viewcode-block" id="Compass"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass">[docs]</a><span class="k">class</span> <span class="nc">Compass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Object for computing geometry for the compass used by a variety of graphics.</span>
+
+<span class="sd">    Methods to project points to orthograhpic and stereographic projectsions are</span>
+<span class="sd">    also within this class so that &quot;domed&quot; visualizations can be synchronized with</span>
+<span class="sd">    the compass in the 2D plane.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        radius: A positive number for the radius of the compass. (Default: 100).</span>
+<span class="sd">        center: A ladybug_geometry Point2D for the center of the compass</span>
+<span class="sd">            in the scene. (Default: (0, 0) for the World origin).</span>
+<span class="sd">        north_angle: A number between -360 and 360 for the counterclockwise</span>
+<span class="sd">            difference between the North and the positive Y-axis in degrees.</span>
+<span class="sd">            90 is West and 270 is East (Default: 0).</span>
+<span class="sd">        spacing_factor: A positive number for the fraction of the radius that</span>
+<span class="sd">            labels and tick marks occupy around the compass. (Default: 0.15)</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * radius</span>
+<span class="sd">        * center</span>
+<span class="sd">        * north_angle</span>
+<span class="sd">        * north_vector</span>
+<span class="sd">        * spacing_factor</span>
+<span class="sd">        * min_point</span>
+<span class="sd">        * max_point</span>
+<span class="sd">        * inner_boundary_circle</span>
+<span class="sd">        * all_boundary_circles</span>
+<span class="sd">        * major_azimuth_points</span>
+<span class="sd">        * major_azimuth_ticks</span>
+<span class="sd">        * minor_azimuth_points</span>
+<span class="sd">        * minor_azimuth_ticks</span>
+<span class="sd">        * orthographic_altitude_circles</span>
+<span class="sd">        * orthographic_altitude_points</span>
+<span class="sd">        * stereographic_altitude_circles</span>
+<span class="sd">        * stereographic_altitude_points</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_radius&#39;</span><span class="p">,</span> <span class="s1">&#39;_center&#39;</span><span class="p">,</span> <span class="s1">&#39;_north_angle&#39;</span><span class="p">,</span> <span class="s1">&#39;_north_vector&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_spacing_factor&#39;</span><span class="p">)</span>
+
+    <span class="n">MAJOR_AZIMUTHS</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">270</span><span class="p">)</span>
+    <span class="n">MAJOR_TEXT</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;W&#39;</span><span class="p">)</span>
+    <span class="n">MINOR_AZIMUTHS</span> <span class="o">=</span> <span class="p">(</span><span class="mf">22.5</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mf">67.5</span><span class="p">,</span> <span class="mf">112.5</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mf">157.5</span><span class="p">,</span> <span class="mf">202.5</span><span class="p">,</span> <span class="mi">225</span><span class="p">,</span> <span class="mf">247.5</span><span class="p">,</span>
+                      <span class="mf">292.5</span><span class="p">,</span> <span class="mi">315</span><span class="p">,</span> <span class="mf">337.5</span><span class="p">)</span>
+    <span class="n">MINOR_TEXT</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;NNE&#39;</span><span class="p">,</span> <span class="s1">&#39;NE&#39;</span><span class="p">,</span> <span class="s1">&#39;ENE&#39;</span><span class="p">,</span> <span class="s1">&#39;ESE&#39;</span><span class="p">,</span> <span class="s1">&#39;SE&#39;</span><span class="p">,</span> <span class="s1">&#39;SSE&#39;</span><span class="p">,</span> <span class="s1">&#39;SSW&#39;</span><span class="p">,</span> <span class="s1">&#39;SW&#39;</span><span class="p">,</span> <span class="s1">&#39;WSW&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;WNW&#39;</span><span class="p">,</span> <span class="s1">&#39;NW&#39;</span><span class="p">,</span> <span class="s1">&#39;NNW&#39;</span><span class="p">)</span>
+    <span class="n">ALTITUDES</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
+    <span class="n">PI</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="n">Point2D</span><span class="p">(),</span> <span class="n">north_angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                 <span class="n">spacing_factor</span><span class="o">=</span><span class="mf">0.15</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize Compass.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">center</span> <span class="o">=</span> <span class="n">center</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">north_angle</span> <span class="o">=</span> <span class="n">north_angle</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span> <span class="o">=</span> <span class="n">spacing_factor</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">radius</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a positive number for the radius of the compass.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_radius</span>
+
+    <span class="nd">@radius</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">radius</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_radius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_radius</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> \
+            <span class="s1">&#39;Compass radius must be a positive number. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">center</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a Point2D for the center of the compass in the scene.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_center</span>
+
+    <span class="nd">@center</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">center</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Point2D</span><span class="p">),</span> <span class="s1">&#39;Expected ladybug_geometry Point2D &#39;</span> \
+            <span class="s1">&#39;for Compass center. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_center</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">north_angle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a number between -360 and 360 for the north_angle in degrees.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span><span class="p">)</span>
+
+    <span class="nd">@north_angle</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">north_angle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_north_vector</span> <span class="o">=</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">PI</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">PI</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> \
+            <span class="s1">&#39;north_angle value should be between -360 and 360. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">north_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a ladybug_geometry Vector2D for the north direction.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_north_vector</span>
+
+    <span class="nd">@north_vector</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">north_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Vector2D</span><span class="p">),</span> \
+            <span class="s1">&#39;Expected Vector2D for north_vector. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_north_vector</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span> <span class="o">=</span> \
+            <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">Vector2D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">angle_clockwise</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_north_vector</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">spacing_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a number for the fraction of radius occupied by labels and ticks.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_spacing_factor</span>
+
+    <span class="nd">@spacing_factor</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">spacing_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_spacing_factor</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_spacing_factor</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> \
+            <span class="s1">&#39;Compass spacing_factor must be a positive number. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">min_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for the minimum around the entire compass.&quot;&quot;&quot;</span>
+        <span class="n">fac</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">fac</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">fac</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for the minimum around the entire compass.&quot;&quot;&quot;</span>
+        <span class="n">fac</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">fac</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">fac</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">inner_boundary_circle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Arc2D for the inner circle of the compass.</span>
+
+<span class="sd">        This is essentially a circle with the compass radius.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Arc2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">all_boundary_circles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an array of 3 Arc2Ds for the circles of the compass.&quot;&quot;&quot;</span>
+        <span class="n">arc2</span> <span class="o">=</span> <span class="n">Arc2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">))</span>
+        <span class="n">arc3</span> <span class="o">=</span> <span class="n">Arc2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">))</span>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">inner_boundary_circle</span><span class="p">,</span> <span class="n">arc2</span><span class="p">,</span> <span class="n">arc3</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">major_azimuth_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Point2Ds for the major azimuth labels.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">label_points_from_angles</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">MAJOR_AZIMUTHS</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">major_azimuth_ticks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of LineSegment2Ds for the major azimuth labels.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ticks_from_angles</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">MAJOR_AZIMUTHS</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">minor_azimuth_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Point2Ds for the minor azimuth labels.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">label_points_from_angles</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">MINOR_AZIMUTHS</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">minor_azimuth_ticks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of LineSegment2Ds for the minor azimuth labels.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ticks_from_angles</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">MINOR_AZIMUTHS</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">orthographic_altitude_circles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of circles for the orthographic altitude labels.&quot;&quot;&quot;</span>
+        <span class="n">circles</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ALTITUDES</span><span class="p">:</span>
+            <span class="n">circles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Arc2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">angle</span><span class="p">))))</span>
+        <span class="k">return</span> <span class="n">circles</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">orthographic_altitude_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Point2Ds for the orthographic altitude labels.&quot;&quot;&quot;</span>
+        <span class="n">pts</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ALTITUDES</span><span class="p">:</span>
+            <span class="n">spacing_fac</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="mf">0.01</span>  <span class="c1"># spacing factor</span>
+            <span class="n">add_y</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">angle</span><span class="p">)))</span> <span class="o">-</span> <span class="n">spacing_fac</span>
+            <span class="n">pts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">add_y</span><span class="p">))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">pts</span> <span class="o">=</span> <span class="p">[</span><span class="n">pt</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="n">pts</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">pts</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">stereographic_altitude_circles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of circles for the stereographic altitude labels.&quot;&quot;&quot;</span>
+        <span class="n">circles</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ALTITUDES</span><span class="p">:</span>
+            <span class="n">ang</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+            <span class="n">pt3d</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">ang</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">ang</span><span class="p">))</span>
+            <span class="n">radius</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">point3d_to_stereographic</span><span class="p">(</span><span class="n">pt3d</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">x</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span>
+            <span class="n">circles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Arc2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">circles</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">stereographic_altitude_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Point2Ds for the stereographic altitude labels.&quot;&quot;&quot;</span>
+        <span class="n">pts</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ALTITUDES</span><span class="p">:</span>
+            <span class="n">spacing_fac</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="mf">0.01</span>  <span class="c1"># spacing factor</span>
+            <span class="n">ang</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+            <span class="n">pt3d</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">ang</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">ang</span><span class="p">))</span>
+            <span class="n">add_y</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">point3d_to_stereographic</span><span class="p">(</span><span class="n">pt3d</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">x</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span><span class="p">)</span> <span class="o">-</span> <span class="n">spacing_fac</span>
+            <span class="n">pts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">add_y</span><span class="p">))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">pts</span> <span class="o">=</span> <span class="p">[</span><span class="n">pt</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="n">pts</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">pts</span>
+
+<div class="viewcode-block" id="Compass.label_points_from_angles"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass.label_points_from_angles">[docs]</a>    <span class="k">def</span> <span class="nf">label_points_from_angles</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">angles</span><span class="p">,</span> <span class="n">factor</span><span class="o">=</span><span class="mf">0.8</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of label points from a list of angles between 0 and 360.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            angles: An array of numbers between 0 and 360 for the angles of</span>
+<span class="sd">                custom angle labels to be generated for the compass.</span>
+<span class="sd">            factor: A number between 0 and 1 for the fraction of the spacing_factor</span>
+<span class="sd">                at which the points should be generated.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">circle</span> <span class="o">=</span> <span class="n">Arc2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span> <span class="o">*</span> <span class="n">factor</span><span class="p">))</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">circle</span><span class="o">.</span><span class="n">point_at_angle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_north_angle</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">angle</span> <span class="o">-</span> <span class="mi">90</span><span class="p">))</span>
+                <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="n">angles</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Compass.ticks_from_angles"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass.ticks_from_angles">[docs]</a>    <span class="k">def</span> <span class="nf">ticks_from_angles</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">angles</span><span class="p">,</span> <span class="n">factor</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Linesegment2Ds from a list of angles between 0 and 360.&quot;&quot;&quot;</span>
+        <span class="n">pts_in</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">label_points_from_angles</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">pts_out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">label_points_from_angles</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="n">factor</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">pi</span><span class="p">,</span> <span class="n">po</span><span class="p">)</span> <span class="k">for</span> <span class="n">pi</span><span class="p">,</span> <span class="n">po</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">pts_in</span><span class="p">,</span> <span class="n">pts_out</span><span class="p">)]</span></div>
+
+<div class="viewcode-block" id="Compass.min_point3d"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass.min_point3d">[docs]</a>    <span class="k">def</span> <span class="nf">min_point3d</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point3D for the minimum around the entire compass.&quot;&quot;&quot;</span>
+        <span class="n">min_pt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_point</span>
+        <span class="k">return</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">min_pt</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">min_pt</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Compass.max_point3d"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass.max_point3d">[docs]</a>    <span class="k">def</span> <span class="nf">max_point3d</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point3D for the minimum around the entire compass.&quot;&quot;&quot;</span>
+        <span class="n">max_pt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_point</span>
+        <span class="k">return</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">max_pt</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">max_pt</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Compass.duplicate"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass.duplicate">[docs]</a>    <span class="k">def</span> <span class="nf">duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a copy of this object.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__copy__</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Compass.point3d_to_orthographic"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass.point3d_to_orthographic">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">point3d_to_orthographic</span><span class="p">(</span><span class="n">point</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for a given Point3D using a orthographic projection.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            point: A ladybug_geometry Point3D to be projected into 2D space via</span>
+<span class="sd">                stereographic projection.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Compass.point3d_to_stereographic"><a class="viewcode-back" href="../../ladybug.compass.html#ladybug.compass.Compass.point3d_to_stereographic">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">point3d_to_stereographic</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="n">Point3D</span><span class="p">()):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for a given Point3D using a stereographic projection.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            point: A ladybug_geometry Point3D to be projected into 2D space via</span>
+<span class="sd">                stereographic projection.</span>
+<span class="sd">            radius: A positive number for the radius of the sphere on which the</span>
+<span class="sd">                point exists. (Default: 100).</span>
+<span class="sd">            origin: An optional ladybug_geometry Point3D representing the origin</span>
+<span class="sd">                of the coordinate system in which the projection is happening.</span>
+<span class="sd">                (eg. the center of the compass).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># move the point to the world origin</span>
+        <span class="n">coords</span> <span class="o">=</span> <span class="p">((</span><span class="n">point</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">origin</span><span class="o">.</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">origin</span><span class="o">.</span><span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">point</span><span class="o">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">origin</span><span class="o">.</span><span class="n">z</span><span class="p">))</span>
+        <span class="c1"># perform the stereographic projection while scaling it to the unit sphere</span>
+        <span class="n">proj_pt</span> <span class="o">=</span> <span class="p">(</span><span class="n">coords</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">radius</span> <span class="o">+</span> <span class="n">coords</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">radius</span> <span class="o">+</span> <span class="n">coords</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
+        <span class="c1"># move the point back to its original location and scale</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">proj_pt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">+</span> <span class="n">origin</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">proj_pt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">+</span> <span class="n">origin</span><span class="o">.</span><span class="n">y</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">__key</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A tuple based on the object properties, useful for hashing.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">radius</span><span class="p">,</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">north_angle</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__key</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Compass</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Compass</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">radius</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">north_angle</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">spacing_factor</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compass representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Compass (radius:</span><span class="si">{}</span><span class="s2">, center:</span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">radius</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">center</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

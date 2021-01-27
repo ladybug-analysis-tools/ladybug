@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug._datacollectionbase &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug._datacollectionbase</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Base class for Ladybug Data Collections.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">.header</span> <span class="kn">import</span> <span class="n">Header</span>
+<span class="kn">from</span> <span class="nn">.datatype.base</span> <span class="kn">import</span> <span class="n">DataTypeBase</span>
+<span class="kn">from</span> <span class="nn">.datatype</span> <span class="kn">import</span> <span class="n">TYPESDICT</span><span class="p">,</span> <span class="n">BASETYPES</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Iterable</span>  <span class="c1"># python &lt; 3.7</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Iterable</span>  <span class="c1"># python &gt;= 3.8</span>
+<span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">ascii_lowercase</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">izip</span> <span class="k">as</span> <span class="nb">zip</span>  <span class="c1"># python 2</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">xrange</span> <span class="o">=</span> <span class="nb">range</span>  <span class="c1"># python 3</span>
+
+
+<span class="k">class</span> <span class="nc">BaseCollection</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Base class for all Data Collections.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        header: A Ladybug Header object.</span>
+<span class="sd">        values: A list of values.</span>
+<span class="sd">        datetimes: A list of Ladybug DateTime objects that aligns with</span>
+<span class="sd">            the list of values.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_header&#39;</span><span class="p">,</span> <span class="s1">&#39;_values&#39;</span><span class="p">,</span> <span class="s1">&#39;_datetimes&#39;</span><span class="p">,</span> <span class="s1">&#39;_validated_a_period&#39;</span><span class="p">)</span>
+    <span class="n">_collection_type</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">_mutable</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">_enumeration</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">header</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">datetimes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize base collection.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">header</span><span class="p">,</span> <span class="n">Header</span><span class="p">),</span> \
+            <span class="s1">&#39;header must be a Ladybug Header object. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">header</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">datetimes</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span> \
+            <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">datetimes</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">)),</span> \
+            <span class="s1">&#39;datetimes should be a list or tuple. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">datetimes</span><span class="p">))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span> <span class="o">=</span> <span class="n">header</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_datetimes</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">values</span> <span class="o">=</span> <span class="n">values</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a Data Collection from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;header&quot;: {},  # A Ladybug Header</span>
+<span class="sd">            &quot;values&quot;: [],  # An array of values</span>
+<span class="sd">            &quot;datetimes&quot;: [],  # An array of datetimes</span>
+<span class="sd">            &quot;validated_a_period&quot;: True  # Boolean for whether header analysis_period</span>
+<span class="sd">                                        # is valid</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="s1">&#39;header&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">,</span> <span class="s1">&#39;Required keyword &quot;header&quot; is missing!&#39;</span>
+        <span class="k">assert</span> <span class="s1">&#39;values&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">,</span> <span class="s1">&#39;Required keyword &quot;values&quot; is missing!&#39;</span>
+        <span class="k">assert</span> <span class="s1">&#39;datetimes&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">,</span> <span class="s1">&#39;Required keyword &quot;datetimes&quot; is missing!&#39;</span>
+        <span class="n">coll</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">Header</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;header&#39;</span><span class="p">]),</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;values&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;datetimes&#39;</span><span class="p">])</span>
+        <span class="k">if</span> <span class="s1">&#39;validated_a_period&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">coll</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;validated_a_period&#39;</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">coll</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">header</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the header for this collection.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">datetimes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of datetimes for this collection, which align with the values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_datetimes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of numerical values for this collection.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="nd">@values</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_check_values</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">validated_a_period</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean for whether the header analysis_period is validated against datetimes.</span>
+
+<span class="sd">        This will always be True when a collection is derived from a continuous one.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">bounds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of two value as (min, max) of the data.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">min</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the min of the Data Collection values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the max of the Data Collection values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">average</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the average of the Data Collection values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">median</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the median of the Data Collection values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_percentile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the total of the Data Collection values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">convert_to_unit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Convert the Data Collection to the input unit.</span>
+
+<span class="sd">        Note that this mutates the data collection object, which can have unintended</span>
+<span class="sd">        consequences depending on how the data collection is used. Use to_unit to</span>
+<span class="sd">        get a new instance of a collection without mutating this one.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="n">unit</span>
+
+    <span class="k">def</span> <span class="nf">convert_to_ip</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Convert the Data Collection to IP units.</span>
+
+<span class="sd">        Note that this mutates the data collection object, which can have unintended</span>
+<span class="sd">        consequences depending on how the data collection is used. Use to_ip to</span>
+<span class="sd">        get a new instance of a collection without mutating this one.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">to_ip</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">convert_to_si</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Convert the Data Collection to SI units.</span>
+
+<span class="sd">        Note that this mutates the data collection object, which can have unintended</span>
+<span class="sd">        consequences depending on how the data collection is used. Use to_si to</span>
+<span class="sd">        get a new instance of a collection without mutating this one.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">to_si</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">to_unit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Data Collection in the input unit.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            unit: Text for the unit to convert the data to (eg. &#39;C&#39; or &#39;kWh&#39;). This</span>
+<span class="sd">                unit must appear under the data collection&#39;s header.data_type.units.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">new_data_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">convert_to_unit</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">new_data_c</span>
+
+    <span class="k">def</span> <span class="nf">to_ip</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Data Collection in IP units.&quot;&quot;&quot;</span>
+        <span class="n">new_data_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">convert_to_ip</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">new_data_c</span>
+
+    <span class="k">def</span> <span class="nf">to_si</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Data Collection in SI units.&quot;&quot;&quot;</span>
+        <span class="n">new_data_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">convert_to_si</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">new_data_c</span>
+
+    <span class="k">def</span> <span class="nf">is_in_data_type_range</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">raise_exception</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if collection values are in physically possible ranges for the data_type.</span>
+
+<span class="sd">        If this method returns False, the collection&#39;s values are physically or</span>
+<span class="sd">        mathematically impossible for the data_type (eg. temperature below</span>
+<span class="sd">        absolute zero).</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            raise_exception: Boolean to note whether an exception should be raised</span>
+<span class="sd">                if an impossible value is found. (Default: True).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">is_in_range</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">unit</span><span class="p">,</span> <span class="n">raise_exception</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">to_mutable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a mutable version of this collection.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">to_immutable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an immutable version of this collection.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_get_mutable_enumeration</span><span class="p">()</span>
+        <span class="n">col_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span><span class="p">[</span><span class="s1">&#39;immutable&#39;</span><span class="p">][</span><span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">]</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="n">col_obj</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">new_obj</span>
+
+    <span class="k">def</span> <span class="nf">normalize_by_area</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">area</span><span class="p">,</span> <span class="n">area_unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Data Collection that is normalized by an area value.</span>
+
+<span class="sd">        Note that this method will raise a ValueError if the data type in the header</span>
+<span class="sd">        of the data collection does not have a normalized_type. Also note that a</span>
+<span class="sd">        ZeroDivisionError will be raised if the input area is equal to 0.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            area: Number representing area by which all of the data is normalized.</span>
+<span class="sd">            area_unit: Text for the units that the area value is in. Acceptable</span>
+<span class="sd">                inputs include &#39;m2&#39;, &#39;ft2&#39; and any other unit that is supported</span>
+<span class="sd">                in the normalized_type of this datacollection&#39;s data type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># get an instance of the normalized data type</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span>
+        <span class="n">norm_type_class</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">normalized_type</span>
+        <span class="k">assert</span> <span class="n">norm_type_class</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> \
+            <span class="s1">&#39;Data type &quot;</span><span class="si">{}</span><span class="s1">&quot; cannot be normalized by area to yield a useful &#39;</span>\
+            <span class="s1">&#39;metric.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="p">)</span>
+
+        <span class="c1"># create the new data collection and assign normalized values</span>
+        <span class="n">new_data_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span> <span class="o">/</span> <span class="n">area</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">]</span>
+
+        <span class="c1"># normalize the data type and unit in the header</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">unit</span><span class="p">,</span> <span class="n">area_unit</span><span class="p">)</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_data_type</span> <span class="o">=</span> <span class="n">norm_type_class</span><span class="p">()</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_data_type</span><span class="o">.</span><span class="n">is_unit_acceptable</span><span class="p">(</span><span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_unit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;type&#39;</span> <span class="ow">in</span> <span class="n">head</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>  <span class="c1"># key used to identify sophisticated data types</span>
+            <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> \
+                <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">],</span> <span class="s1">&#39;Intensity&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">new_data_c</span>
+
+    <span class="k">def</span> <span class="nf">highest_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of the the x highest values of the Data Collection and their indices.</span>
+
+<span class="sd">        This is useful for situations where one needs to know the times of</span>
+<span class="sd">        the year when the largest values of a data collection occur.  For example,</span>
+<span class="sd">        there is a European daylight code that requires an analysis for the hours</span>
+<span class="sd">        of the year with the greatest exterior illuminance level.  This method</span>
+<span class="sd">        can be used to help build a schedule for such a study.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            count: Integer representing the number of highest values to account for.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with two elements.</span>
+
+<span class="sd">            -   highest_values:</span>
+<span class="sd">                The n highest values in data list, ordered from</span>
+<span class="sd">                highest to lowest.</span>
+
+<span class="sd">            -   highest_values_index:</span>
+<span class="sd">                Indices of the n highest values in data</span>
+<span class="sd">                list, ordered from highest to lowest.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">count</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">),</span> \
+            <span class="s1">&#39;count must be smaller than or equal to values length. </span><span class="si">{}</span><span class="s1"> &gt; </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">count</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> \
+            <span class="s1">&#39;count must be greater than 0. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+        <span class="n">highest_values</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="n">count</span><span class="p">]</span>
+        <span class="n">highest_values_index</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">))),</span>
+                                      <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">[</span><span class="n">k</span><span class="p">],</span>
+                                      <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="n">count</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">highest_values</span><span class="p">,</span> <span class="n">highest_values_index</span>
+
+    <span class="k">def</span> <span class="nf">lowest_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of the the x lowest values of the Data Collection and their indices.</span>
+
+<span class="sd">        This is useful for situations where one needs to know the times of</span>
+<span class="sd">        the year when the smallest values of a data collection occur.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            count: Integer representing the number of lowest values to account for.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with two elements.</span>
+
+<span class="sd">            -   highest_values:</span>
+<span class="sd">                The n lowest values in data list, ordered from</span>
+<span class="sd">                lowest to lowest.</span>
+<span class="sd">            -   lowest_values_index:</span>
+<span class="sd">                Indices of the n lowest values in data</span>
+<span class="sd">                list, ordered from lowest to lowest.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">count</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">),</span> \
+            <span class="s1">&#39;count must be &lt;= to Data Collection len. </span><span class="si">{}</span><span class="s1"> &gt; </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">count</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> \
+            <span class="s1">&#39;count must be greater than 0. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+        <span class="n">lowest_values</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="n">count</span><span class="p">]</span>
+        <span class="n">lowest_values_index</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">))),</span>
+                                     <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">[</span><span class="n">k</span><span class="p">])[</span><span class="mi">0</span><span class="p">:</span><span class="n">count</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">lowest_values</span><span class="p">,</span> <span class="n">lowest_values_index</span>
+
+    <span class="k">def</span> <span class="nf">percentile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">percentile</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a value representing a the input percentile of the Data Collection.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            percentile: A float value from 0 to 100 representing the</span>
+<span class="sd">                requested percentile.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            The Data Collection value at the input percentile</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">percentile</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">,</span> \
+            <span class="s1">&#39;percentile must be between 0 and 100. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">percentile</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_percentile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">percentile</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">filter_by_conditional_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">statement</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Filter the Data Collection based on a conditional statement.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            statement: A conditional statement as a string (e.g. a &gt; 25 and a%5 == 0).</span>
+<span class="sd">                The variable should always be named as &#39;a&#39; (without quotations).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A new Data Collection containing only the filtered data</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_filt_values</span><span class="p">,</span> <span class="n">_filt_datetimes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_filter_by_statement</span><span class="p">(</span><span class="n">statement</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_get_mutable_enumeration</span><span class="p">()</span>
+        <span class="n">col_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span><span class="p">[</span><span class="s1">&#39;mutable&#39;</span><span class="p">][</span><span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">collection</span> <span class="o">=</span> <span class="n">col_obj</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">_filt_values</span><span class="p">,</span> <span class="n">_filt_datetimes</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AssertionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s1">&#39;No value meets the conditional statement.&#39;</span>
+                                 <span class="s1">&#39;</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="n">collection</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">collection</span>
+
+    <span class="k">def</span> <span class="nf">filter_by_pattern</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Filter the Data Collection based on a list of booleans.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pattern: A list of True/False values.  Typically, this is a list</span>
+<span class="sd">                with a length matching the length of the Data Collections values</span>
+<span class="sd">                but it can also be a pattern to be repeated over the Data Collection.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A new Data Collection with filtered data</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_filt_values</span><span class="p">,</span> <span class="n">_filt_datetimes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_filter_by_pattern</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_get_mutable_enumeration</span><span class="p">()</span>
+        <span class="n">col_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span><span class="p">[</span><span class="s1">&#39;mutable&#39;</span><span class="p">][</span><span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">]</span>
+        <span class="n">collection</span> <span class="o">=</span> <span class="n">col_obj</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">_filt_values</span><span class="p">,</span> <span class="n">_filt_datetimes</span><span class="p">)</span>
+        <span class="n">collection</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">collection</span>
+
+    <span class="k">def</span> <span class="nf">is_collection_aligned</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_collection</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if this Data Collection is aligned with another.</span>
+
+<span class="sd">        Aligned Data Collections are of the same Data Collection class, have the</span>
+<span class="sd">        same number of values and have matching datetimes.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data_collection: The Data Collection which you want to test if this</span>
+<span class="sd">                collection is aligned with.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            True if collections are aligned, False if not aligned</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span> <span class="o">!=</span> <span class="n">data_collection</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_collection</span><span class="o">.</span><span class="n">values</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span> <span class="o">!=</span> <span class="n">data_collection</span><span class="o">.</span><span class="n">datetimes</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">get_aligned_collection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">data_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mutable</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a collection aligned with this one composed of one repeated value.</span>
+
+<span class="sd">        Aligned Data Collections are of the same Data Collection class, have the same</span>
+<span class="sd">        number of values and have matching datetimes.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            value: A value to be repeated in the aliged collection values or</span>
+<span class="sd">                A list of values that has the same length as this collection.</span>
+<span class="sd">                Default: 0.</span>
+<span class="sd">            data_type: The data type of the aligned collection. Default is to</span>
+<span class="sd">                use the data type of this collection.</span>
+<span class="sd">            unit: The unit of the aligned collection. Default is to</span>
+<span class="sd">                use the unit of this collection or the base unit of the</span>
+<span class="sd">                input data_type (if it exists).</span>
+<span class="sd">            mutable: An optional Boolean to set whether the returned aligned</span>
+<span class="sd">                collection is mutable (True) or immutable (False). The default is</span>
+<span class="sd">                None, which will simply set the aligned collection to have the</span>
+<span class="sd">                same mutability as the starting collection.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># set up the header of the new collection</span>
+        <span class="n">header</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_aligned_header</span><span class="p">(</span><span class="n">data_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span>
+
+        <span class="c1"># set up the values of the new collection</span>
+        <span class="n">values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_aligned_value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+        <span class="c1"># get the correct base class for the aligned collection (mutable or immutable)</span>
+        <span class="k">if</span> <span class="n">mutable</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">collection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">header</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_get_mutable_enumeration</span><span class="p">()</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">mutable</span><span class="p">:</span>
+                <span class="n">col_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span><span class="p">[</span><span class="s1">&#39;immutable&#39;</span><span class="p">][</span><span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">col_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span><span class="p">[</span><span class="s1">&#39;mutable&#39;</span><span class="p">][</span><span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">]</span>
+            <span class="n">collection</span> <span class="o">=</span> <span class="n">col_obj</span><span class="p">(</span><span class="n">header</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">collection</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">collection</span>
+
+    <span class="k">def</span> <span class="nf">duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a copy of this Data Collection.&quot;&quot;&quot;</span>
+        <span class="n">collection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">collection</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">collection</span>
+
+    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Convert Data Collection to a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;header&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+            <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span>
+            <span class="s1">&#39;datetimes&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">,</span>
+            <span class="s1">&#39;validated_a_period&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span><span class="p">,</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="p">}</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">filter_collections_by_statement</span><span class="p">(</span><span class="n">data_collections</span><span class="p">,</span> <span class="n">statement</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generate a filtered data collections according to a conditional statement.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data_collections: A list of aligned Data Collections to be evaluated</span>
+<span class="sd">                against the statement.</span>
+<span class="sd">            statement: A conditional statement as a string (e.g. a&gt;25 and a%5==0).</span>
+<span class="sd">                The variable should always be named as &#39;a&#39; (without quotations).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            collections -- A list of Data Collections that have been filtered based</span>
+<span class="sd">            on the statement.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="n">BaseCollection</span><span class="o">.</span><span class="n">pattern_from_collections_and_statement</span><span class="p">(</span>
+            <span class="n">data_collections</span><span class="p">,</span> <span class="n">statement</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">collections</span> <span class="o">=</span> <span class="p">[</span><span class="n">coll</span><span class="o">.</span><span class="n">filter_by_pattern</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span> <span class="k">for</span> <span class="n">coll</span> <span class="ow">in</span> <span class="n">data_collections</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">AssertionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s1">&#39;No value meets the conditional statement.&#39;</span>
+                                 <span class="s1">&#39;</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">collections</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">pattern_from_collections_and_statement</span><span class="p">(</span><span class="n">data_collections</span><span class="p">,</span> <span class="n">statement</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generate a list of booleans from data collections and a conditional statement.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data_collections: A list of aligned Data Collections to be evaluated</span>
+<span class="sd">                against the statement.</span>
+<span class="sd">            statement: A conditional statement as a string (e.g. a&gt;25 and a%5==0).</span>
+<span class="sd">                The variable should always be named as &#39;a&#39; (without quotations).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            pattern -- A list of True/False booleans with the length of the</span>
+<span class="sd">            Data Collections where True meets the conditional statement</span>
+<span class="sd">            and False does not.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">BaseCollection</span><span class="o">.</span><span class="n">are_collections_aligned</span><span class="p">(</span><span class="n">data_collections</span><span class="p">)</span>
+        <span class="n">correct_var</span> <span class="o">=</span> <span class="n">BaseCollection</span><span class="o">.</span><span class="n">_check_conditional_statement</span><span class="p">(</span>
+            <span class="n">statement</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_collections</span><span class="p">))</span>
+
+        <span class="c1"># replace the operators of the statement with non-alphanumeric characters</span>
+        <span class="c1"># necessary to avoid replacing the characters of the operators</span>
+        <span class="n">num_statement_clean</span> <span class="o">=</span> <span class="n">BaseCollection</span><span class="o">.</span><span class="n">_replace_operators</span><span class="p">(</span><span class="n">statement</span><span class="p">)</span>
+
+        <span class="n">pattern</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data_collections</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">num_statement</span> <span class="o">=</span> <span class="n">num_statement_clean</span>
+            <span class="c1"># replace the variable names with their numerical values</span>
+            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">coll</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_collections</span><span class="p">):</span>
+                <span class="n">var</span> <span class="o">=</span> <span class="n">correct_var</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                <span class="n">num_statement</span> <span class="o">=</span> <span class="n">num_statement</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">coll</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+            <span class="c1"># put back the operators</span>
+            <span class="n">num_statement</span> <span class="o">=</span> <span class="n">BaseCollection</span><span class="o">.</span><span class="n">_restore_operators</span><span class="p">(</span><span class="n">num_statement</span><span class="p">)</span>
+            <span class="n">pattern</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">num_statement</span><span class="p">,</span> <span class="p">{}))</span>
+        <span class="k">return</span> <span class="n">pattern</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">are_collections_aligned</span><span class="p">(</span><span class="n">data_collections</span><span class="p">,</span> <span class="n">raise_exception</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Test if a series of Data Collections are aligned with one another.</span>
+
+<span class="sd">        Aligned Data Collections are of the same Data Collection class, have the</span>
+<span class="sd">        same number of values and have matching datetimes.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data_collections: A list of Data Collections for which you want to</span>
+<span class="sd">                test if they are al aligned with one another.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            True if collections are aligned, False if not aligned</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_collections</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">first_coll</span> <span class="o">=</span> <span class="n">data_collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">coll</span> <span class="ow">in</span> <span class="n">data_collections</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">first_coll</span><span class="o">.</span><span class="n">is_collection_aligned</span><span class="p">(</span><span class="n">coll</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">raise_exception</span><span class="p">:</span>
+                        <span class="n">error_msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> Data Collection is not aligned with &#39;</span>\
+                            <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> Data Collection.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                                <span class="n">first_coll</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">,</span> <span class="n">coll</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">)</span>
+                        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">compute_function_aligned</span><span class="p">(</span><span class="n">funct</span><span class="p">,</span> <span class="n">data_collections</span><span class="p">,</span> <span class="n">data_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute a function with a list of aligned data collections or individual values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            funct: A function with a single numerical value as output and one or</span>
+<span class="sd">                more numerical values as input.</span>
+<span class="sd">            data_collections: A list with a length equal to the number of arguments</span>
+<span class="sd">                for the function. Items of the list can be either Data Collections</span>
+<span class="sd">                or individual values to be used at each datetime of other collections.</span>
+<span class="sd">            data_type: An instance of a Ladybug data type that describes the results</span>
+<span class="sd">                of the funct.</span>
+<span class="sd">            unit: The units of the funct results.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A Data Collection with the results function. If all items in this list of</span>
+<span class="sd">            data_collections are individual values, only a single value will be returned.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            from ladybug.datacollection import HourlyContinuousCollection</span>
+<span class="sd">            from ladybug.epw import EPW</span>
+<span class="sd">            from ladybug.psychrometrics import humid_ratio_from_db_rh</span>
+<span class="sd">            from ladybug.datatype.percentage import HumidityRatio</span>
+
+<span class="sd">            epw_file_path = &#39;./epws/denver.epw&#39;</span>
+<span class="sd">            denver_epw = EPW(epw_file_path)</span>
+<span class="sd">            pressure_at_denver = 85000</span>
+<span class="sd">            hr_inputs = [denver_epw.dry_bulb_temperature,</span>
+<span class="sd">                         denver_epw.relative_humidity,</span>
+<span class="sd">                         pressure_at_denver]</span>
+<span class="sd">            humid_ratio = HourlyContinuousCollection.compute_function_aligned(</span>
+<span class="sd">                humid_ratio_from_db_rh, hr_inputs, HumidityRatio(), &#39;fraction&#39;)</span>
+<span class="sd">            # humid_ratio will be a Data Collection of humidity ratios at Denver</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># check that all inputs are either data collections or floats</span>
+        <span class="n">data_colls</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">func_input</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_collections</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">func_input</span><span class="p">,</span> <span class="n">BaseCollection</span><span class="p">):</span>
+                <span class="n">data_colls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">func_input</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">data_collections</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">func_input</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;Expected a number or a Data Collection. &#39;</span>
+                                    <span class="s1">&#39;Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">func_input</span><span class="p">)))</span>
+
+        <span class="c1"># run the function and return the result</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_colls</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">funct</span><span class="p">(</span><span class="o">*</span><span class="n">data_collections</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">BaseCollection</span><span class="o">.</span><span class="n">are_collections_aligned</span><span class="p">(</span><span class="n">data_colls</span><span class="p">)</span>
+            <span class="n">val_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_colls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_collections</span><span class="p">):</span>
+                <span class="n">data_collections</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">*</span> <span class="n">val_len</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="k">else</span> <span class="n">col</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">data_colls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_aligned_collection</span><span class="p">(</span><span class="n">data_type</span><span class="o">=</span><span class="n">data_type</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="n">unit</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="n">val_len</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">funct</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">col</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data_collections</span><span class="p">])</span>
+            <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">def</span> <span class="nf">_time_aggregated_collection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timestep</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a time-aggregated version of this collection.&quot;&quot;&quot;</span>
+        <span class="c1"># get an instance of the time aggregated data type</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span>
+        <span class="n">time_class</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">time_aggregated_type</span>
+        <span class="k">assert</span> <span class="n">time_class</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> \
+            <span class="s1">&#39;Data type &quot;</span><span class="si">{}</span><span class="s1">&quot; cannot be time aggregated to yield a useful &#39;</span>\
+            <span class="s1">&#39;metric.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="p">)</span>
+
+        <span class="c1"># create the new data collection and assign normalized values</span>
+        <span class="n">new_data_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">factor</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">time_aggregated_factor</span> <span class="o">/</span> <span class="n">timestep</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span> <span class="o">*</span> <span class="n">factor</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">new_data_c</span><span class="o">.</span><span class="n">_values</span><span class="p">]</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_data_type</span> <span class="o">=</span> <span class="n">time_class</span><span class="p">()</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_data_type</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">new_data_c</span>
+
+    <span class="k">def</span> <span class="nf">_time_rate_of_change_collection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timestep</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a time-rate-of-change version of this collection.&quot;&quot;&quot;</span>
+        <span class="c1"># get an instance of the time aggregated data type</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span>
+        <span class="n">dat_type</span><span class="p">,</span> <span class="n">time_class</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="p">,</span> <span class="kc">None</span>
+        <span class="c1"># first see if there&#39;s a specific data type for the current one</span>
+        <span class="k">for</span> <span class="n">typ_clss</span> <span class="ow">in</span> <span class="n">TYPESDICT</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">typ_clss</span><span class="o">.</span><span class="n">_time_aggregated_type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">dat_type</span><span class="o">.</span><span class="vm">__class__</span> <span class="o">==</span> <span class="n">typ_clss</span><span class="o">.</span><span class="n">_time_aggregated_type</span><span class="p">:</span>
+                <span class="n">time_class</span> <span class="o">=</span> <span class="n">typ_clss</span>
+                <span class="k">break</span>
+        <span class="c1"># then, check to see if there&#39;s any base type</span>
+        <span class="k">if</span> <span class="n">time_class</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">typ_clss_name</span> <span class="ow">in</span> <span class="n">BASETYPES</span><span class="p">:</span>
+                <span class="n">typ_clss</span> <span class="o">=</span> <span class="n">TYPESDICT</span><span class="p">[</span><span class="n">typ_clss_name</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">typ_clss</span><span class="o">.</span><span class="n">_time_aggregated_type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">continue</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dat_type</span><span class="p">,</span> <span class="n">typ_clss</span><span class="o">.</span><span class="n">_time_aggregated_type</span><span class="p">):</span>
+                    <span class="n">time_class</span> <span class="o">=</span> <span class="n">typ_clss</span>
+                <span class="k">break</span>
+        <span class="c1"># if nothing was found, throw an error</span>
+        <span class="k">if</span> <span class="n">time_class</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Data type &quot;</span><span class="si">{}</span><span class="s1">&quot; does not have a time-rate-of-&#39;</span>
+                             <span class="s1">&#39;change metric.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="p">))</span>
+
+        <span class="c1"># create the new data collection and assign normalized values</span>
+        <span class="n">new_data_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">factor</span> <span class="o">=</span> <span class="n">typ_clss</span><span class="o">.</span><span class="n">_time_aggregated_factor</span> <span class="o">/</span> <span class="n">timestep</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span> <span class="o">/</span> <span class="n">factor</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">new_data_c</span><span class="o">.</span><span class="n">_values</span><span class="p">]</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_data_type</span> <span class="o">=</span> <span class="n">time_class</span><span class="p">()</span>
+        <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="n">new_data_c</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="n">_data_type</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">new_data_c</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_check_conditional_statement</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">num_collections</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Method to check conditional statements to be sure that they are valid.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            statement: A conditional statement as a string (e.g. a&gt;25 and a%5==0).</span>
+<span class="sd">                The variable should always be named as &#39;a&#39; (without quotations).</span>
+<span class="sd">            num_collections: An integer representing the number of data collections</span>
+<span class="sd">                that the statement will be evaluating.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            correct_var -- A list of the correct variable names that should be</span>
+<span class="sd">                used within the statement (eg. [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;])</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Determine what the list of variables should be based on the num_collections</span>
+        <span class="n">correct_var</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ascii_lowercase</span><span class="p">)[:</span><span class="n">num_collections</span><span class="p">]</span>
+
+        <span class="c1"># Clean out the operators of the statement</span>
+        <span class="n">st_statement</span> <span class="o">=</span> <span class="n">BaseCollection</span><span class="o">.</span><span class="n">_remove_operators</span><span class="p">(</span><span class="n">statement</span><span class="p">)</span>
+        <span class="n">parsed_st</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">st_statement</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()]</span>
+
+        <span class="c1"># Perform the check</span>
+        <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">parsed_st</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">var</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">correct_var</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                    <span class="s1">&#39;Invalid conditional statement: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span>
+                    <span class="s1">&#39;Statement should be a valid Python statement&#39;</span>
+                    <span class="s1">&#39; and the variables should be named as follows: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                        <span class="n">statement</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">correct_var</span><span class="p">))</span>
+                <span class="p">)</span>
+        <span class="k">return</span> <span class="n">correct_var</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_remove_operators</span><span class="p">(</span><span class="n">statement</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Remove logical operators from a statement.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">statement</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;and&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;or&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;not&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;in&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_replace_operators</span><span class="p">(</span><span class="n">statement</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Replace logical operators of a statement with non-alphanumeric characters.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">statement</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;and&quot;</span><span class="p">,</span> <span class="s2">&quot;&amp;&amp;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;or&quot;</span><span class="p">,</span> <span class="s2">&quot;||&quot;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;not&quot;</span><span class="p">,</span> <span class="s2">&quot;~&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;in&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;&lt;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_restore_operators</span><span class="p">(</span><span class="n">statement</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Restore python logical operators from previously replaced ones.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">statement</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&amp;&amp;&quot;</span><span class="p">,</span> <span class="s2">&quot;and&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;||&quot;</span><span class="p">,</span> <span class="s2">&quot;or&quot;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">,</span> <span class="s2">&quot;not&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;&lt;&quot;</span><span class="p">,</span> <span class="s2">&quot;in&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">linspace</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get evenly spaced numbers calculated over the interval start, stop.</span>
+
+<span class="sd">        This method is similar to native Python range except that it takes a number of</span>
+<span class="sd">        divisions instead of a step. It is also equivalent to numpy&#39;s linspace method.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            start: Start interval index as integer or float.</span>
+<span class="sd">            stop: Stop interval index as integer or float.</span>
+<span class="sd">            num: Number of divisions as integer.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of numbers.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            from BaseCollection import linspace</span>
+
+<span class="sd">            linspace(0, 5, 6)</span>
+<span class="sd">            # &gt;&gt; [0., 1., 2., 3., 4., 5.]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">delta</span> <span class="o">=</span> <span class="n">stop</span> <span class="o">-</span> <span class="n">start</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="p">(</span><span class="n">delta</span> <span class="o">/</span> <span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">start</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)]</span>
+        <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">start</span><span class="p">]</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">arange</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return evenly spaced fractional or whole values within a given interval.</span>
+
+<span class="sd">        This function acts like the Python range method, but can also account for</span>
+<span class="sd">        fractional values. It is equivalent to the numpy.arange function.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            start: Number for inclusive start of interval.</span>
+<span class="sd">            stop: Number for exclusive end of interval.</span>
+<span class="sd">            step: Number for step size of interval.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Generator of evenly spaced values.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            from BaseCollection import arange</span>
+
+<span class="sd">            arange(1, 351, 50)</span>
+<span class="sd">            # &gt;&gt; [1, 51, 101, 151, 201, 251, 301]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">val</span> <span class="o">=</span> <span class="n">start</span>
+
+        <span class="k">if</span> <span class="n">start</span> <span class="o">&lt;=</span> <span class="n">stop</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">ineq</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span> <span class="k">return</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">ineq</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span> <span class="k">return</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>
+
+        <span class="k">while</span> <span class="n">ineq</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">stop</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">val</span> <span class="o">-</span> <span class="n">stop</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">1e-10</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">val</span>
+            <span class="n">val</span> <span class="o">+=</span> <span class="n">step</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">histogram</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the frequency histogram from a list of values.</span>
+
+<span class="sd">        The data is binned inclusive of the lower bound but exclusive of the upper bound</span>
+<span class="sd">        for intervals. See usage for example of losing the last number in the following</span>
+<span class="sd">        dataset because of exclusive upper bound.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            values: Set of numerical data as a list.</span>
+<span class="sd">            bins: A monotonically increasing array of uniform-width bin edges, excluding</span>
+<span class="sd">                the rightmost edge.</span>
+<span class="sd">            key: Optional parameter to define key to bin values by, as a function. If not</span>
+<span class="sd">                provided, the histogram will be binned by the value.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of lists representing the ordered values binned by frequency.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            from BaseCollection import histogram</span>
+
+<span class="sd">            # Simple example</span>
+<span class="sd">            histogram([0, 0, 0.9, 1, 1.5, 1.99, 2, 3], (0, 1, 2, 3))</span>
+<span class="sd">            # &gt;&gt; [[0, 0, 0.9], [1, 1.5, 1.99], [2]]</span>
+
+<span class="sd">            # With key parameter</span>
+<span class="sd">            histogram(</span>
+<span class="sd">                zip([0, 0, 0.9, 1, 1.5, 1.99],</span>
+<span class="sd">                    [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;]),</span>
+<span class="sd">                    (0, 1, 2), key=lambda k: k[0])</span>
+<span class="sd">            # &gt;&gt; [[(0, &#39;a&#39;), (0, &#39;b&#39;), (0.9, &#39;c&#39;)], [(1, &#39;d&#39;), (1.5, &#39;e&#39;), (1.99, &#39;f&#39;)]]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">key</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">v</span>
+
+        <span class="n">vals</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">)</span>
+        <span class="n">min_bound</span><span class="p">,</span> <span class="n">max_bound</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">bins</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">bins</span><span class="p">)</span>
+        <span class="n">bin_bound_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">bins</span><span class="p">)</span>
+
+        <span class="c1"># Init histogram bins</span>
+        <span class="n">hist</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bin_bound_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="n">bin_index</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">vals</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">key</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+            <span class="c1"># Ignore values out of range</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">min_bound</span> <span class="ow">or</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="n">max_bound</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># This loop will iterate through the bin upper bounds.</span>
+            <span class="c1"># If the value is within the bounds, the lower bound</span>
+            <span class="c1"># of the bin_index is updated, and the loop is broken</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bin_index</span><span class="p">,</span> <span class="n">bin_bound_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">bins</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">hist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+                    <span class="n">bin_index</span> <span class="o">=</span> <span class="n">i</span>
+                    <span class="k">break</span>
+        <span class="k">return</span> <span class="n">hist</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">histogram_circular</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">hist_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the frequency histogram from a list of circular values.</span>
+
+<span class="sd">        Circular values refers to a set of values where there is no distinction between</span>
+<span class="sd">        values at the lower or upper end of the range, for example angles in a circle, or</span>
+<span class="sd">        time. The data is binned inclusive of the lower bound but exclusive of the upper</span>
+<span class="sd">        bound for intervals.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            values: Set of numerical data as a list.</span>
+<span class="sd">            bins: An array of uniform-width bin edges, excluding the rightmost edge.</span>
+<span class="sd">                These values do not have to be monotonically increasing.</span>
+<span class="sd">            hist_range: Optional parameter to define the lower and upper range of the</span>
+<span class="sd">                histogram as a tuple of numbers. If not provided the range is</span>
+<span class="sd">                ``(min(key(values)), max(key(values))+1)``.</span>
+<span class="sd">            key: Optional parameter to define key to bin values by, as a function. If not</span>
+<span class="sd">                provided, the histogram will be binned by the value.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of lists representing the ordered values binned by frequency.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            from BaseCollection import histogram_circular</span>
+
+<span class="sd">            histogram_circular([358, 359, 0, 1, 2, 3], (358, 0, 3))</span>
+<span class="sd">            # &gt;&gt; [[358, 359], [0, 1, 2]]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">key</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">v</span>
+
+        <span class="n">vals</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">hist_range</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">hist_range</span> <span class="o">=</span> <span class="p">(</span><span class="n">key</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">key</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">bin_bound_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">bins</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+        <span class="c1"># Init histogram bins</span>
+        <span class="n">hist</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bin_bound_num</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">vals</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">key</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+
+            <span class="c1"># Ignore values out of range</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">hist_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">or</span> <span class="n">k</span> <span class="o">&gt;=</span> <span class="n">hist_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># This loop will iterate through the bin upper bounds.</span>
+            <span class="c1"># If the value is within the bounds, the loop is broken.</span>
+            <span class="c1"># Since values at the end of the list can still be binned</span>
+            <span class="c1"># into the earlier histogram bars for circular</span>
+            <span class="c1"># data, we don&#39;t update the bin_index.</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bin_bound_num</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">bins</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">bins</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                    <span class="k">if</span> <span class="n">k</span> <span class="o">&gt;=</span> <span class="n">bins</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">bins</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                        <span class="n">hist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+                        <span class="k">break</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># If the interval starts data from the end of the list,</span>
+                    <span class="c1"># split the conditional checks into two to check two</span>
+                    <span class="c1"># intervals.</span>
+                    <span class="n">interval1</span> <span class="o">=</span> <span class="p">(</span><span class="n">k</span> <span class="o">&lt;=</span> <span class="n">hist_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">&gt;=</span> <span class="n">bins</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                    <span class="n">interval2</span> <span class="o">=</span> <span class="p">(</span><span class="n">k</span> <span class="o">&lt;</span> <span class="n">bins</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">&gt;=</span> <span class="n">hist_range</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="k">if</span> <span class="n">interval1</span> <span class="ow">or</span> <span class="n">interval2</span><span class="p">:</span>
+                        <span class="n">hist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+                        <span class="k">break</span>
+
+        <span class="k">return</span> <span class="n">hist</span>
+
+    <span class="k">def</span> <span class="nf">_filter_by_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">statement</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Filter the data collection based on a conditional statement.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_check_conditional_statement</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">_filt_values</span><span class="p">,</span> <span class="n">_filt_datetimes</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">eval</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="n">a</span><span class="p">}):</span>
+                <span class="n">_filt_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+                <span class="n">_filt_datetimes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">_filt_values</span><span class="p">,</span> <span class="n">_filt_datetimes</span>
+
+    <span class="k">def</span> <span class="nf">_filter_by_pattern</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Filter the Filter the Data Collection based on a list of booleans.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;pattern is not a list of Booleans. Got </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="nb">type</span><span class="p">(</span><span class="n">pattern</span><span class="p">)))</span>
+        <span class="n">_filt_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span> <span class="k">if</span> <span class="n">pattern</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="n">_len</span><span class="p">]]</span>
+        <span class="n">_filt_datetimes</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span> <span class="k">if</span> <span class="n">pattern</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="n">_len</span><span class="p">]]</span>
+        <span class="k">return</span> <span class="n">_filt_values</span><span class="p">,</span> <span class="n">_filt_datetimes</span>
+
+    <span class="k">def</span> <span class="nf">_check_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check values whenever they come through the values setter.&quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> \
+            <span class="nb">isinstance</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">)),</span> \
+            <span class="s1">&#39;values should be a list or tuple. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">values</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">),</span> \
+            <span class="s1">&#39;Length of values list must match length of datetimes list. &#39;</span> \
+            <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> != </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Data Collection must include at least one value&#39;</span>
+
+    <span class="k">def</span> <span class="nf">_check_aligned_header</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check the header inputs whenever get_aligned_collection is called.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">data_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_type</span><span class="p">,</span> <span class="n">DataTypeBase</span><span class="p">),</span> \
+                <span class="s1">&#39;data_type must be a Ladybug DataType. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data_type</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">unit</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">unit</span> <span class="o">=</span> <span class="n">data_type</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span>
+            <span class="n">unit</span> <span class="o">=</span> <span class="n">unit</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span>
+        <span class="k">return</span> <span class="n">Header</span><span class="p">(</span><span class="n">data_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_check_aligned_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check the value input whenever get_aligned_collection is called.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
+                <span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">)):</span>
+            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">),</span> <span class="s2">&quot;Length of value (</span><span class="si">{}</span><span class="s2">) must match &quot;</span>\
+                <span class="s2">&quot;the length of this collection&#39;s values (</span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">))</span>
+            <span class="n">values</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">values</span>
+
+    <span class="k">def</span> <span class="nf">_percentile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">percent</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Find the percentile of a list of values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            values: A list of values for which percentiles are desired</span>
+<span class="sd">            percent: A float value from 0 to 100 representing the requested percentile.</span>
+<span class="sd">            key: optional key function to compute value from each element of N.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            The percentile of the values</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">vals</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">percent</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">f</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">key</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">k</span><span class="p">)])</span>
+        <span class="n">d0</span> <span class="o">=</span> <span class="n">key</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">f</span><span class="p">)])</span> <span class="o">*</span> <span class="p">(</span><span class="n">c</span> <span class="o">-</span> <span class="n">k</span><span class="p">)</span>
+        <span class="n">d1</span> <span class="o">=</span> <span class="n">key</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)])</span> <span class="o">*</span> <span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="n">f</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">d0</span> <span class="o">+</span> <span class="n">d1</span>
+
+    <span class="k">def</span> <span class="nf">_average</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vals</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_total</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vals</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_get_percentile_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">percentile</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">percentile_function</span><span class="p">(</span><span class="n">vals</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_percentile</span><span class="p">(</span><span class="n">vals</span><span class="p">,</span> <span class="n">percentile</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">percentile_function</span>
+
+    <span class="k">def</span> <span class="nf">_get_mutable_enumeration</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;mutable&#39;</span><span class="p">:</span> <span class="p">{},</span> <span class="s1">&#39;immutable&#39;</span><span class="p">:</span> <span class="p">{}}</span>
+        <span class="k">for</span> <span class="n">clss</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_all_subclasses</span><span class="p">(</span><span class="n">BaseCollection</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">clss</span><span class="o">.</span><span class="n">_mutable</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span><span class="p">[</span><span class="s1">&#39;mutable&#39;</span><span class="p">][</span><span class="n">clss</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">]</span> <span class="o">=</span> <span class="n">clss</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_enumeration</span><span class="p">[</span><span class="s1">&#39;immutable&#39;</span><span class="p">][</span><span class="n">clss</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">]</span> <span class="o">=</span> <span class="n">clss</span>
+
+    <span class="k">def</span> <span class="nf">_all_subclasses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">clss</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">set</span><span class="p">(</span><span class="n">clss</span><span class="o">.</span><span class="n">__subclasses__</span><span class="p">())</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+            <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">clss</span><span class="o">.</span><span class="n">__subclasses__</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_all_subclasses</span><span class="p">(</span><span class="n">c</span><span class="p">)])</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">iter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span>
+
+    <span class="k">def</span> <span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">new_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_add_values</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">new_vals</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">new_obj</span>
+
+    <span class="k">def</span> <span class="fm">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">new_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sub_values</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">new_vals</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">new_obj</span>
+
+    <span class="k">def</span> <span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">new_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mul_values</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">new_vals</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">new_obj</span>
+
+    <span class="k">def</span> <span class="nf">__div__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">new_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_div_values</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">new_vals</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">new_obj</span>
+
+    <span class="k">def</span> <span class="fm">__truediv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">new_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_div_values</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">new_vals</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">new_obj</span>
+
+    <span class="k">def</span> <span class="fm">__neg__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="n">v_1</span> <span class="k">for</span> <span class="n">v_1</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">]</span>
+        <span class="n">new_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(),</span> <span class="n">new_vals</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">)</span>
+        <span class="n">new_obj</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validated_a_period</span>
+        <span class="k">return</span> <span class="n">new_obj</span>
+
+    <span class="k">def</span> <span class="nf">_add_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">+</span> <span class="n">other</span> <span class="k">for</span> <span class="n">v_1</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">,</span> \
+                <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> cannot be added to </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">),</span> <span class="s1">&#39;Length of DataCollections must match in &#39;</span> \
+                <span class="s1">&#39;order to add them together. </span><span class="si">{}</span><span class="s1"> != </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">))</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">+</span> <span class="n">v_2</span> <span class="k">for</span> <span class="n">v_1</span><span class="p">,</span> <span class="n">v_2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">_values</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="n">new_vals</span>
+
+    <span class="k">def</span> <span class="nf">_sub_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">-</span> <span class="n">other</span> <span class="k">for</span> <span class="n">v_1</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">,</span> \
+                <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> cannot be subtracted from </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">),</span> <span class="s1">&#39;Length of DataCollections must match &#39;</span> \
+                <span class="s1">&#39;to subtract one from the other. </span><span class="si">{}</span><span class="s1"> != </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">))</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">-</span> <span class="n">v_2</span> <span class="k">for</span> <span class="n">v_1</span><span class="p">,</span> <span class="n">v_2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">_values</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="n">new_vals</span>
+
+    <span class="k">def</span> <span class="nf">_mul_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">*</span> <span class="n">other</span> <span class="k">for</span> <span class="n">v_1</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">,</span> \
+                <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> cannot be multiplied by </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">),</span> <span class="s1">&#39;Length of DataCollections must match &#39;</span> \
+                <span class="s1">&#39;to multiply them together. </span><span class="si">{}</span><span class="s1"> != </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">))</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">*</span> <span class="n">v_2</span> <span class="k">for</span> <span class="n">v_1</span><span class="p">,</span> <span class="n">v_2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">_values</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="n">new_vals</span>
+
+    <span class="k">def</span> <span class="nf">_div_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">/</span> <span class="n">other</span> <span class="k">for</span> <span class="n">v_1</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_collection_type</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">_collection_type</span><span class="p">,</span> \
+                <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> cannot be divided by </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">),</span> <span class="s1">&#39;Length of DataCollections must match &#39;</span> \
+                <span class="s1">&#39;to divide them. </span><span class="si">{}</span><span class="s1"> != </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">other</span><span class="p">))</span>
+            <span class="n">new_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">v_1</span> <span class="o">/</span> <span class="n">v_2</span> <span class="k">for</span> <span class="n">v_1</span><span class="p">,</span> <span class="n">v_2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">_values</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="n">new_vals</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_continuous</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean denoting whether the data collection is continuous.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_mutable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean denoting whether the data collection is mutable.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mutable</span>
+
+    <span class="k">def</span> <span class="nf">__key</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">datetimes</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">validated_a_period</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__eq__</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString method.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Discontinuous Collection representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Discontinuous Data Collection</span><span class="se">\n</span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2">)</span><span class="se">\n</span><span class="s2">...</span><span class="si">{}</span><span class="s2"> values...&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

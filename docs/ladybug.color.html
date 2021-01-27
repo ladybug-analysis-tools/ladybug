@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.color module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.compass module" href="ladybug.compass.html" />
+    <link rel="prev" title="ladybug.climatezone module" href="ladybug.climatezone.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.climatezone.html" title="Previous Chapter: ladybug.climatezone module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.clima...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.compass.html" title="Next Chapter: ladybug.compass module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.compa... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.color.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.color">
+<span id="ladybug-color-module"></span><h1>ladybug.color module<a class="headerlink" href="#module-ladybug.color" title="Permalink to this headline">¶</a></h1>
+<p>Ladybug color, colorsets and colorrange.</p>
+<dl class="py class">
+<dt id="ladybug.color.Color">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.color.</code><code class="sig-name descname">Color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">r</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">g</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">b</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">a</span><span class="o">=</span><span class="default_value">255</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Ladybug RGBA color.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – red value 0-255, default: 0</p></li>
+<li><p><strong>g</strong> – green value 0-255, default: 0</p></li>
+<li><p><strong>b</strong> – blue red value 0-255, default: 0</p></li>
+<li><p><strong>a</strong> – alpha value 0-255. Alpha defines the opacity as a number between 0 (fully
+transparent) and 255 (fully opaque). Default 255.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>r</p></li>
+<li><p>g</p></li>
+<li><p>b</p></li>
+<li><p>a</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.color.Color.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Color.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Color.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Color.duplicate">
+<code class="sig-name descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Color.duplicate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Color.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the current color.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Color.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Color.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Color.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a color from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;r&quot;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span>
+<span class="s2">&quot;g&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">150</span><span class="p">,</span>
+<span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">255</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Color.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Color.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Color.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get color as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Color.a">
+<em class="property">property </em><code class="sig-name descname">a</code><a class="headerlink" href="#ladybug.color.Color.a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return A value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Color.b">
+<em class="property">property </em><code class="sig-name descname">b</code><a class="headerlink" href="#ladybug.color.Color.b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return B value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Color.g">
+<em class="property">property </em><code class="sig-name descname">g</code><a class="headerlink" href="#ladybug.color.Color.g" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return G value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Color.r">
+<em class="property">property </em><code class="sig-name descname">r</code><a class="headerlink" href="#ladybug.color.Color.r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return R value.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ladybug.color.ColorRange">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.color.</code><code class="sig-name descname">ColorRange</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">colors</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">continuous_colors</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#ColorRange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.ColorRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Ladybug Color Range. Used to generate colors from numerical values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>colors</strong> – A list of colors. Colors should be input as objects with
+R, G, B values. Default is Ladybug’s original colorset.</p></li>
+<li><p><strong>domain</strong> – A list of at least two numbers to set the lower and upper
+boundary of the color range. This can also be a list of more than
+two values, which can be used to approximate logarithmic or other types
+of color scales. However, the number of values in the domain must
+always be less than or equal to the number of colors.
+Default: [0, 1].</p></li>
+<li><p><strong>continuous_colors</strong> – Boolean. If True, the colors generated from the
+color range will be in a continuous gradient. If False,
+they will be categorized in incremental groups according to the
+number_of_segments. Default: True for continuous colors.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>colors</p></li>
+<li><p>continuous_colors</p></li>
+<li><p>domain</p></li>
+</ul>
+</dd>
+</dl>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span>
+    <span class="n">color_range</span> <span class="o">=</span> <span class="n">ColorRange</span><span class="p">(</span><span class="n">continuous_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">color_range</span><span class="o">.</span><span class="n">domain</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2000</span><span class="p">]</span>
+    <span class="n">color_range</span><span class="o">.</span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">Color</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">169</span><span class="p">),</span> <span class="n">Color</span><span class="p">(</span><span class="mi">245</span><span class="p">,</span> <span class="mi">239</span><span class="p">,</span> <span class="mi">103</span><span class="p">),</span>
+        <span class="n">Color</span><span class="p">(</span><span class="mi">234</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">color_range</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="mi">99</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">color_range</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">color_range</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="mi">2000</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">color_range</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="mi">2001</span><span class="p">))</span>
+    <span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">R</span><span class="p">:</span><span class="mi">75</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">107</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">169</span><span class="p">)</span>
+    <span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">R</span><span class="p">:</span><span class="mi">245</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">239</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">103</span><span class="p">)</span>
+    <span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">R</span><span class="p">:</span><span class="mi">245</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">239</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">103</span><span class="p">)</span>
+    <span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">R</span><span class="p">:</span><span class="mi">234</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">38</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="mf">2.</span>
+    <span class="n">color_range</span> <span class="o">=</span> <span class="n">ColorRange</span><span class="p">(</span><span class="n">continuous_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">color_range</span><span class="o">.</span><span class="n">domain</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2000</span><span class="p">]</span>
+    <span class="n">color_range</span><span class="o">.</span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">Color</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">169</span><span class="p">),</span> <span class="n">Color</span><span class="p">(</span><span class="mi">245</span><span class="p">,</span> <span class="mi">239</span><span class="p">,</span> <span class="mi">103</span><span class="p">),</span>
+        <span class="n">Color</span><span class="p">(</span><span class="mi">234</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+    <span class="n">color_range</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
+    <span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">R</span><span class="p">:</span><span class="mi">245</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">239</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">103</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#ColorRange.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.ColorRange.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.color">
+<code class="sig-name descname">color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#ColorRange.color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.ColorRange.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate a color along the range for an input value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.duplicate">
+<code class="sig-name descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#ColorRange.duplicate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.ColorRange.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the current color range.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#ColorRange.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.ColorRange.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a color range from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;colors&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">}],</span>
+<span class="s2">&quot;domain&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>
+<span class="s2">&quot;continuous_colors&quot;</span><span class="p">:</span> <span class="kc">True</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#ColorRange.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.ColorRange.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get color range as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.colors">
+<em class="property">property </em><code class="sig-name descname">colors</code><a class="headerlink" href="#ladybug.color.ColorRange.colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the colors defining the color range.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.continuous_colors">
+<em class="property">property </em><code class="sig-name descname">continuous_colors</code><a class="headerlink" href="#ladybug.color.ColorRange.continuous_colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean noting whether colors generated are continuous or discrete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.ColorRange.domain">
+<em class="property">property </em><code class="sig-name descname">domain</code><a class="headerlink" href="#ladybug.color.ColorRange.domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the domain defining the color range.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ladybug.color.Colorset">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.color.</code><code class="sig-name descname">Colorset</code><a class="reference internal" href="_modules/ladybug/color.html#Colorset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Ladybug Color-range repository.</p>
+<dl class="simple">
+<dt>A list of default Ladybug colorsets for color range:</dt><dd><ul class="simple">
+<li><p>0 - original Ladybug</p></li>
+<li><p>1 - nuanced Ladybug</p></li>
+<li><p>2 - Multi-colored Ladybug</p></li>
+<li><p>3 - View Analysis 1</p></li>
+<li><p>4 - View Analysis 2 (Red,Green,Blue)</p></li>
+<li><p>5 - Sunlight Hours</p></li>
+<li><p>6 - ecotect</p></li>
+<li><p>7 - thermal Comfort Percentage</p></li>
+<li><p>8 - thermal Comfort Colors</p></li>
+<li><p>9 - thermal Comfort Colors (UTCI)</p></li>
+<li><p>10 - Hot Hours</p></li>
+<li><p>11 - Cold Hours</p></li>
+<li><p>12 - Shade Benefit/Harm</p></li>
+<li><p>13 - thermal Comfort Colors v2 (UTCI)</p></li>
+<li><p>14 - Shade Harm</p></li>
+<li><p>15 - Shade Benefit</p></li>
+<li><p>16 - Black to White</p></li>
+<li><p>17 - CFD Colors 1</p></li>
+<li><p>18 - CFD Colors 2</p></li>
+<li><p>19 - Energy Balance</p></li>
+<li><p>20 - THERM</p></li>
+<li><p>21 - Cloud Cover</p></li>
+</ul>
+</dd>
+</dl>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialize colorsets</span>
+<span class="n">cs</span> <span class="o">=</span> <span class="n">Colorset</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="o">&gt;&gt;</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">75</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">107</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">169</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">115</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">147</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">202</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">170</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">247</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">193</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">213</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">208</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">245</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">239</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">103</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">252</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">230</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">74</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">239</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">156</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">21</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">234</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">123</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">0</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">234</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">74</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">0</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="o">&lt;</span><span class="n">R</span><span class="p">:</span><span class="mi">234</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span><span class="mi">38</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span><span class="mi">0</span><span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="ladybug.color.Colorset.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.annual_comfort">
+<em class="property">classmethod </em><code class="sig-name descname">annual_comfort</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.annual_comfort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.annual_comfort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Good for annual metrics like UDI and thermal comfort percent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.benefit">
+<em class="property">classmethod </em><code class="sig-name descname">benefit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.benefit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.benefit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Benefit colors (light yellow to green).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.benefit_harm">
+<em class="property">classmethod </em><code class="sig-name descname">benefit_harm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.benefit_harm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.benefit_harm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Benefit / harm study colors (red to light yellow to green).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.black_to_white">
+<em class="property">classmethod </em><code class="sig-name descname">black_to_white</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.black_to_white"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.black_to_white" title="Permalink to this definition">¶</a></dt>
+<dd><p>Black to white colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.blue_green_red">
+<em class="property">classmethod </em><code class="sig-name descname">blue_green_red</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.blue_green_red"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.blue_green_red" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blue to Green to Red colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.cloud_cover">
+<em class="property">classmethod </em><code class="sig-name descname">cloud_cover</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.cloud_cover"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.cloud_cover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cloud cover colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.cold_sensation">
+<em class="property">classmethod </em><code class="sig-name descname">cold_sensation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.cold_sensation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.cold_sensation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blue colors for cold sensation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.ecotect">
+<em class="property">classmethod </em><code class="sig-name descname">ecotect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.ecotect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.ecotect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ecotect colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.energy_balance">
+<em class="property">classmethod </em><code class="sig-name descname">energy_balance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.energy_balance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.energy_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Energy Balance colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.energy_balance_storage">
+<em class="property">classmethod </em><code class="sig-name descname">energy_balance_storage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.energy_balance_storage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.energy_balance_storage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Energy Balance colors with a brown color for storage term.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.glare_study">
+<em class="property">classmethod </em><code class="sig-name descname">glare_study</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.glare_study"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.glare_study" title="Permalink to this definition">¶</a></dt>
+<dd><p>Useful for depicting spatial glare (light blue to yellow, red, black).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.harm">
+<em class="property">classmethod </em><code class="sig-name descname">harm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.harm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.harm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Harm colors (light yellow to red).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.heat_sensation">
+<em class="property">classmethod </em><code class="sig-name descname">heat_sensation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.heat_sensation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.heat_sensation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Red colors for heat sensation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.multi_colored">
+<em class="property">classmethod </em><code class="sig-name descname">multi_colored</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.multi_colored"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.multi_colored" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multi-colored legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.multicolored_2">
+<em class="property">classmethod </em><code class="sig-name descname">multicolored_2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.multicolored_2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.multicolored_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multi-colored colors with less saturation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.multicolored_3">
+<em class="property">classmethod </em><code class="sig-name descname">multicolored_3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.multicolored_3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.multicolored_3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multi-colored colors with the least saturation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.nuanced">
+<em class="property">classmethod </em><code class="sig-name descname">nuanced</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.nuanced"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.nuanced" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nuanced Ladybug colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.openstudio_palette">
+<em class="property">classmethod </em><code class="sig-name descname">openstudio_palette</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.openstudio_palette"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.openstudio_palette" title="Permalink to this definition">¶</a></dt>
+<dd><p>Standard color set for the OpenStudio surface types. Ordered as follows.</p>
+<p>Exterior Wall, Interior Wall, Underground Wall,
+Roof, Ceiling, Underground Roof,
+Exposed Floor, Interior Floor, Ground Floor,
+Window, Door, Shade, Air</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.original">
+<em class="property">classmethod </em><code class="sig-name descname">original</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.original"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.original" title="Permalink to this definition">¶</a></dt>
+<dd><p>Original Ladybug colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.shade_benefit">
+<em class="property">classmethod </em><code class="sig-name descname">shade_benefit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.shade_benefit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.shade_benefit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shade benefit colors (white to dark blue).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.shade_benefit_harm">
+<em class="property">classmethod </em><code class="sig-name descname">shade_benefit_harm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.shade_benefit_harm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.shade_benefit_harm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shade benefit / harm colors (dark red to white to dark blue).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.shade_harm">
+<em class="property">classmethod </em><code class="sig-name descname">shade_harm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.shade_harm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.shade_harm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shade harm colors (white to dark red).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.shadow_study">
+<em class="property">classmethod </em><code class="sig-name descname">shadow_study</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.shadow_study"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.shadow_study" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shadow study colors (dark to light grey).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.therm">
+<em class="property">classmethod </em><code class="sig-name descname">therm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.therm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.therm" title="Permalink to this definition">¶</a></dt>
+<dd><p>THERM colors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.thermal_comfort">
+<em class="property">classmethod </em><code class="sig-name descname">thermal_comfort</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.thermal_comfort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.thermal_comfort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thermal comfort colors (blue to white to red).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.thermal_comfort_utci">
+<em class="property">classmethod </em><code class="sig-name descname">thermal_comfort_utci</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.thermal_comfort_utci"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.thermal_comfort_utci" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thermal comfort colors weighted for the UTCI scale (heat more than cold).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.color.Colorset.view_study">
+<em class="property">classmethod </em><code class="sig-name descname">view_study</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/color.html#Colorset.view_study"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.color.Colorset.view_study" title="Permalink to this definition">¶</a></dt>
+<dd><p>View analysis colors.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

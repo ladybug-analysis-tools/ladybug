@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.location &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.location</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Ladybug location.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+
+
+<div class="viewcode-block" id="Location"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location">[docs]</a><span class="k">class</span> <span class="nc">Location</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Ladybug Location.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        city: Name of the city as a string.</span>
+<span class="sd">        state: Optional state in which the city is located.</span>
+<span class="sd">        country: Name of the country as a string.</span>
+<span class="sd">        latitude: Location latitude between -90 and 90 (Default: 0).</span>
+<span class="sd">        longitude: Location longitude between -180 (west) and 180 (east) (Default: 0).</span>
+<span class="sd">        time_zone: Time zone between -12 hours (west) and +14 hours (east). If None,</span>
+<span class="sd">            the time zone will be an estimated integer value derived from the</span>
+<span class="sd">            longitude in accordance with solar time (Default: None).</span>
+<span class="sd">        elevation: A number for elevation of the location in meters. (Default: 0).</span>
+<span class="sd">        station_id: ID of the location if the location is representing a weather station.</span>
+<span class="sd">        source: Source of data (e.g. TMY, TMY3).</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * city</span>
+<span class="sd">        * country</span>
+<span class="sd">        * elevation</span>
+<span class="sd">        * latitude</span>
+<span class="sd">        * longitude</span>
+<span class="sd">        * meridian</span>
+<span class="sd">        * source</span>
+<span class="sd">        * state</span>
+<span class="sd">        * station_id</span>
+<span class="sd">        * time_zone</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;_lat&#39;</span><span class="p">,</span> <span class="s1">&#39;_lon&#39;</span><span class="p">,</span> <span class="s1">&#39;_tz&#39;</span><span class="p">,</span> <span class="s1">&#39;_elev&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;station_id&#39;</span><span class="p">,</span> <span class="s1">&#39;source&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">latitude</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">longitude</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                 <span class="n">time_zone</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">elevation</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">station_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a Ladybug location.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">city</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">country</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">country</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">country</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">latitude</span> <span class="o">=</span> <span class="n">latitude</span> <span class="ow">or</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">longitude</span> <span class="o">=</span> <span class="n">longitude</span> <span class="ow">or</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">time_zone</span> <span class="o">=</span> <span class="n">time_zone</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">elevation</span> <span class="o">=</span> <span class="n">elevation</span> <span class="ow">or</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">station_id</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">station_id</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">station_id</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="n">source</span>
+
+<div class="viewcode-block" id="Location.from_dict"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a location from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">                {</span>
+<span class="sd">                &quot;city&quot;: &quot;-&quot;,</span>
+<span class="sd">                &quot;latitude&quot;: 0,</span>
+<span class="sd">                &quot;longitude&quot;: 0,</span>
+<span class="sd">                &quot;time_zone&quot;: 0,</span>
+<span class="sd">                &quot;elevation&quot;: 0</span>
+<span class="sd">                }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">optional_keys</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">,</span>
+                         <span class="s1">&#39;time_zone&#39;</span><span class="p">,</span> <span class="s1">&#39;elevation&#39;</span><span class="p">,</span> <span class="s1">&#39;station_id&#39;</span><span class="p">,</span> <span class="s1">&#39;source&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">optional_keys</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">],</span>
+                   <span class="n">data</span><span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;time_zone&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;elevation&#39;</span><span class="p">],</span>
+                   <span class="n">data</span><span class="p">[</span><span class="s1">&#39;station_id&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Location.from_location"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location.from_location">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_location</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Try to create a Ladybug location from a location string.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            locationString: Location string</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            l = Location.from_location(locationString)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">location</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">cls</span><span class="p">()</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">location</span><span class="p">,</span> <span class="n">Location</span><span class="p">):</span>
+                <span class="c1"># Ladybug location</span>
+                <span class="k">return</span> <span class="n">location</span>
+
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">location</span><span class="p">,</span> <span class="s1">&#39;Latitude&#39;</span><span class="p">):</span>
+                <span class="c1"># Revit&#39;s location</span>
+                <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">Name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)),</span>
+                           <span class="n">latitude</span><span class="o">=</span><span class="n">location</span><span class="o">.</span><span class="n">Latitude</span><span class="p">,</span>
+                           <span class="n">longitude</span><span class="o">=</span><span class="n">location</span><span class="o">.</span><span class="n">Longitude</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="n">location</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;Site:&#39;</span><span class="p">):</span>
+                <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">from_idf</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">city</span><span class="p">,</span> <span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="p">,</span> <span class="n">time_zone</span><span class="p">,</span> <span class="n">elevation</span> <span class="o">=</span> \
+                        <span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">location</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)]</span>
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                    <span class="c1"># it&#39;s just the city name</span>
+                    <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">location</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">city</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">latitude</span><span class="o">=</span><span class="n">latitude</span><span class="p">,</span>
+                       <span class="n">longitude</span><span class="o">=</span><span class="n">longitude</span><span class="p">,</span> <span class="n">time_zone</span><span class="o">=</span><span class="n">time_zone</span><span class="p">,</span>
+                       <span class="n">elevation</span><span class="o">=</span><span class="n">elevation</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Failed to create a Location from </span><span class="si">%s</span><span class="s2">!</span><span class="se">\n</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">location</span><span class="p">,</span> <span class="n">e</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Location.from_idf"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location.from_idf">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_idf</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">idf_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a Ladybug location from an EnergyPlus IDF string.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            idf_string: A full IDF string representing a Site:Location.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># format the object into a list of properties</span>
+        <span class="n">idf_string</span> <span class="o">=</span> <span class="n">idf_string</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">assert</span> <span class="n">idf_string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;Site:Location&#39;</span><span class="p">),</span> <span class="s1">&#39;Expected Site&#39;</span> \
+            <span class="s1">&#39;:Location but received a different object: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">idf_string</span><span class="p">)</span>
+        <span class="n">idf_string</span> <span class="o">=</span> <span class="n">idf_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+        <span class="n">idf_string</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;!.*\n&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">idf_string</span><span class="p">)</span>
+        <span class="n">ep_fields</span> <span class="o">=</span> <span class="p">[</span><span class="n">e_str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">e_str</span> <span class="ow">in</span> <span class="n">idf_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+        <span class="n">ep_fields</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># remove the EnergyPlus object name</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">ep_fields</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">latitude</span><span class="o">=</span><span class="n">ep_fields</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">longitude</span><span class="o">=</span><span class="n">ep_fields</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                   <span class="n">time_zone</span><span class="o">=</span><span class="n">ep_fields</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">elevation</span><span class="o">=</span><span class="n">ep_fields</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">latitude</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set the location latitude in degrees.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lat</span>
+
+    <span class="nd">@latitude</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">latitude</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lat</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_lat</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">lat</span> <span class="k">else</span> <span class="nb">float</span><span class="p">(</span><span class="n">lat</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="o">-</span><span class="mi">90</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lat</span> <span class="o">&lt;=</span> <span class="mi">90</span><span class="p">,</span> \
+            <span class="s1">&#39;latitude must be between -90 and 90. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_lat</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">longitude</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set the location longitude in degrees.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lon</span>
+
+    <span class="nd">@longitude</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">longitude</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lon</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_lon</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">lon</span> <span class="k">else</span> <span class="nb">float</span><span class="p">(</span><span class="n">lon</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="o">-</span><span class="mi">180</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lon</span> <span class="o">&lt;=</span> <span class="mi">180</span><span class="p">,</span> \
+            <span class="s1">&#39;longitude must be between -180 and 180. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_lon</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">time_zone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set the location time zone as a number between -12 and +14.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tz</span>
+
+    <span class="nd">@time_zone</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">time_zone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tz</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tz</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_lon</span> <span class="o">/</span> <span class="mi">15</span><span class="p">)</span> <span class="k">if</span> <span class="n">tz</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">float</span><span class="p">(</span><span class="n">tz</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="o">-</span><span class="mi">12</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tz</span> <span class="o">&lt;=</span> <span class="mi">14</span><span class="p">,</span> \
+            <span class="s1">&#39;Time zone must be between -12 and +14 Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tz</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">elevation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a number for the location elevation in meters.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elev</span>
+
+    <span class="nd">@elevation</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">elevation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elev</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_elev</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">elev</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Failed to convert </span><span class="si">{}</span><span class="s2"> to an elevation&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">elev</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">meridian</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a number between -180 and +180 for the meridian west of Greenwich.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">15</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_zone</span>
+
+<div class="viewcode-block" id="Location.duplicate"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location.duplicate">[docs]</a>    <span class="k">def</span> <span class="nf">duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Duplicate location.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__copy__</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Location.to_idf"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location.to_idf">[docs]</a>    <span class="k">def</span> <span class="nf">to_idf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the Location as an EnergyPlus IDF string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Site:Location,</span><span class="se">\n</span><span class="s2">  &quot;</span> <span class="o">+</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">+</span> <span class="s1">&#39;,</span><span class="se">\n</span><span class="s1">  &#39;</span> <span class="o">+</span> \
+            <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">latitude</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,      !Latitude</span><span class="se">\n</span><span class="s1">  &#39;</span> <span class="o">+</span> \
+            <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">longitude</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,     !Longitude</span><span class="se">\n</span><span class="s1">  &#39;</span> <span class="o">+</span> \
+            <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time_zone</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,     !Time Zone</span><span class="se">\n</span><span class="s1">  &#39;</span> <span class="o">+</span> \
+            <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">elevation</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;;       !Elevation&#39;</span></div>
+
+<div class="viewcode-block" id="Location.to_dict"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get location as a a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span>
+            <span class="s2">&quot;state&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">,</span>
+            <span class="s2">&quot;country&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">country</span><span class="p">,</span>
+            <span class="s2">&quot;latitude&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span>
+            <span class="s2">&quot;longitude&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span>
+            <span class="s2">&quot;time_zone&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_zone</span><span class="p">,</span>
+            <span class="s2">&quot;elevation&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">elevation</span><span class="p">,</span>
+            <span class="s2">&quot;station_id&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">station_id</span><span class="p">,</span>
+            <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">source</span><span class="p">,</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s1">&#39;Location&#39;</span>
+        <span class="p">}</span></div>
+
+<div class="viewcode-block" id="Location.ToString"><a class="viewcode-back" href="../../ladybug.location.html#ladybug.location.Location.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Location</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">country</span><span class="p">,</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_zone</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">elevation</span><span class="p">,</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">station_id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">source</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__key</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A tuple based on the object properties, useful for hashing.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">country</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">time_zone</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">elevation</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">station_id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">source</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__key</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Location</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__key</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return location as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_idf</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return location as a string.&quot;&quot;&quot;</span>
+        <span class="c1"># Tehran, lat:36, lon:34, tz:3.5, elev:54</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">, lat:</span><span class="si">%.2f</span><span class="s2">, lon:</span><span class="si">%.2f</span><span class="s2">, tz:</span><span class="si">%.1f</span><span class="s2">, elev:</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">longitude</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">time_zone</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">elevation</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

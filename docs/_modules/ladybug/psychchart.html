@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.psychchart &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.psychchart</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Object for calculating PMV comfort from DataCollections.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.pointvector</span> <span class="kn">import</span> <span class="n">Point2D</span><span class="p">,</span> <span class="n">Vector2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.line</span> <span class="kn">import</span> <span class="n">LineSegment2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.polyline</span> <span class="kn">import</span> <span class="n">Polyline2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.mesh</span> <span class="kn">import</span> <span class="n">Mesh2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.pointvector</span> <span class="kn">import</span> <span class="n">Point3D</span>
+
+<span class="kn">from</span> <span class="nn">.epw</span> <span class="kn">import</span> <span class="n">EPW</span>
+<span class="kn">from</span> <span class="nn">.datacollection</span> <span class="kn">import</span> <span class="n">DailyCollection</span><span class="p">,</span> <span class="n">HourlyContinuousCollection</span><span class="p">,</span> \
+    <span class="n">HourlyDiscontinuousCollection</span>
+<span class="kn">from</span> <span class="nn">.psychrometrics</span> <span class="kn">import</span> <span class="n">humid_ratio_from_db_rh</span><span class="p">,</span> <span class="n">db_temp_from_enth_hr</span><span class="p">,</span> \
+    <span class="n">db_temp_from_rh_hr</span><span class="p">,</span> <span class="n">db_temp_and_hr_from_wb_rh</span>
+<span class="kn">from</span> <span class="nn">.legend</span> <span class="kn">import</span> <span class="n">LegendParameters</span>
+<span class="kn">from</span> <span class="nn">.graphic</span> <span class="kn">import</span> <span class="n">GraphicContainer</span>
+
+<span class="kn">from</span> <span class="nn">.datatype.time</span> <span class="kn">import</span> <span class="n">Time</span>
+<span class="kn">from</span> <span class="nn">.datatype.temperature</span> <span class="kn">import</span> <span class="n">Temperature</span>
+<span class="kn">from</span> <span class="nn">.datatype.fraction</span> <span class="kn">import</span> <span class="n">Fraction</span>
+<span class="kn">from</span> <span class="nn">.datatype.specificenergy</span> <span class="kn">import</span> <span class="n">Enthalpy</span>
+
+
+<div class="viewcode-block" id="PsychrometricChart"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart">[docs]</a><span class="k">class</span> <span class="nc">PsychrometricChart</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Class for constructing psychrometric charts and plotting data on them.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        temperature: Hourly, daily, or sub-hourly data collection of temperature</span>
+<span class="sd">            values in Celsius or a single temperature value to be used for the</span>
+<span class="sd">            whole analysis.</span>
+<span class="sd">        relative_humidity: Hourly, daily, or sub-hourly data collection of relative</span>
+<span class="sd">            humidity values in % or a single relative humidity value to be used</span>
+<span class="sd">            for the whole analysis.</span>
+<span class="sd">        average_pressure: Number for the average air pressure across the data</span>
+<span class="sd">            plotted on the chart (Pa). (Default: 101325 Pa; pressure at sea level).</span>
+<span class="sd">        legend_parameters: An optional LegendParameter object to change the display</span>
+<span class="sd">            of the PsychrometricChart. (Default: None).</span>
+<span class="sd">        base_point: A Point2D to be used as a starting point to generate the geometry</span>
+<span class="sd">            of the plot. (Default: (0, 0)).</span>
+<span class="sd">        x_dim: A number to set the X dimension of each degree of temperature on the</span>
+<span class="sd">            chart. (Default: 1).</span>
+<span class="sd">        y_dim: A number to set the Y dimension of a unity humidity ratio on the chart.</span>
+<span class="sd">            Note that most maximum humidity ratios are around 0.03. (Default: 1500).</span>
+<span class="sd">        min_temperature: An integer for the minimum temperature on the chart in</span>
+<span class="sd">            degrees. This should be celsius if use_ip is False and fahrenheit if</span>
+<span class="sd">            use_ip is True. (Default: -20; suitable for celsius).</span>
+<span class="sd">        max_temperature: An integer for the maximum temperature on the chart in</span>
+<span class="sd">            degrees. This should be celsius if use_ip is False and fahrenheit if</span>
+<span class="sd">            use_ip is True. (Default: 50; suitable for celsius).</span>
+<span class="sd">        max_humidity_ratio: A value for the maximum humidity ratio in kg water / kg</span>
+<span class="sd">            air. (Default: 0.03).</span>
+<span class="sd">        use_ip: Boolean to note whether temperature values should be plotted in</span>
+<span class="sd">            Fahrenheit instead of Celsius. (Default: False).</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * temperature</span>
+<span class="sd">        * relative_humidity</span>
+<span class="sd">        * average_pressure</span>
+<span class="sd">        * legend_parameters</span>
+<span class="sd">        * base_point</span>
+<span class="sd">        * x_dim</span>
+<span class="sd">        * y_dim</span>
+<span class="sd">        * min_temperature</span>
+<span class="sd">        * max_temperature</span>
+<span class="sd">        * max_humidity_ratio</span>
+<span class="sd">        * use_ip</span>
+<span class="sd">        * saturation_line</span>
+<span class="sd">        * chart_border</span>
+<span class="sd">        * temperature_labels</span>
+<span class="sd">        * temperature_label_points</span>
+<span class="sd">        * temperature_lines</span>
+<span class="sd">        * rh_labels</span>
+<span class="sd">        * rh_label_points</span>
+<span class="sd">        * rh_lines</span>
+<span class="sd">        * hr_labels</span>
+<span class="sd">        * hr_label_points</span>
+<span class="sd">        * hr_lines</span>
+<span class="sd">        * enthalpy_labels</span>
+<span class="sd">        * enthalpy_label_points</span>
+<span class="sd">        * enthalpy_lines</span>
+<span class="sd">        * wb_labels</span>
+<span class="sd">        * wb_label_points</span>
+<span class="sd">        * wb_lines</span>
+<span class="sd">        * title_text</span>
+<span class="sd">        * title_location</span>
+<span class="sd">        * x_axis_text</span>
+<span class="sd">        * x_axis_location</span>
+<span class="sd">        * y_axis_text</span>
+<span class="sd">        * y_axis_location</span>
+<span class="sd">        * data_points</span>
+<span class="sd">        * time_matrix</span>
+<span class="sd">        * hour_values</span>
+<span class="sd">        * colored_mesh</span>
+<span class="sd">        * legend</span>
+<span class="sd">        * container</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ACCEPTABLE_COLLECTIONS</span> <span class="o">=</span> <span class="p">(</span><span class="n">DailyCollection</span><span class="p">,</span> <span class="n">HourlyContinuousCollection</span><span class="p">,</span>
+                              <span class="n">HourlyDiscontinuousCollection</span><span class="p">)</span>
+    <span class="n">TEMP_TYPE</span> <span class="o">=</span> <span class="n">Temperature</span><span class="p">()</span>
+    <span class="n">ENTH_TYPE</span> <span class="o">=</span> <span class="n">Enthalpy</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">relative_humidity</span><span class="p">,</span> <span class="n">average_pressure</span><span class="o">=</span><span class="mi">101325</span><span class="p">,</span>
+                 <span class="n">legend_parameters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">base_point</span><span class="o">=</span><span class="n">Point2D</span><span class="p">(),</span> <span class="n">x_dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">y_dim</span><span class="o">=</span><span class="mi">1500</span><span class="p">,</span>
+                 <span class="n">min_temperature</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">max_temperature</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">max_humidity_ratio</span><span class="o">=</span><span class="mf">0.03</span><span class="p">,</span>
+                 <span class="n">use_ip</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize Psychrometric Chart.&quot;&quot;&quot;</span>
+        <span class="c1"># check and assign the temperature and humidity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_use_ip</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">use_ip</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_calc_length</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time_multiplier</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_temperature</span> <span class="o">=</span> <span class="n">temperature</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_relative_humidity</span> <span class="o">=</span> <span class="n">relative_humidity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_values_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_input</span><span class="p">(</span>
+            <span class="n">temperature</span><span class="p">,</span> <span class="n">Temperature</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;temperature&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rh_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_input</span><span class="p">(</span>
+            <span class="n">relative_humidity</span><span class="p">,</span> <span class="n">Fraction</span><span class="p">,</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span> <span class="s1">&#39;relative_humidity&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_values_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_length</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_ip</span><span class="p">:</span>  <span class="c1"># convert everthing to Fahrenheit</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_rh_values</span><span class="p">),</span> \
+            <span class="s1">&#39;Number of temperature and humidity values must match.&#39;</span>
+
+        <span class="c1"># assign the inputs as properties of the chart</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_average_pressure</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_number</span><span class="p">(</span><span class="n">average_pressure</span><span class="p">,</span> <span class="s1">&#39;average_pressure&#39;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">base_point</span><span class="p">,</span> <span class="n">Point2D</span><span class="p">),</span> <span class="s1">&#39;Expected Point2D for &#39;</span> \
+            <span class="s1">&#39;PsychrometricChart base point. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">base_point</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span> <span class="o">=</span> <span class="n">base_point</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_number</span><span class="p">(</span><span class="n">x_dim</span><span class="p">,</span> <span class="s1">&#39;x_dim&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_number</span><span class="p">(</span><span class="n">y_dim</span><span class="p">,</span> <span class="s1">&#39;y_dim&#39;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">max_temperature</span> <span class="o">-</span> <span class="n">min_temperature</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Psychrometric chart &#39;</span> \
+            <span class="s1">&#39;max_temperature and min_temperature difference must be at least 10.&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">max_temperature</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">min_temperature</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_humidity_ratio</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span> <span class="o">&gt;=</span> <span class="mf">0.005</span><span class="p">,</span> <span class="s1">&#39;Psychrometric chart &#39;</span> \
+            <span class="s1">&#39;max_humidity_ratio must be at least 0.005.&#39;</span>
+
+        <span class="c1"># create the graphic container</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_ip</span><span class="p">:</span>  <span class="c1"># categorize based on every 1.66 fahrenheit</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">current_t</span><span class="p">,</span> <span class="n">max_t</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span> <span class="o">+</span> <span class="mf">1.75</span>
+            <span class="k">while</span> <span class="n">current_t</span> <span class="o">&lt;</span> <span class="n">max_t</span><span class="p">:</span>
+                <span class="n">current_t</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_t</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># categorize based on every degree celsius</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                                          <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rh_category</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time_matrix</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_remove_pattern</span> <span class="o">=</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_hour_values</span><span class="p">()</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_hour_values</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> \
+            <span class="s1">&#39;No data was found to lie on the psychrometric chart.&#39;</span>
+        <span class="n">max_x</span> <span class="o">=</span> <span class="n">base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span> \
+            <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span>
+        <span class="n">max_pt</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">max_x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_humidity_ratio</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">min_pt</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">base_point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">base_point</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_container</span> <span class="o">=</span> <span class="n">GraphicContainer</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_hour_values</span><span class="p">,</span> <span class="n">min_pt</span><span class="p">,</span> <span class="n">max_pt</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="p">,</span> <span class="n">Time</span><span class="p">(),</span> <span class="s1">&#39;hr&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_process_legend_default</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">legend_parameters</span><span class="p">)</span>
+
+        <span class="c1"># create global attributes used by several of the geometry properties</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span> \
+            <span class="o">+</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">use_ip</span><span class="p">:</span>  <span class="c1"># ensure that _temp_range is always in celsius</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">)</span>
+        <span class="n">rh_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rh_lines</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relative_humidity_polyline</span><span class="p">(</span><span class="n">rh</span><span class="p">)</span> <span class="k">for</span> <span class="n">rh</span> <span class="ow">in</span> <span class="n">rh_range</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_saturation_line</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relative_humidity_polyline</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">max_hr_thnd</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
+        <span class="n">base_hr_range</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_hr_thnd</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span> <span class="o">+</span> <span class="p">[</span><span class="n">max_hr_thnd</span><span class="p">]</span>
+        <span class="n">max_db_hr</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">*</span> <span class="n">humid_ratio_from_db_rh</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_average_pressure</span><span class="p">)</span>
+        <span class="n">base_hr_range</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">base_hr_range</span> <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;=</span> <span class="n">max_db_hr</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hr_range</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">val</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">base_hr_range</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_y_range</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="n">hr</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span> <span class="k">for</span> <span class="n">hr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hr_range</span><span class="p">]</span>
+
+        <span class="c1"># set null values for properties that are optional</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_chart_border</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enth_range</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enth_lines</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wb_range</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wb_lines</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_data_points</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_colored_mesh</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># check to be sure we don&#39;t have conditions above the boiling point</span>
+        <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">,</span> \
+            <span class="s1">&#39;Temperatures above the boiling point of water are not plotable.&#39;</span>
+
+<div class="viewcode-block" id="PsychrometricChart.from_epw"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.from_epw">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_epw</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">epw_file</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">base_point</span><span class="o">=</span><span class="n">Point2D</span><span class="p">(),</span>
+                 <span class="n">x_dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">y_dim</span><span class="o">=</span><span class="mi">1500</span><span class="p">,</span> <span class="n">min_temperature</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">max_temperature</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+                 <span class="n">max_humidity_ratio</span><span class="o">=</span><span class="mf">0.03</span><span class="p">,</span> <span class="n">use_ip</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a psychrometric chart object using the data in an epw file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            epw_file: Full path to epw weather file.</span>
+<span class="sd">            legend_parameters: An optional LegendParameter object to change the display</span>
+<span class="sd">                of the PsychrometricChart. (Default: None).</span>
+<span class="sd">            base_point: A Point2D to be used as a starting point to generate the geometry</span>
+<span class="sd">                of the plot. (Default: (0, 0)).</span>
+<span class="sd">            x_dim: A number to set the X dimension of each degree of temperature on the</span>
+<span class="sd">                chart. (Default: 1).</span>
+<span class="sd">            y_dim: A number to set the Y dimension of a unity humidity ratio on the chart.</span>
+<span class="sd">                Note that most maximum humidity ratios are around 0.03. (Default: 1500).</span>
+<span class="sd">            min_temperature: An integer for the minimum temperature on the chart in</span>
+<span class="sd">                degrees. This should be celsius if use_ip is False and fahrenheit if</span>
+<span class="sd">                use_ip is True. (Default: -20; suitable for celsius).</span>
+<span class="sd">            max_temperature: An integer for the maximum temperature on the chart in</span>
+<span class="sd">                degrees. This should be celsius if use_ip is False and fahrenheit if</span>
+<span class="sd">                use_ip is True. (Default: 50; suitable for celsius).</span>
+<span class="sd">            max_humidity_ratio: A value for the maximum humidity ratio in kg water / kg</span>
+<span class="sd">                air. (Default: 0.03).</span>
+<span class="sd">            use_ip: Boolean to note whether temperature values should be plotted in</span>
+<span class="sd">                Fahrenheit instead of Celsius. (Default: False).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">epw</span> <span class="o">=</span> <span class="n">EPW</span><span class="p">(</span><span class="n">epw_file</span><span class="p">)</span>
+        <span class="n">pressure</span> <span class="o">=</span> <span class="n">epw</span><span class="o">.</span><span class="n">atmospheric_station_pressure</span><span class="o">.</span><span class="n">average</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">epw</span><span class="o">.</span><span class="n">dry_bulb_temperature</span><span class="p">,</span> <span class="n">epw</span><span class="o">.</span><span class="n">relative_humidity</span><span class="p">,</span> <span class="n">pressure</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="p">,</span>
+            <span class="n">base_point</span><span class="p">,</span> <span class="n">x_dim</span><span class="p">,</span> <span class="n">y_dim</span><span class="p">,</span> <span class="n">min_temperature</span><span class="p">,</span> <span class="n">max_temperature</span><span class="p">,</span>
+            <span class="n">max_humidity_ratio</span><span class="p">,</span> <span class="n">use_ip</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="PsychrometricChart.from_dict"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Create PsychrometricChart from a dictionary</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &#39;type&#39;: &#39;PsychrometricChart&#39;,</span>
+<span class="sd">            &#39;temperature&#39;: {},  # data collection or value for temperature [C]</span>
+<span class="sd">            &#39;relative_humidity&#39;: {},  # data collection or value for humidity [%]</span>
+<span class="sd">            &#39;average_pressure&#39;: 101325,  # average atmospheric pressure [Pa]</span>
+<span class="sd">            &#39;legend_parameters&#39;: {},  # legend parameters dictionary</span>
+<span class="sd">            &#39;base_point&#39;: {},  # Point2D dictionary</span>
+<span class="sd">            &#39;x_dim&#39;: 1.0,  # value for X dimension per degree</span>
+<span class="sd">            &#39;y_dim&#39;: 1500.0,  # value for Y dimension for unity humidity ratio</span>
+<span class="sd">            &#39;min_temperature&#39;: -20.0,  # value for minimum temperature</span>
+<span class="sd">            &#39;max_temperature&#39;: 50.0,  # value for maximum temperature</span>
+<span class="sd">            &#39;max_humidity_ratio&#39;: 0.03,  # value for maximum humidity ratio</span>
+<span class="sd">            &#39;use_ip&#39;: False,  # boolean for whether to use IP values</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># process the optional inputs</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;average_pressure&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;average_pressure&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">101325</span>
+        <span class="n">lp</span> <span class="o">=</span> <span class="n">LegendParameters</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;legend_parameters&#39;</span><span class="p">])</span> \
+            <span class="k">if</span> <span class="s1">&#39;legend_parameters&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="kc">None</span>
+        <span class="n">bpt</span> <span class="o">=</span> <span class="n">Point2D</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;base_point&#39;</span><span class="p">])</span> <span class="k">if</span> <span class="s1">&#39;base_point&#39;</span> <span class="ow">in</span> <span class="n">data</span> \
+            <span class="k">else</span> <span class="n">Point2D</span><span class="p">()</span>
+        <span class="n">xd</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_dim&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;x_dim&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="n">yd</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_dim&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;y_dim&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">1500</span>
+        <span class="n">tmin</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;min_temperature&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;min_temperature&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="o">-</span><span class="mi">20</span>
+        <span class="n">tmax</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;max_temperature&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;max_temperature&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">50</span>
+        <span class="n">hrmax</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;max_humidity_ratio&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;max_humidity_ratio&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mf">0.03</span>
+        <span class="n">ip</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;use_ip&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;use_ip&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="kc">False</span>
+
+        <span class="c1"># process the data collections</span>
+        <span class="n">class_mapper</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;DailyCollection&#39;</span><span class="p">:</span> <span class="n">DailyCollection</span><span class="p">,</span>
+            <span class="s1">&#39;HourlyContinuousCollection&#39;</span><span class="p">:</span> <span class="n">HourlyContinuousCollection</span><span class="p">,</span>
+            <span class="s1">&#39;HourlyDiscontinuousCollection&#39;</span><span class="p">:</span> <span class="n">HourlyDiscontinuousCollection</span><span class="p">}</span>
+        <span class="n">t_data</span><span class="p">,</span> <span class="n">rh_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;temperature&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;relative_humidity&#39;</span><span class="p">]</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">class_mapper</span><span class="p">[</span><span class="n">t_data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">t_data</span><span class="p">)</span> \
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">t_data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="k">else</span> <span class="n">t_data</span>
+        <span class="n">rh</span> <span class="o">=</span> <span class="n">class_mapper</span><span class="p">[</span><span class="n">rh_data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">rh_data</span><span class="p">)</span> \
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">rh_data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="k">else</span> <span class="n">rh_data</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">rh</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">lp</span><span class="p">,</span> <span class="n">bpt</span><span class="p">,</span> <span class="n">xd</span><span class="p">,</span> <span class="n">yd</span><span class="p">,</span> <span class="n">tmin</span><span class="p">,</span> <span class="n">tmax</span><span class="p">,</span> <span class="n">hrmax</span><span class="p">,</span> <span class="n">ip</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">temperature</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The temperature assigned to this psychrometric chart [C].&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temperature</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">relative_humidity</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The relative humidity assigned to this psychrometric chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_relative_humidity</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">average_pressure</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;the average air pressure across the data plotted on the chart (Pa).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_average_pressure</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">legend_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The legend parameters customizing this psychrometric chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">legend_parameters</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">base_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Point3D for the base point of this psychrometric chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">x_dim</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The X dimension of each degree of temperature on the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_dim</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The Y dimension of a unity humidity ratio on the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">min_temperature</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An integer for the minimum temperature on the chart.</span>
+
+<span class="sd">        Will be in celsius if use_ip is False and fahrenheit if use_ip is True.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max_temperature</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An integer for the maximum temperature on the chart.</span>
+
+<span class="sd">        Will be in celsius if use_ip is False and fahrenheit if use_ip is True.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max_humidity_ratio</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A value for the maximum humidity ratio in kg water / kg air.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">use_ip</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean for whether temperature should be in Fahrenheit or Celsius.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_ip</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">saturation_line</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Polyline2D for the saturation line of the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_saturation_line</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">chart_border</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Polyline2D for the border of the chart (excluding saturation line).&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chart_border</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_chart_border</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_border</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chart_border</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">temperature_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of text for the temperature labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span><span class="p">:</span>
+            <span class="n">temp_range</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span> \
+                <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span><span class="p">,)</span>
+            <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">temp_range</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">temperature_label_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of Point2Ds for the temperature labels on the chart.&quot;&quot;&quot;</span>
+        <span class="n">y_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span> <span class="o">*</span> <span class="mf">0.5</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">)</span> <span class="k">for</span> <span class="n">x_val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">temperature_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of LineSegment2Ds for the temperature labels on the chart.&quot;&quot;&quot;</span>
+        <span class="c1"># get the Y-values for the top of the temperature lines</span>
+        <span class="n">hr_vals</span> <span class="o">=</span> <span class="p">(</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span><span class="p">)</span>
+                   <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">)</span>
+        <span class="n">top_y</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">hr</span> <span class="ow">in</span> <span class="n">hr_vals</span><span class="p">:</span>
+            <span class="n">y_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">hr</span><span class="p">)</span> <span class="k">if</span> <span class="n">hr</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span> \
+                <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span><span class="p">)</span>
+            <span class="n">top_y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y_val</span><span class="p">)</span>
+
+        <span class="n">t_lines</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># create the array of line segments</span>
+        <span class="k">for</span> <span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">,</span> <span class="n">top_y</span><span class="p">):</span>
+            <span class="n">l_seg</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span>
+                <span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span><span class="p">),</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">))</span>
+            <span class="n">t_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l_seg</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">t_lines</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rh_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of text for the relative humidity labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">%&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rh_label_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of Point2Ds for the relative humidity labels on the chart.&quot;&quot;&quot;</span>
+        <span class="n">last_sgs</span> <span class="o">=</span> <span class="p">(</span><span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_lines</span><span class="p">)</span>
+        <span class="n">last_dirs</span> <span class="o">=</span> <span class="p">(</span><span class="n">seg</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">seg</span> <span class="ow">in</span> <span class="n">last_sgs</span><span class="p">)</span>
+        <span class="n">move_vec</span> <span class="o">=</span> <span class="p">(</span><span class="n">Vector2D</span><span class="p">(</span><span class="n">vec</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">*</span> <span class="mf">0.4</span><span class="p">),</span> <span class="n">vec</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">vec</span> <span class="ow">in</span> <span class="n">last_dirs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">pl</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span> <span class="k">for</span> <span class="n">pl</span><span class="p">,</span> <span class="n">vec</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_rh_lines</span><span class="p">,</span> <span class="n">move_vec</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rh_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of Polyline2Ds for the relative humidity labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_lines</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hr_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of text for the humidity ratio labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hr_range</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hr_label_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of Point2Ds for the humidity ratio labels on the chart.&quot;&quot;&quot;</span>
+        <span class="n">x_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span> <span class="o">*</span> <span class="mf">0.5</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">)</span> <span class="k">for</span> <span class="n">y_val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_range</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hr_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of LineSegment2Ds for the humidity ratio labels on the chart.&quot;&quot;&quot;</span>
+        <span class="n">hr_lines</span><span class="p">,</span> <span class="n">xmax</span> <span class="o">=</span> <span class="p">[],</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">hr</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_hr_range</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_range</span><span class="p">):</span>
+            <span class="n">tmin</span> <span class="o">=</span> <span class="n">db_temp_from_rh_hr</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">hr</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span><span class="p">)</span>
+            <span class="n">tmin</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">([</span><span class="n">tmin</span><span class="p">],</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> <span class="n">tmin</span>
+            <span class="n">xmin</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">tmin</span><span class="p">)</span>
+            <span class="n">xmin</span> <span class="o">=</span> <span class="n">xmin</span> <span class="k">if</span> <span class="n">xmin</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="o">.</span><span class="n">x</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="o">.</span><span class="n">x</span>
+            <span class="n">l_seg</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">xmax</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+            <span class="n">hr_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l_seg</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">hr_lines</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">enthalpy_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of text for the enthalpy labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enth_range</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_enthalpy_range</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> kJ/kg&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enth_range</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> Btu/lb&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enth_range</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">enthalpy_label_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of Point2Ds for the humidity ratio labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enth_lines</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_enthalpy_range</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_labels_points_from_lines</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_enth_lines</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">enthalpy_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of LineSegment2Ds for the humidity ratio labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enth_lines</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_enthalpy_range</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enth_lines</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wb_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of text for the wet bulb labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wb_range</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_wb_range</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> C&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wb_range</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> F&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wb_range</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wb_label_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of Point2Ds for the wet bulb labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wb_lines</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_wb_range</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_labels_points_from_lines</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wb_lines</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wb_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of LineSegment2Ds for the wet bulb temp labels on the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wb_lines</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_wb_range</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wb_lines</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">title_text</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get text for the title of the chart.&quot;&quot;&quot;</span>
+        <span class="n">title_items</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Time [hr]&#39;</span><span class="p">]</span>
+        <span class="n">extra_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temperature</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ACCEPTABLE_COLLECTIONS</span><span class="p">):</span>
+            <span class="n">extra_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relative_humidity</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ACCEPTABLE_COLLECTIONS</span><span class="p">):</span>
+            <span class="n">extra_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relative_humidity</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">title_items</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">extra_data</span><span class="p">])</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">title_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for the title of the chart.&quot;&quot;&quot;</span>
+        <span class="n">origin</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">container</span><span class="o">.</span><span class="n">upper_title_location</span><span class="o">.</span><span class="n">o</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">origin</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">origin</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">x_axis_text</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get text for the X-axis label of the chart.&quot;&quot;&quot;</span>
+        <span class="n">unit</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> <span class="s1">&#39;F&#39;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temperature</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ACCEPTABLE_COLLECTIONS</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s1">&#39;type&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> [</span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">],</span> <span class="n">unit</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> [</span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">&#39;Temperature [</span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">x_axis_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for the X-axis label of the chart.&quot;&quot;&quot;</span>
+        <span class="n">y_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span> <span class="o">*</span> <span class="mf">2.5</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y_val</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_text</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get text for the Y-axis label of the chart.&quot;&quot;&quot;</span>
+        <span class="n">unit</span> <span class="o">=</span> <span class="s1">&#39;kg&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> <span class="s1">&#39;lb&#39;</span>
+        <span class="k">return</span> <span class="s1">&#39;Humidity Ratio</span><span class="se">\n</span><span class="s1">[</span><span class="si">{0}</span><span class="s1"> water / </span><span class="si">{0}</span><span class="s1"> air]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for the Y-axis label of the chart.&quot;&quot;&quot;</span>
+        <span class="n">x_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">max_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span> <span class="o">*</span> <span class="mf">1.5</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">max_point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">data_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of Point2Ds for each of the temperature and humidity values.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_points</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_average_pressure</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_data_points</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span>
+                <span class="n">Point2D</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">)))</span>
+                <span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_values_c</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_values</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_points</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">time_matrix</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple of of tuples where each sub-tuple is a row of the mesh.</span>
+
+<span class="sd">        Each value in the resulting matrix corresponds to the number of temperature/</span>
+<span class="sd">        humidity points in a given cell of the mesh.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_matrix</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hour_values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple for the number of hours associated with each colored_mesh face.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_values</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">colored_mesh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a colored mesh for the number of hours for each part of the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colored_mesh</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_colored_mesh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generate_mesh</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colored_mesh</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">legend</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The legend assigned to this graphic.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">_legend</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">container</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the GraphicContainer for the colored mesh.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span>
+
+<div class="viewcode-block" id="PsychrometricChart.plot_point"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.plot_point">[docs]</a>    <span class="k">def</span> <span class="nf">plot_point</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">relative_humidity</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for a given temperature and relative humidity on the chart.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            temperature: A temperature value, which should be in Celsius if use_ip</span>
+<span class="sd">                is False and Fahrenheit is use_ip is True.</span>
+<span class="sd">            relative_humidity: A relative humidity value in % (from 0 to 100).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">tc</span> <span class="o">=</span> <span class="n">temperature</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">([</span><span class="n">temperature</span><span class="p">],</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">hr</span> <span class="o">=</span> <span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">tc</span><span class="p">,</span> <span class="n">relative_humidity</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">temperature</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">hr</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="PsychrometricChart.data_mesh"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.data_mesh">[docs]</a>    <span class="k">def</span> <span class="nf">data_mesh</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_collection</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a colored mesh for a data_collection aligned with the chart&#39;s data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data_collection: A data collection that is aligned with the temperature</span>
+<span class="sd">                and humidity values of the chart.</span>
+<span class="sd">            legend_parameters: Optional legend parameters to customize the legend</span>
+<span class="sd">                and look of the resulting mesh.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with two values.</span>
+
+<span class="sd">            -   mesh: A colored Mesh2D similar to the chart&#39;s colored_mesh property</span>
+<span class="sd">                but where each face is colored with the average value of the input</span>
+<span class="sd">                data_collection.</span>
+
+<span class="sd">            -   container: A GraphicContainer object for the mesh, which possesses</span>
+<span class="sd">                a legend that corresponds to the mesh.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># check to be sure the data collection aligns</span>
+        <span class="n">data_vals</span> <span class="o">=</span> <span class="n">data_collection</span><span class="o">.</span><span class="n">values</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_vals</span><span class="p">)</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_length</span><span class="p">,</span> <span class="s1">&#39;Number of data collection values &#39;</span> \
+            <span class="s1">&#39;must match those of the psychometric chart temperature and humidity.&#39;</span>
+
+        <span class="c1"># create a matrix with a tally of the hours for all the data</span>
+        <span class="n">base_mtx</span> <span class="o">=</span> <span class="p">[[[]</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span><span class="p">]</span> <span class="k">for</span> <span class="n">rh</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_category</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">rh</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_values</span><span class="p">,</span> <span class="n">data_vals</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span><span class="p">:</span>
+                <span class="k">continue</span>  <span class="c1"># temperature value does not currently fit on the chart</span>
+            <span class="k">for</span> <span class="n">y</span><span class="p">,</span> <span class="n">rh_cat</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_rh_category</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">rh</span> <span class="o">&lt;</span> <span class="n">rh_cat</span><span class="p">:</span>
+                    <span class="k">break</span>
+            <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">t_cat</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">t_cat</span><span class="p">:</span>
+                    <span class="k">break</span>
+            <span class="n">base_mtx</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+
+        <span class="c1"># compute average values</span>
+        <span class="n">avg_values</span> <span class="o">=</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">val_list</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">val_list</span><span class="p">)</span> <span class="k">for</span> <span class="n">rh_l</span> <span class="ow">in</span> <span class="n">base_mtx</span>
+                      <span class="k">for</span> <span class="n">val_list</span> <span class="ow">in</span> <span class="n">rh_l</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">val_list</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+
+        <span class="c1"># create the colored mesh and graphic container</span>
+        <span class="n">base_contain</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">container</span>
+        <span class="n">container</span> <span class="o">=</span> <span class="n">GraphicContainer</span><span class="p">(</span>
+            <span class="n">avg_values</span><span class="p">,</span> <span class="n">base_contain</span><span class="o">.</span><span class="n">min_point</span><span class="p">,</span> <span class="n">base_contain</span><span class="o">.</span><span class="n">max_point</span><span class="p">,</span>
+            <span class="n">legend_parameters</span><span class="p">,</span> <span class="n">data_collection</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">,</span>
+            <span class="n">data_collection</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_process_legend_default</span><span class="p">(</span><span class="n">container</span><span class="o">.</span><span class="n">legend_parameters</span><span class="p">)</span>
+        <span class="n">mesh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">colored_mesh</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>  <span class="c1"># start with hour mesh as a base</span>
+        <span class="n">mesh</span><span class="o">.</span><span class="n">colors</span> <span class="o">=</span> <span class="n">container</span><span class="o">.</span><span class="n">value_colors</span>
+        <span class="k">return</span> <span class="n">mesh</span><span class="p">,</span> <span class="n">container</span></div>
+
+<div class="viewcode-block" id="PsychrometricChart.relative_humidity_polyline"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.relative_humidity_polyline">[docs]</a>    <span class="k">def</span> <span class="nf">relative_humidity_polyline</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rh</span><span class="p">,</span> <span class="n">subdivisions</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Polyline2D for a given relative humidity value.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            rh: A number between 0 and 100 for the relative humidity line to draw.</span>
+<span class="sd">            subdivisions: Integer for the number of subdivisions for every 5</span>
+<span class="sd">                degrees. (Default: 1).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># get the HR values and temperatures</span>
+        <span class="n">prs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span>
+        <span class="k">if</span> <span class="n">subdivisions</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">hr_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">rh</span><span class="p">,</span> <span class="n">prs</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">]</span>
+            <span class="n">x_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># build up custom temperatures and HRs</span>
+            <span class="n">hr_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rh</span><span class="p">,</span> <span class="n">prs</span><span class="p">)]</span>
+            <span class="n">x_vals</span><span class="p">,</span> <span class="n">t_diff</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="mi">5</span> <span class="o">/</span> <span class="n">subdivisions</span>
+            <span class="n">x_diff</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="n">subdivisions</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="n">st_t</span><span class="p">,</span> <span class="n">st_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_range</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">subdivisions</span><span class="p">):</span>
+                    <span class="n">t</span> <span class="o">=</span> <span class="n">st_t</span> <span class="o">+</span> <span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">t_diff</span>
+                    <span class="n">hr_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">rh</span><span class="p">,</span> <span class="n">prs</span><span class="p">))</span>
+                    <span class="n">x_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">st_x</span> <span class="o">+</span> <span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">x_diff</span><span class="p">)</span>
+
+        <span class="c1"># loop through the values and create the points</span>
+        <span class="n">pts</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">hr</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">hr_vals</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">hr</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span><span class="p">:</span>
+                <span class="n">pts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">hr</span><span class="p">)))</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># we&#39;re at the top of the chart; cut it off</span>
+                <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span> <span class="o">-</span> <span class="n">hr_vals</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mf">0.001</span><span class="p">:</span>
+                    <span class="k">del</span> <span class="n">pts</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># avoid the case of a bad interpolation</span>
+                <span class="n">last_db</span> <span class="o">=</span> <span class="n">db_temp_from_rh_hr</span><span class="p">(</span>
+                    <span class="n">rh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span><span class="p">)</span>
+                <span class="n">last_db</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">([</span><span class="n">last_db</span><span class="p">],</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> \
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> <span class="n">last_db</span>
+                <span class="n">x_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">last_db</span><span class="p">)</span>
+                <span class="n">pts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span><span class="p">)))</span>
+                <span class="k">break</span>
+        <span class="k">return</span> <span class="n">Polyline2D</span><span class="p">(</span><span class="n">pts</span><span class="p">,</span> <span class="n">interpolated</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="PsychrometricChart.hr_y_value"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.hr_y_value">[docs]</a>    <span class="k">def</span> <span class="nf">hr_y_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">humidity_ratio</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the Y-coordinate associated with a certain HR on the chart.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            humidity_ratio: A humidity ratio value in kg water / kg air.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">humidity_ratio</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span></div>
+
+<div class="viewcode-block" id="PsychrometricChart.t_x_value"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.t_x_value">[docs]</a>    <span class="k">def</span> <span class="nf">t_x_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the X-coordinate associated with a certain temperature on the chart.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            temperature: A temperature value, which should be in Celsius if use_ip</span>
+<span class="sd">                is False and Fahrenheit is use_ip is True.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">*</span> <span class="p">(</span><span class="n">temperature</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="PsychrometricChart.to_dict"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get psychrometric chart as a dictionary.&quot;&quot;&quot;</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">temperature</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ACCEPTABLE_COLLECTIONS</span><span class="p">)</span> <span class="k">else</span> <span class="n">temp</span>
+        <span class="n">rh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relative_humidity</span>
+        <span class="n">rh</span> <span class="o">=</span> <span class="n">rh</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">rh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ACCEPTABLE_COLLECTIONS</span><span class="p">)</span> <span class="k">else</span> <span class="n">rh</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;temperature&#39;</span><span class="p">:</span> <span class="n">temp</span><span class="p">,</span>
+            <span class="s1">&#39;relative_humidity&#39;</span><span class="p">:</span> <span class="n">rh</span><span class="p">,</span>
+            <span class="s1">&#39;average_pressure&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span><span class="p">,</span>
+            <span class="s1">&#39;legend_parameters&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+            <span class="s1">&#39;base_point&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+            <span class="s1">&#39;x_dim&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">x_dim</span><span class="p">,</span>
+            <span class="s1">&#39;y_dim&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_dim</span><span class="p">,</span>
+            <span class="s1">&#39;min_temperature&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_temperature</span><span class="p">,</span>
+            <span class="s1">&#39;max_temperature&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_temperature</span><span class="p">,</span>
+            <span class="s1">&#39;max_humidity_ratio&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_humidity_ratio</span><span class="p">,</span>
+            <span class="s1">&#39;use_ip&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span><span class="p">,</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;PsychrometricChart&#39;</span>
+        <span class="p">}</span></div>
+
+    <span class="k">def</span> <span class="nf">_compute_hour_values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the matrix of binned time values based on the chart inputs.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with three values.</span>
+
+<span class="sd">            -   base_mtx: A full matrix with counts of values for each degree</span>
+<span class="sd">                temperature and 5% RH of the chart.</span>
+
+<span class="sd">            -   mesh_values: A list of numbers for the values of the mesh.</span>
+
+<span class="sd">            -   remove_pattern: A list of booleand for which faces of the full mesh</span>
+<span class="sd">                should be removed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># create a matrix with a tally of the hours for all the data</span>
+        <span class="n">base_mtx</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span><span class="p">]</span> <span class="k">for</span> <span class="n">rh</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_category</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">rh</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_values</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span><span class="p">:</span>
+                <span class="k">continue</span>  <span class="c1"># temperature value does not currently fit on the chart</span>
+            <span class="k">for</span> <span class="n">y</span><span class="p">,</span> <span class="n">rh_cat</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_rh_category</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">rh</span> <span class="o">&lt;</span> <span class="n">rh_cat</span><span class="p">:</span>
+                    <span class="k">break</span>
+            <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">t_cat</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">t_cat</span><span class="p">:</span>
+                    <span class="k">break</span>
+            <span class="n">base_mtx</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># flatten the matrix and create a pattern to remove faces</span>
+        <span class="n">flat_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">tc</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_multiplier</span> <span class="k">for</span> <span class="n">rh_l</span> <span class="ow">in</span> <span class="n">base_mtx</span> <span class="k">for</span> <span class="n">tc</span> <span class="ow">in</span> <span class="n">rh_l</span><span class="p">]</span>
+        <span class="n">remove_pattern</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">flat_values</span><span class="p">]</span>
+        <span class="n">mesh_values</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">val</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">flat_values</span> <span class="k">if</span> <span class="n">val</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">base_mtx</span><span class="p">,</span> <span class="n">mesh_values</span><span class="p">,</span> <span class="n">remove_pattern</span>
+
+    <span class="k">def</span> <span class="nf">_generate_mesh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the colored mesh from this object&#39;s hour values.&quot;&quot;&quot;</span>
+        <span class="c1"># global properties used in the generation of the mesh</span>
+        <span class="n">prs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span>
+        <span class="n">t_per_row</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_category</span>
+        <span class="n">x_per_row</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">t_per_row</span><span class="p">]</span>
+        <span class="n">temp_in_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">t_per_row</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">)</span> \
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span> <span class="k">else</span> <span class="n">t_per_row</span>
+
+        <span class="c1"># loop through RH rows and create mesh vertices and faces</span>
+        <span class="n">vertices</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">x_per_row</span><span class="p">]</span>
+        <span class="n">faces</span><span class="p">,</span> <span class="n">vert_count</span><span class="p">,</span> <span class="n">row_len</span> <span class="o">=</span> <span class="p">[],</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t_per_row</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">rh</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_category</span><span class="p">:</span>
+            <span class="n">vert_count</span> <span class="o">+=</span> <span class="n">row_len</span>
+            <span class="n">y1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">temp_in_c</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rh</span><span class="p">,</span> <span class="n">prs</span><span class="p">))</span>
+            <span class="n">vertices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x_per_row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y1</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">temp_in_c</span><span class="p">[</span><span class="mi">1</span><span class="p">:]):</span>
+                <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">rh</span><span class="p">,</span> <span class="n">prs</span><span class="p">))</span>
+                <span class="n">vertices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x_per_row</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">))</span>
+                <span class="n">v1</span> <span class="o">=</span> <span class="n">vert_count</span> <span class="o">-</span> <span class="n">row_len</span> <span class="o">+</span> <span class="n">i</span>
+                <span class="n">v2</span> <span class="o">=</span> <span class="n">v1</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="n">v3</span> <span class="o">=</span> <span class="n">vert_count</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="n">v4</span> <span class="o">=</span> <span class="n">v3</span> <span class="o">-</span> <span class="mi">1</span>
+                <span class="n">faces</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">,</span> <span class="n">v3</span><span class="p">,</span> <span class="n">v4</span><span class="p">))</span>
+
+        <span class="c1"># create the Mesh2D, remove unused faces, and assign the colors</span>
+        <span class="n">mesh</span> <span class="o">=</span> <span class="n">Mesh2D</span><span class="p">(</span><span class="n">vertices</span><span class="p">,</span> <span class="n">faces</span><span class="p">)</span>
+        <span class="n">mesh</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">remove_faces_only</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_remove_pattern</span><span class="p">)</span>
+        <span class="n">mesh</span><span class="o">.</span><span class="n">colors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">value_colors</span>
+        <span class="k">return</span> <span class="n">mesh</span>
+
+    <span class="k">def</span> <span class="nf">_compute_border</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute a Polyline2D for the outer boerder of the chart.&quot;&quot;&quot;</span>
+        <span class="c1"># get properties used to establish the border of the chart</span>
+        <span class="n">prs</span><span class="p">,</span> <span class="n">bpt</span><span class="p">,</span> <span class="n">hmax</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">average_pressure</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_humidity_ratio</span>
+        <span class="n">max_hr</span> <span class="o">=</span> <span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">,</span> <span class="n">prs</span><span class="p">)</span>
+        <span class="n">y_left</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_temp_range</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">100</span><span class="p">,</span> <span class="n">prs</span><span class="p">))</span>
+        <span class="n">y_right</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">hmax</span><span class="p">)</span> <span class="k">if</span> <span class="n">max_hr</span> <span class="o">&gt;</span> <span class="n">hmax</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">max_hr</span><span class="p">)</span>
+        <span class="n">x_max</span> <span class="o">=</span> <span class="n">bpt</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_temperature</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_temperature</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span>
+
+        <span class="c1"># get the points and build the polyline</span>
+        <span class="n">pt1</span><span class="p">,</span> <span class="n">pt2</span><span class="p">,</span> <span class="n">pt3</span><span class="p">,</span> <span class="n">pt4</span> <span class="o">=</span> \
+            <span class="n">Point2D</span><span class="p">(</span><span class="n">bpt</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y_left</span><span class="p">),</span> <span class="n">bpt</span><span class="p">,</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">x_max</span><span class="p">,</span> <span class="n">bpt</span><span class="o">.</span><span class="n">y</span><span class="p">),</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">x_max</span><span class="p">,</span> <span class="n">y_right</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">max_hr</span> <span class="o">&gt;</span> <span class="n">hmax</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">Polyline2D</span><span class="p">((</span><span class="n">pt1</span><span class="p">,</span> <span class="n">pt2</span><span class="p">,</span> <span class="n">pt3</span><span class="p">,</span> <span class="n">pt4</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_saturation_line</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="n">Polyline2D</span><span class="p">((</span><span class="n">pt1</span><span class="p">,</span> <span class="n">pt2</span><span class="p">,</span> <span class="n">pt3</span><span class="p">,</span> <span class="n">pt4</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">_compute_enthalpy_range</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the values for enthalpy range and lines.&quot;&quot;&quot;</span>
+        <span class="c1"># constants used throughout the calculation</span>
+        <span class="n">low_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="mf">1e-6</span>
+        <span class="n">up_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_humidity_ratio</span><span class="p">)</span>
+        <span class="n">border</span><span class="p">,</span> <span class="n">sat_line</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">chart_border</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_saturation_line</span>
+        <span class="n">all_enthalpies</span><span class="p">,</span> <span class="n">ref_temp</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">10</span><span class="p">)),</span> <span class="mi">0</span>
+        <span class="n">enth_lbl</span> <span class="o">=</span> <span class="n">all_enthalpies</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span><span class="p">:</span>
+            <span class="n">enth_lbl</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+            <span class="n">all_enthalpies</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ENTH_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">enth_lbl</span><span class="p">,</span> <span class="s1">&#39;kJ/kg&#39;</span><span class="p">,</span> <span class="s1">&#39;Btu/lb&#39;</span><span class="p">)</span>
+            <span class="n">ref_temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="c1"># loop through the enthalpies and compute the lines of constant enthalpy</span>
+        <span class="n">enth_range</span><span class="p">,</span> <span class="n">enth_lines</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">enthalpy</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">all_enthalpies</span><span class="p">):</span>
+            <span class="n">st_db</span> <span class="o">=</span> <span class="n">db_temp_from_enth_hr</span><span class="p">(</span><span class="n">enthalpy</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">ref_temp</span><span class="p">)</span>
+            <span class="n">end_db</span> <span class="o">=</span> <span class="n">db_temp_from_enth_hr</span><span class="p">(</span><span class="n">enthalpy</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="n">ref_temp</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span><span class="p">:</span>
+                <span class="n">st_db</span><span class="p">,</span> <span class="n">end_db</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">((</span><span class="n">st_db</span><span class="p">,</span> <span class="n">end_db</span><span class="p">),</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
+            <span class="n">enth_line</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span>
+                <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">st_db</span><span class="p">),</span> <span class="n">low_y</span><span class="p">),</span>
+                <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">end_db</span><span class="p">),</span> <span class="n">up_y</span><span class="p">))</span>
+            <span class="n">border_ints</span> <span class="o">=</span> <span class="n">border</span><span class="o">.</span><span class="n">intersect_line_ray</span><span class="p">(</span><span class="n">enth_line</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">border_ints</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">enth_range</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">enth_lbl</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="n">seg</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">border_ints</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">border_ints</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">enth_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">sat_ints</span> <span class="o">=</span> <span class="n">sat_line</span><span class="o">.</span><span class="n">intersect_line_ray</span><span class="p">(</span><span class="n">enth_line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sat_ints</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">enth_range</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">enth_lbl</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">border_ints</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                        <span class="n">seg</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">border_ints</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sat_ints</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">seg</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">enth_line</span><span class="o">.</span><span class="n">p</span><span class="p">,</span> <span class="n">sat_ints</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="n">enth_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="p">)</span>
+
+        <span class="c1"># set the properties on this class</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enth_range</span> <span class="o">=</span> <span class="n">enth_range</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enth_lines</span> <span class="o">=</span> <span class="n">enth_lines</span>
+
+    <span class="k">def</span> <span class="nf">_compute_wb_range</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the values for wet bulb range and lines.&quot;&quot;&quot;</span>
+        <span class="c1"># constants used throughout the calculation</span>
+        <span class="n">low_y</span><span class="p">,</span> <span class="n">border</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">chart_border</span>
+        <span class="n">all_wbs</span> <span class="o">=</span> <span class="n">wb_c</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_min_temperature</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_temperature</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span><span class="p">:</span>
+            <span class="n">wb_c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">wb_c</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">)</span>
+
+        <span class="c1"># loop through the wet bulb and compute the lines of constant wet bulb</span>
+        <span class="n">wb_range</span><span class="p">,</span> <span class="n">wb_lines</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">wb</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">wb_c</span><span class="p">):</span>
+            <span class="n">st_db</span> <span class="o">=</span> <span class="n">db_temp_and_hr_from_wb_rh</span><span class="p">(</span><span class="n">wb</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_average_pressure</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">end_db</span><span class="p">,</span> <span class="n">end_hr</span> <span class="o">=</span> <span class="n">db_temp_and_hr_from_wb_rh</span><span class="p">(</span><span class="n">wb</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_average_pressure</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_ip</span><span class="p">:</span>
+                <span class="n">st_db</span><span class="p">,</span> <span class="n">end_db</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMP_TYPE</span><span class="o">.</span><span class="n">to_unit</span><span class="p">((</span><span class="n">st_db</span><span class="p">,</span> <span class="n">end_db</span><span class="p">),</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
+            <span class="n">enth_line</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span>
+                <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">st_db</span><span class="p">),</span> <span class="n">low_y</span><span class="p">),</span>
+                <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">t_x_value</span><span class="p">(</span><span class="n">end_db</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">hr_y_value</span><span class="p">(</span><span class="n">end_hr</span><span class="p">)))</span>
+            <span class="n">border_ints</span> <span class="o">=</span> <span class="n">border</span><span class="o">.</span><span class="n">intersect_line_ray</span><span class="p">(</span><span class="n">enth_line</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">border_ints</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">wb_range</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">all_wbs</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="n">seg</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">border_ints</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">border_ints</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">wb_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">border_ints</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">wb_range</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">all_wbs</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="n">seg</span> <span class="o">=</span> <span class="n">LineSegment2D</span><span class="o">.</span><span class="n">from_end_points</span><span class="p">(</span><span class="n">border_ints</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">enth_line</span><span class="o">.</span><span class="n">p2</span><span class="p">)</span>
+                <span class="n">wb_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="p">)</span>
+
+        <span class="c1"># set the properties on this class</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wb_range</span> <span class="o">=</span> <span class="n">wb_range</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wb_lines</span> <span class="o">=</span> <span class="n">wb_lines</span>
+
+    <span class="k">def</span> <span class="nf">_labels_points_from_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label_lines</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract label points from lines.&quot;&quot;&quot;</span>
+        <span class="n">move_vec</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">base_pts</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">seg</span> <span class="ow">in</span> <span class="n">label_lines</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">seg</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">move_vec</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+                <span class="n">base_pts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="o">.</span><span class="n">p1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">move_vec</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="o">.</span><span class="n">v</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+                <span class="n">base_pts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">seg</span><span class="o">.</span><span class="n">p2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">pt</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span><span class="p">,</span> <span class="n">vec</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">base_pts</span><span class="p">,</span> <span class="n">move_vec</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">_process_legend_default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">l_par</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Override the dimensions of the legend to ensure it fits the chart.&quot;&quot;&quot;</span>
+        <span class="n">min_pt</span><span class="p">,</span> <span class="n">max_pt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">container</span><span class="o">.</span><span class="n">min_point</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">container</span><span class="o">.</span><span class="n">max_point</span>
+        <span class="k">if</span> <span class="n">l_par</span><span class="o">.</span><span class="n">vertical</span> <span class="ow">and</span> <span class="n">l_par</span><span class="o">.</span><span class="n">is_segment_height_default</span><span class="p">:</span>
+            <span class="n">l_par</span><span class="o">.</span><span class="n">segment_height</span> <span class="o">=</span> <span class="p">(</span><span class="n">max_pt</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">min_pt</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="mi">20</span>
+            <span class="n">l_par</span><span class="o">.</span><span class="n">_is_segment_height_default</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">elif</span> <span class="n">l_par</span><span class="o">.</span><span class="n">vertical</span> <span class="ow">and</span> <span class="n">l_par</span><span class="o">.</span><span class="n">is_segment_height_default</span><span class="p">:</span>
+            <span class="n">l_par</span><span class="o">.</span><span class="n">segment_width</span> <span class="o">=</span> <span class="p">(</span><span class="n">max_pt</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">min_pt</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="mi">20</span>
+            <span class="n">l_par</span><span class="o">.</span><span class="n">_is_segment_width_default</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">_check_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_coll</span><span class="p">,</span> <span class="n">dat_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check an input that can be either a number or a Data Collection.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_coll</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ACCEPTABLE_COLLECTIONS</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_check_datacoll</span><span class="p">(</span><span class="n">data_coll</span><span class="p">,</span> <span class="n">dat_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">data_coll</span><span class="o">.</span><span class="n">values</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>  <span class="c1"># assume that it&#39;s a single number</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">data_coll</span><span class="p">)</span>
+                <span class="k">return</span> <span class="p">[</span><span class="n">value</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_length</span>
+            <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> must be either a number or a hourly/daily data &#39;</span>
+                                <span class="s1">&#39;collection. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">data_coll</span><span class="p">)))</span>
+
+    <span class="k">def</span> <span class="nf">_check_datacoll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_coll</span><span class="p">,</span> <span class="n">dat_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check the data type and units of a Data Collection.&quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_coll</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">,</span> <span class="n">dat_type</span><span class="p">)</span> <span class="ow">and</span> \
+            <span class="n">data_coll</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span> <span class="o">==</span> <span class="n">unit</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> must be </span><span class="si">{}</span><span class="s1"> in </span><span class="si">{}</span><span class="s1">. &#39;</span> \
+            <span class="s1">&#39;Got </span><span class="si">{}</span><span class="s1"> in </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">dat_type</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span>
+                                  <span class="n">data_coll</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+                                  <span class="n">data_coll</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_coll</span><span class="p">,</span> <span class="n">DailyCollection</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_time_multiplier</span> <span class="o">=</span> <span class="mi">24</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># it&#39;s an hourly or sub-hourly collection</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_time_multiplier</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">data_coll</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">timestep</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_calc_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_coll</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_check_number</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">value_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check a given value for a dimension input.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;Expected number for Psychrometric Chart </span><span class="si">{}</span><span class="s1">. &#39;</span>
+                            <span class="s1">&#39;Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value_name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)))</span>
+        <span class="k">assert</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Psychrometric Chart </span><span class="si">{}</span><span class="s1"> must be greater than 0. &#39;</span> \
+            <span class="s1">&#39;Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value_name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return length of values on the object.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a tuple of temperature and humidity.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_values</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Iterate through the values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rh_values</span><span class="p">)</span>
+
+<div class="viewcode-block" id="PsychrometricChart.ToString"><a class="viewcode-back" href="../../ladybug.psychchart.html#ladybug.psychchart.PsychrometricChart.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Psychrometric Chart representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;Psychrometric Chart: </span><span class="si">{}</span><span class="s1"> values&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_t_values</span><span class="p">))</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

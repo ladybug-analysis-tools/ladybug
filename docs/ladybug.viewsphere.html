@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.viewsphere module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.wea module" href="ladybug.wea.html" />
+    <link rel="prev" title="ladybug.sunpath module" href="ladybug.sunpath.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.sunpath.html" title="Previous Chapter: ladybug.sunpath module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.sunpa...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.wea.html" title="Next Chapter: ladybug.wea module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.wea module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.viewsphere.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.viewsphere">
+<span id="ladybug-viewsphere-module"></span><h1>ladybug.viewsphere module<a class="headerlink" href="#module-ladybug.viewsphere" title="Permalink to this headline">¶</a></h1>
+<p>Class to subdivide the sphere and hemisphere for view-based and radiation studies.</p>
+<dl class="py class">
+<dt id="ladybug.viewsphere.ViewSphere">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.viewsphere.</code><code class="sig-name descname">ViewSphere</code><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for subdividing the sphere and hemisphere for view-based studies.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Tregenza, Peter. (1987). Subdivision of the sky hemisphere for luminance
+measurements. Lighting Research &amp; Technology - LIGHTING RES TECHNOL.
+19. 13-14. 10.1177/096032718701900103.</p>
+</div>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>tregenza_dome_vectors</p></li>
+<li><p>tregenza_sphere_vectors</p></li>
+<li><p>tregenza_dome_mesh</p></li>
+<li><p>tregenza_dome_mesh_high_res</p></li>
+<li><p>tregenza_sphere_mesh</p></li>
+<li><p>tregenza_solid_angles</p></li>
+<li><p>reinhart_dome_vectors</p></li>
+<li><p>reinhart_sphere_vectors</p></li>
+<li><p>reinhart_dome_mesh</p></li>
+<li><p>reinhart_sphere_mesh</p></li>
+<li><p>reinhart_solid_angles</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.dome_patch_weights">
+<code class="sig-name descname">dome_patch_weights</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">division_count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere.dome_patch_weights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.dome_patch_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of numbers corresponding to the area weight of each dome patch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>division_count</strong> – A positive integer for the number of times that the
+original Tregenza patches are subdivided. (Default: 1).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of numbers with a value for each patch that corresponds to the
+area of that patch. The aveage value of all the patches is equal to 1.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.dome_patches">
+<code class="sig-name descname">dome_patches</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">division_count</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">subdivide_in_place</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere.dome_patches"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.dome_patches" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Vector3Ds and a correcponding Mesh3D for a dome.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>division_count</strong> – A positive integer for the number of times that the
+original Tregenza patches are subdivided. 1 indicates that the
+original Tregenza patches will be used, 2 indicates
+the Reinhart patches will be used, and so on. (Default: 1).</p></li>
+<li><p><strong>subdivide_in_place</strong> – A boolean to note whether patches should be
+subdivided according to the extension of Tregenza’s original
+logic through the Reinhart method (False) or they should be
+simply divided into 4 in place (True). The latter is useful
+for making higher resolution Mesh visualizations of an
+inherently low-resolution dome.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two elements</p>
+<ul class="simple">
+<li><p>patch_mesh: A ladybug_geometry Mesh3D that represents the dome at
+the input division_count. There is one quad face per patch except
+for the last circular patch, which is represented by a number of
+triangles equal to division_count * 6.</p></li>
+<li><p>patch_vectors: A list of ladybug_geometry Vector3D with one vector
+per patch. These will align with the faces of the patch_mesh up
+until the last circular patch, which will have a single vector
+for the several triangular faces. All vectors are unit vectors.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.horizontal_radial_patch_weights">
+<code class="sig-name descname">horizontal_radial_patch_weights</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offset_angle</span><span class="o">=</span><span class="default_value">30</span></em>, <em class="sig-param"><span class="n">division_count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere.horizontal_radial_patch_weights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.horizontal_radial_patch_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of numbers corresponding to the area weight of each radial patch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>offset_angle</strong> – A number between 0 and 90 for the angle offset from the
+horizontal plane at which vectors will be included. Vectors both
+above and below this angle will be included (Default: 30).</p></li>
+<li><p><strong>division_count</strong> – A positive integer for the number of times that the
+original Tregenza patches are subdivided. (Default: 1).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of numbers with a value for each patch that corresponds to the
+area of that patch. The aveage value of all the patches is equal to 1.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.horizontal_radial_patches">
+<code class="sig-name descname">horizontal_radial_patches</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offset_angle</span><span class="o">=</span><span class="default_value">30</span></em>, <em class="sig-param"><span class="n">division_count</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">subdivide_in_place</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere.horizontal_radial_patches"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.horizontal_radial_patches" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Vector3Ds within a certain angle offset from the horizontal plane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>offset_angle</strong> – A number between 0 and 90 for the angle offset from the
+horizontal plane at which vectors will be included. Vectors both
+above and below this angle will be included (Default: 30 for the
+rough vertical limit of human peripheral vision).</p></li>
+<li><p><strong>division_count</strong> – A positive integer for the number of times that the
+original Tregenza patches are subdivided. 1 indicates that the
+original Tregenza patches will be used, 2 indicates
+the Reinhart patches will be used, and so on. (Default: 1).</p></li>
+<li><p><strong>subdivide_in_place</strong> – A boolean to note whether patches should be
+subdivided according to the extension of Tregenza’s original
+logic through the Reinhart method (False) or they should be
+simply divided into 4 in place (True).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two elements</p>
+<ul class="simple">
+<li><p>patch_mesh: A ladybug_geometry Mesh3D that represents the patches at
+the input division_count. There is one quad face per patch.</p></li>
+<li><p>patch_vectors: A list of ladybug_geometry Vector3D with one vector
+per patch. These will align with the faces of the patch_mesh.
+All vectors are unit vectors.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.horizontal_radial_vectors">
+<code class="sig-name descname">horizontal_radial_vectors</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector_count</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere.horizontal_radial_vectors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.horizontal_radial_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get perfectly horizontal Vector3Ds radiating outward in a circle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vector_count</strong> – An integer for the number of vectors to generate in the
+horizontal plane. This can align with any of the dome or sphere
+patches by setting this to 30 * division_count.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of ladybug_geometry horizontal Vector3D radiating outward in
+a circle. All vectors are unit vectors.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.sphere_patch_weights">
+<code class="sig-name descname">sphere_patch_weights</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">division_count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere.sphere_patch_weights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.sphere_patch_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of numbers corresponding to the area weight of each sphere patch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>division_count</strong> – A positive integer for the number of times that the
+original Tregenza patches are subdivided. (Default: 1).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of numbers with a value for each patch that corresponds to the
+area of that patch. The aveage value of all the patches is equal to 1.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.sphere_patches">
+<code class="sig-name descname">sphere_patches</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">division_count</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">subdivide_in_place</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/viewsphere.html#ViewSphere.sphere_patches"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.sphere_patches" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Vector3Ds and a correcponding Mesh3D for a sphere.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>division_count</strong> – A positive integer for the number of times that the
+original Tregenza patches are subdivided. 1 indicates that the
+original Tregenza patches will be used, 2 indicates
+the Reinhart patches will be used, and so on. (Default: 1).</p></li>
+<li><p><strong>subdivide_in_place</strong> – A boolean to note whether patches should be
+subdivided according to the extension of Tregenza’s original
+logic through the Reinhart method (False) or they should be
+simply divided into 4 in place (True). The latter is useful
+for making higher resolution Mesh visualizations of an
+inherently low-resolution dome.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two elements</p>
+<ul class="simple">
+<li><p>patch_mesh: A ladybug_geometry Mesh3D that represents the sphere at
+the input division_count. There is one quad face per patch except
+for the last circular patch of each hemisphere, which is represented
+by a number of triangles equal to division_count * 6.</p></li>
+<li><p>patch_vectors: A list of ladybug_geometry Vector3D with one vector
+per patch. These will align with the faces of the patch_mesh except
+for the two circular patches, which will have a single vector
+for the several triangular faces. All vectors are unit vectors.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.viewsphere.ViewSphere.REINHART_COEFFICIENTS">
+<code class="sig-name descname">REINHART_COEFFICIENTS</code><em class="property"> = (0.0113221971, 0.0111894547, 0.0109255262, 0.0105335058, 0.0125224872, 0.0117312774, 0.0108025291, 0.00974713106, 0.011436609, 0.00974295956, 0.0119026242, 0.00905126163, 0.0121875626, 0.00612971396, 0.00921483254)</em><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.REINHART_COEFFICIENTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.viewsphere.ViewSphere.REINHART_PATCHES_PER_ROW">
+<code class="sig-name descname">REINHART_PATCHES_PER_ROW</code><em class="property"> = (60, 60, 60, 60, 48, 48, 48, 48, 36, 36, 24, 24, 12, 12)</em><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.REINHART_PATCHES_PER_ROW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.viewsphere.ViewSphere.TREGENZA_COEFFICIENTS">
+<code class="sig-name descname">TREGENZA_COEFFICIENTS</code><em class="property"> = (0.0435449227, 0.0416418006, 0.0473984151, 0.0406730411, 0.0428934136, 0.0445221864, 0.0455168385, 0.0344199465)</em><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.TREGENZA_COEFFICIENTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.viewsphere.ViewSphere.TREGENZA_PATCHES_PER_ROW">
+<code class="sig-name descname">TREGENZA_PATCHES_PER_ROW</code><em class="property"> = (30, 30, 24, 24, 18, 12, 6)</em><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.TREGENZA_PATCHES_PER_ROW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.reinhart_dome_mesh">
+<em class="property">property </em><code class="sig-name descname">reinhart_dome_mesh</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.reinhart_dome_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>An Mesh3D representing the Reinhart sky dome.</p>
+<p>There is one quad face per patch except for the last circular patch, which
+is represented by 12 triangles.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.reinhart_dome_vectors">
+<em class="property">property </em><code class="sig-name descname">reinhart_dome_vectors</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.reinhart_dome_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>An array of 577 vectors representing the Reinhart sky dome.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.reinhart_solid_angles">
+<em class="property">property </em><code class="sig-name descname">reinhart_solid_angles</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.reinhart_solid_angles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of solid angles that align with the reinhart_dome_vectors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.reinhart_sphere_mesh">
+<em class="property">property </em><code class="sig-name descname">reinhart_sphere_mesh</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.reinhart_sphere_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>An Mesh3D representing a Reinhart sphere.</p>
+<p>There is one quad face per patch except for the two circular patches, which
+are each represented by 12 triangles.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.reinhart_sphere_vectors">
+<em class="property">property </em><code class="sig-name descname">reinhart_sphere_vectors</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.reinhart_sphere_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>An array of 1154 vectors representing a sphere of Reinhart vectors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.tregenza_dome_mesh">
+<em class="property">property </em><code class="sig-name descname">tregenza_dome_mesh</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.tregenza_dome_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>An Mesh3D representing the Tregenza sky dome.</p>
+<p>There is one quad face per patch except for the last circular patch, which
+is represented by 6 triangles.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.tregenza_dome_mesh_high_res">
+<em class="property">property </em><code class="sig-name descname">tregenza_dome_mesh_high_res</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.tregenza_dome_mesh_high_res" title="Permalink to this definition">¶</a></dt>
+<dd><p>An high-resolution Mesh3D representing the Tregenza sky dome.</p>
+<p>Each patch is represented by a 3x3 set of quad faces except for the last
+circular patch, which is represented by 18 triangles.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.tregenza_dome_vectors">
+<em class="property">property </em><code class="sig-name descname">tregenza_dome_vectors</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.tregenza_dome_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>An array of 145 vectors representing the Tregenza sky dome.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.tregenza_solid_angles">
+<em class="property">property </em><code class="sig-name descname">tregenza_solid_angles</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.tregenza_solid_angles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of solid angles that align with the tregenza_dome_vectors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.tregenza_sphere_mesh">
+<em class="property">property </em><code class="sig-name descname">tregenza_sphere_mesh</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.tregenza_sphere_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>An Mesh3D representing a Tregenza sphere.</p>
+<p>There is one quad face per patch except for the two circular patches, which
+are each represented by 6 triangles.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.viewsphere.ViewSphere.tregenza_sphere_vectors">
+<em class="property">property </em><code class="sig-name descname">tregenza_sphere_vectors</code><a class="headerlink" href="#ladybug.viewsphere.ViewSphere.tregenza_sphere_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>An array of 290 vectors representing a sphere of Tregenza vectors.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

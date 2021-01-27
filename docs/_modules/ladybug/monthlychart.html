@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.monthlychart &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.monthlychart</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Module for visualization of data collections in monthly intervals.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">.datatype</span> <span class="kn">import</span> <span class="n">UNITS</span><span class="p">,</span> <span class="n">TYPESDICT</span>
+<span class="kn">from</span> <span class="nn">.datatype.generic</span> <span class="kn">import</span> <span class="n">GenericType</span>
+<span class="kn">from</span> <span class="nn">.analysisperiod</span> <span class="kn">import</span> <span class="n">AnalysisPeriod</span>
+<span class="kn">from</span> <span class="nn">.datacollection</span> <span class="kn">import</span> <span class="n">BaseCollection</span><span class="p">,</span> <span class="n">HourlyDiscontinuousCollection</span><span class="p">,</span> \
+    <span class="n">DailyCollection</span><span class="p">,</span> <span class="n">MonthlyCollection</span><span class="p">,</span> <span class="n">MonthlyPerHourCollection</span>
+<span class="kn">from</span> <span class="nn">.graphic</span> <span class="kn">import</span> <span class="n">GraphicContainer</span>
+
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.pointvector</span> <span class="kn">import</span> <span class="n">Point2D</span><span class="p">,</span> <span class="n">Vector2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.line</span> <span class="kn">import</span> <span class="n">LineSegment2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.polygon</span> <span class="kn">import</span> <span class="n">Polygon2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.polyline</span> <span class="kn">import</span> <span class="n">Polyline2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry2d.mesh</span> <span class="kn">import</span> <span class="n">Mesh2D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.pointvector</span> <span class="kn">import</span> <span class="n">Point3D</span><span class="p">,</span> <span class="n">Vector3D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.plane</span> <span class="kn">import</span> <span class="n">Plane</span>
+
+
+<div class="viewcode-block" id="MonthlyChart"><a class="viewcode-back" href="../../ladybug.monthlychart.html#ladybug.monthlychart.MonthlyChart">[docs]</a><span class="k">class</span> <span class="nc">MonthlyChart</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Object for visualization of data collections in monthly intervals.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data_collections: An array of data collections, which will be plotted</span>
+<span class="sd">            on the monthly chart.</span>
+<span class="sd">        legend_parameters: An optional LegendParameter object to change the display</span>
+<span class="sd">            of the HourlyPlot (Default: None).</span>
+<span class="sd">        base_point: An optional Point2D to be used as a starting point to generate</span>
+<span class="sd">            the geometry of the plot (Default: (0, 0)).</span>
+<span class="sd">        x_dim: An optional number to set the X dimension of each month of the</span>
+<span class="sd">            chart. (Default: 10).</span>
+<span class="sd">        y_dim: An optional number to set the Y dimension of the chart (Default: 40).</span>
+<span class="sd">        stack: Boolean to note whether multiple connected data collections with</span>
+<span class="sd">            the same cumulative data type should be stacked on top of each other.</span>
+<span class="sd">            Otherwise, all bars for cumulative monthly/daily data will be placed</span>
+<span class="sd">            next to each other and all meshes for cumulative hourly data will</span>
+<span class="sd">            be overlapped on top of one another. Note that this input has no effect</span>
+<span class="sd">            on data collections that do not have a cumulative data type or do</span>
+<span class="sd">            not have a time aggregated data type that is cumulative. (Default: False).</span>
+<span class="sd">        percentile: An optional number between 0 and 50 to be used for the percentile</span>
+<span class="sd">            difference from the mean that hourly data meshes display at. For example,</span>
+<span class="sd">            using 34 will generate hourly data meshes with a range of one standard</span>
+<span class="sd">            deviation from the mean. Note that this input only has significance when</span>
+<span class="sd">            the input data collections are hourly. (Default: 34)</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * data_collections</span>
+<span class="sd">        * legend_parameters</span>
+<span class="sd">        * base_point</span>
+<span class="sd">        * x_dim</span>
+<span class="sd">        * y_dim</span>
+<span class="sd">        * stack</span>
+<span class="sd">        * percentile</span>
+<span class="sd">        * data_meshes</span>
+<span class="sd">        * data_polylines</span>
+<span class="sd">        * legend</span>
+<span class="sd">        * chart_border</span>
+<span class="sd">        * y_axis_lines</span>
+<span class="sd">        * y_axis_label_points1</span>
+<span class="sd">        * y_axis_label_points2</span>
+<span class="sd">        * y_axis_labels1</span>
+<span class="sd">        * y_axis_labels2</span>
+<span class="sd">        * month_lines</span>
+<span class="sd">        * month_label_points</span>
+<span class="sd">        * month_labels</span>
+<span class="sd">        * y_axis_title_text1</span>
+<span class="sd">        * y_axis_title_location1</span>
+<span class="sd">        * y_axis_title_text2</span>
+<span class="sd">        * y_axis_title_location2</span>
+<span class="sd">        * title_text</span>
+<span class="sd">        * lower_title_location</span>
+<span class="sd">        * upper_title_location</span>
+<span class="sd">        * time_interval</span>
+<span class="sd">        * analysis_period</span>
+<span class="sd">        * colors</span>
+<span class="sd">        * data_types</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_data_collections&#39;</span><span class="p">,</span> <span class="s1">&#39;_base_point&#39;</span><span class="p">,</span> <span class="s1">&#39;_x_dim&#39;</span><span class="p">,</span> <span class="s1">&#39;_y_dim&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_stack&#39;</span><span class="p">,</span> <span class="s1">&#39;_percentile&#39;</span><span class="p">,</span> <span class="s1">&#39;_time_interval&#39;</span><span class="p">,</span> <span class="s1">&#39;_grouped_data&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_units&#39;</span><span class="p">,</span> <span class="s1">&#39;_data_types&#39;</span><span class="p">,</span> <span class="s1">&#39;_color_map&#39;</span><span class="p">,</span> <span class="s1">&#39;_minimums&#39;</span><span class="p">,</span> <span class="s1">&#39;_maximums&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_seg_count&#39;</span><span class="p">,</span> <span class="s1">&#39;_container&#39;</span><span class="p">,</span> <span class="s1">&#39;_analysis_period&#39;</span><span class="p">,</span> <span class="s1">&#39;_months_int&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_y_axis_points&#39;</span><span class="p">,</span> <span class="s1">&#39;_month_points&#39;</span><span class="p">,</span> <span class="s1">&#39;_month_label_points&#39;</span><span class="p">,</span> <span class="s1">&#39;_month_text&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_collections</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">base_point</span><span class="o">=</span><span class="n">Point2D</span><span class="p">(),</span>
+                 <span class="n">x_dim</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">y_dim</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">stack</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">percentile</span><span class="o">=</span><span class="mi">34</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize monthly chart.&quot;&quot;&quot;</span>
+        <span class="c1"># check the input data collections</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_collections</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">data_collections</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data_collections</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;MonthlyChart data_collections must be an iterable. &#39;</span>
+                                <span class="s1">&#39;Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data_collections</span><span class="p">)))</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_collections</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">,</span> \
+            <span class="s1">&#39;MonthlyChart must have at least one data collection.&#39;</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_collections</span><span class="p">):</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">BaseCollection</span><span class="p">),</span> <span class="s1">&#39;MonthlyChart data_collections&#39;</span> \
+                <span class="s1">&#39; must contain data collections. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="o">.</span><span class="n">validated_a_period</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">validate_analysis_period</span><span class="p">()</span>
+            <span class="n">data_collections</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to_immutable</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_time_interval</span><span class="p">(</span><span class="n">data_collections</span><span class="p">)</span>
+
+        <span class="c1"># check the input percentile and base point</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">percentile</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">percentile</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;Input percentile must be a number. Got </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="nb">type</span><span class="p">(</span><span class="n">percentile</span><span class="p">),</span> <span class="n">percentile</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">percentile</span> <span class="o">&lt;=</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;Input percentile must be between 0 and 50. &#39;</span> \
+            <span class="s1">&#39;Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">percentile</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">base_point</span><span class="p">,</span> <span class="n">Point2D</span><span class="p">),</span> <span class="s1">&#39;Expected Point2D for &#39;</span> \
+            <span class="s1">&#39;MonthlyChart base point. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">base_point</span><span class="p">))</span>
+
+        <span class="c1"># assign the inputs as properties of this data collection</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span> <span class="o">=</span> <span class="n">data_collections</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span> <span class="o">=</span> <span class="n">base_point</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_dim</span><span class="p">(</span><span class="n">x_dim</span><span class="p">,</span> <span class="s1">&#39;x_dim&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_dim</span><span class="p">(</span><span class="n">y_dim</span><span class="p">,</span> <span class="s1">&#39;y_dim&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_percentile</span> <span class="o">=</span> <span class="n">percentile</span>
+
+        <span class="c1"># set properties to None that will be computed later</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_month_points</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_month_label_points</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_month_text</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># group the input data by data type and figure out the max + min of the Y-axes</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_units</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span> <span class="o">=</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">_group_data_by_units</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_compute_maximums_minimums</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_seg_count</span> <span class="o">=</span> <span class="mi">11</span>
+        <span class="k">if</span> <span class="n">legend_parameters</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">legend_parameters</span> <span class="o">=</span> <span class="n">legend_parameters</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>  <span class="c1"># avoid editing original</span>
+            <span class="k">if</span> <span class="n">legend_parameters</span><span class="o">.</span><span class="n">min</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">legend_parameters</span><span class="o">.</span><span class="n">min</span>
+                <span class="n">legend_parameters</span><span class="o">.</span><span class="n">min</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">if</span> <span class="n">legend_parameters</span><span class="o">.</span><span class="n">max</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">legend_parameters</span><span class="o">.</span><span class="n">max</span>
+                <span class="n">legend_parameters</span><span class="o">.</span><span class="n">max</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">legend_parameters</span><span class="o">.</span><span class="n">is_segment_count_default</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_seg_count</span> <span class="o">=</span> <span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_count</span>
+                <span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_count</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># check the analysis periods of the data collections</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_analysis_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_analysis_period</span><span class="o">.</span><span class="n">months_int</span>
+        <span class="c1"># TODO: consider supporting different periods by analyzing their overlap</span>
+        <span class="n">apers</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">[</span><span class="mi">1</span><span class="p">:]]</span>
+        <span class="k">assert</span> <span class="nb">all</span><span class="p">([</span><span class="n">aper</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_analysis_period</span> <span class="k">for</span> <span class="n">aper</span> <span class="ow">in</span> <span class="n">apers</span><span class="p">]),</span> \
+            <span class="s1">&#39;All MonthlyChart data collections must have the same analysis period.&#39;</span>
+
+        <span class="c1"># create the graphic container</span>
+        <span class="n">min_pt</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">base_point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">base_point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+        <span class="n">max_pt</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="p">(</span><span class="n">x_dim</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">)),</span>
+                         <span class="n">base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">y_dim</span><span class="p">)</span>
+        <span class="n">mock_values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">)))</span>
+        <span class="n">mock_descr</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data_c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">):</span>
+            <span class="n">data_t_str</span> <span class="o">=</span> <span class="n">data_c</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;type&#39;</span> <span class="ow">in</span> \
+                <span class="n">data_c</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">data_c</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">)</span>
+            <span class="n">mock_descr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_t_str</span>
+        <span class="n">mock_type</span> <span class="o">=</span> <span class="n">GenericType</span><span class="p">(</span><span class="s1">&#39;Monthly Chart Data Streams&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">unit_descr</span><span class="o">=</span><span class="n">mock_descr</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_container</span> <span class="o">=</span> <span class="n">GraphicContainer</span><span class="p">(</span>
+            <span class="n">mock_values</span><span class="p">,</span> <span class="n">min_pt</span><span class="p">,</span> <span class="n">max_pt</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="p">,</span> <span class="n">mock_type</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+        <span class="c1"># re-make the container if there is a second axis</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># there&#39;s a second axis; move max point</span>
+            <span class="n">offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span> <span class="o">*</span> \
+                <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y_axis_labels2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span>
+            <span class="n">max_pt</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">max_pt</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">offset</span><span class="p">,</span> <span class="n">max_pt</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_container</span> <span class="o">=</span> <span class="n">GraphicContainer</span><span class="p">(</span>
+                <span class="n">mock_values</span><span class="p">,</span> <span class="n">min_pt</span><span class="p">,</span> <span class="n">max_pt</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="p">,</span> <span class="n">mock_type</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">data_collections</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the data collections assigned to this monthly chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">legend_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the legend parameters customizing this monthly chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">legend_parameters</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">base_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Point2D for the base point of this monthly chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">x_dim</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a number for the X dimension of each month of the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_dim</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a number for the Y dimension of the chart.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">stack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean for whether cumulative data should be stacked on top of each other.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">percentile</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a number for the percentile difference from the mean for hourly data.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_percentile</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">data_meshes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of colored Mesh2D for the data of this graphic.</span>
+
+<span class="sd">        These meshes will resemble a bar chart in the case of monthly or daily data</span>
+<span class="sd">        and will resemble a band between two ranges for hourly and sub-hourly data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">==</span> <span class="s1">&#39;Monthly&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_monthly_bars</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">==</span> <span class="s1">&#39;Hourly&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_hourly_ranges</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">==</span> <span class="s1">&#39;Daily&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_daily_bars</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">data_polylines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Polyline2D for the data of this graphic.</span>
+
+<span class="sd">        These meshes will display the percentile borders of the data and the mean</span>
+<span class="sd">        in the case of hourly data.  It will display a single line in the case of</span>
+<span class="sd">        monthly-per-hour data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">==</span> <span class="s1">&#39;Hourly&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_hourly_lines</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">==</span> <span class="s1">&#39;MonthlyPerHour&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_monthly_per_hour_lines</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">legend</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The legend assigned to this graphic.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">_legend</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">chart_border</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Polyline2D for the border of the plot.&quot;&quot;&quot;</span>
+        <span class="n">width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">)</span>
+        <span class="n">height</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span>
+        <span class="n">pgon</span> <span class="o">=</span> <span class="n">Polygon2D</span><span class="o">.</span><span class="n">from_rectangle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="p">,</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Polyline2D</span><span class="o">.</span><span class="n">from_polygon</span><span class="p">(</span><span class="n">pgon</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of LineSegment2D for the Y-axis values of the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_y_axis_points</span><span class="p">()</span>
+        <span class="n">vec</span> <span class="o">=</span> <span class="n">Vector2D</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">LineSegment2D</span><span class="p">(</span><span class="n">pt</span><span class="p">,</span> <span class="n">vec</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_label_points1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Point2Ds for the left-side labels of the Y-axis.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_y_axis_points</span><span class="p">()</span>
+        <span class="n">txt_hght</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">Point2D</span><span class="p">(</span><span class="n">pt</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">txt_hght</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_label_points2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Point2Ds for the right-side labels of the Y-axis.</span>
+
+<span class="sd">        This will be None if all of the input data collections are of the same</span>
+<span class="sd">        data type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_y_axis_points</span><span class="p">()</span>
+        <span class="n">txt_hght</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span>
+        <span class="n">x_dist</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">+</span> <span class="n">txt_hght</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">Point2D</span><span class="p">(</span><span class="n">pt</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">x_dist</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_labels1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of text strings for the left-side labels of the Y-axis.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_label_text</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_labels2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of text strings for the right-side labels of the Y-axis.</span>
+
+<span class="sd">        This will be None if all of the input data collections are of the same</span>
+<span class="sd">        data type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_label_text</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">month_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of LineSegment2D for the month intervals of the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_month_points</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_month_line_pts</span><span class="p">()</span>
+        <span class="n">vec</span> <span class="o">=</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">LineSegment2D</span><span class="p">(</span><span class="n">pt</span><span class="p">,</span> <span class="n">vec</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_month_points</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">month_label_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Point2Ds for the month text labels for the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_month_label_points</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_month_line_pts</span><span class="p">()</span>
+        <span class="n">txt_hght</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">Point2D</span><span class="p">(</span><span class="n">pt</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">txt_hght</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_month_label_points</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">month_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of text strings for the month labels for the chart.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_month_text</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_compute_month_line_pts</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_month_text</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_title_text1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Text string for the suggested title of the left-side Y-axis.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> (</span><span class="si">{}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">_units</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_title_location1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A Plane for the location of left Y-axis title text.&quot;&quot;&quot;</span>
+        <span class="n">pt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span>
+        <span class="n">txt_hght</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span>
+        <span class="n">txt_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y_axis_labels1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">offset</span> <span class="o">=</span> <span class="n">txt_hght</span> <span class="o">*</span> <span class="p">(</span><span class="n">txt_len</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Plane</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">pt</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">offset</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">y</span><span class="p">),</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_title_text2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Text string for the suggested title of the right-side Y-axis.</span>
+
+<span class="sd">        This will be None if all of the input data collections are of the same</span>
+<span class="sd">        data type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> (</span><span class="si">{}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">_units</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">y_axis_title_location2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A Plane for the location of right Y-axis title text.</span>
+
+<span class="sd">        This will be None if all of the input data collections are of the same</span>
+<span class="sd">        data type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">pt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span>
+            <span class="n">txt_hght</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span>
+            <span class="n">txt_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y_axis_labels2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">offset</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">+</span> <span class="n">txt_hght</span> <span class="o">*</span> <span class="p">(</span><span class="n">txt_len</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">Plane</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">pt</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">offset</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">y</span><span class="p">),</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">title_text</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Text string for the suggested title of the monthly chart.&quot;&quot;&quot;</span>
+        <span class="n">excluded_keys</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;System&#39;</span><span class="p">,</span> <span class="s1">&#39;Zone&#39;</span><span class="p">,</span> <span class="s1">&#39;Surface&#39;</span><span class="p">)</span>
+        <span class="n">title_array</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">excluded_keys</span><span class="p">:</span>
+                <span class="n">title_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">))</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">title_array</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">lower_title_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A Plane for the lower location of title text.&quot;&quot;&quot;</span>
+        <span class="n">pln</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">lower_title_location</span>
+        <span class="n">txt_hght</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span>
+        <span class="k">return</span> <span class="n">Plane</span><span class="p">(</span><span class="n">pln</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">pln</span><span class="o">.</span><span class="n">o</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">pln</span><span class="o">.</span><span class="n">o</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">txt_hght</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">upper_title_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A Plane for the upper location of title text.&quot;&quot;&quot;</span>
+        <span class="n">num_lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">title_text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span>
+        <span class="n">pln</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">upper_title_location</span>
+        <span class="n">txt_hght</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span>
+        <span class="k">return</span> <span class="n">Plane</span><span class="p">(</span><span class="n">pln</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="n">Point3D</span><span class="p">(</span><span class="n">pln</span><span class="o">.</span><span class="n">o</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">pln</span><span class="o">.</span><span class="n">o</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">txt_hght</span> <span class="o">*</span> <span class="n">num_lines</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">time_interval</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Text for the time interval of the input data collections.</span>
+
+<span class="sd">        This determines how the data displays on the chart.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">analysis_period</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The AnalysisPeriod assigned to the hourly plot&#39;s data collection.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_analysis_period</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">colors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An array of colors in the legend with one color per input data collection.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_container</span><span class="o">.</span><span class="n">value_colors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">data_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A array of all the unique data types among the input collections.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span>
+
+<div class="viewcode-block" id="MonthlyChart.set_minimum_by_index"><a class="viewcode-back" href="../../ladybug.monthlychart.html#ladybug.monthlychart.MonthlyChart.set_minimum_by_index">[docs]</a>    <span class="k">def</span> <span class="nf">set_minimum_by_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">minimum_value</span><span class="p">,</span> <span class="n">data_type_index</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the minimum value of the Y-axis given the index of a data_type.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            minimum_value: The value to be set as the minimum of the Y-axis.</span>
+<span class="sd">            data_type_index: An integer for the index of the data type to set</span>
+<span class="sd">                the minimum_value for. This corresponds to one of the data types</span>
+<span class="sd">                in the data_types property of this class. Using 0 indicates the</span>
+<span class="sd">                left-side axis minimum and using 1 indicated the right-side</span>
+<span class="sd">                axis minimum. (Default: 0).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">data_type_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">minimum_value</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+            <span class="k">pass</span>  <span class="c1"># does not refer to an index for the current data types</span></div>
+
+<div class="viewcode-block" id="MonthlyChart.set_maximum_by_index"><a class="viewcode-back" href="../../ladybug.monthlychart.html#ladybug.monthlychart.MonthlyChart.set_maximum_by_index">[docs]</a>    <span class="k">def</span> <span class="nf">set_maximum_by_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">maximum_value</span><span class="p">,</span> <span class="n">data_type_index</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the maximum value of the Y-axis given the index of a data_type.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            maximum_value: The value to be set as the maximum of the Y-axis.</span>
+<span class="sd">            data_type_index: An integer for the index of the data type to set</span>
+<span class="sd">                the maximum_value for. This corresponds to one of the data types</span>
+<span class="sd">                in the data_types property of this class. Using 0 indicates the</span>
+<span class="sd">                left-side axis maximum and using 1 indicated the right-side</span>
+<span class="sd">                axis maximum. (Default: 0).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="n">data_type_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">maximum_value</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+            <span class="k">pass</span>  <span class="c1"># does not refer to an index for the current data types</span></div>
+
+    <span class="k">def</span> <span class="nf">_compute_hourly_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute a list of lines from this object&#39;s input data.&quot;&quot;&quot;</span>
+        <span class="c1"># get values used by all polylines</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">step</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">timestep</span> <span class="o">*</span> <span class="mi">24</span>
+        <span class="n">x_dist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">/</span> <span class="n">step</span>
+
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">data_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">)):</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">d_range</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">d_range</span>  <span class="c1"># catch case of all same values</span>
+            <span class="n">min_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">prev_y_low</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_base</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+            <span class="n">prev_y_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_base</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_arr</span><span class="p">):</span>
+                <span class="c1"># get all of the upper and lower y-values of the data</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>
+                    <span class="n">dat_total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+                    <span class="n">prev_y</span> <span class="o">=</span> <span class="n">prev_y_up</span> <span class="k">if</span> <span class="n">dat_total</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">prev_y_low</span>
+                    <span class="n">low_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_stack</span><span class="p">(</span>
+                        <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">prev_y</span><span class="p">)</span>
+                    <span class="n">up_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_stack</span><span class="p">(</span>
+                        <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">prev_y</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>  <span class="c1"># set the start y so the next data stacks</span>
+                        <span class="k">if</span> <span class="n">dat_total</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">prev_y_up</span> <span class="o">=</span> <span class="n">up_vals</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">prev_y_low</span> <span class="o">=</span> <span class="n">low_vals</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">low_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+                    <span class="n">up_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_hour_polylines</span><span class="p">(</span><span class="n">low_vals</span><span class="p">,</span> <span class="n">x_dist</span><span class="p">))</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_hour_polylines</span><span class="p">(</span><span class="n">up_vals</span><span class="p">,</span> <span class="n">x_dist</span><span class="p">))</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>  <span class="c1"># get the middle value if it exists</span>
+                    <span class="n">mid_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+                    <span class="n">lines</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_hour_polylines</span><span class="p">(</span><span class="n">mid_vals</span><span class="p">,</span> <span class="n">x_dist</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">lines</span>
+
+    <span class="k">def</span> <span class="nf">_compute_monthly_per_hour_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute a list of lines from this object&#39;s input data.&quot;&quot;&quot;</span>
+        <span class="c1"># get values used by all polylines</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">step</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">timestep</span> <span class="o">*</span> <span class="mi">24</span>
+        <span class="n">x_dist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">/</span> <span class="n">step</span>
+
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">data_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">)):</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">d_range</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">d_range</span>  <span class="c1"># catch case of all same values</span>
+            <span class="n">min_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">prev_y_low</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_base</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+            <span class="n">prev_y_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_base</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_arr</span><span class="p">):</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>
+                    <span class="n">dat_total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+                    <span class="n">prev_y</span> <span class="o">=</span> <span class="n">prev_y_up</span> <span class="k">if</span> <span class="n">dat_total</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">prev_y_low</span>
+                    <span class="n">vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_stack</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">prev_y</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>  <span class="c1"># set the start y so the next data stacks</span>
+                        <span class="k">if</span> <span class="n">dat_total</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">prev_y_up</span> <span class="o">=</span> <span class="n">vals</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">prev_y_low</span> <span class="o">=</span> <span class="n">vals</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_hour_polylines</span><span class="p">(</span><span class="n">vals</span><span class="p">,</span> <span class="n">x_dist</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">lines</span>
+
+    <span class="k">def</span> <span class="nf">_compute_monthly_bars</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute a list of bar colored meshes from this object&#39;s input data.&quot;&quot;&quot;</span>
+        <span class="c1"># get values used across all bars</span>
+        <span class="n">meshes</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">colors</span>
+        <span class="n">bar_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">bar_width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_horizontal_bar_count</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">spacer_width</span> <span class="o">=</span> <span class="n">bar_width</span> <span class="o">/</span> <span class="mi">2</span>
+
+        <span class="c1"># loop through each data set and build the bar meshes</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">data_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">)):</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">d_range</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">d_range</span>  <span class="c1"># catch case of all same values</span>
+            <span class="n">min_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">zero_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">(</span><span class="n">min_val</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span>
+            <span class="n">base_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">zero_val</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> \
+                <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span>
+            <span class="n">bar_y_low</span> <span class="o">=</span> <span class="p">[</span><span class="n">base_y</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># track the bar cumulative heights</span>
+            <span class="n">bar_y_up</span> <span class="o">=</span> <span class="p">[</span><span class="n">base_y</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># track the bar cumulative heights</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_arr</span><span class="p">):</span>
+                <span class="n">verts</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">faces</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">vert_count</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">for</span> <span class="n">m_i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>  <span class="c1"># iterate through values</span>
+                    <span class="c1"># compute critical dimensions of each bar</span>
+                    <span class="n">start_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">m_i</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">+</span> \
+                        <span class="n">spacer_width</span> <span class="o">+</span> <span class="n">bar_count</span> <span class="o">*</span> <span class="n">bar_width</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+                        <span class="n">bar_hgt</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">((</span><span class="n">val</span> <span class="o">-</span> <span class="n">min_val</span><span class="p">)</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">))</span> <span class="o">+</span> <span class="n">zero_val</span>
+                        <span class="k">if</span> <span class="n">bar_hgt</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">start_y</span> <span class="o">=</span> <span class="n">bar_y_up</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>  <span class="c1"># shift the baseline up for next bar</span>
+                                <span class="n">bar_y_up</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">bar_hgt</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">start_y</span> <span class="o">=</span> <span class="n">bar_y_low</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>  <span class="c1"># shift the baseline down for next bar</span>
+                                <span class="n">bar_y_low</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">bar_hgt</span>
+                    <span class="k">else</span><span class="p">:</span>  <span class="c1"># always plot the value from the bottom</span>
+                        <span class="n">bar_hgt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">((</span><span class="n">val</span> <span class="o">-</span> <span class="n">min_val</span><span class="p">)</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span>
+                        <span class="n">start_y</span> <span class="o">=</span> <span class="n">base_y</span>
+                    <span class="n">end_y</span> <span class="o">=</span> <span class="n">start_y</span> <span class="o">+</span> <span class="n">bar_hgt</span>
+                    <span class="c1"># create the bar mesh face</span>
+                    <span class="n">verts</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_bar_pts</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">start_y</span><span class="p">,</span> <span class="n">bar_width</span><span class="p">,</span> <span class="n">end_y</span><span class="p">))</span>
+                    <span class="n">faces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">vert_count</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+                    <span class="n">vert_count</span> <span class="o">+=</span> <span class="mi">4</span>
+                <span class="c1"># create the final colored mesh</span>
+                <span class="n">mesh_col</span> <span class="o">=</span> <span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]]]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">faces</span><span class="p">)</span>
+                <span class="n">meshes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Mesh2D</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="n">faces</span><span class="p">,</span> <span class="n">mesh_col</span><span class="p">))</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>  <span class="c1"># shift bar in x dir</span>
+                    <span class="n">bar_count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+                <span class="n">bar_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">meshes</span>
+
+    <span class="k">def</span> <span class="nf">_compute_daily_bars</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute a list of bar colored meshes from this object&#39;s input data.&quot;&quot;&quot;</span>
+        <span class="c1"># get values used across all bars</span>
+        <span class="n">meshes</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">colors</span>
+        <span class="n">bar_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">n_big_bars</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_horizontal_bar_count</span><span class="p">()</span>
+        <span class="n">big_bar_width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">/</span> <span class="n">n_big_bars</span>
+        <span class="n">aper</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">analysis_period</span>
+        <span class="n">per_mon</span> <span class="o">=</span> <span class="n">aper</span><span class="o">.</span><span class="n">NUMOFDAYSEACHMONTH</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">aper</span><span class="o">.</span><span class="n">is_leap_year</span> \
+            <span class="k">else</span> <span class="n">aper</span><span class="o">.</span><span class="n">NUMOFDAYSEACHMONTHLEAP</span>
+        <span class="n">day_per_mon</span> <span class="o">=</span> <span class="p">[</span><span class="n">per_mon</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">]</span>
+
+        <span class="c1"># loop through each data set and build the bar meshes</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">data_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">)):</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">d_range</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">d_range</span>  <span class="c1"># catch case of all same values</span>
+            <span class="n">min_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">zero_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">(</span><span class="n">min_val</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span>
+            <span class="n">base_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">zero_val</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> \
+                <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span>
+            <span class="n">bar_y_low</span> <span class="o">=</span> <span class="p">[</span><span class="n">base_y</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># track the bar cumulative heights</span>
+            <span class="n">bar_y_up</span> <span class="o">=</span> <span class="p">[</span><span class="n">base_y</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># track the bar cumulative heights</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_arr</span><span class="p">):</span>
+                <span class="n">verts</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">faces</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">vert_count</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">day_count</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">month_count</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">x_dist</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">bar_width</span> <span class="o">=</span> <span class="n">big_bar_width</span> <span class="o">/</span> <span class="n">day_per_mon</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">m_i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>  <span class="c1"># iterate through values</span>
+                    <span class="c1"># compute critical dimensions of each bar</span>
+                    <span class="n">start_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">x_dist</span> <span class="o">+</span> \
+                        <span class="n">month_count</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">+</span> <span class="n">bar_count</span> <span class="o">*</span> <span class="n">big_bar_width</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+                        <span class="n">bar_hgt</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">((</span><span class="n">val</span> <span class="o">-</span> <span class="n">min_val</span><span class="p">)</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">))</span> <span class="o">+</span> <span class="n">zero_val</span>
+                        <span class="k">if</span> <span class="n">bar_hgt</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">start_y</span> <span class="o">=</span> <span class="n">bar_y_up</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>  <span class="c1"># shift the baseline up for next bar</span>
+                                <span class="n">bar_y_up</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">bar_hgt</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">start_y</span> <span class="o">=</span> <span class="n">bar_y_low</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>  <span class="c1"># shift the baseline down for next bar</span>
+                                <span class="n">bar_y_low</span><span class="p">[</span><span class="n">m_i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">bar_hgt</span>
+                    <span class="k">else</span><span class="p">:</span>  <span class="c1"># always plot the value from the bottom</span>
+                        <span class="n">bar_hgt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">((</span><span class="n">val</span> <span class="o">-</span> <span class="n">min_val</span><span class="p">)</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span>
+                        <span class="n">start_y</span> <span class="o">=</span> <span class="n">base_y</span>
+                    <span class="n">end_y</span> <span class="o">=</span> <span class="n">start_y</span> <span class="o">+</span> <span class="n">bar_hgt</span>
+                    <span class="c1"># create the bar mesh face</span>
+                    <span class="n">verts</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_bar_pts</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">start_y</span><span class="p">,</span> <span class="n">bar_width</span><span class="p">,</span> <span class="n">end_y</span><span class="p">))</span>
+                    <span class="n">faces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">vert_count</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+                    <span class="n">vert_count</span> <span class="o">+=</span> <span class="mi">4</span>
+                    <span class="n">x_dist</span> <span class="o">+=</span> <span class="n">bar_width</span>
+                    <span class="n">day_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">if</span> <span class="n">day_count</span> <span class="o">==</span> <span class="n">day_per_mon</span><span class="p">[</span><span class="n">month_count</span><span class="p">]:</span>
+                        <span class="n">day_count</span> <span class="o">=</span> <span class="mi">0</span>
+                        <span class="k">if</span> <span class="n">month_count</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">day_per_mon</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                            <span class="n">month_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                            <span class="n">bar_width</span> <span class="o">=</span> <span class="n">big_bar_width</span> <span class="o">/</span> <span class="n">day_per_mon</span><span class="p">[</span><span class="n">month_count</span><span class="p">]</span>
+                            <span class="n">x_dist</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="c1"># create the final colored mesh</span>
+                <span class="n">mesh_col</span> <span class="o">=</span> <span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]]]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">faces</span><span class="p">)</span>
+                <span class="n">meshes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Mesh2D</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="n">faces</span><span class="p">,</span> <span class="n">mesh_col</span><span class="p">))</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>  <span class="c1"># shift bar in x dir</span>
+                    <span class="n">bar_count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+                <span class="n">bar_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">meshes</span>
+
+    <span class="k">def</span> <span class="nf">_compute_hourly_ranges</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute a list of hour range colored meshes from this object&#39;s input data.&quot;&quot;&quot;</span>
+        <span class="c1"># get values used in all meshes</span>
+        <span class="n">meshes</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">step</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">timestep</span> <span class="o">*</span> <span class="mi">24</span>
+        <span class="n">x_dist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">/</span> <span class="n">step</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">colors</span>
+
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">data_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">)):</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">d_range</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">d_range</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">d_range</span>  <span class="c1"># catch case of all same values</span>
+            <span class="n">min_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">prev_y_low</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_base</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+            <span class="n">prev_y_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_base</span><span class="p">(</span><span class="n">data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_arr</span><span class="p">):</span>
+                <span class="c1"># get all of the upper and lower y-values of the data</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>
+                    <span class="n">dat_total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+                    <span class="n">prev_y</span> <span class="o">=</span> <span class="n">prev_y_up</span> <span class="k">if</span> <span class="n">dat_total</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">prev_y_low</span>
+                    <span class="n">low_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_stack</span><span class="p">(</span>
+                        <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">prev_y</span><span class="p">)</span>
+                    <span class="n">up_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values_stack</span><span class="p">(</span>
+                        <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">prev_y</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>  <span class="c1"># set start y so the next data stacks</span>
+                        <span class="k">if</span> <span class="n">dat_total</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">prev_y_up</span> <span class="o">=</span> <span class="n">up_vals</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">prev_y_low</span> <span class="o">=</span> <span class="n">low_vals</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">low_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+                    <span class="n">up_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_y_values</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+                <span class="c1"># get the mesh components from upper/lower values</span>
+                <span class="n">verts</span><span class="p">,</span> <span class="n">faces</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hour_mesh_components</span><span class="p">(</span><span class="n">low_vals</span><span class="p">,</span> <span class="n">up_vals</span><span class="p">,</span> <span class="n">x_dist</span><span class="p">)</span>
+                <span class="c1"># create the final colored mesh</span>
+                <span class="n">mesh_col</span> <span class="o">=</span> <span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]]]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">faces</span><span class="p">)</span>
+                <span class="n">meshes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Mesh2D</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="n">faces</span><span class="p">,</span> <span class="n">mesh_col</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">meshes</span>
+
+    <span class="k">def</span> <span class="nf">_hour_mesh_components</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">low_vals</span><span class="p">,</span> <span class="n">up_vals</span><span class="p">,</span> <span class="n">x_hr_dist</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the vertices and faces of a mesh from upper/lower lists of values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            low_vals: A list of lists with each sublist having lower y values.</span>
+<span class="sd">            up_vals: A list of lists with each sublist having upper y values.</span>
+<span class="sd">            x_hr_dist: The x distance moved by each cell of the mesh.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            verts: A list of vertices for the mesh.</span>
+<span class="sd">            faces: A list of faces for the mesh.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">verts</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">faces</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">vert_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">month</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">low_vals</span><span class="p">)):</span>
+            <span class="c1"># create the two starting vertices for the month</span>
+            <span class="n">start_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">month</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span>
+            <span class="n">v1</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">low_vals</span><span class="p">[</span><span class="n">month</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">v2</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">up_vals</span><span class="p">[</span><span class="n">month</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">verts</span><span class="o">.</span><span class="n">extend</span><span class="p">((</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">))</span>
+            <span class="c1"># loop through the hourly data and add vertices</span>
+            <span class="k">for</span> <span class="n">hour</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">low_vals</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+                <span class="n">x_val</span> <span class="o">=</span> <span class="n">start_x</span> <span class="o">+</span> <span class="n">x_hr_dist</span> <span class="o">*</span> <span class="n">hour</span>
+                <span class="n">v3</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">low_vals</span><span class="p">[</span><span class="n">month</span><span class="p">][</span><span class="n">hour</span><span class="p">])</span>
+                <span class="n">v4</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">up_vals</span><span class="p">[</span><span class="n">month</span><span class="p">][</span><span class="n">hour</span><span class="p">])</span>
+                <span class="n">verts</span><span class="o">.</span><span class="n">extend</span><span class="p">((</span><span class="n">v3</span><span class="p">,</span> <span class="n">v4</span><span class="p">))</span>
+                <span class="n">faces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">vert_count</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+                <span class="n">vert_count</span> <span class="o">+=</span> <span class="mi">2</span>
+            <span class="n">vert_count</span> <span class="o">+=</span> <span class="mi">2</span>
+        <span class="k">return</span> <span class="n">verts</span><span class="p">,</span> <span class="n">faces</span>
+
+    <span class="k">def</span> <span class="nf">_hour_polylines</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y_vals</span><span class="p">,</span> <span class="n">x_hr_dist</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a polyline from a lists of Y-coordinate values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            y_vals: A list of lists with each sublist having y values.</span>
+<span class="sd">            x_hr_dist: The x distance moved by each cell of the mesh.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            polylines: A list of Polyline2D.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">plines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">month</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_vals</span><span class="p">)):</span>
+            <span class="n">verts</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">start_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">month</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span>
+            <span class="k">for</span> <span class="n">hour</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_vals</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+                <span class="n">x_val</span> <span class="o">=</span> <span class="n">start_x</span> <span class="o">+</span> <span class="n">x_hr_dist</span> <span class="o">*</span> <span class="n">hour</span>
+                <span class="n">y_val</span> <span class="o">=</span> <span class="n">y_vals</span><span class="p">[</span><span class="n">month</span><span class="p">][</span><span class="n">hour</span><span class="p">]</span>
+                <span class="n">verts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point2D</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">))</span>
+            <span class="n">plines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Polyline2D</span><span class="p">(</span><span class="n">verts</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">plines</span>
+
+    <span class="k">def</span> <span class="nf">_hour_y_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">minimum</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of y-coordinates from a monthly-per-hour data collection.&quot;&quot;&quot;</span>
+        <span class="n">data_values</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">y_values</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_values</span><span class="p">),</span> <span class="n">step</span><span class="p">):</span>
+            <span class="n">month_val</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">data_values</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">step</span><span class="p">]:</span>
+                <span class="n">rel_y</span> <span class="o">=</span> <span class="p">((</span><span class="n">val</span> <span class="o">-</span> <span class="n">minimum</span><span class="p">)</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span>
+                <span class="n">month_val</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="n">rel_y</span><span class="p">)</span>
+            <span class="n">month_val</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">month_val</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># loop data in each month</span>
+            <span class="n">y_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">month_val</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">y_values</span>
+
+    <span class="k">def</span> <span class="nf">_hour_y_values_stack</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">minimum</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">start_y</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of y-coordinates from a monthly-per-hour data collection.&quot;&quot;&quot;</span>
+        <span class="n">data_values</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">zero_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">(</span><span class="n">minimum</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span> <span class="k">if</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">y_values</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_values</span><span class="p">),</span> <span class="n">step</span><span class="p">)):</span>
+            <span class="n">month_val</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_values</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">step</span><span class="p">]):</span>
+                <span class="n">rel_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">((</span><span class="n">val</span> <span class="o">-</span> <span class="n">minimum</span><span class="p">)</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span>
+                <span class="n">month_val</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">start_y</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">rel_y</span> <span class="o">+</span> <span class="n">zero_val</span><span class="p">)</span>
+            <span class="n">month_val</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">month_val</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># loop start/end for each month</span>
+            <span class="n">y_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">month_val</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">y_values</span>
+
+    <span class="k">def</span> <span class="nf">_hour_y_values_base</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">d_range</span><span class="p">,</span> <span class="n">minimum</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of base y-coordinates from a monthly-per-hour data collection.&quot;&quot;&quot;</span>
+        <span class="n">y_values</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">zero_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">minimum</span> <span class="o">/</span> <span class="n">d_range</span><span class="p">)</span> <span class="k">if</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">data_type</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">step</span><span class="p">):</span>
+            <span class="n">y_values</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">zero_val</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">y_values</span>
+
+    <span class="k">def</span> <span class="nf">_horizontal_bar_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the number of bars in the horizontal direction.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">n_bars</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">d_type</span><span class="p">,</span> <span class="n">data_list</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">):</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">d_type</span><span class="p">):</span>
+                    <span class="n">n_bars</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">n_bars</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">n_bars</span>
+
+    <span class="k">def</span> <span class="nf">_compute_y_axis_points</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the points for the Y-axis lines and labels.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">y_interval</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y_dim</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_seg_count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">base_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_seg_count</span><span class="p">):</span>
+            <span class="n">line_pt</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">base_y</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">y_interval</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_y_axis_points</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line_pt</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_y_axis_label_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Y-axis labels using the index of the data in _data_types.&quot;&quot;&quot;</span>
+        <span class="n">format_str</span> <span class="o">=</span> <span class="s1">&#39;%.</span><span class="si">{}</span><span class="s1">f&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">decimal_count</span><span class="p">)</span>
+        <span class="n">y_axis_text</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">interval</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">index</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_seg_count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">base_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_seg_count</span><span class="p">):</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">base_val</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">interval</span><span class="p">)</span>
+            <span class="n">y_axis_text</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">format_str</span> <span class="o">%</span> <span class="n">val</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">y_axis_text</span>
+
+    <span class="k">def</span> <span class="nf">_compute_month_line_pts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the points for the month lines and labels.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_month_text</span> <span class="o">=</span> <span class="p">[</span><span class="n">AnalysisPeriod</span><span class="o">.</span><span class="n">MONTHNAMES</span><span class="p">[</span><span class="n">mon</span><span class="p">]</span> <span class="k">for</span> <span class="n">mon</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_month_points</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">)):</span>
+            <span class="n">pt</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_month_points</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pt</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_month_label_points</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">start_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months_int</span><span class="p">)):</span>
+            <span class="n">pt</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">start_x</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x_dim</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base_point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_month_label_points</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pt</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_compute_maximums_minimums</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the maximum and minimum values of the chart using self._grouped_data.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">data_type</span><span class="p">,</span> <span class="n">data_list</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_types</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grouped_data</span><span class="p">):</span>
+            <span class="c1"># get the minimum values of all the data collections</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">==</span> <span class="s1">&#39;Hourly&#39;</span><span class="p">:</span>
+                <span class="n">min_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">]</span>
+                <span class="n">max_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">max</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">min_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">min</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">]</span>
+                <span class="n">max_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">max</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">]</span>
+
+            <span class="c1"># determine the maximum and minium values depending on the stack input</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">data_type</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stack</span><span class="p">:</span>
+                <span class="n">min_val</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">min_vals</span><span class="p">)</span>
+                <span class="n">max_val</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_vals</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># stacked data; sum up the values to get the total of the stack</span>
+                <span class="n">min_val</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">min_vals</span><span class="p">)</span>
+                <span class="n">max_val</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">max_vals</span><span class="p">)</span>
+
+            <span class="c1"># plot everything from 0 if the data is cumulative</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">data_type</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">min_val</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">max_val</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">min_val</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">elif</span> <span class="n">max_val</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">min_val</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">max_val</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">elif</span> <span class="n">min_val</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">1e-9</span> <span class="ow">and</span> <span class="n">max_val</span> <span class="o">&gt;</span> <span class="mf">1e-9</span><span class="p">:</span>
+                    <span class="c1"># probably an energy balance; center the chart on 0 by default</span>
+                    <span class="n">extreme</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">min_val</span><span class="p">)</span> <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">min_val</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max_val</span> <span class="k">else</span> <span class="n">max_val</span>
+                    <span class="n">max_val</span> <span class="o">=</span> <span class="n">extreme</span>
+                    <span class="n">min_val</span> <span class="o">=</span> <span class="o">-</span><span class="n">extreme</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">_minimums</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">min_val</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_maximums</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">max_val</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_group_data_by_units</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Group an the data collections of this MonthlyChart by their units.</span>
+
+<span class="sd">        This will also convert hourly data collections to lists of percentile</span>
+<span class="sd">        collections if they are hourly.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># group the data collections by their units</span>
+        <span class="n">grouped_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">units</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">color_map</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data_collections</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span> <span class="ow">in</span> <span class="n">units</span><span class="p">:</span>
+                <span class="n">ind</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+                <span class="n">grouped_data</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+                <span class="n">color_map</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">units</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">unit</span><span class="p">)</span>
+                <span class="n">grouped_data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">data</span><span class="p">])</span>
+                <span class="n">color_map</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="c1"># get the base type from the units</span>
+        <span class="n">data_types</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">unit</span> <span class="ow">in</span> <span class="n">units</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">UNITS</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">unit</span> <span class="ow">in</span> <span class="n">UNITS</span><span class="p">[</span><span class="n">key</span><span class="p">]:</span>
+                    <span class="n">data_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TYPESDICT</span><span class="p">[</span><span class="n">key</span><span class="p">]())</span>
+                    <span class="k">break</span>
+
+        <span class="c1"># convert hourly data collections into monthly-per-hour collections</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_interval</span> <span class="o">==</span> <span class="s1">&#39;Hourly&#39;</span><span class="p">:</span>
+            <span class="n">lower</span><span class="p">,</span> <span class="n">upper</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_percentile</span><span class="p">,</span> <span class="mi">50</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_percentile</span>
+            <span class="n">new_data</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">data_list</span> <span class="ow">in</span> <span class="n">grouped_data</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data_list</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">grouped_data</span><span class="p">):</span>
+                <span class="n">cumul</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_cumulative</span><span class="p">(</span><span class="n">data_types</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">:</span>
+                    <span class="n">new_d</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hourly_to_monthly_per_hour</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">lower</span><span class="p">,</span> <span class="n">upper</span><span class="p">,</span> <span class="n">cumul</span><span class="p">)</span>
+                    <span class="n">new_data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_d</span><span class="p">)</span>
+            <span class="n">grouped_data</span> <span class="o">=</span> <span class="n">new_data</span>
+        <span class="k">return</span> <span class="n">grouped_data</span><span class="p">,</span> <span class="n">data_types</span><span class="p">,</span> <span class="n">units</span><span class="p">,</span> <span class="n">color_map</span>
+
+    <span class="k">def</span> <span class="nf">_is_cumulative</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Determine if a data type is cumulative and should be stack-able.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">data_type</span><span class="o">.</span><span class="n">cumulative</span> <span class="ow">or</span> \
+            <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_stack</span> <span class="ow">and</span> <span class="n">data_type</span><span class="o">.</span><span class="n">time_aggregated_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_bar_pts</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">base_y</span><span class="p">,</span> <span class="n">bar_width</span><span class="p">,</span> <span class="n">end_y</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of bar vertices from input bar properties.&quot;&quot;&quot;</span>
+        <span class="c1"># create each of the 4 vertices</span>
+        <span class="n">v1</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">base_y</span><span class="p">)</span>
+        <span class="n">v2</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">start_x</span> <span class="o">+</span> <span class="n">bar_width</span><span class="p">,</span> <span class="n">base_y</span><span class="p">)</span>
+        <span class="n">v3</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">start_x</span> <span class="o">+</span> <span class="n">bar_width</span><span class="p">,</span> <span class="n">end_y</span><span class="p">)</span>
+        <span class="n">v4</span> <span class="o">=</span> <span class="n">Point2D</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">end_y</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">,</span> <span class="n">v3</span><span class="p">,</span> <span class="n">v4</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_hourly_to_monthly_per_hour</span><span class="p">(</span><span class="n">hourly_collection</span><span class="p">,</span> <span class="n">lower</span><span class="p">,</span> <span class="n">upper</span><span class="p">,</span> <span class="n">cumulative</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Convert hourly data into lists of 2-3 monthly-per-hour data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            hourly_collection: An hourly data collection to be analyzed.</span>
+<span class="sd">            lower: The lower percentile for the first monthly-per-hour collection.</span>
+<span class="sd">            upper: The upper percentile for the last monthly-per-hour collection.</span>
+<span class="sd">            cumulative: Boolean to note if data is cumulative, in which case just</span>
+<span class="sd">                a total collection and a zero collection will be output.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">cumulative</span><span class="p">:</span>
+            <span class="n">low</span> <span class="o">=</span> <span class="n">hourly_collection</span><span class="o">.</span><span class="n">percentile_monthly_per_hour</span><span class="p">(</span><span class="n">lower</span><span class="p">)</span>
+            <span class="n">mid</span> <span class="o">=</span> <span class="n">hourly_collection</span><span class="o">.</span><span class="n">average_monthly_per_hour</span><span class="p">()</span>
+            <span class="n">up</span> <span class="o">=</span> <span class="n">hourly_collection</span><span class="o">.</span><span class="n">percentile_monthly_per_hour</span><span class="p">(</span><span class="n">upper</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">mid</span><span class="p">,</span> <span class="n">up</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">total</span> <span class="o">=</span> <span class="n">hourly_collection</span><span class="o">.</span><span class="n">total_monthly_per_hour</span><span class="p">()</span>
+            <span class="n">zero</span> <span class="o">=</span> <span class="n">total</span><span class="o">.</span><span class="n">duplicate</span><span class="p">()</span>
+            <span class="n">zero</span><span class="o">.</span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">total</span><span class="p">))]</span>
+            <span class="k">if</span> <span class="n">total</span><span class="o">.</span><span class="n">total</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">[</span><span class="n">zero</span><span class="p">,</span> <span class="n">total</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">[</span><span class="n">total</span><span class="p">,</span> <span class="n">zero</span><span class="p">]</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_check_dim</span><span class="p">(</span><span class="n">dim_value</span><span class="p">,</span> <span class="n">dim_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check a given value for a dimension input.&quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dim_value</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">)),</span> <span class="s1">&#39;Expected number for &#39;</span> \
+            <span class="s1">&#39;MonthlyChart </span><span class="si">{}</span><span class="s1">. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dim_name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">dim_value</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="n">dim_value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;MonthlyChart </span><span class="si">{}</span><span class="s1"> must be greater than 0. &#39;</span> \
+            <span class="s1">&#39;Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dim_name</span><span class="p">,</span> <span class="n">dim_value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">dim_value</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_check_time_interval</span><span class="p">(</span><span class="n">data_collections</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check that input data collections all have the same time interval.</span>
+
+<span class="sd">        For example: Hourly, Daily, Monthly, MonthlyPerHour.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># get the base class and the time interval from the first data collection</span>
+        <span class="n">base_collection</span> <span class="o">=</span> <span class="n">data_collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">base_collection</span><span class="p">,</span> <span class="n">HourlyDiscontinuousCollection</span><span class="p">):</span>
+            <span class="n">base_class</span> <span class="o">=</span> <span class="n">HourlyDiscontinuousCollection</span>
+            <span class="n">time_interval</span> <span class="o">=</span> <span class="s1">&#39;Hourly&#39;</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">base_collection</span><span class="p">,</span> <span class="n">DailyCollection</span><span class="p">):</span>
+            <span class="n">base_class</span> <span class="o">=</span> <span class="n">DailyCollection</span>
+            <span class="n">time_interval</span> <span class="o">=</span> <span class="s1">&#39;Daily&#39;</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">base_collection</span><span class="p">,</span> <span class="n">MonthlyCollection</span><span class="p">):</span>
+            <span class="n">base_class</span> <span class="o">=</span> <span class="n">MonthlyCollection</span>
+            <span class="n">time_interval</span> <span class="o">=</span> <span class="s1">&#39;Monthly&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_class</span> <span class="o">=</span> <span class="n">MonthlyPerHourCollection</span>
+            <span class="n">time_interval</span> <span class="o">=</span> <span class="s1">&#39;MonthlyPerHour&#39;</span>
+
+        <span class="c1"># check that all of the data collections have the same time interval</span>
+        <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">base_class</span><span class="p">)</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_collections</span><span class="p">),</span> \
+            <span class="s1">&#39;MonthlyChart data collections must all be for the same time interval.</span><span class="se">\n</span><span class="s1">&#39;</span> \
+            <span class="s1">&#39;Either Hourly, Daily, Monthly, or MonthlyPerHour.&#39;</span>
+
+        <span class="c1"># check that all of the data collections are continuous</span>
+        <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">is_continuous</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_collections</span><span class="p">),</span> \
+            <span class="s1">&#39;MonthlyChart data collections must all be continuous.&#39;</span>
+        <span class="k">return</span> <span class="n">time_interval</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Monthly Chart representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;Monthly Chart:</span><span class="se">\n</span><span class="si">{}</span><span class="s1"> data collections&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data_collections</span><span class="p">))</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.stat module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.sunpath module" href="ladybug.sunpath.html" />
+    <link rel="prev" title="ladybug.sql module" href="ladybug.sql.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.sql.html" title="Previous Chapter: ladybug.sql module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.sql module</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.sunpath.html" title="Next Chapter: ladybug.sunpath module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.sunpa... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.stat.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.stat">
+<span id="ladybug-stat-module"></span><h1>ladybug.stat module<a class="headerlink" href="#module-ladybug.stat" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="ladybug.stat.STAT">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.stat.</code><code class="sig-name descname">STAT</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_path</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/stat.html#STAT"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.stat.STAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Import data from a local .stat file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_path</strong> – Address to a local .stat file.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>location</p></li>
+<li><p>ashrae_climate_zone</p></li>
+<li><p>koppen_climate_zone</p></li>
+<li><p>extreme_cold_week</p></li>
+<li><p>extreme_hot_week</p></li>
+<li><p>typical_winter_week</p></li>
+<li><p>typical_spring_week</p></li>
+<li><p>typical_summer_week</p></li>
+<li><p>typical_autumn_week</p></li>
+<li><p>other_typical_weeks</p></li>
+<li><p>annual_heating_design_day_996</p></li>
+<li><p>annual_heating_design_day_990</p></li>
+<li><p>annual_cooling_design_day_004</p></li>
+<li><p>annual_cooling_design_day_010</p></li>
+<li><p>monthly_cooling_design_days_100</p></li>
+<li><p>monthly_cooling_design_days_050</p></li>
+<li><p>monthly_cooling_design_days_020</p></li>
+<li><p>monthly_cooling_design_days_004</p></li>
+<li><p>monthly_db_temp_050</p></li>
+<li><p>monthly_wb_temp_050</p></li>
+<li><p>monthly_db_temp_range_050</p></li>
+<li><p>monthly_wb_temp_range_050</p></li>
+<li><p>monthly_found</p></li>
+<li><p>standard_pressure_at_elev</p></li>
+<li><p>monthly_wind_conditions</p></li>
+<li><p>monthly_ws_avg</p></li>
+<li><p>monthly_wind_dirs</p></li>
+<li><p>monthly_clear_sky_conditions</p></li>
+<li><p>monthly_tau_beam</p></li>
+<li><p>monthly_tau_diffuse</p></li>
+<li><p>file_path</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.stat.STAT.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/stat.html#STAT.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.stat.STAT.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/stat.html#STAT.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.stat.STAT.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Stat from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug location schema</span>
+<span class="s2">&quot;ashrae_climate_zone&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="mi">5</span><span class="n">A</span><span class="p">,</span>  <span class="c1"># str</span>
+<span class="s2">&quot;koppen_climate_zone&quot;</span><span class="p">:</span> <span class="s2">&quot;Dfa&quot;</span><span class="p">,</span> <span class="c1"># str</span>
+<span class="s2">&quot;extreme_cold_week&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug analysis period schema</span>
+<span class="s2">&quot;extreme_hot_week&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug analysis period schema</span>
+<span class="s2">&quot;typical_weeks&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict of ladybug analysis period schemas</span>
+<span class="s2">&quot;heating_dict&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict containing heating design conditions</span>
+<span class="s2">&quot;cooling_dict&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict containing cooling design conditions</span>
+<span class="s2">&quot;monthly_db_50&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_wb_50&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_db_range_50&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_wb_range_50&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_db_100&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_wb_100&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_db_20&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_wb_20&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_db_04&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_wb_04&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_wind&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_wind_dirs&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># matrix with 12 cols for months of the year</span>
+                          <span class="c1">#and 8 rows for the cardinal directions.</span>
+<span class="s2">&quot;standard_pressure_at_elev&quot;</span><span class="p">:</span> <span class="mi">101325</span><span class="p">,</span>  <span class="c1"># float value for pressure in Pa</span>
+<span class="s2">&quot;monthly_tau_beam&quot;</span><span class="p">:[],</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="s2">&quot;monthly_tau_diffuse&quot;</span><span class="p">:</span> <span class="p">[]</span>  <span class="c1"># list of 12 float values for each month</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/stat.html#STAT.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.stat.STAT.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the stat object to a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.annual_cooling_design_day_004">
+<em class="property">property </em><code class="sig-name descname">annual_cooling_design_day_004</code><a class="headerlink" href="#ladybug.stat.STAT.annual_cooling_design_day_004" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 0.4% cooling design day.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.annual_cooling_design_day_010">
+<em class="property">property </em><code class="sig-name descname">annual_cooling_design_day_010</code><a class="headerlink" href="#ladybug.stat.STAT.annual_cooling_design_day_010" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 1.0% cooling design day.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.annual_heating_design_day_990">
+<em class="property">property </em><code class="sig-name descname">annual_heating_design_day_990</code><a class="headerlink" href="#ladybug.stat.STAT.annual_heating_design_day_990" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 99.0% heating design day.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.annual_heating_design_day_996">
+<em class="property">property </em><code class="sig-name descname">annual_heating_design_day_996</code><a class="headerlink" href="#ladybug.stat.STAT.annual_heating_design_day_996" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 99.6% heating design day.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.ashrae_climate_zone">
+<em class="property">property </em><code class="sig-name descname">ashrae_climate_zone</code><a class="headerlink" href="#ladybug.stat.STAT.ashrae_climate_zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a text string indicating the ASHRAE climate zone.</p>
+<p>Numbers in the zone denote average temperature (0 = Hottest; 8 = Coldest)
+Letters in the zone denote wetness (A = Humid; B = Dry; C = Marine)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.extreme_cold_week">
+<em class="property">property </em><code class="sig-name descname">extreme_cold_week</code><a class="headerlink" href="#ladybug.stat.STAT.extreme_cold_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>AnalysisPeriod for the coldest week within the corresponding EPW.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.extreme_hot_week">
+<em class="property">property </em><code class="sig-name descname">extreme_hot_week</code><a class="headerlink" href="#ladybug.stat.STAT.extreme_hot_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>AnalysisPeriod for the hottest week within the corresponding EPW.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.file_path">
+<em class="property">property </em><code class="sig-name descname">file_path</code><a class="headerlink" href="#ladybug.stat.STAT.file_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the path to the stat file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.koppen_climate_zone">
+<em class="property">property </em><code class="sig-name descname">koppen_climate_zone</code><a class="headerlink" href="#ladybug.stat.STAT.koppen_climate_zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a text string indicating the Koppen climate zone.</p>
+<p>The Koppen climate classification is the most widely used climate
+classification system and combines average annual and monthly
+temperatures, precipitation, and the seasonality of precipitation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.location">
+<em class="property">property </em><code class="sig-name descname">location</code><a class="headerlink" href="#ladybug.stat.STAT.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return ladybug location object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_clear_sky_conditions">
+<em class="property">property </em><code class="sig-name descname">monthly_clear_sky_conditions</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_clear_sky_conditions" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 monthly clear sky conditions that are used on the design days.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_cooling_design_days_004">
+<em class="property">property </em><code class="sig-name descname">monthly_cooling_design_days_004</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_cooling_design_days_004" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 objects representing monthly 0.4% cooling design days.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_cooling_design_days_020">
+<em class="property">property </em><code class="sig-name descname">monthly_cooling_design_days_020</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_cooling_design_days_020" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 objects representing monthly 2.0% cooling design days.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_cooling_design_days_050">
+<em class="property">property </em><code class="sig-name descname">monthly_cooling_design_days_050</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_cooling_design_days_050" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 objects representing monthly 5.0% cooling design days.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_cooling_design_days_100">
+<em class="property">property </em><code class="sig-name descname">monthly_cooling_design_days_100</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_cooling_design_days_100" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 objects representing monthly 10.0% cooling design days.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_db_temp_050">
+<em class="property">property </em><code class="sig-name descname">monthly_db_temp_050</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_db_temp_050" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 float values for monthly 5.0% dry bulb temperature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_db_temp_range_050">
+<em class="property">property </em><code class="sig-name descname">monthly_db_temp_range_050</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_db_temp_range_050" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 values for monthly ranges of dry bulb temperatures at 5.0%.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_found">
+<em class="property">property </em><code class="sig-name descname">monthly_found</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_found" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_tau_beam">
+<em class="property">property </em><code class="sig-name descname">monthly_tau_beam</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_tau_beam" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 float values for monthly beam optical depth.</p>
+<p>These values can be used to generate ASHRAE Revised Clear Skies, which
+are intended to determine peak solar load and sizing parmeters for
+HVAC systems.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_tau_diffuse">
+<em class="property">property </em><code class="sig-name descname">monthly_tau_diffuse</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_tau_diffuse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of 12 float values for monthly diffuse optical depth.</p>
+<p>These values can be used to generate ASHRAE Revised Clear Skies, which
+are intended to determine peak solar load and sizing parmeters for
+HVAC systems.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_wb_temp_050">
+<em class="property">property </em><code class="sig-name descname">monthly_wb_temp_050</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_wb_temp_050" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 float values for monthly 5.0% wet bulb temperature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_wb_temp_range_050">
+<em class="property">property </em><code class="sig-name descname">monthly_wb_temp_range_050</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_wb_temp_range_050" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 values for monthly ranges of wet bulb temperatures at 5.0%.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_wind_conditions">
+<em class="property">property </em><code class="sig-name descname">monthly_wind_conditions</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_wind_conditions" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 monthly wind conditions that are used on the design days.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_wind_dirs">
+<em class="property">property </em><code class="sig-name descname">monthly_wind_dirs</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_wind_dirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of prevailing wind directions for each month.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.monthly_ws_avg">
+<em class="property">property </em><code class="sig-name descname">monthly_ws_avg</code><a class="headerlink" href="#ladybug.stat.STAT.monthly_ws_avg" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of 12 float values for monthly average wind speeds.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.other_typical_weeks">
+<em class="property">property </em><code class="sig-name descname">other_typical_weeks</code><a class="headerlink" href="#ladybug.stat.STAT.other_typical_weeks" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of AnalysisPeriods for typical weeks outside of the seasonal weeks.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.standard_pressure_at_elev">
+<em class="property">property </em><code class="sig-name descname">standard_pressure_at_elev</code><a class="headerlink" href="#ladybug.stat.STAT.standard_pressure_at_elev" title="Permalink to this definition">¶</a></dt>
+<dd><p>The standard pressure on pascals at the elevation of the location.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.typical_autumn_week">
+<em class="property">property </em><code class="sig-name descname">typical_autumn_week</code><a class="headerlink" href="#ladybug.stat.STAT.typical_autumn_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>AnalysisPeriod for a typical autumn week within the corresponding EPW.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.typical_spring_week">
+<em class="property">property </em><code class="sig-name descname">typical_spring_week</code><a class="headerlink" href="#ladybug.stat.STAT.typical_spring_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>AnalysisPeriod for a typical spring week within the corresponding EPW.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.typical_summer_week">
+<em class="property">property </em><code class="sig-name descname">typical_summer_week</code><a class="headerlink" href="#ladybug.stat.STAT.typical_summer_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>AnalysisPeriod for a typical summer week within the corresponding EPW.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.stat.STAT.typical_winter_week">
+<em class="property">property </em><code class="sig-name descname">typical_winter_week</code><a class="headerlink" href="#ladybug.stat.STAT.typical_winter_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>AnalysisPeriod for a typical winter week within the corresponding EPW.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.sql &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.sql</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Module for parsing EnergyPlus SQLite result files into Ladybug DataCollections&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+
+<span class="kn">import</span> <span class="nn">ladybug.datatype</span>
+<span class="kn">from</span> <span class="nn">.dt</span> <span class="kn">import</span> <span class="n">DateTime</span><span class="p">,</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">.location</span> <span class="kn">import</span> <span class="n">Location</span>
+<span class="kn">from</span> <span class="nn">.analysisperiod</span> <span class="kn">import</span> <span class="n">AnalysisPeriod</span>
+<span class="kn">from</span> <span class="nn">.header</span> <span class="kn">import</span> <span class="n">Header</span>
+<span class="kn">from</span> <span class="nn">.datacollection</span> <span class="kn">import</span> <span class="n">HourlyContinuousCollection</span><span class="p">,</span> <span class="n">DailyCollection</span><span class="p">,</span> \
+    <span class="n">MonthlyCollection</span>
+
+
+<div class="viewcode-block" id="SQLiteResult"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.SQLiteResult">[docs]</a><span class="k">class</span> <span class="nc">SQLiteResult</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Object for parsing EnergyPlus SQLite result files into Ladybug DataCollections.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        file_path: Full path to an SQLite file that was generated by EnergyPlus.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * file_path</span>
+<span class="sd">        * location</span>
+<span class="sd">        * reporting_frequency</span>
+<span class="sd">        * run_periods</span>
+<span class="sd">        * run_period_names</span>
+<span class="sd">        * run_period_indices</span>
+<span class="sd">        * available_outputs</span>
+<span class="sd">        * available_outputs_info</span>
+<span class="sd">        * zone_cooling_sizes</span>
+<span class="sd">        * zone_heating_sizes</span>
+<span class="sd">        * component_sizes</span>
+<span class="sd">        * component_types</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_interval_codes</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Timestep&#39;</span><span class="p">,</span> <span class="s1">&#39;Hourly&#39;</span><span class="p">,</span> <span class="s1">&#39;Daily&#39;</span><span class="p">,</span> <span class="s1">&#39;Monthly&#39;</span><span class="p">,</span> <span class="s1">&#39;Annual&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize SQLiteResult&quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">file_path</span><span class="p">),</span> <span class="s1">&#39;No file was found at </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">file_path</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.sql&#39;</span><span class="p">,</span> <span class="s1">&#39;.db&#39;</span><span class="p">,</span> <span class="s1">&#39;.sqlite&#39;</span><span class="p">)),</span> \
+            <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not an SQL file ending in .sql or .db.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_file_path</span> <span class="o">=</span> <span class="n">file_path</span>
+
+        <span class="c1"># values to be computed as soon as they are requested</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reporting_frequency</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_run_periods</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_names</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_indices</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs_info</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_zone_cooling_sizes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_zone_heating_sizes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_sizes</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">file_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the path to the .sql file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_file_path</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Ladybug Location object derived from the SQL data.</span>
+
+<span class="sd">        This will be None if there was no AllSummary report in the SQL file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extract_location</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reporting_frequency</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get text for the output reporting frequency. Will be one of the following.</span>
+
+<span class="sd">            * Annual</span>
+<span class="sd">            * Monthly</span>
+<span class="sd">            * Daily</span>
+<span class="sd">            * Hourly</span>
+<span class="sd">            * An integer for the number of steps per hour</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reporting_frequency</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extract_available_outputs</span><span class="p">()</span>
+        <span class="k">if</span> <span class="s1">&#39;Timestep&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reporting_frequency</span><span class="p">:</span>  <span class="c1"># get timesteps per hour</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reporting_frequency</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_timestep</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reporting_frequency</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">run_periods</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an array of Ladybug AnalysisPeriod objects for the simulation run periods.</span>
+
+<span class="sd">        This will be None if there was no AllSummary report in the SQL file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_periods</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extract_full_run_periods</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_run_periods</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">run_period_names</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an array of text for the names of the run periods.</span>
+
+<span class="sd">        These will align with the run_periods property. This will be None if</span>
+<span class="sd">        there was no AllSummary report in the SQL file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_names</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extract_full_run_periods</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_run_period_names</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">run_period_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an array integers used to identify the run periods in the time table.</span>
+
+<span class="sd">        These will align with the run_periods property.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_indices</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extract_full_run_period_indices</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_indices</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">available_outputs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of strings for available timeseries outputs that can be requested.</span>
+
+<span class="sd">        Any of these outputs when input to data_collections_by_output_name will</span>
+<span class="sd">        yield a result with data collections.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extract_available_outputs</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">available_outputs_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of dictionaries with outputs within the SQL and their metadata.</span>
+
+<span class="sd">        Each dictionary is formatted with the keys below.</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;output_name&quot;: &quot;Zone Ideal Loads Supply Air Total Cooling Energy&quot;,</span>
+<span class="sd">            &quot;object_type&quot;: &quot;Zone&quot;,</span>
+<span class="sd">            &quot;units&quot;: &quot;kWh&quot;,</span>
+<span class="sd">            &quot;data_type &quot;: Energy  # this is a ladybug DataType object</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs_info</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extract_available_outputs</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs_info</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">zone_cooling_sizes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of ZoneSize objects for all conditioned zones in the model.</span>
+
+<span class="sd">        Each ZoneSize object contains several properties regarding the outcome</span>
+<span class="sd">        of the cooling sizing calculation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_zone_cooling_sizes</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_zone_cooling_sizes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_zone_sizes</span><span class="p">(</span><span class="s1">&#39;Cooling&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_zone_cooling_sizes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">zone_heating_sizes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of ZoneSize objects for all conditioned zones in the model.</span>
+
+<span class="sd">        Each ZoneSize object contains several properties regarding the outcome</span>
+<span class="sd">        of the heating sizing calculation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_zone_heating_sizes</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_zone_heating_sizes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_zone_sizes</span><span class="p">(</span><span class="s1">&#39;Heating&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_zone_heating_sizes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_sizes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of ComponentSize objects for all HVAC components in the results.</span>
+
+<span class="sd">        Each ComponentSize object contains several properties regarding the outcome</span>
+<span class="sd">        of the sizing calculation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_sizes</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_component_sizes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_component_sizes</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_sizes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of text for all component types contained in the results.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_sizes</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_component_sizes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_component_sizes</span><span class="p">()</span>
+        <span class="n">_comp_types</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">comp</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_sizes</span><span class="p">:</span>
+            <span class="n">_comp_types</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">comp</span><span class="o">.</span><span class="n">component_type</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">_comp_types</span><span class="p">)</span>
+
+<div class="viewcode-block" id="SQLiteResult.component_sizes_by_type"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.SQLiteResult.component_sizes_by_type">[docs]</a>    <span class="k">def</span> <span class="nf">component_sizes_by_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">component_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of ComponentSize objects for a specific type of HVAC component.</span>
+
+<span class="sd">        This can be much faster than using the component_sizes property when</span>
+<span class="sd">        there are a lot of components in the model and only one type of</span>
+<span class="sd">        component is needed.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            component_type: Text for the type of component to be retrieved.</span>
+<span class="sd">                (eg. &#39;ZoneHVAC:IdealLoadsAirSystem&#39;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_component_sizes</span><span class="p">(</span><span class="n">component_type</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SQLiteResult.data_collections_by_output_name"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.SQLiteResult.data_collections_by_output_name">[docs]</a>    <span class="k">def</span> <span class="nf">data_collections_by_output_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an array of Ladybug DataCollections for a specified output.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_name: The name of an EnergyPlus output to be retrieved from</span>
+<span class="sd">                the SQLite result file. This can also be an array of output names</span>
+<span class="sd">                for which all data collections should be retrieved.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            An array of data collections of the requested output type. This will</span>
+<span class="sd">            be an empty list if no output of the requested name was found in the</span>
+<span class="sd">            file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract all indices in the ReportDataDictionary with the output_name</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">cols</span> <span class="o">=</span> <span class="s1">&#39;ReportDataDictionaryIndex, IndexGroup, KeyValue, Name, Units&#39;</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">output_name</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>  <span class="c1"># assume it&#39;s a single output</span>
+                <span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;SELECT </span><span class="si">{}</span><span class="s1"> FROM ReportDataDictionary WHERE Name=?&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="p">(</span><span class="n">output_name</span><span class="p">,))</span>
+            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">output_name</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># assume it&#39;s a list</span>
+                <span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;SELECT </span><span class="si">{}</span><span class="s1"> FROM ReportDataDictionary WHERE Name=?&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="p">(</span><span class="n">output_name</span><span class="p">[</span><span class="mi">0</span><span class="p">],))</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># assume it is a list of outputs</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT </span><span class="si">{}</span><span class="s1"> FROM ReportDataDictionary WHERE Name IN </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">cols</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">output_name</span><span class="p">)))</span>
+            <span class="n">header_rows</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+            <span class="c1"># if nothing was found, return an empty list</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">header_rows</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+                <span class="k">return</span> <span class="p">[]</span>
+
+            <span class="c1"># extract all data of the relevant type from ReportData</span>
+            <span class="n">rel_indices</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">header_rows</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">rel_indices</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT Value, TimeIndex FROM ReportData WHERE &#39;</span>
+                          <span class="s1">&#39;ReportDataDictionaryIndex=?&#39;</span><span class="p">,</span> <span class="n">rel_indices</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT Value, TimeIndex FROM ReportData WHERE &#39;</span>
+                          <span class="s1">&#39;ReportDataDictionaryIndex IN </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rel_indices</span><span class="p">))</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+        <span class="c1"># get the analysis period and the reporting frequency from the time table</span>
+        <span class="n">st_time</span><span class="p">,</span> <span class="n">end_time</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">run_period</span><span class="p">,</span> <span class="n">report_frequency</span><span class="p">,</span> <span class="n">mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_run_period</span><span class="p">(</span><span class="n">st_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">mult</span><span class="p">:</span>  <span class="c1"># there are multiple analysis periods; get them all</span>
+            <span class="n">run_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_all_run_period</span><span class="p">(</span>
+                <span class="n">report_frequency</span><span class="p">,</span> <span class="n">run_period</span><span class="o">.</span><span class="n">timestep</span><span class="p">,</span> <span class="n">run_period</span><span class="o">.</span><span class="n">is_leap_year</span><span class="p">)</span>
+
+        <span class="c1"># create the header objects to be used for the resulting data collections</span>
+        <span class="n">units</span> <span class="o">=</span> <span class="n">header_rows</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">header_rows</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;J&#39;</span> <span class="k">else</span> <span class="s1">&#39;kWh&#39;</span>
+        <span class="n">data_type</span><span class="p">,</span> <span class="n">units</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_type_from_unit</span><span class="p">(</span><span class="n">units</span><span class="p">)</span>
+        <span class="n">meta_datas</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">header_rows</span><span class="p">:</span>
+            <span class="n">obj_type</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;Surface&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">output_name</span> <span class="k">else</span> <span class="s1">&#39;Surface&#39;</span>
+            <span class="n">meta_datas</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">obj_type</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]})</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">run_period</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>  <span class="c1"># multiple run periods</span>
+            <span class="k">for</span> <span class="n">runper</span> <span class="ow">in</span> <span class="n">run_period</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">m_data</span> <span class="ow">in</span> <span class="n">meta_datas</span><span class="p">:</span>
+                    <span class="n">headers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Header</span><span class="p">(</span><span class="n">data_type</span><span class="p">,</span> <span class="n">units</span><span class="p">,</span> <span class="n">runper</span><span class="p">,</span> <span class="n">m_data</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># just one run period</span>
+            <span class="k">for</span> <span class="n">m_data</span> <span class="ow">in</span> <span class="n">meta_datas</span><span class="p">:</span>
+                <span class="n">headers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Header</span><span class="p">(</span><span class="n">data_type</span><span class="p">,</span> <span class="n">units</span><span class="p">,</span> <span class="n">run_period</span><span class="p">,</span> <span class="n">m_data</span><span class="p">))</span>
+
+        <span class="c1"># format the data such that we have one list for each of the header rows</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">run_period</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>  <span class="c1"># multiple run periods</span>
+            <span class="n">chunks</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">runper</span><span class="p">)</span> <span class="k">for</span> <span class="n">runper</span> <span class="ow">in</span> <span class="n">run_period</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kWh&#39;</span><span class="p">:</span>
+                <span class="n">all_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partition_and_convert_timeseries_chunks</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">chunks</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">all_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partition_timeseries_chunks</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">chunks</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># just one run period</span>
+            <span class="n">n_lists</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">header_rows</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kWh&#39;</span><span class="p">:</span>
+                <span class="n">all_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partition_and_convert_timeseries</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n_lists</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">all_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partition_timeseries</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n_lists</span><span class="p">)</span>
+
+        <span class="c1"># create the final data collections</span>
+        <span class="n">data_colls</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">report_frequency</span> <span class="o">==</span> <span class="s1">&#39;Hourly&#39;</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">report_frequency</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">head</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="n">all_values</span><span class="p">):</span>
+                <span class="n">data_colls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">HourlyContinuousCollection</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">report_frequency</span> <span class="o">==</span> <span class="s1">&#39;Daily&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">head</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="n">all_values</span><span class="p">):</span>
+                <span class="n">data_colls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">DailyCollection</span><span class="p">(</span>
+                    <span class="n">head</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">head</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">doys_int</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">report_frequency</span> <span class="o">==</span> <span class="s1">&#39;Monthly&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">head</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="n">all_values</span><span class="p">):</span>
+                <span class="n">data_colls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">MonthlyCollection</span><span class="p">(</span>
+                    <span class="n">head</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">head</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">months_int</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># Annual data; just return the values as they are</span>
+            <span class="k">return</span> <span class="n">all_values</span>
+        <span class="c1"># ensure all imported data gets marked as valid; this increases speed elsewhere</span>
+        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_colls</span><span class="p">:</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">return</span> <span class="n">data_colls</span></div>
+
+<div class="viewcode-block" id="SQLiteResult.data_collections_by_output_name_run_period"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.SQLiteResult.data_collections_by_output_name_run_period">[docs]</a>    <span class="k">def</span> <span class="nf">data_collections_by_output_name_run_period</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_name</span><span class="p">,</span> <span class="n">run_period_index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an array of Ladybug DataCollections for an output and a run period index.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_name: The name of an EnergyPlus output to be retrieved from</span>
+<span class="sd">                the SQLite result file as a string.</span>
+<span class="sd">            run_period_index: An integer taken from the run_period_indices property</span>
+<span class="sd">                of this object, which will be used to select out data collections</span>
+<span class="sd">                for just one run period in the SQL file.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            An array of data collections of the requested output type. This will</span>
+<span class="sd">            be an empty list if no output of the requested name was found in the</span>
+<span class="sd">            file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract all indices in the ReportDataDictionary with the output_name</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">cols</span> <span class="o">=</span> <span class="s1">&#39;ReportDataDictionaryIndex, IndexGroup, KeyValue, Name, Units&#39;</span>
+            <span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;SELECT </span><span class="si">{}</span><span class="s1"> FROM ReportDataDictionary WHERE Name=?&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="p">(</span><span class="n">output_name</span><span class="p">,))</span>
+            <span class="n">header_rows</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+            <span class="c1"># if nothing was found, return an empty list</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">header_rows</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+                <span class="k">return</span> <span class="p">[]</span>
+
+            <span class="c1"># extract all data of the relevant type from ReportData</span>
+            <span class="n">rel_indices</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">header_rows</span><span class="p">)</span>
+            <span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;SELECT ReportData.Value, ReportData.TimeIndex &#39;</span> \
+                <span class="s1">&#39;FROM ReportData &#39;</span> \
+                <span class="s1">&#39;INNER JOIN Time ON ReportData.TimeIndex=Time.TimeIndex &#39;</span> \
+                <span class="s1">&#39;WHERE ReportData.ReportDataDictionaryIndex IN </span><span class="si">{}</span><span class="s1"> AND &#39;</span> \
+                <span class="s1">&#39;Time.EnvironmentPeriodIndex=?&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rel_indices</span><span class="p">)</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="p">(</span><span class="n">run_period_index</span><span class="p">,))</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+        <span class="c1"># get the analysis period and the reporting frequency from the time table</span>
+        <span class="n">st_time</span><span class="p">,</span> <span class="n">end_time</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">run_period</span><span class="p">,</span> <span class="n">report_frequency</span><span class="p">,</span> <span class="n">mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_run_period</span><span class="p">(</span><span class="n">st_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">)</span>
+
+        <span class="c1"># create the header objects to be used for the resulting data collections</span>
+        <span class="n">units</span> <span class="o">=</span> <span class="n">header_rows</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">header_rows</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;J&#39;</span> <span class="k">else</span> <span class="s1">&#39;kWh&#39;</span>
+        <span class="n">data_type</span><span class="p">,</span> <span class="n">units</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_type_from_unit</span><span class="p">(</span><span class="n">units</span><span class="p">)</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">header_rows</span><span class="p">:</span>
+            <span class="n">obj_type</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;Surface&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">output_name</span> <span class="k">else</span> <span class="s1">&#39;Surface&#39;</span>
+            <span class="n">m_data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">obj_type</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]}</span>
+            <span class="n">headers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Header</span><span class="p">(</span><span class="n">data_type</span><span class="p">,</span> <span class="n">units</span><span class="p">,</span> <span class="n">run_period</span><span class="p">,</span> <span class="n">m_data</span><span class="p">))</span>
+
+        <span class="c1"># format the data such that we have one list for each of the header rows</span>
+        <span class="n">all_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partition_and_convert_timeseries</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">header_rows</span><span class="p">))</span> <span class="k">if</span> \
+            <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kWh&#39;</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partition_timeseries</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">header_rows</span><span class="p">))</span>
+
+        <span class="c1"># create the final data collections</span>
+        <span class="n">data_colls</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">report_frequency</span> <span class="o">==</span> <span class="s1">&#39;Hourly&#39;</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">report_frequency</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">head</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="n">all_values</span><span class="p">):</span>
+                <span class="n">data_colls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">HourlyContinuousCollection</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">report_frequency</span> <span class="o">==</span> <span class="s1">&#39;Daily&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">head</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="n">all_values</span><span class="p">):</span>
+                <span class="n">data_colls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">DailyCollection</span><span class="p">(</span>
+                    <span class="n">head</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">head</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">doys_int</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">report_frequency</span> <span class="o">==</span> <span class="s1">&#39;Monthly&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">head</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="n">all_values</span><span class="p">):</span>
+                <span class="n">data_colls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">MonthlyCollection</span><span class="p">(</span>
+                    <span class="n">head</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">head</span><span class="o">.</span><span class="n">analysis_period</span><span class="o">.</span><span class="n">months_int</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># Annual data; just return the values as they are</span>
+            <span class="k">return</span> <span class="n">all_values</span>
+        <span class="c1"># ensure all imported data gets marked as valid; this increases speed elsewhere</span>
+        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_colls</span><span class="p">:</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">_validated_a_period</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="n">data_colls</span></div>
+
+<div class="viewcode-block" id="SQLiteResult.tabular_data_by_name"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.SQLiteResult.tabular_data_by_name">[docs]</a>    <span class="k">def</span> <span class="nf">tabular_data_by_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">j_to_kwh</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get all the data within a table of a Summary Report using the table name.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            table_name: Text string for the name of a table within a summary</span>
+<span class="sd">                report. (eg. &#39;General&#39;).</span>
+<span class="sd">            j_to_kwh: Boolean to note if any data in MJ or GJ should be</span>
+<span class="sd">                converted to kWh upon import of the table. This will also mean</span>
+<span class="sd">                that any area-normalized values will also be converted to kWh/m2.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            An ordered dictionary representing a matrix (list of lists), where</span>
+<span class="sd">            the keys of the dictionary represent the row names and each value</span>
+<span class="sd">            is a row of the table. The output should mirror how the table appears</span>
+<span class="sd">            in the HTML output.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract the data from the General table in AllSummary</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">j_to_kwh</span><span class="p">:</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT RowName, Value, Units FROM TabularDataWithStrings &#39;</span>
+                          <span class="s1">&#39;WHERE TableName=?&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">table_name</span><span class="p">,))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT RowName, Value FROM TabularDataWithStrings &#39;</span>
+                          <span class="s1">&#39;WHERE TableName=?&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">table_name</span><span class="p">,))</span>
+            <span class="n">table_data</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+        <span class="c1"># convert all of the extracted data into a tabular format</span>
+        <span class="n">table_dict</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">j_to_kwh</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">table_data</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">val</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="k">if</span> <span class="s1">&#39;GJ&#39;</span> <span class="ow">in</span> <span class="n">item</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+                        <span class="n">val</span> <span class="o">=</span> <span class="n">val</span> <span class="o">/</span> <span class="mf">0.0036</span>
+                    <span class="k">elif</span> <span class="s1">&#39;MJ&#39;</span> <span class="ow">in</span> <span class="n">item</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+                        <span class="n">val</span> <span class="o">=</span> <span class="n">val</span> <span class="o">/</span> <span class="mf">3.6</span>
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>  <span class="c1"># not a number</span>
+                    <span class="n">val</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">table_dict</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                    <span class="n">table_dict</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">table_data</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">val</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>  <span class="c1"># not a number</span>
+                    <span class="n">val</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">table_dict</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                    <span class="n">table_dict</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">table_dict</span></div>
+
+<div class="viewcode-block" id="SQLiteResult.tabular_column_names"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.SQLiteResult.tabular_column_names">[docs]</a>    <span class="k">def</span> <span class="nf">tabular_column_names</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">table_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the names of the columns for a table of a Summary Report.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            table_name: Text string for the name of a table within a summary</span>
+<span class="sd">                report. (eg. &#39;General&#39;).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of the column names of the table</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract the data from the General table in AllSummary</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT ColumnName FROM TabularDataWithStrings &#39;</span>
+                      <span class="s1">&#39;WHERE TableName=?&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">table_name</span><span class="p">,))</span>
+            <span class="n">table_col_names</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">OrderedDict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">([</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">table_col_names</span><span class="p">]))</span></div>
+
+    <span class="k">def</span> <span class="nf">_extract_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract a Location object from the SQLite file.&quot;&quot;&quot;</span>
+        <span class="c1"># extract all of the data from the General table in AllSummary</span>
+        <span class="n">table_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tabular_data_by_name</span><span class="p">(</span><span class="s1">&#39;General&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="n">general</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">table_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">general</span> <span class="o">==</span> <span class="p">[]:</span>
+            <span class="k">return</span>
+
+        <span class="c1"># convert the extracted data into a Location object</span>
+        <span class="n">split_id</span> <span class="o">=</span> <span class="n">general</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">split_id</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">source</span> <span class="o">=</span> <span class="n">split_id</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">station_id</span> <span class="o">=</span> <span class="n">split_id</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_location</span> <span class="o">=</span> <span class="n">Location</span><span class="p">(</span>
+            <span class="n">city</span><span class="o">=</span><span class="n">city</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">,</span> <span class="n">station_id</span><span class="o">=</span><span class="n">station_id</span><span class="p">,</span>
+            <span class="n">latitude</span><span class="o">=</span><span class="n">general</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">longitude</span><span class="o">=</span><span class="n">general</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+            <span class="n">time_zone</span><span class="o">=</span><span class="n">general</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">elevation</span><span class="o">=</span><span class="n">general</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_extract_full_run_periods</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract all of the RunPeriod objects from the SQLite file.&quot;&quot;&quot;</span>
+        <span class="c1"># extract all of the data from the General table in AllSummary</span>
+        <span class="n">table_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tabular_data_by_name</span><span class="p">(</span><span class="s1">&#39;Environment&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="n">sim_env</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">table_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">sim_env</span> <span class="o">==</span> <span class="p">[]:</span>
+            <span class="k">return</span>
+
+        <span class="c1"># convert the extracted data into a AnalysisPeriod objects</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_run_periods</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_names</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">sim_env</span><span class="p">:</span>
+            <span class="n">st_date</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span> <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)]</span>
+            <span class="n">end_date</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span> <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)]</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">st_date</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>  <span class="c1"># it&#39;s a true run period</span>
+                <span class="n">lp_yr</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">st_date</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">False</span>
+                <span class="n">aper</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="p">(</span><span class="n">st_date</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">st_date</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="n">end_date</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                                      <span class="n">end_date</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">23</span><span class="p">,</span> <span class="n">is_leap_year</span><span class="o">=</span><span class="n">lp_yr</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># it&#39;s a design day period</span>
+                <span class="n">aper</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="p">(</span><span class="n">st_date</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">st_date</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span>
+                                      <span class="n">end_date</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end_date</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">23</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_run_periods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">aper</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_extract_full_run_period_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract all RunPeriod indices from the Time table of the SQLite file.&quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract all of the data from the Time table</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT EnvironmentPeriodIndex FROM Time &#39;</span>
+                      <span class="s1">&#39;GROUP BY EnvironmentPeriodIndex&#39;</span><span class="p">)</span>
+            <span class="n">e_periods</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_run_period_indices</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">ind</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="n">e_periods</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_extract_available_outputs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract the list of all available outputs from the SQLite file.&quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract all indices in the ReportDataDictionary</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT Name, IndexGroup, Units, ReportingFrequency &#39;</span>
+                      <span class="s1">&#39;FROM ReportDataDictionary&#39;</span><span class="p">)</span>
+            <span class="n">outputs</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="n">unique_outputs</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">outputs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">outp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">outp</span> <span class="ow">in</span> <span class="n">unique_outputs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs_info</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">outp</span> <span class="ow">in</span> <span class="n">unique_outputs</span><span class="p">:</span>
+            <span class="n">outp_dict</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">outp_dict</span><span class="p">[</span><span class="s1">&#39;output_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">outp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">outp_dict</span><span class="p">[</span><span class="s1">&#39;object_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">outp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">outp_dict</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">outp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">if</span> <span class="n">outp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;J&#39;</span> <span class="k">else</span> <span class="s1">&#39;kWh&#39;</span>
+            <span class="n">outp_dict</span><span class="p">[</span><span class="s1">&#39;data_type&#39;</span><span class="p">],</span> <span class="n">outp_dict</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">_data_type_from_unit</span><span class="p">(</span><span class="n">outp_dict</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_available_outputs_info</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">outp_dict</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reporting_frequency</span> <span class="o">=</span> <span class="n">outp</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">_extract_timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract an integer for the timestep of the data.</span>
+
+<span class="sd">        This is done by checking the first entry within the Time table.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract the start and end times from the Time table</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT Interval FROM Time&#39;</span><span class="p">)</span>
+            <span class="n">min_per_step</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="mi">60</span> <span class="o">/</span> <span class="n">min_per_step</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_extract_zone_sizes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">load_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get all of the ZoneSize objects of a certain load type.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            load_type: Text for the type of load to retrive.</span>
+<span class="sd">                This must be either &#39;Cooling&#39; or &#39;Heating&#39;.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract the data from the ZoneSizes table</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM ZoneSizes WHERE LoadType=?&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">load_type</span><span class="p">,))</span>
+            <span class="n">table_data</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">ZoneSize</span><span class="p">(</span><span class="n">table_row</span><span class="p">)</span> <span class="k">for</span> <span class="n">table_row</span> <span class="ow">in</span> <span class="n">table_data</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">_extract_component_sizes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">component_type</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get all of the ComponentSize objects of a certain type in the model.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            component_type: Text for the type of component to be retrieved.</span>
+<span class="sd">                (eg. &#39;ZoneHVAC:IdealLoadsAirSystem&#39;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract the data from the ZoneSizes table</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">component_type</span><span class="p">:</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM ComponentSizes WHERE CompType=?&#39;</span><span class="p">,</span>
+                          <span class="p">(</span><span class="n">component_type</span><span class="p">,))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM ComponentSizes&#39;</span><span class="p">)</span>
+            <span class="n">table_data</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="c1"># group the rows by component name</span>
+        <span class="n">table_dict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">prop</span> <span class="ow">in</span> <span class="n">table_data</span><span class="p">:</span>
+            <span class="n">comp_name</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">table_dict</span><span class="p">[</span><span class="n">comp_name</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prop</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                <span class="n">table_dict</span><span class="p">[</span><span class="n">comp_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">prop</span><span class="p">]</span>
+        <span class="c1"># create the ComponentSize objects</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">ComponentSize</span><span class="p">(</span><span class="n">table_rows</span><span class="p">)</span> <span class="k">for</span> <span class="n">table_rows</span> <span class="ow">in</span> <span class="n">table_dict</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+
+    <span class="k">def</span> <span class="nf">_extract_run_period</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">st_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract the run period object and frequency from the SQLite file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            st_time: Index for the start time of the data.</span>
+<span class="sd">            end_time: Index for the end time of the data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with run_period, reporting_frequency, and a boolean for whether</span>
+<span class="sd">            the data was for a design day.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract the start and end times from the Time table</span>
+            <span class="n">query_str</span> <span class="o">=</span> <span class="s1">&#39;SELECT Year, Month, Day, Interval, IntervalType, &#39;</span> \
+                <span class="s1">&#39;EnvironmentPeriodIndex FROM Time WHERE TimeIndex=?&#39;</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query_str</span><span class="p">,</span> <span class="p">(</span><span class="n">st_time</span><span class="p">,))</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query_str</span><span class="p">,</span> <span class="p">(</span><span class="n">end_time</span><span class="p">,))</span>
+            <span class="n">end</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+        <span class="c1"># check whether the data was for a design day</span>
+        <span class="n">multiple_period</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">start</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">!=</span> <span class="n">end</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="k">else</span> <span class="kc">False</span>
+
+        <span class="c1"># set the reporting frequency by the interval type</span>
+        <span class="n">interval_typ</span> <span class="o">=</span> <span class="n">start</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">interval_typ</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">min_per_step</span> <span class="o">=</span> <span class="n">start</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+            <span class="n">aper_timestep</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">60</span> <span class="o">/</span> <span class="n">min_per_step</span><span class="p">)</span>
+            <span class="n">reporting_frequency</span> <span class="o">=</span> <span class="n">aper_timestep</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">reporting_frequency</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interval_codes</span><span class="p">[</span><span class="n">interval_typ</span><span class="p">]</span>
+            <span class="n">aper_timestep</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">min_per_step</span> <span class="o">=</span> <span class="mi">60</span>
+
+        <span class="c1"># convert the extracted data into an AnalysisPeriod object</span>
+        <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">reporting_frequency</span> <span class="o">==</span> <span class="s1">&#39;Monthly&#39;</span><span class="p">:</span>
+            <span class="n">st_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">st_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">end_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">end</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">end_date</span> <span class="o">=</span> <span class="n">end_date</span><span class="o">.</span><span class="n">add_minute</span><span class="p">(</span><span class="mi">1440</span> <span class="o">-</span> <span class="n">min_per_step</span><span class="p">)</span>
+        <span class="n">run_period</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="p">(</span>
+            <span class="n">st_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">st_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">st_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">end_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">end_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+            <span class="n">end_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">aper_timestep</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">run_period</span><span class="p">,</span> <span class="n">reporting_frequency</span><span class="p">,</span> <span class="n">multiple_period</span>
+
+    <span class="k">def</span> <span class="nf">_extract_all_run_period</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reporting_frequency</span><span class="p">,</span> <span class="n">timestep</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Extract all run period objects the Time table in the SQLite file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            reporting_frequency: Text for the reporting frequency of the data.</span>
+<span class="sd">            timestep: Integer to note the timestep of the analsis periods. By the</span>
+<span class="sd">                time this function is running, this value should have been gotten</span>
+<span class="sd">                from the _extract_run_period method</span>
+<span class="sd">            leap_year: Boolean to note whether the analysis periods are for a</span>
+<span class="sd">                leap year.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of AnalysisPeriods for all periods that could be obtained from</span>
+<span class="sd">            the Time table.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># extract all of the data from the Time table</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT Month, Day, EnvironmentPeriodIndex FROM Time&#39;</span><span class="p">)</span>
+            <span class="n">timeseries</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># ensure connection is always closed</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="n">min_per_step</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">60</span> <span class="o">/</span> <span class="n">timestep</span><span class="p">)</span>
+
+        <span class="c1"># extract information about the first run period</span>
+        <span class="k">if</span> <span class="n">reporting_frequency</span> <span class="o">==</span> <span class="s1">&#39;Monthly&#39;</span><span class="p">:</span>
+            <span class="n">st_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">timeseries</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">st_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">timeseries</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">timeseries</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">env_period</span> <span class="o">=</span> <span class="n">timeseries</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="c1"># build up the analysis period objects</span>
+        <span class="n">run_periods</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">time_row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">timeseries</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">time_row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">!=</span> <span class="n">env_period</span><span class="p">:</span>  <span class="c1"># start of a new run period</span>
+                <span class="c1"># create the run period</span>
+                <span class="n">end</span> <span class="o">=</span> <span class="n">timeseries</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+                <span class="n">end_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">end_date</span> <span class="o">=</span> <span class="n">end_date</span><span class="o">.</span><span class="n">add_minute</span><span class="p">(</span><span class="mi">1440</span> <span class="o">-</span> <span class="n">min_per_step</span><span class="p">)</span>
+                <span class="n">run_period</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="p">(</span>
+                    <span class="n">st_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">st_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">st_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">end_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span>
+                    <span class="n">end_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">end_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">timestep</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span>
+                <span class="n">run_periods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">run_period</span><span class="p">)</span>
+                <span class="c1"># reset the tracking variables</span>
+                <span class="k">if</span> <span class="n">reporting_frequency</span> <span class="o">==</span> <span class="s1">&#39;Monthly&#39;</span><span class="p">:</span>
+                    <span class="n">st_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">time_row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">st_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">time_row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">time_row</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">env_period</span> <span class="o">=</span> <span class="n">time_row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="c1"># create the last run period object and return all run periods</span>
+        <span class="n">end_date</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">time_row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">time_row</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">end_date</span> <span class="o">=</span> <span class="n">end_date</span><span class="o">.</span><span class="n">add_minute</span><span class="p">(</span><span class="mi">1440</span> <span class="o">-</span> <span class="n">min_per_step</span><span class="p">)</span>
+        <span class="n">run_period</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="p">(</span>
+            <span class="n">st_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">st_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">st_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">end_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span>
+            <span class="n">end_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">end_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">timestep</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span>
+        <span class="n">run_periods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">run_period</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">run_periods</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_data_type_from_unit</span><span class="p">(</span><span class="n">from_unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Ladybug DataType object instance from a unit abbreviation.</span>
+
+<span class="sd">        The returned object will be the base type (eg. Temperature, Energy, etc.).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">ladybug</span><span class="o">.</span><span class="n">datatype</span><span class="o">.</span><span class="n">UNITS</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">from_unit</span> <span class="ow">in</span> <span class="n">ladybug</span><span class="o">.</span><span class="n">datatype</span><span class="o">.</span><span class="n">UNITS</span><span class="p">[</span><span class="n">key</span><span class="p">]:</span>
+                <span class="k">return</span> <span class="n">ladybug</span><span class="o">.</span><span class="n">datatype</span><span class="o">.</span><span class="n">TYPESDICT</span><span class="p">[</span><span class="n">key</span><span class="p">](),</span> <span class="n">from_unit</span>
+        <span class="c1"># no units are specified; the values are dimensionless or fractional</span>
+        <span class="k">return</span> <span class="n">ladybug</span><span class="o">.</span><span class="n">datatype</span><span class="o">.</span><span class="n">TYPESDICT</span><span class="p">[</span><span class="s1">&#39;Fraction&#39;</span><span class="p">](),</span> <span class="s1">&#39;fraction&#39;</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_partition_timeseries</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n_lists</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Partition timeseries data that has been retrived from the SQL file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            n_lists: An integer for the number of lists to partiton the data into.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">all_values</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">n_lists</span><span class="p">):</span>
+            <span class="n">all_values</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">n_lists</span><span class="p">]])</span>
+        <span class="k">return</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">all_values</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_partition_and_convert_timeseries</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n_lists</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Partition data that retrived from the SQL file + convert it to kWh.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            n_lists: An integer for the number of lists to partiton the data into.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">all_values</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">n_lists</span><span class="p">):</span>
+            <span class="n">all_values</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mf">3600000.</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">n_lists</span><span class="p">]])</span>
+        <span class="k">return</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">all_values</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_partition_timeseries_chunks</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">chunks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Partition timeseries data based on a chunking pattern.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            chunks: A list of integers for the chunking pattern (eg. [24, 24, 8760]).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">n_lists</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">chunks</span><span class="p">))</span>
+        <span class="n">zero_cum_chunks</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">SQLiteResult</span><span class="o">.</span><span class="n">_accumulate</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span>
+        <span class="n">all_values</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunks</span><span class="p">):</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="n">zero_cum_chunks</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">n_lists</span>
+            <span class="n">day_vals</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">chunk</span> <span class="o">*</span> <span class="n">n_lists</span><span class="p">,</span> <span class="n">n_lists</span><span class="p">):</span>
+                <span class="n">day_vals</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="n">start</span> <span class="o">+</span> <span class="n">i</span><span class="p">:</span><span class="n">start</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="n">n_lists</span><span class="p">]])</span>
+            <span class="n">all_values</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">day_vals</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">all_values</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_partition_and_convert_timeseries_chunks</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">chunks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Partition timeseries data based on a chunking pattern + convert it to kWh.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            chunks: A list of integers for the chunking pattern (eg. [24, 24, 8760]).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">n_lists</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">chunks</span><span class="p">))</span>
+        <span class="n">zero_cum_chunks</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">SQLiteResult</span><span class="o">.</span><span class="n">_accumulate</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span>
+        <span class="n">all_values</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunks</span><span class="p">):</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="n">zero_cum_chunks</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">n_lists</span>
+            <span class="n">day_vals</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">chunk</span> <span class="o">*</span> <span class="n">n_lists</span><span class="p">,</span> <span class="n">n_lists</span><span class="p">):</span>
+                <span class="n">day_vals</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mf">3600000.</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span>
+                                 <span class="n">data</span><span class="p">[</span><span class="n">start</span> <span class="o">+</span> <span class="n">i</span><span class="p">:</span><span class="n">start</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="n">n_lists</span><span class="p">]])</span>
+            <span class="n">all_values</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">day_vals</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">all_values</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_accumulate</span><span class="p">(</span><span class="n">chunks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Cumulatively sum a list of numbers.&quot;&quot;&quot;</span>
+        <span class="n">cum_chunks</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">chunks</span><span class="p">:</span>
+            <span class="n">total</span> <span class="o">+=</span> <span class="n">x</span>
+            <span class="n">cum_chunks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cum_chunks</span>
+
+<div class="viewcode-block" id="SQLiteResult.ToString"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.SQLiteResult.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;Energy SQLiteResult: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ZoneSize"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ZoneSize">[docs]</a><span class="k">class</span> <span class="nc">ZoneSize</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Object for holding the sizing results of an individual zone.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        sql_table_row: A list that represents a row of the SQLite ZoneSizes table.</span>
+<span class="sd">            This row contains all of the sizing information for a single conditioned</span>
+<span class="sd">            zone (either heating or cooling).</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * zone_name</span>
+<span class="sd">        * load_type</span>
+<span class="sd">        * calculated_design_load</span>
+<span class="sd">        * final_design_load</span>
+<span class="sd">        * calculated_design_flow</span>
+<span class="sd">        * final_design_flow</span>
+<span class="sd">        * design_day_name</span>
+<span class="sd">        * peak_date_time</span>
+<span class="sd">        * peak_temperature</span>
+<span class="sd">        * peak_humidity_ratio</span>
+<span class="sd">        * peak_outdoor_air_flow</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_zone_name&#39;</span><span class="p">,</span> <span class="s1">&#39;_load_type&#39;</span><span class="p">,</span> <span class="s1">&#39;_calculated_design_load&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_final_design_load&#39;</span><span class="p">,</span> <span class="s1">&#39;_calculated_design_flow&#39;</span><span class="p">,</span> <span class="s1">&#39;_final_design_flow&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_design_day_name&#39;</span><span class="p">,</span> <span class="s1">&#39;_peak_date_time&#39;</span><span class="p">,</span> <span class="s1">&#39;_peak_temperature&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_peak_humidity_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;_peak_outdoor_air_flow&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sql_table_row</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize ZoneSize&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_zone_name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sql_table_row</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_load_type</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sql_table_row</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_calculated_design_load</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_final_design_load</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_calculated_design_flow</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_final_design_flow</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_design_day_name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sql_table_row</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_peak_temperature</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_peak_humidity_ratio</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_peak_outdoor_air_flow</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">date_str</span> <span class="o">=</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;24:00:00&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="k">else</span> \
+                <span class="n">sql_table_row</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;24:00:00&#39;</span><span class="p">,</span> <span class="s1">&#39;00:00:00&#39;</span><span class="p">)</span>
+            <span class="n">pyd</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">date_str</span><span class="p">,</span> <span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_peak_date_time</span> <span class="o">=</span> <span class="n">DateTime</span><span class="p">(</span><span class="n">pyd</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">pyd</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">pyd</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">pyd</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>  <span class="c1"># likely a zone with no cooling; a peak value of 0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_peak_date_time</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="ZoneSize.from_dict"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ZoneSize.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a ZoneSize from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: ZoneSize dictionary following the format below.</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;type&quot;: &quot;ZoneSize&quot;,</span>
+<span class="sd">            &quot;zone_name&quot;: str,</span>
+<span class="sd">            &quot;load_type&quot;: str,</span>
+<span class="sd">            &quot;calculated_design_load&quot;: float,</span>
+<span class="sd">            &quot;final_design_load&quot;: float,</span>
+<span class="sd">            &quot;calculated_design_flow&quot;: float,</span>
+<span class="sd">            &quot;final_design_flow&quot;: float,</span>
+<span class="sd">            &quot;design_day_name&quot;: str,</span>
+<span class="sd">            &quot;peak_date_time&quot;: str,</span>
+<span class="sd">            &quot;peak_temperature&quot;: float,</span>
+<span class="sd">            &quot;peak_humidity_ratio&quot;: float,</span>
+<span class="sd">            &quot;peak_outdoor_air_flow&quot;: float</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ZoneSize&#39;</span><span class="p">,</span> \
+            <span class="s1">&#39;Expected ZoneSize. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;zone_name&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;load_type&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;calculated_design_load&#39;</span><span class="p">],</span>
+             <span class="n">data</span><span class="p">[</span><span class="s1">&#39;final_design_load&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;calculated_design_flow&#39;</span><span class="p">],</span>
+             <span class="n">data</span><span class="p">[</span><span class="s1">&#39;final_design_flow&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;design_day_name&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;peak_date_time&#39;</span><span class="p">],</span>
+             <span class="n">data</span><span class="p">[</span><span class="s1">&#39;peak_temperature&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;peak_humidity_ratio&#39;</span><span class="p">],</span>
+             <span class="n">data</span><span class="p">[</span><span class="s1">&#39;peak_outdoor_air_flow&#39;</span><span class="p">]])</span></div>
+
+<div class="viewcode-block" id="ZoneSize.to_dict"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ZoneSize.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get ZoneSize as a dictionary.&quot;&quot;&quot;</span>
+        <span class="n">pk_time</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">peak_date_time</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">peak_date_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;ZoneSize&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;zone_name&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">zone_name</span><span class="p">,</span>
+            <span class="s1">&#39;load_type&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">load_type</span><span class="p">,</span>
+            <span class="s1">&#39;calculated_design_load&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculated_design_load</span><span class="p">,</span>
+            <span class="s1">&#39;final_design_load&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">final_design_load</span><span class="p">,</span>
+            <span class="s1">&#39;calculated_design_flow&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculated_design_flow</span><span class="p">,</span>
+            <span class="s1">&#39;final_design_flow&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">final_design_flow</span><span class="p">,</span>
+            <span class="s1">&#39;design_day_name&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">design_day_name</span><span class="p">,</span>
+            <span class="s1">&#39;peak_date_time&#39;</span><span class="p">:</span> <span class="n">pk_time</span><span class="p">,</span>
+            <span class="s1">&#39;peak_temperature&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">peak_temperature</span><span class="p">,</span>
+            <span class="s1">&#39;peak_humidity_ratio&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">peak_humidity_ratio</span><span class="p">,</span>
+            <span class="s1">&#39;peak_outdoor_air_flow&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">peak_outdoor_air_flow</span>
+        <span class="p">}</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">zone_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the name of the zone to which this sizing information corresponds.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_zone_name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">load_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a text string that is either &quot;Cooling&quot; or &quot;Heating&quot;.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">calculated_design_load</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the peak load of the Zone computed by the EnergyPlus sizing calculation.</span>
+
+<span class="sd">        Values are always in Watts.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calculated_design_load</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">final_design_load</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the peak load of the Zone that is ultimately used to size the equipment.</span>
+
+<span class="sd">        Values are always in Watts. This accounts for the heating_factor and</span>
+<span class="sd">        cooling_factor of the specified in the SizingParameter of the</span>
+<span class="sd">        SimulationParameter object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_final_design_load</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">calculated_design_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the peak flow of the Zone computed by the EnergyPlus sizing calculation.</span>
+
+<span class="sd">        Values are always in m3/s.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calculated_design_flow</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">final_design_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the peak flor of the Zone that is ultimately used to size the equipment.</span>
+
+<span class="sd">        Values are always in m3/s. This accounts for the heating_factor and</span>
+<span class="sd">        cooling_factor of the specified in the SizingParameter of the</span>
+<span class="sd">        SimulationParameter object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_final_design_flow</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">design_day_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the name of the design day on which the peak load occurred.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_design_day_name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">peak_date_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a DateTime for the time at which the peak occurred.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_peak_date_time</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">peak_temperature</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the outdoor air temperature at the time of the peak load (C).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_peak_temperature</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">peak_humidity_ratio</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the outdoor humidity ratio at the time of the peak load (fractional).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_peak_humidity_ratio</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">peak_outdoor_air_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the outdoor air flow into the zone at the time of the peak load (m3/s).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_peak_outdoor_air_flow</span>
+
+<div class="viewcode-block" id="ZoneSize.ToString"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ZoneSize.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> Zone Size: </span><span class="si">{}</span><span class="s1"> W&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">load_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculated_design_load</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ComponentSize"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ComponentSize">[docs]</a><span class="k">class</span> <span class="nc">ComponentSize</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Object for holding the sizing results of an individual HVAC components.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        sql_table_rows: A list of list where each sub-list represents a row of</span>
+<span class="sd">            the SQLite ComponentSizes table. These rows are all expected to have</span>
+<span class="sd">            the same component name.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * component_type</span>
+<span class="sd">        * component_name</span>
+<span class="sd">        * descriptions</span>
+<span class="sd">        * properties</span>
+<span class="sd">        * values</span>
+<span class="sd">        * units</span>
+<span class="sd">        * properties_dict</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_component_type&#39;</span><span class="p">,</span> <span class="s1">&#39;_component_name&#39;</span><span class="p">,</span> <span class="s1">&#39;_properties&#39;</span><span class="p">,</span> <span class="s1">&#39;_values&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_units&#39;</span><span class="p">,</span> <span class="s1">&#39;_properties_dict&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sql_table_rows</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize ComponentSize&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_type</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sql_table_rows</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sql_table_rows</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_properties</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">table_row</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="k">for</span> <span class="n">table_row</span> <span class="ow">in</span> <span class="n">sql_table_rows</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_values</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">table_row</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="k">for</span> <span class="n">table_row</span> <span class="ow">in</span> <span class="n">sql_table_rows</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_units</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">table_row</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="k">for</span> <span class="n">table_row</span> <span class="ow">in</span> <span class="n">sql_table_rows</span><span class="p">)</span>
+
+<div class="viewcode-block" id="ComponentSize.from_dict"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ComponentSize.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a ComponentSize from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: ComponentSize dictionary following the format below.</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;type&quot;: &quot;ComponentSize&quot;,</span>
+<span class="sd">            &quot;component_type&quot;: str,</span>
+<span class="sd">            &quot;component_name&quot;: str,</span>
+<span class="sd">            &quot;properties&quot;: [],</span>
+<span class="sd">            &quot;values&quot;: [],</span>
+<span class="sd">            &quot;units&quot;: []</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ComponentSize&#39;</span><span class="p">,</span> \
+            <span class="s1">&#39;Expected ComponentSize. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+        <span class="n">mtx</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">prop</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">unit</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;values&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]):</span>
+            <span class="n">row</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;component_type&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;component_name&#39;</span><span class="p">],</span> <span class="n">prop</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">unit</span><span class="p">]</span>
+            <span class="n">mtx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">mtx</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ComponentSize.to_dict"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ComponentSize.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get ComponentSize as a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;ComponentSize&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;component_type&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">component_type</span><span class="p">,</span>
+            <span class="s1">&#39;component_name&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">component_name</span><span class="p">,</span>
+            <span class="s1">&#39;properties&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">,</span>
+            <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+            <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">units</span>
+        <span class="p">}</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get text for the type of component that this object represents.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get text for the name of component that this object represents.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">descriptions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple with text descriptions for all component properties.</span>
+
+<span class="sd">        Descriptions are formatted as component_name-property-unit. They are</span>
+<span class="sd">        aligned with the values on this object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1"> [</span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_component_name</span><span class="p">,</span> <span class="n">prop</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span>
+                     <span class="k">for</span> <span class="n">prop</span><span class="p">,</span> <span class="n">unit</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_properties</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_units</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">properties</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple with text for all component properties.</span>
+
+<span class="sd">        They are aligned with the values on this object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_properties</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple with numbers for all component property values.</span>
+
+<span class="sd">        They are aligned with the properties on this object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">units</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a tuple with text for all component property units.</span>
+
+<span class="sd">        They are aligned with the values on this object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_units</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">properties_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a dictionary with the properties as keys and values as the values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span><span class="n">prop</span><span class="p">:</span> <span class="n">val</span> <span class="k">for</span> <span class="n">prop</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_properties</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">)}</span>
+
+<div class="viewcode-block" id="ComponentSize.ToString"><a class="viewcode-back" href="../../ladybug.sql.html#ladybug.sql.ComponentSize.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;Component Size: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">component_name</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

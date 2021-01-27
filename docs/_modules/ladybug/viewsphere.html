@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.viewsphere &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.viewsphere</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Class to subdivide the sphere and hemisphere for view-based and radiation studies.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.pointvector</span> <span class="kn">import</span> <span class="n">Point3D</span><span class="p">,</span> <span class="n">Vector3D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.mesh</span> <span class="kn">import</span> <span class="n">Mesh3D</span>
+
+
+<div class="viewcode-block" id="ViewSphere"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere">[docs]</a><span class="k">class</span> <span class="nc">ViewSphere</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Class for subdividing the sphere and hemisphere for view-based studies.</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] Tregenza, Peter. (1987). Subdivision of the sky hemisphere for luminance</span>
+<span class="sd">        measurements. Lighting Research &amp; Technology - LIGHTING RES TECHNOL.</span>
+<span class="sd">        19. 13-14. 10.1177/096032718701900103.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * tregenza_dome_vectors</span>
+<span class="sd">        * tregenza_sphere_vectors</span>
+<span class="sd">        * tregenza_dome_mesh</span>
+<span class="sd">        * tregenza_dome_mesh_high_res</span>
+<span class="sd">        * tregenza_sphere_mesh</span>
+<span class="sd">        * tregenza_solid_angles</span>
+<span class="sd">        * reinhart_dome_vectors</span>
+<span class="sd">        * reinhart_sphere_vectors</span>
+<span class="sd">        * reinhart_dome_mesh</span>
+<span class="sd">        * reinhart_sphere_mesh</span>
+<span class="sd">        * reinhart_solid_angles</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># number of patches in each row of the most-used sky domes</span>
+    <span class="n">TREGENZA_PATCHES_PER_ROW</span> <span class="o">=</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">REINHART_PATCHES_PER_ROW</span> <span class="o">=</span> <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+    <span class="c1"># number of steradians for the patches of each row of the most-used sky domes</span>
+    <span class="n">TREGENZA_COEFFICIENTS</span> <span class="o">=</span> \
+        <span class="p">(</span><span class="mf">0.0435449227</span><span class="p">,</span> <span class="mf">0.0416418006</span><span class="p">,</span> <span class="mf">0.0473984151</span><span class="p">,</span> <span class="mf">0.0406730411</span><span class="p">,</span> <span class="mf">0.0428934136</span><span class="p">,</span>
+         <span class="mf">0.0445221864</span><span class="p">,</span> <span class="mf">0.0455168385</span><span class="p">,</span> <span class="mf">0.0344199465</span><span class="p">)</span>
+    <span class="n">REINHART_COEFFICIENTS</span> <span class="o">=</span> \
+        <span class="p">(</span><span class="mf">0.0113221971</span><span class="p">,</span> <span class="mf">0.0111894547</span><span class="p">,</span> <span class="mf">0.0109255262</span><span class="p">,</span> <span class="mf">0.0105335058</span><span class="p">,</span> <span class="mf">0.0125224872</span><span class="p">,</span>
+         <span class="mf">0.0117312774</span><span class="p">,</span> <span class="mf">0.0108025291</span><span class="p">,</span> <span class="mf">0.00974713106</span><span class="p">,</span> <span class="mf">0.011436609</span><span class="p">,</span> <span class="mf">0.00974295956</span><span class="p">,</span>
+         <span class="mf">0.0119026242</span><span class="p">,</span> <span class="mf">0.00905126163</span><span class="p">,</span> <span class="mf">0.0121875626</span><span class="p">,</span> <span class="mf">0.00612971396</span><span class="p">,</span> <span class="mf">0.00921483254</span><span class="p">)</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_tregenza_dome_vectors&#39;</span><span class="p">,</span> <span class="s1">&#39;_tregenza_sphere_vectors&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_tregenza_dome_mesh&#39;</span><span class="p">,</span> <span class="s1">&#39;_tregenza_dome_mesh_high_res&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_tregenza_sphere_mesh&#39;</span><span class="p">,</span> <span class="s1">&#39;_tregenza_solid_angles&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_reinhart_dome_vectors&#39;</span><span class="p">,</span> <span class="s1">&#39;_reinhart_sphere_vectors&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_reinhart_dome_mesh&#39;</span><span class="p">,</span> <span class="s1">&#39;_reinhart_sphere_mesh&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_reinhart_solid_angles&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create the ViewSphere.&quot;&quot;&quot;</span>
+        <span class="c1"># everything starts with None and properties are generated as requested</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_vectors</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_vectors</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh_high_res</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_mesh</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_solid_angles</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_vectors</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_vectors</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_mesh</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_mesh</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_solid_angles</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tregenza_dome_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An array of 145 vectors representing the Tregenza sky dome.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_vectors</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_vectors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dome_patches</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_vectors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tregenza_sphere_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An array of 290 vectors representing a sphere of Tregenza vectors.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_vectors</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_vectors</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">sphere_patches</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_vectors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tregenza_dome_mesh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An Mesh3D representing the Tregenza sky dome.</span>
+
+<span class="sd">        There is one quad face per patch except for the last circular patch, which</span>
+<span class="sd">        is represented by 6 triangles.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_vectors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dome_patches</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tregenza_dome_mesh_high_res</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An high-resolution Mesh3D representing the Tregenza sky dome.</span>
+
+<span class="sd">        Each patch is represented by a 3x3 set of quad faces except for the last</span>
+<span class="sd">        circular patch, which is represented by 18 triangles.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh_high_res</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh_high_res</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dome_patches</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_dome_mesh_high_res</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tregenza_sphere_mesh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An Mesh3D representing a Tregenza sphere.</span>
+
+<span class="sd">        There is one quad face per patch except for the two circular patches, which</span>
+<span class="sd">        are each represented by 6 triangles.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_mesh</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_vectors</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">sphere_patches</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tregenza_sphere_mesh</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tregenza_solid_angles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of solid angles that align with the tregenza_dome_vectors.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_solid_angles</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">angles</span> <span class="o">=</span> <span class="n">view_sphere</span><span class="o">.</span><span class="n">TREGENZA_COEFFICIENTS</span>
+            <span class="n">patch_rows</span> <span class="o">=</span> <span class="n">view_sphere</span><span class="o">.</span><span class="n">TREGENZA_PATCHES_PER_ROW</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,)</span>
+            <span class="n">patch_angles</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">ang</span><span class="p">,</span> <span class="n">p_count</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="n">patch_rows</span><span class="p">):</span>
+                <span class="n">patch_angles</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">ang</span><span class="p">]</span> <span class="o">*</span> <span class="n">p_count</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_solid_angles</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">patch_angles</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_solid_angles</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reinhart_dome_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An array of 577 vectors representing the Reinhart sky dome.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_vectors</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_vectors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dome_patches</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_vectors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reinhart_sphere_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An array of 1154 vectors representing a sphere of Reinhart vectors.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_vectors</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_vectors</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">sphere_patches</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_vectors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reinhart_dome_mesh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An Mesh3D representing the Reinhart sky dome.</span>
+
+<span class="sd">        There is one quad face per patch except for the last circular patch, which</span>
+<span class="sd">        is represented by 12 triangles.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_mesh</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_vectors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dome_patches</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_dome_mesh</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reinhart_sphere_mesh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;An Mesh3D representing a Reinhart sphere.</span>
+
+<span class="sd">        There is one quad face per patch except for the two circular patches, which</span>
+<span class="sd">        are each represented by 12 triangles.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_mesh</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_mesh</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_vectors</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">sphere_patches</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_sphere_mesh</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reinhart_solid_angles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of solid angles that align with the reinhart_dome_vectors.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_solid_angles</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">angles</span> <span class="o">=</span> <span class="n">view_sphere</span><span class="o">.</span><span class="n">REINHART_COEFFICIENTS</span>
+            <span class="n">patch_rows</span> <span class="o">=</span> <span class="n">view_sphere</span><span class="o">.</span><span class="n">REINHART_PATCHES_PER_ROW</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,)</span>
+            <span class="n">patch_angles</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">ang</span><span class="p">,</span> <span class="n">p_count</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="n">patch_rows</span><span class="p">):</span>
+                <span class="n">patch_angles</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">ang</span><span class="p">]</span> <span class="o">*</span> <span class="n">p_count</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_solid_angles</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">patch_angles</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reinhart_solid_angles</span>
+
+<div class="viewcode-block" id="ViewSphere.horizontal_radial_vectors"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere.horizontal_radial_vectors">[docs]</a>    <span class="k">def</span> <span class="nf">horizontal_radial_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vector_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get perfectly horizontal Vector3Ds radiating outward in a circle.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vector_count: An integer for the number of vectors to generate in the</span>
+<span class="sd">                horizontal plane. This can align with any of the dome or sphere</span>
+<span class="sd">                patches by setting this to 30 * division_count.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of ladybug_geometry horizontal Vector3D radiating outward in</span>
+<span class="sd">            a circle. All vectors are unit vectors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">base_vec</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">horiz_angle</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">vector_count</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">base_vec</span><span class="o">.</span><span class="n">rotate_xy</span><span class="p">(</span><span class="n">horiz_angle</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">vector_count</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="ViewSphere.horizontal_radial_patches"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere.horizontal_radial_patches">[docs]</a>    <span class="k">def</span> <span class="nf">horizontal_radial_patches</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">offset_angle</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">division_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                                  <span class="n">subdivide_in_place</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Vector3Ds within a certain angle offset from the horizontal plane.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            offset_angle: A number between 0 and 90 for the angle offset from the</span>
+<span class="sd">                horizontal plane at which vectors will be included. Vectors both</span>
+<span class="sd">                above and below this angle will be included (Default: 30 for the</span>
+<span class="sd">                rough vertical limit of human peripheral vision).</span>
+<span class="sd">            division_count: A positive integer for the number of times that the</span>
+<span class="sd">                original Tregenza patches are subdivided. 1 indicates that the</span>
+<span class="sd">                original Tregenza patches will be used, 2 indicates</span>
+<span class="sd">                the Reinhart patches will be used, and so on. (Default: 1).</span>
+<span class="sd">            subdivide_in_place: A boolean to note whether patches should be</span>
+<span class="sd">                subdivided according to the extension of Tregenza&#39;s original</span>
+<span class="sd">                logic through the Reinhart method (False) or they should be</span>
+<span class="sd">                simply divided into 4 in place (True).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with two elements</span>
+
+<span class="sd">            -   patch_mesh: A ladybug_geometry Mesh3D that represents the patches at</span>
+<span class="sd">                the input division_count. There is one quad face per patch.</span>
+
+<span class="sd">            -   patch_vectors: A list of ladybug_geometry Vector3D with one vector</span>
+<span class="sd">                per patch. These will align with the faces of the patch_mesh.</span>
+<span class="sd">                All vectors are unit vectors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># figure out how many rows and patches should be in the output</span>
+        <span class="n">patch_row_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_patch_row_count_array</span><span class="p">(</span><span class="n">division_count</span><span class="p">)</span>
+        <span class="n">patch_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_patch_count_in_radial_offset</span><span class="p">(</span>
+            <span class="n">offset_angle</span><span class="p">,</span> <span class="n">division_count</span><span class="p">,</span> <span class="n">patch_row_count</span><span class="p">,</span> <span class="n">subdivide_in_place</span><span class="p">)</span>
+
+        <span class="c1"># get the dome and vectors and remove faces up tot the patch count</span>
+        <span class="n">m_all</span><span class="p">,</span> <span class="n">v_all</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dome_patches</span><span class="p">(</span><span class="n">division_count</span><span class="p">,</span> <span class="n">subdivide_in_place</span><span class="p">)</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">]</span> <span class="o">*</span> <span class="n">patch_count</span> <span class="o">+</span> \
+            <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">)</span> <span class="o">-</span> <span class="n">patch_count</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">division_count</span><span class="p">)</span>
+        <span class="n">m_top</span><span class="p">,</span> <span class="n">v_pattern</span> <span class="o">=</span> <span class="n">m_all</span><span class="o">.</span><span class="n">remove_faces</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+        <span class="n">v_top</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">vec</span> <span class="k">for</span> <span class="n">vec</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">v_all</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span> <span class="k">if</span> <span class="n">val</span><span class="p">)</span>
+
+        <span class="c1"># reverse the vectors and negate all the z values of the sky patch mesh</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generate_bottom_from_top</span><span class="p">(</span><span class="n">m_top</span><span class="p">,</span> <span class="n">v_top</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ViewSphere.horizontal_radial_patch_weights"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere.horizontal_radial_patch_weights">[docs]</a>    <span class="k">def</span> <span class="nf">horizontal_radial_patch_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">offset_angle</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">division_count</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of numbers corresponding to the area weight of each radial patch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            offset_angle: A number between 0 and 90 for the angle offset from the</span>
+<span class="sd">                horizontal plane at which vectors will be included. Vectors both</span>
+<span class="sd">                above and below this angle will be included (Default: 30).</span>
+<span class="sd">            division_count: A positive integer for the number of times that the</span>
+<span class="sd">                original Tregenza patches are subdivided. (Default: 1).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of numbers with a value for each patch that corresponds to the</span>
+<span class="sd">            area of that patch. The aveage value of all the patches is equal to 1.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># get the areas of the patches and the number of patches to include in the offset</span>
+        <span class="n">patch_areas</span><span class="p">,</span> <span class="n">patch_row_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dome_patch_areas</span><span class="p">(</span><span class="n">division_count</span><span class="p">)</span>
+        <span class="n">patch_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_patch_count_in_radial_offset</span><span class="p">(</span>
+            <span class="n">offset_angle</span><span class="p">,</span> <span class="n">division_count</span><span class="p">,</span> <span class="n">patch_row_count</span><span class="p">)</span>
+        <span class="c1"># normalize the patch areas so that they average to 1</span>
+        <span class="n">relevant_patches</span> <span class="o">=</span> <span class="n">patch_areas</span><span class="p">[:</span><span class="n">patch_count</span><span class="p">]</span>
+        <span class="n">avg_patch_area</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">relevant_patches</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">relevant_patches</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">p_area</span> <span class="o">/</span> <span class="n">avg_patch_area</span> <span class="k">for</span> <span class="n">p_area</span> <span class="ow">in</span> <span class="n">relevant_patches</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span></div>
+
+<div class="viewcode-block" id="ViewSphere.dome_patches"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere.dome_patches">[docs]</a>    <span class="k">def</span> <span class="nf">dome_patches</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">division_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">subdivide_in_place</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Vector3Ds and a correcponding Mesh3D for a dome.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            division_count: A positive integer for the number of times that the</span>
+<span class="sd">                original Tregenza patches are subdivided. 1 indicates that the</span>
+<span class="sd">                original Tregenza patches will be used, 2 indicates</span>
+<span class="sd">                the Reinhart patches will be used, and so on. (Default: 1).</span>
+<span class="sd">            subdivide_in_place: A boolean to note whether patches should be</span>
+<span class="sd">                subdivided according to the extension of Tregenza&#39;s original</span>
+<span class="sd">                logic through the Reinhart method (False) or they should be</span>
+<span class="sd">                simply divided into 4 in place (True). The latter is useful</span>
+<span class="sd">                for making higher resolution Mesh visualizations of an</span>
+<span class="sd">                inherently low-resolution dome.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with two elements</span>
+
+<span class="sd">            -   patch_mesh: A ladybug_geometry Mesh3D that represents the dome at</span>
+<span class="sd">                the input division_count. There is one quad face per patch except</span>
+<span class="sd">                for the last circular patch, which is represented by a number of</span>
+<span class="sd">                triangles equal to division_count * 6.</span>
+
+<span class="sd">            -   patch_vectors: A list of ladybug_geometry Vector3D with one vector</span>
+<span class="sd">                per patch. These will align with the faces of the patch_mesh up</span>
+<span class="sd">                until the last circular patch, which will have a single vector</span>
+<span class="sd">                for the several triangular faces. All vectors are unit vectors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># compute constants to be used in the generation of patch points</span>
+        <span class="n">patch_row_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_patch_row_count_array</span><span class="p">(</span><span class="n">division_count</span><span class="p">)</span>
+        <span class="n">base_vec</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">rotate_axis</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">vertical_angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">)</span> <span class="o">+</span> <span class="n">division_count</span><span class="p">)</span> <span class="k">if</span> \
+            <span class="n">subdivide_in_place</span> <span class="k">else</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="c1"># loop through the patch values and generate points for each vertex</span>
+        <span class="n">vertices</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">faces</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">pt_i</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>  <span class="c1"># track the number of vertices in the mesh</span>
+        <span class="k">for</span> <span class="n">row_i</span><span class="p">,</span> <span class="n">row_count</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">):</span>
+            <span class="n">pt_i</span> <span class="o">+=</span> <span class="mi">2</span>  <span class="c1"># advance the number of vertices by two</span>
+            <span class="n">horiz_angle</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">row_count</span>  <span class="c1"># horizontal angle of each patch</span>
+            <span class="n">vec01</span> <span class="o">=</span> <span class="n">base_vec</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">rotate_axis</span><span class="p">,</span> <span class="n">vertical_angle</span> <span class="o">*</span> <span class="n">row_i</span><span class="p">)</span>
+            <span class="n">vec02</span> <span class="o">=</span> <span class="n">vec01</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">rotate_axis</span><span class="p">,</span> <span class="n">vertical_angle</span><span class="p">)</span>
+            <span class="n">correction_angle</span> <span class="o">=</span> <span class="o">-</span><span class="n">horiz_angle</span> <span class="o">/</span> <span class="mi">2</span>
+            <span class="k">if</span> <span class="n">subdivide_in_place</span><span class="p">:</span>
+                <span class="n">correction_angle</span> <span class="o">*</span> <span class="n">division_count</span>
+            <span class="n">vec1</span> <span class="o">=</span> <span class="n">vec01</span><span class="o">.</span><span class="n">rotate_xy</span><span class="p">(</span><span class="n">correction_angle</span><span class="p">)</span>
+            <span class="n">vec2</span> <span class="o">=</span> <span class="n">vec02</span><span class="o">.</span><span class="n">rotate_xy</span><span class="p">(</span><span class="n">correction_angle</span><span class="p">)</span>
+            <span class="n">vertices</span><span class="o">.</span><span class="n">extend</span><span class="p">((</span><span class="n">Point3D</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">z</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span><span class="p">)))</span>
+            <span class="k">for</span> <span class="n">patch_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row_count</span><span class="p">):</span>  <span class="c1"># generate the row of patches</span>
+                <span class="n">vec3</span> <span class="o">=</span> <span class="n">vec1</span><span class="o">.</span><span class="n">rotate_xy</span><span class="p">(</span><span class="n">horiz_angle</span><span class="p">)</span>
+                <span class="n">vec4</span> <span class="o">=</span> <span class="n">vec2</span><span class="o">.</span><span class="n">rotate_xy</span><span class="p">(</span><span class="n">horiz_angle</span><span class="p">)</span>
+                <span class="n">vertices</span><span class="o">.</span><span class="n">extend</span><span class="p">((</span><span class="n">Point3D</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">z</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="p">(</span><span class="n">vec3</span><span class="p">,</span> <span class="n">vec4</span><span class="p">)))</span>
+                <span class="n">faces</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">pt_i</span><span class="p">,</span> <span class="n">pt_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">pt_i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">,</span> <span class="n">pt_i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">))</span>
+                <span class="n">pt_i</span> <span class="o">+=</span> <span class="mi">2</span>  <span class="c1"># advance the number of vertices by two</span>
+                <span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span> <span class="o">=</span> <span class="n">vec3</span><span class="p">,</span> <span class="n">vec4</span>  <span class="c1"># reset vec1 and vec2 for the next patch</span>
+
+        <span class="c1"># add triangular faces to represent the last circular patch</span>
+        <span class="n">end_vert_i</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">vertices</span><span class="p">)</span>
+        <span class="n">start_vert_i</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">vertices</span><span class="p">)</span> <span class="o">-</span> <span class="n">patch_row_count</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">vertices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Point3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">tr_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">patch_row_count</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+            <span class="n">faces</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">start_vert_i</span> <span class="o">+</span> <span class="n">tr_i</span><span class="p">,</span> <span class="n">end_vert_i</span><span class="p">,</span> <span class="n">start_vert_i</span> <span class="o">+</span> <span class="n">tr_i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">))</span>
+
+        <span class="c1"># create the Mesh3D object and derive the patch vectors from the mesh</span>
+        <span class="n">patch_mesh</span> <span class="o">=</span> <span class="n">Mesh3D</span><span class="p">(</span><span class="n">vertices</span><span class="p">,</span> <span class="n">faces</span><span class="p">)</span>
+        <span class="n">patch_vectors</span> <span class="o">=</span> <span class="n">patch_mesh</span><span class="o">.</span><span class="n">face_normals</span><span class="p">[:</span><span class="o">-</span><span class="n">patch_row_count</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">+</span> \
+            <span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),)</span>
+        <span class="k">return</span> <span class="n">patch_mesh</span><span class="p">,</span> <span class="n">patch_vectors</span></div>
+
+<div class="viewcode-block" id="ViewSphere.dome_patch_weights"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere.dome_patch_weights">[docs]</a>    <span class="k">def</span> <span class="nf">dome_patch_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">division_count</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of numbers corresponding to the area weight of each dome patch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            division_count: A positive integer for the number of times that the</span>
+<span class="sd">                original Tregenza patches are subdivided. (Default: 1).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of numbers with a value for each patch that corresponds to the</span>
+<span class="sd">            area of that patch. The aveage value of all the patches is equal to 1.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># get the areas of the patches</span>
+        <span class="n">patch_areas</span><span class="p">,</span> <span class="n">patch_row_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dome_patch_areas</span><span class="p">(</span><span class="n">division_count</span><span class="p">)</span>
+        <span class="c1"># normalize the patch areas so that they average to 1</span>
+        <span class="n">avg_patch_area</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">patch_areas</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">p_area</span> <span class="o">/</span> <span class="n">avg_patch_area</span> <span class="k">for</span> <span class="n">p_area</span> <span class="ow">in</span> <span class="n">patch_areas</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="ViewSphere.sphere_patches"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere.sphere_patches">[docs]</a>    <span class="k">def</span> <span class="nf">sphere_patches</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">division_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">subdivide_in_place</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Vector3Ds and a correcponding Mesh3D for a sphere.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            division_count: A positive integer for the number of times that the</span>
+<span class="sd">                original Tregenza patches are subdivided. 1 indicates that the</span>
+<span class="sd">                original Tregenza patches will be used, 2 indicates</span>
+<span class="sd">                the Reinhart patches will be used, and so on. (Default: 1).</span>
+<span class="sd">            subdivide_in_place: A boolean to note whether patches should be</span>
+<span class="sd">                subdivided according to the extension of Tregenza&#39;s original</span>
+<span class="sd">                logic through the Reinhart method (False) or they should be</span>
+<span class="sd">                simply divided into 4 in place (True). The latter is useful</span>
+<span class="sd">                for making higher resolution Mesh visualizations of an</span>
+<span class="sd">                inherently low-resolution dome.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A tuple with two elements</span>
+
+<span class="sd">            -   patch_mesh: A ladybug_geometry Mesh3D that represents the sphere at</span>
+<span class="sd">                the input division_count. There is one quad face per patch except</span>
+<span class="sd">                for the last circular patch of each hemisphere, which is represented</span>
+<span class="sd">                by a number of triangles equal to division_count * 6.</span>
+
+<span class="sd">            -   patch_vectors: A list of ladybug_geometry Vector3D with one vector</span>
+<span class="sd">                per patch. These will align with the faces of the patch_mesh except</span>
+<span class="sd">                for the two circular patches, which will have a single vector</span>
+<span class="sd">                for the several triangular faces. All vectors are unit vectors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># generate patches for the hemisphere</span>
+        <span class="n">m_top</span><span class="p">,</span> <span class="n">v_top</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dome_patches</span><span class="p">(</span><span class="n">division_count</span><span class="p">,</span> <span class="n">subdivide_in_place</span><span class="p">)</span>
+        <span class="c1"># reverse the vectors and negate all the z values of the sky patch mesh</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generate_bottom_from_top</span><span class="p">(</span><span class="n">m_top</span><span class="p">,</span> <span class="n">v_top</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ViewSphere.sphere_patch_weights"><a class="viewcode-back" href="../../ladybug.viewsphere.html#ladybug.viewsphere.ViewSphere.sphere_patch_weights">[docs]</a>    <span class="k">def</span> <span class="nf">sphere_patch_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">division_count</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of numbers corresponding to the area weight of each sphere patch.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            division_count: A positive integer for the number of times that the</span>
+<span class="sd">                original Tregenza patches are subdivided. (Default: 1).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A list of numbers with a value for each patch that corresponds to the</span>
+<span class="sd">            area of that patch. The aveage value of all the patches is equal to 1.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># get the areas of the patches</span>
+        <span class="n">patch_areas</span><span class="p">,</span> <span class="n">patch_row_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dome_patch_areas</span><span class="p">(</span><span class="n">division_count</span><span class="p">)</span>
+        <span class="c1"># normalize the patch areas so that they average to 1</span>
+        <span class="n">avg_patch_area</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">patch_areas</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">p_area</span> <span class="o">/</span> <span class="n">avg_patch_area</span> <span class="k">for</span> <span class="n">p_area</span> <span class="ow">in</span> <span class="n">patch_areas</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span></div>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_dome_patch_areas</span><span class="p">(</span><span class="n">division_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the area of each patch in a dome from a division_count.&quot;&quot;&quot;</span>
+        <span class="c1"># get the areas of each spherical cap moving up the unit dome</span>
+        <span class="n">patch_row_count</span> <span class="o">=</span> <span class="n">ViewSphere</span><span class="o">.</span><span class="n">_patch_row_count_array</span><span class="p">(</span><span class="n">division_count</span><span class="p">)</span>
+        <span class="n">vert_angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">)</span> <span class="o">+</span> <span class="n">division_count</span><span class="p">)</span>
+        <span class="n">cap_areas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">]</span>
+        <span class="n">current_angle</span> <span class="o">=</span> <span class="n">vert_angle</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">)):</span>
+            <span class="n">cap_areas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">current_angle</span><span class="p">)))</span>
+            <span class="n">current_angle</span> <span class="o">+=</span> <span class="n">vert_angle</span>
+
+        <span class="c1"># get the area of each row and subdivide it by the patch count of the row</span>
+        <span class="n">row_areas</span> <span class="o">=</span> <span class="p">[</span><span class="n">cap_areas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">cap_areas</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cap_areas</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="n">patch_areas</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row_count</span><span class="p">,</span> <span class="n">row_area</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">,</span> <span class="n">row_areas</span><span class="p">):</span>
+            <span class="n">patch_areas</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">row_area</span> <span class="o">/</span> <span class="n">row_count</span><span class="p">]</span> <span class="o">*</span> <span class="n">row_count</span><span class="p">)</span>
+        <span class="n">patch_areas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cap_areas</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">patch_areas</span><span class="p">,</span> <span class="n">patch_row_count</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_patch_count_in_radial_offset</span><span class="p">(</span><span class="n">offset_angle</span><span class="p">,</span> <span class="n">division_count</span><span class="p">,</span> <span class="n">patch_row_count</span><span class="p">,</span>
+                                      <span class="n">subdivide_in_place</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the number of patches within a radial offset from the horizontal plane.&quot;&quot;&quot;</span>
+        <span class="n">rad_angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">offset_angle</span><span class="p">)</span>
+        <span class="n">patch_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">)</span>
+        <span class="n">vert_angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">patch_rows</span> <span class="o">+</span> <span class="n">division_count</span><span class="p">)</span> <span class="k">if</span> <span class="n">subdivide_in_place</span> \
+            <span class="k">else</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">patch_rows</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">row_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">rad_angle</span> <span class="o">/</span> <span class="n">vert_angle</span><span class="p">))</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">patch_row_count</span><span class="p">[:</span><span class="n">row_count</span><span class="p">])</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_patch_row_count_array</span><span class="p">(</span><span class="n">division_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get an array of the number of patches in each dome row from division_count.&quot;&quot;&quot;</span>
+        <span class="n">patch_row_count</span> <span class="o">=</span> <span class="n">ViewSphere</span><span class="o">.</span><span class="n">TREGENZA_PATCHES_PER_ROW</span>
+        <span class="k">if</span> <span class="n">division_count</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">patch_row_count</span> <span class="o">=</span> <span class="p">[</span><span class="n">init_ct</span> <span class="o">*</span> <span class="n">division_count</span> <span class="k">for</span> <span class="n">init_ct</span> <span class="ow">in</span> <span class="n">patch_row_count</span>
+                               <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">division_count</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="n">patch_row_count</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_generate_bottom_from_top</span><span class="p">(</span><span class="n">m_top</span><span class="p">,</span> <span class="n">v_top</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a joined mesh and vectors for top and bottom from only top vectors.&quot;&quot;&quot;</span>
+        <span class="c1"># reverse the vectors and negate all the z values of the sky patch mesh</span>
+        <span class="n">verts</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Point3D</span><span class="p">(</span><span class="n">pt</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="o">-</span><span class="n">pt</span><span class="o">.</span><span class="n">z</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="n">m_top</span><span class="o">.</span><span class="n">vertices</span><span class="p">)</span>
+        <span class="n">faces</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">face</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">m_top</span><span class="o">.</span><span class="n">faces</span><span class="p">)</span>
+        <span class="n">m_bottom</span> <span class="o">=</span> <span class="n">Mesh3D</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="n">faces</span><span class="p">)</span>
+        <span class="n">v_bottom</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="o">-</span><span class="n">v</span><span class="o">.</span><span class="n">z</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">v_top</span><span class="p">)</span>
+
+        <span class="c1"># join everything together</span>
+        <span class="n">patch_mesh</span> <span class="o">=</span> <span class="n">Mesh3D</span><span class="o">.</span><span class="n">join_meshes</span><span class="p">([</span><span class="n">m_top</span><span class="p">,</span> <span class="n">m_bottom</span><span class="p">])</span>
+        <span class="n">patch_vectors</span> <span class="o">=</span> <span class="n">v_top</span> <span class="o">+</span> <span class="n">v_bottom</span>
+        <span class="k">return</span> <span class="n">patch_mesh</span><span class="p">,</span> <span class="n">patch_vectors</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;ViewSphere representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;ViewSphere&#39;</span></div>
+
+
+<span class="c1"># make a single object that can be reused throughout the library</span>
+<span class="n">view_sphere</span> <span class="o">=</span> <span class="n">ViewSphere</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

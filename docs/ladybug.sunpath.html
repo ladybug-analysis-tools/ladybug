@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.sunpath module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.viewsphere module" href="ladybug.viewsphere.html" />
+    <link rel="prev" title="ladybug.stat module" href="ladybug.stat.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.stat.html" title="Previous Chapter: ladybug.stat module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.stat module</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.viewsphere.html" title="Next Chapter: ladybug.viewsphere module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.views... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.sunpath.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.sunpath">
+<span id="ladybug-sunpath-module"></span><h1>ladybug.sunpath module<a class="headerlink" href="#module-ladybug.sunpath" title="Permalink to this headline">¶</a></h1>
+<p>Module for calculating sun positions and visualizing the sun path.</p>
+<dl class="py class">
+<dt id="ladybug.sunpath.Sun">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.sunpath.</code><code class="sig-name descname">Sun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datetime</span></em>, <em class="sig-param"><span class="n">altitude</span></em>, <em class="sig-param"><span class="n">azimuth</span></em>, <em class="sig-param"><span class="n">is_solar_time</span></em>, <em class="sig-param"><span class="n">is_daylight_saving</span></em>, <em class="sig-param"><span class="n">north_angle</span></em>, <em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An object representing a single Sun.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datetime</strong> – A DateTime that represents the datetime for this sun_vector</p></li>
+<li><p><strong>altitude</strong> – Solar Altitude in degrees.</p></li>
+<li><p><strong>azimuth</strong> – Solar Azimuth in degrees.</p></li>
+<li><p><strong>is_solar_time</strong> – Boolean indicating if the datetime represents a solar time.</p></li>
+<li><p><strong>is_daylight_saving</strong> – A Boolean indicating if the datetime is calculated
+for a daylight saving period</p></li>
+<li><p><strong>north_angle</strong> – North angle of the sunpath in degrees. This is only used to
+adjust the sun_vector and does not affect the sun altitude or azimuth.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>datetime</p></li>
+<li><p>north_angle</p></li>
+<li><p>hoy</p></li>
+<li><p>altitude</p></li>
+<li><p>azimuth</p></li>
+<li><p>altitude_in_radians</p></li>
+<li><p>azimuth_in_radians</p></li>
+<li><p>is_solar_time</p></li>
+<li><p>is_daylight_saving</p></li>
+<li><p>data</p></li>
+<li><p>is_during_day</p></li>
+<li><p>sun_vector</p></li>
+<li><p>sun_vector_reversed</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sun.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sun.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.position_2d">
+<code class="sig-name descname">position_2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">projection</span><span class="o">=</span><span class="default_value">'Orthographic'</span></em>, <em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sun.position_2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sun.position_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for the position of this sun on a sunpath.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>projection</strong> – <p>Text for the name of the projection to use from the sky
+dome hemisphere to the 2D plane. (Default: ‘Orthographic’). Choose
+from the following:</p>
+<blockquote>
+<div><ul>
+<li><p>Orthographic</p></li>
+<li><p>Stereographic</p></li>
+</ul>
+</div></blockquote>
+</p></li>
+<li><p><strong>origin</strong> – A ladybug_geometry Point2D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A Point2D for the position of this sun on a sunpath.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.position_3d">
+<code class="sig-name descname">position_3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point3D(0.0, 0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sun.position_3d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sun.position_3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point3D for the position of this sun on a sunpath.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>origin</strong> – A ladybug_geometry Point3D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A Point3D for the position of this sun on a sunpath.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.sunpath.Sun.PI">
+<code class="sig-name descname">PI</code><em class="property"> = 3.141592653589793</em><a class="headerlink" href="#ladybug.sunpath.Sun.PI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.altitude">
+<em class="property">property </em><code class="sig-name descname">altitude</code><a class="headerlink" href="#ladybug.sunpath.Sun.altitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar altitude in degrees.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.altitude_in_radians">
+<em class="property">property </em><code class="sig-name descname">altitude_in_radians</code><a class="headerlink" href="#ladybug.sunpath.Sun.altitude_in_radians" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar altitude in radians.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.azimuth">
+<em class="property">property </em><code class="sig-name descname">azimuth</code><a class="headerlink" href="#ladybug.sunpath.Sun.azimuth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar azimuth in degrees.</p>
+<p>This value is the same regardless of what the north_angle is.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.azimuth_from_y_axis">
+<em class="property">property </em><code class="sig-name descname">azimuth_from_y_axis</code><a class="headerlink" href="#ladybug.sunpath.Sun.azimuth_from_y_axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar azimuth in degrees with respect to the Y-axis of the scene.</p>
+<p>This value will change as the north_angle is changed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.azimuth_in_radians">
+<em class="property">property </em><code class="sig-name descname">azimuth_in_radians</code><a class="headerlink" href="#ladybug.sunpath.Sun.azimuth_in_radians" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar azimuth in radians.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#ladybug.sunpath.Sun.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set metadata to this sun position.</p>
+<p>No particular data type is enforced for this metadata but a dictionary
+is recommended so that it can be extended for multiple properties.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.datetime">
+<em class="property">property </em><code class="sig-name descname">datetime</code><a class="headerlink" href="#ladybug.sunpath.Sun.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return datetime.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.hoy">
+<em class="property">property </em><code class="sig-name descname">hoy</code><a class="headerlink" href="#ladybug.sunpath.Sun.hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return Hour of the year.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.is_daylight_saving">
+<em class="property">property </em><code class="sig-name descname">is_daylight_saving</code><a class="headerlink" href="#ladybug.sunpath.Sun.is_daylight_saving" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a Boolean that indicates is datetime is solar time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.is_during_day">
+<em class="property">property </em><code class="sig-name descname">is_during_day</code><a class="headerlink" href="#ladybug.sunpath.Sun.is_during_day" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean to note if this sun position is during day.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.is_solar_time">
+<em class="property">property </em><code class="sig-name descname">is_solar_time</code><a class="headerlink" href="#ladybug.sunpath.Sun.is_solar_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a Boolean that indicates is datetime is solar time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.north_angle">
+<em class="property">property </em><code class="sig-name descname">north_angle</code><a class="headerlink" href="#ladybug.sunpath.Sun.north_angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return north angle for +YAxis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.sun_vector">
+<em class="property">property </em><code class="sig-name descname">sun_vector</code><a class="headerlink" href="#ladybug.sunpath.Sun.sun_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>A ladybug_geometry Vector3D representing the vector for this sun.</p>
+<p>Note that daytime sun vectors point downward (z will be negative).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sun.sun_vector_reversed">
+<em class="property">property </em><code class="sig-name descname">sun_vector_reversed</code><a class="headerlink" href="#ladybug.sunpath.Sun.sun_vector_reversed" title="Permalink to this definition">¶</a></dt>
+<dd><p>A ladybug_geomtry Vector3D representing the reversed vector for this sun.</p>
+<p>Daytime sun_vector_reversed point upward (z will be positive).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ladybug.sunpath.Sunpath">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.sunpath.</code><code class="sig-name descname">Sunpath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">latitude</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">longitude</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">time_zone</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">north_angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">daylight_saving_period</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Calculate sun positions and visualize the sun path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>latitude</strong> – A number between -90 and 90 for the latitude of the location
+in degrees. (Default: 0 for the equator)</p></li>
+<li><p><strong>longitude</strong> – A number between -180 and 180 for the longitude of the location
+in degrees (Default: 0 for the prime meridian)</p></li>
+<li><p><strong>time_zone</strong> – A number representing the time zone of the location for the
+sun path. Typically, this value is an integer, assuming that a
+standard time zone is used but this value can also be a decimal
+for the purposes of modeling location-specific solar time.
+The time zone should follow the epw convention and should be
+between -12 and +14, where 0 is at Greenwich, UK, positive values
+are to the East of Greenwich and negative values are to the West.
+If None, this value will be set to solar time using the Sunpath’s
+longitude. (Default: None).</p></li>
+<li><p><strong>north_angle</strong> – A number between -360 and 360 for the counterclockwise
+difference between the North and the positive Y-axis in degrees.
+90 is West and 270 is East (Default: 0).</p></li>
+<li><p><strong>daylight_saving_period</strong> – An analysis period for daylight saving time.
+If None, no daylight saving time will be used. (Default: None)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>latitude</p></li>
+<li><p>longitude</p></li>
+<li><p>time_zone</p></li>
+<li><p>north_angle</p></li>
+<li><p>daylight_saving_period</p></li>
+<li><p>is_leap_year</p></li>
+</ul>
+</dd>
+</dl>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ladybug.sunpath</span> <span class="k">as</span> <span class="nn">sunpath</span>
+<span class="c1"># initiate sunpath</span>
+<span class="n">sp</span> <span class="o">=</span> <span class="n">sunpath</span><span class="o">.</span><span class="n">Sunpath</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">calculate_sun</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span> <span class="c1"># calculate sun data for Jan 1 at noon</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sun</span><span class="o">.</span><span class="n">azimuth</span><span class="p">,</span> <span class="n">sun</span><span class="o">.</span><span class="n">altitude</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.analemma_suns">
+<code class="sig-name descname">analemma_suns</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">time</span></em>, <em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.analemma_suns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.analemma_suns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of Suns that represent an analemma for a single time of day.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time</strong> – A ladybug Time object for the specific time of day to make
+the analemma.</p></li>
+<li><p><strong>daytime_only</strong> – A boolean to note whether only daytime suns should
+be included in the resulting array. Note that this can
+result in a completely empty array. (Default: False)</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the output analemmas should
+be for solar hours instead of the hours of the sunpath time
+zone. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of suns representing an analemma for a specific time.
+Analemmas will each have 12 suns for the 12 months of the year
+if daytime_only is False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sun">
+<code class="sig-name descname">calculate_sun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">day</span></em>, <em class="sig-param"><span class="n">hour</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sun data for an hour of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – An integer between 1 and 12.</p></li>
+<li><p><strong>day</strong> – An integer between 1 and 31.</p></li>
+<li><p><strong>hour</strong> – A positive number between 0 and 23. This can be a decimal value
+to yield a solar position in between hours (eg. 12.5).</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the input hour is in solar
+time. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A sun object for the input month, day, hour.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sun_from_date_time">
+<code class="sig-name descname">calculate_sun_from_date_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datetime</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sun_from_date_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sun_from_date_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sun for a specific datetime.</p>
+<p>This code is originally written by Trygve Wastvedt (<a class="reference external" href="mailto:Trygve&#46;Wastvedt&#37;&#52;&#48;gmail&#46;com">Trygve<span>&#46;</span>Wastvedt<span>&#64;</span>gmail<span>&#46;</span>com</a>)
+based on (NOAA) and modified by Chris Mackey and Mostapha Roudsari.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datetime</strong> – Ladybug datetime.</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the input hour is in solar
+time. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A sun object for the input datetime.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sun_from_hoy">
+<code class="sig-name descname">calculate_sun_from_hoy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hoy</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sun_from_hoy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sun_from_hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sun data for an hour of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hoy</strong> – A number for the hour of the year. This can be a decimal value
+to yield a solar position in between hours (eg. 12.5).</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the input hoy is in solar
+time. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A sun object for the input hoy.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sun_from_moy">
+<code class="sig-name descname">calculate_sun_from_moy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">moy</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sun_from_moy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sun_from_moy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sun data for a minute of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>moy</strong> – An integer for the minute of the year.</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the input moy is in solar
+time. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A sun object for the input moy.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sunrise_sunset">
+<code class="sig-name descname">calculate_sunrise_sunset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">day</span></em>, <em class="sig-param"><span class="n">depression</span><span class="o">=</span><span class="default_value">0.5334</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sunrise_sunset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sunrise_sunset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate sunrise, noon and sunset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – Integer for the month in which sunrise and sunset are computed.</p></li>
+<li><p><strong>day</strong> – Integer for the day of the month in which sunrise and sunset
+are computed.</p></li>
+<li><p><strong>depression</strong> – An angle in degrees indicating the additional period
+before/after the edge of the sun has passed the horizon where
+the sun is still considered up. Setting this value to 0 will
+compute sunrise/sunset as the time when the edge of the sun begins
+to touch the horizon. Setting it to the angular diameter of the
+sun (0.5334) will compute sunrise/sunset as the time when the sun
+just finishes passing the horizon (actual sunset). Setting it
+to 0.833 will compute the apparent sunrise/sunset, accounting for
+atmospheric refraction. Setting this to 6 will compute sunrise/sunset
+as the beginning/end of civil twilight. Setting this to 12 will
+compute sunrise/sunset as the beginning/end of nautical twilight.
+Setting this to 18 will compute sunrise/sunset as the beginning/end
+of astronomical twilight. (Default: 0.5334).</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the output datetimes for sunrise,
+noon and sunset should be in solar time as opposed to the time zone
+of this Sunpath. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary. Keys are (“sunrise”, “noon”, “sunset”). Values are
+datetimes that correspond to these moments. Note that some values
+may be None if there is no sunrise or sunset on the specified day.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sunrise_sunset_from_datetime">
+<code class="sig-name descname">calculate_sunrise_sunset_from_datetime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datetime</span></em>, <em class="sig-param"><span class="n">depression</span><span class="o">=</span><span class="default_value">0.5334</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sunrise_sunset_from_datetime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sunrise_sunset_from_datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate sunrise, sunset and noon for a day of year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datetime</strong> – A ladybug DateTime object to indicate the month and day for
+which sunrise and sunset are computed.</p></li>
+<li><p><strong>depression</strong> – An angle in degrees indicating the additional period
+before/after the edge of the sun has passed the horizon where
+the sun is still considered up. Setting this value to 0 will
+compute sunrise/sunset as the time when the edge of the sun begins
+to touch the horizon. Setting it to the angular diameter of the
+sun (0.5334) will compute sunrise/sunset as the time when the sun
+just finishes passing the horizon (actual sunset). Setting it
+to 0.833 will compute the apparent sunrise/sunset, accounting for
+atmospheric refraction. Setting this to 6 will compute sunrise/sunset
+as the beginning/end of civil twilight. Setting this to 12 will
+compute sunrise/sunset as the beginning/end of nautical twilight.
+Setting this to 18 will compute sunrise/sunset as the beginning/end
+of astronomical twilight. (Default: 0.5334).</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the output datetimes for sunrise,
+noon and sunset should be in solar time as opposed to the time zone
+of this Sunpath. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary. Keys are (“sunrise”, “noon”, “sunset”). Values are
+datetimes that correspond to these moments. Note that some values
+may be None if there is no sunrise or sunset on the specified day.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.day_arc3d">
+<code class="sig-name descname">day_arc3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">day</span></em>, <em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point3D(0.0, 0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">depression</span><span class="o">=</span><span class="default_value">0.5334</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.day_arc3d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.day_arc3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a ladybug_geometry Arc3D for the path taken by the sun on a single day.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – Integer for the month in which sunrise and sunset are computed.</p></li>
+<li><p><strong>day</strong> – Integer for the day of the month in which sunrise and sunset
+are computed.</p></li>
+<li><p><strong>origin</strong> – A ladybug_geometry Point3D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+<li><p><strong>daytime_only</strong> – A boolean to note whether None should be returned if
+the sun never rises above the horizon on the the input day.
+For example, in the arctic circle in winter. (Default: True)</p></li>
+<li><p><strong>depression</strong> – An angle in degrees indicating the additional period
+before/after the edge of the sun has passed the horizon where
+the sun is still considered up. Setting this value to 0 will
+return an arc that ends when the edge of the sun begins to
+touch the horizon. Setting it to the angular diameter of the
+sun (0.5334) will return an arc that ends right at the horizon
+(actual sunset). Setting it to 0.833 will compute the apparent
+sunrise/sunset, accounting for atmospheric refraction. Setting to
+6 will return an arc that ends at the beginning/end of civil twilight.
+Setting to 12 will return an arc that ends at the beginning/end
+of nautical twilight. Setting to 18 will return an arc that
+ends at the beginning/end of astronomical twilight. (Default: 0.5334)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An Arc3D for the path of the sun taken over the course of a day. Will be
+None if daytime_only is True and the sun is completely below the horizon
+for the entire day.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.day_polyline2d">
+<code class="sig-name descname">day_polyline2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">day</span></em>, <em class="sig-param"><span class="n">projection</span><span class="o">=</span><span class="default_value">'Orthographic'</span></em>, <em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">depression</span><span class="o">=</span><span class="default_value">0.5334</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.day_polyline2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.day_polyline2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Polyline2D for the path taken by the sun on a single day.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – Integer for the month in which sunrise and sunset are computed.</p></li>
+<li><p><strong>day</strong> – Integer for the day of the month in which sunrise and sunset
+are computed.</p></li>
+<li><p><strong>projection</strong> – <p>Text for the name of the projection to use from the sky
+dome hemisphere to the 2D plane. (Default: ‘Orthographic’). Choose
+from the following:</p>
+<blockquote>
+<div><ul>
+<li><p>Orthographic</p></li>
+<li><p>Stereographic</p></li>
+</ul>
+</div></blockquote>
+</p></li>
+<li><p><strong>origin</strong> – A ladybug_geometry Point2D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+<li><p><strong>daytime_only</strong> – A boolean to note whether None should be returned if
+the sun never rises above the horizon on the the input day.
+For example, in the arctic circle in winter. (Default: True)</p></li>
+<li><p><strong>depression</strong> – An angle in degrees indicating the additional period
+before/after the edge of the sun has passed the horizon where
+the sun is still considered up. Setting this value to 0 will
+return an arc that ends when the edge of the sun begins to
+touch the horizon. Setting it to the angular diameter of the
+sun (0.5334) will return an arc that ends right at the horizon
+(actual sunset). Setting it to 0.833 will compute the apparent
+sunrise/sunset, accounting for atmospheric refraction. Setting to
+6 will return an arc that ends at the beginning/end of civil twilight.
+Setting to 12 will return an arc that ends at the beginning/end
+of nautical twilight. Setting to 18 will return an arc that
+ends at the beginning/end of astronomical twilight. (Default: 0.5334)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A Polyline2D for the path of the sun taken over the course of a day. Will be
+None if daytime_only is True and the sun is completely below the horizon
+for the entire day.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.from_location">
+<em class="property">classmethod </em><code class="sig-name descname">from_location</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">north_angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">daylight_saving_period</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.from_location"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.from_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a sun path from a ladybug.location.Location.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.hourly_analemma_polyline2d">
+<code class="sig-name descname">hourly_analemma_polyline2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">projection</span><span class="o">=</span><span class="default_value">'Orthographic'</span></em>, <em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.hourly_analemma_polyline2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.hourly_analemma_polyline2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of ladybug_geometry Polyline2D for hourly analemmas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>projection</strong> – <p>Text for the name of the projection to use from the sky
+dome hemisphere to the 2D plane. (Default: ‘Orthographic’). Choose
+from the following:</p>
+<blockquote>
+<div><ul>
+<li><p>Orthographic</p></li>
+<li><p>Stereographic</p></li>
+</ul>
+</div></blockquote>
+</p></li>
+<li><p><strong>origin</strong> – A ladybug_geometry Point2D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+<li><p><strong>daytime_only</strong> – A boolean to note whether only the daytime hours should
+be represented in the output Polyline2D. (Default: True)</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the output analemmas should
+be for solar hours instead of the hours of the sunpath time
+zone. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of ladybug_geometry Polyline2D with at least one polyline for
+each analemma.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.hourly_analemma_polyline3d">
+<code class="sig-name descname">hourly_analemma_polyline3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point3D(0.0, 0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.hourly_analemma_polyline3d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.hourly_analemma_polyline3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of ladybug_geometry Polyline3D for hourly analemmas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>origin</strong> – A ladybug_geometry Point3D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+<li><p><strong>daytime_only</strong> – A boolean to note whether only the daytime hours should
+be represented in the output Polyline3D. (Default: True)</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the output analemmas should
+be for solar hours instead of the hours of the sunpath time
+zone. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of ladybug_geometry Polyline3D with at least one polyline
+for each analemma.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.hourly_analemma_suns">
+<code class="sig-name descname">hourly_analemma_suns</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">is_solar_time</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.hourly_analemma_suns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.hourly_analemma_suns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a nested array of Suns with one sub-array for each hourly analemma.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>daytime_only</strong> – A boolean to note whether only daytime suns should
+be included in the resulting arrays. Note that this will likely
+result in completely empty arrays for some hours. (Default: False)</p></li>
+<li><p><strong>is_solar_time</strong> – A boolean to indicate if the output analemmas should
+be for solar hours instead of the hours of the sunpath time
+zone. (Default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of 24 arrays with each sub-array representing an analemma.
+Analemmas will each have 12 suns for the 12 months of the year</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.is_daylight_saving_hour">
+<code class="sig-name descname">is_daylight_saving_hour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datetime</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.is_daylight_saving_hour"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.is_daylight_saving_hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a datetime is within the daylight saving time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.monthly_day_arc3d">
+<code class="sig-name descname">monthly_day_arc3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point3D(0.0, 0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">depression</span><span class="o">=</span><span class="default_value">0.5334</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.monthly_day_arc3d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.monthly_day_arc3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of Arc3Ds for the path taken by the sun on the 21st of each month.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>origin</strong> – A ladybug_geometry Point3D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+<li><p><strong>daytime_only</strong> – A boolean to note whether arcs should be excluded from the
+output array if the sun never rises above the horizon on the the day.
+For example, in the arctic circle in winter. (Default: True)</p></li>
+<li><p><strong>depression</strong> – An angle in degrees indicating the additional period
+before/after the edge of the sun has passed the horizon where
+the sun is still considered up. Setting this value to 0 will
+return an arc that ends when the edge of the sun begins to
+touch the horizon. Setting it to the angular diameter of the
+sun (0.5334) will return an arc that ends right at the horizon
+(actual sunset). Setting it to 0.833 will compute the apparent
+sunrise/sunset, accounting for atmospheric refraction. Setting to
+6 will return an arc that ends at the beginning/end of civil twilight.
+Setting to 12 will return an arc that ends at the beginning/end
+of nautical twilight. Setting to 18 will return an arc that
+ends at the beginning/end of astronomical twilight. (Default: 0.5334)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of ladybug_geometry Arc3D with an arc for the 21st of each month.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.monthly_day_polyline2d">
+<code class="sig-name descname">monthly_day_polyline2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">projection</span><span class="o">=</span><span class="default_value">'Orthographic'</span></em>, <em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">daytime_only</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">depression</span><span class="o">=</span><span class="default_value">0.5334</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.monthly_day_polyline2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.monthly_day_polyline2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of Polyline2Ds for the sun path on the 21st of each month.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>projection</strong> – <p>Text for the name of the projection to use from the sky
+dome hemisphere to the 2D plane. (Default: ‘Orthographic’). Choose
+from the following:</p>
+<blockquote>
+<div><ul>
+<li><p>Orthographic</p></li>
+<li><p>Stereographic</p></li>
+</ul>
+</div></blockquote>
+</p></li>
+<li><p><strong>origin</strong> – A ladybug_geometry Point2D to note the center of the sun path.</p></li>
+<li><p><strong>radius</strong> – A number to note the radius of the sunpath.</p></li>
+<li><p><strong>daytime_only</strong> – A boolean to note whether arcs should be excluded from the
+output array if the sun never rises above the horizon on the the day.
+For example, in the arctic circle in winter. (Default: True)</p></li>
+<li><p><strong>depression</strong> – An angle in degrees indicating the additional period
+before/after the edge of the sun has passed the horizon where
+the sun is still considered up. Setting this value to 0 will
+return an arc that ends when the edge of the sun begins to
+touch the horizon. Setting it to the angular diameter of the
+sun (0.5334) will return an arc that ends right at the horizon
+(actual sunset). Setting it to 0.833 will compute the apparent
+sunrise/sunset, accounting for atmospheric refraction. Setting to
+6 will return an arc that ends at the beginning/end of civil twilight.
+Setting to 12 will return an arc that ends at the beginning/end
+of nautical twilight. Setting to 18 will return an arc that
+ends at the beginning/end of astronomical twilight. (Default: 0.5334)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of ladybug_geometry Polyline2D with a polyline for the 21st
+of each month.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.sunpath.Sunpath.PI">
+<code class="sig-name descname">PI</code><em class="property"> = 3.141592653589793</em><a class="headerlink" href="#ladybug.sunpath.Sunpath.PI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.daylight_saving_period">
+<em class="property">property </em><code class="sig-name descname">daylight_saving_period</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.daylight_saving_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set an AnalysisPeriod for the daylight saving period.</p>
+<p>Note that the st_hour and end_hour of the AnalysisPeriod will be interpreted
+as indicating the time of day when the shift in clocks happen. So setting the
+st_hour and end_hour to 2 will ensure that the time shift happens at 2 AM on
+the dates specified. Note that this is different than how the hour inputs of
+AnalysisPeriods typically work, where the st_hour and end_hour apply to every
+day of the analysis period.</p>
+<p>If None, no daylight saving period will be used.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.is_leap_year">
+<em class="property">property </em><code class="sig-name descname">is_leap_year</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.is_leap_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a boolean to indicate is sunpath calculated for a leap year.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.latitude">
+<em class="property">property </em><code class="sig-name descname">latitude</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.latitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a number between -90 and 90 for the latitude in degrees.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.longitude">
+<em class="property">property </em><code class="sig-name descname">longitude</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.longitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a number between -180 and 180 for the longitude in degrees.</p>
+<p>Note that you will also likely want to update the time zone of the
+Sunpath if this value is set to somethign far from its original value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.north_angle">
+<em class="property">property </em><code class="sig-name descname">north_angle</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.north_angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a number between -360 and 360 for the north_angle in degrees.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sunpath.Sunpath.time_zone">
+<em class="property">property </em><code class="sig-name descname">time_zone</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.time_zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the time zone as a number between -12 and + 14.</p>
+<p>Setting this property to None will automatically set the Sunpath to use
+solar time for the Sunpath’s longitude.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

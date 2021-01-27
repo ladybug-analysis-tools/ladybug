@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.psychchart module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.psychrometrics module" href="ladybug.psychrometrics.html" />
+    <link rel="prev" title="ladybug.monthlychart module" href="ladybug.monthlychart.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.monthlychart.html" title="Previous Chapter: ladybug.monthlychart module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.month...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.psychrometrics.html" title="Next Chapter: ladybug.psychrometrics module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.psych... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.psychchart.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.psychchart">
+<span id="ladybug-psychchart-module"></span><h1>ladybug.psychchart module<a class="headerlink" href="#module-ladybug.psychchart" title="Permalink to this headline">¶</a></h1>
+<p>Object for calculating PMV comfort from DataCollections.</p>
+<dl class="py class">
+<dt id="ladybug.psychchart.PsychrometricChart">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.psychchart.</code><code class="sig-name descname">PsychrometricChart</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">relative_humidity</span></em>, <em class="sig-param"><span class="n">average_pressure</span><span class="o">=</span><span class="default_value">101325</span></em>, <em class="sig-param"><span class="n">legend_parameters</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">base_point</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">x_dim</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">y_dim</span><span class="o">=</span><span class="default_value">1500</span></em>, <em class="sig-param"><span class="n">min_temperature</span><span class="o">=</span><span class="default_value">- 20</span></em>, <em class="sig-param"><span class="n">max_temperature</span><span class="o">=</span><span class="default_value">50</span></em>, <em class="sig-param"><span class="n">max_humidity_ratio</span><span class="o">=</span><span class="default_value">0.03</span></em>, <em class="sig-param"><span class="n">use_ip</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for constructing psychrometric charts and plotting data on them.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>temperature</strong> – Hourly, daily, or sub-hourly data collection of temperature
+values in Celsius or a single temperature value to be used for the
+whole analysis.</p></li>
+<li><p><strong>relative_humidity</strong> – Hourly, daily, or sub-hourly data collection of relative
+humidity values in % or a single relative humidity value to be used
+for the whole analysis.</p></li>
+<li><p><strong>average_pressure</strong> – Number for the average air pressure across the data
+plotted on the chart (Pa). (Default: 101325 Pa; pressure at sea level).</p></li>
+<li><p><strong>legend_parameters</strong> – An optional LegendParameter object to change the display
+of the PsychrometricChart. (Default: None).</p></li>
+<li><p><strong>base_point</strong> – A Point2D to be used as a starting point to generate the geometry
+of the plot. (Default: (0, 0)).</p></li>
+<li><p><strong>x_dim</strong> – A number to set the X dimension of each degree of temperature on the
+chart. (Default: 1).</p></li>
+<li><p><strong>y_dim</strong> – A number to set the Y dimension of a unity humidity ratio on the chart.
+Note that most maximum humidity ratios are around 0.03. (Default: 1500).</p></li>
+<li><p><strong>min_temperature</strong> – An integer for the minimum temperature on the chart in
+degrees. This should be celsius if use_ip is False and fahrenheit if
+use_ip is True. (Default: -20; suitable for celsius).</p></li>
+<li><p><strong>max_temperature</strong> – An integer for the maximum temperature on the chart in
+degrees. This should be celsius if use_ip is False and fahrenheit if
+use_ip is True. (Default: 50; suitable for celsius).</p></li>
+<li><p><strong>max_humidity_ratio</strong> – A value for the maximum humidity ratio in kg water / kg
+air. (Default: 0.03).</p></li>
+<li><p><strong>use_ip</strong> – Boolean to note whether temperature values should be plotted in
+Fahrenheit instead of Celsius. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>temperature</p></li>
+<li><p>relative_humidity</p></li>
+<li><p>average_pressure</p></li>
+<li><p>legend_parameters</p></li>
+<li><p>base_point</p></li>
+<li><p>x_dim</p></li>
+<li><p>y_dim</p></li>
+<li><p>min_temperature</p></li>
+<li><p>max_temperature</p></li>
+<li><p>max_humidity_ratio</p></li>
+<li><p>use_ip</p></li>
+<li><p>saturation_line</p></li>
+<li><p>chart_border</p></li>
+<li><p>temperature_labels</p></li>
+<li><p>temperature_label_points</p></li>
+<li><p>temperature_lines</p></li>
+<li><p>rh_labels</p></li>
+<li><p>rh_label_points</p></li>
+<li><p>rh_lines</p></li>
+<li><p>hr_labels</p></li>
+<li><p>hr_label_points</p></li>
+<li><p>hr_lines</p></li>
+<li><p>enthalpy_labels</p></li>
+<li><p>enthalpy_label_points</p></li>
+<li><p>enthalpy_lines</p></li>
+<li><p>wb_labels</p></li>
+<li><p>wb_label_points</p></li>
+<li><p>wb_lines</p></li>
+<li><p>title_text</p></li>
+<li><p>title_location</p></li>
+<li><p>x_axis_text</p></li>
+<li><p>x_axis_location</p></li>
+<li><p>y_axis_text</p></li>
+<li><p>y_axis_location</p></li>
+<li><p>data_points</p></li>
+<li><p>time_matrix</p></li>
+<li><p>hour_values</p></li>
+<li><p>colored_mesh</p></li>
+<li><p>legend</p></li>
+<li><p>container</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.data_mesh">
+<code class="sig-name descname">data_mesh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_collection</span></em>, <em class="sig-param"><span class="n">legend_parameters</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.data_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.data_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a colored mesh for a data_collection aligned with the chart’s data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_collection</strong> – A data collection that is aligned with the temperature
+and humidity values of the chart.</p></li>
+<li><p><strong>legend_parameters</strong> – Optional legend parameters to customize the legend
+and look of the resulting mesh.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two values.</p>
+<ul class="simple">
+<li><p>mesh: A colored Mesh2D similar to the chart’s colored_mesh property
+but where each face is colored with the average value of the input
+data_collection.</p></li>
+<li><p>container: A GraphicContainer object for the mesh, which possesses
+a legend that corresponds to the mesh.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create PsychrometricChart from a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;PsychrometricChart&#39;</span><span class="p">,</span>
+<span class="s1">&#39;temperature&#39;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># data collection or value for temperature [C]</span>
+<span class="s1">&#39;relative_humidity&#39;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># data collection or value for humidity [%]</span>
+<span class="s1">&#39;average_pressure&#39;</span><span class="p">:</span> <span class="mi">101325</span><span class="p">,</span>  <span class="c1"># average atmospheric pressure [Pa]</span>
+<span class="s1">&#39;legend_parameters&#39;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># legend parameters dictionary</span>
+<span class="s1">&#39;base_point&#39;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># Point2D dictionary</span>
+<span class="s1">&#39;x_dim&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>  <span class="c1"># value for X dimension per degree</span>
+<span class="s1">&#39;y_dim&#39;</span><span class="p">:</span> <span class="mf">1500.0</span><span class="p">,</span>  <span class="c1"># value for Y dimension for unity humidity ratio</span>
+<span class="s1">&#39;min_temperature&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">20.0</span><span class="p">,</span>  <span class="c1"># value for minimum temperature</span>
+<span class="s1">&#39;max_temperature&#39;</span><span class="p">:</span> <span class="mf">50.0</span><span class="p">,</span>  <span class="c1"># value for maximum temperature</span>
+<span class="s1">&#39;max_humidity_ratio&#39;</span><span class="p">:</span> <span class="mf">0.03</span><span class="p">,</span>  <span class="c1"># value for maximum humidity ratio</span>
+<span class="s1">&#39;use_ip&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>  <span class="c1"># boolean for whether to use IP values</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.from_epw">
+<em class="property">classmethod </em><code class="sig-name descname">from_epw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">epw_file</span></em>, <em class="sig-param"><span class="n">legend_parameters</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">base_point</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">x_dim</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">y_dim</span><span class="o">=</span><span class="default_value">1500</span></em>, <em class="sig-param"><span class="n">min_temperature</span><span class="o">=</span><span class="default_value">- 20</span></em>, <em class="sig-param"><span class="n">max_temperature</span><span class="o">=</span><span class="default_value">50</span></em>, <em class="sig-param"><span class="n">max_humidity_ratio</span><span class="o">=</span><span class="default_value">0.03</span></em>, <em class="sig-param"><span class="n">use_ip</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.from_epw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.from_epw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a psychrometric chart object using the data in an epw file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epw_file</strong> – Full path to epw weather file.</p></li>
+<li><p><strong>legend_parameters</strong> – An optional LegendParameter object to change the display
+of the PsychrometricChart. (Default: None).</p></li>
+<li><p><strong>base_point</strong> – A Point2D to be used as a starting point to generate the geometry
+of the plot. (Default: (0, 0)).</p></li>
+<li><p><strong>x_dim</strong> – A number to set the X dimension of each degree of temperature on the
+chart. (Default: 1).</p></li>
+<li><p><strong>y_dim</strong> – A number to set the Y dimension of a unity humidity ratio on the chart.
+Note that most maximum humidity ratios are around 0.03. (Default: 1500).</p></li>
+<li><p><strong>min_temperature</strong> – An integer for the minimum temperature on the chart in
+degrees. This should be celsius if use_ip is False and fahrenheit if
+use_ip is True. (Default: -20; suitable for celsius).</p></li>
+<li><p><strong>max_temperature</strong> – An integer for the maximum temperature on the chart in
+degrees. This should be celsius if use_ip is False and fahrenheit if
+use_ip is True. (Default: 50; suitable for celsius).</p></li>
+<li><p><strong>max_humidity_ratio</strong> – A value for the maximum humidity ratio in kg water / kg
+air. (Default: 0.03).</p></li>
+<li><p><strong>use_ip</strong> – Boolean to note whether temperature values should be plotted in
+Fahrenheit instead of Celsius. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.hr_y_value">
+<code class="sig-name descname">hr_y_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">humidity_ratio</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.hr_y_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.hr_y_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the Y-coordinate associated with a certain HR on the chart.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>humidity_ratio</strong> – A humidity ratio value in kg water / kg air.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.plot_point">
+<code class="sig-name descname">plot_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">relative_humidity</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.plot_point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.plot_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for a given temperature and relative humidity on the chart.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>temperature</strong> – A temperature value, which should be in Celsius if use_ip
+is False and Fahrenheit is use_ip is True.</p></li>
+<li><p><strong>relative_humidity</strong> – A relative humidity value in % (from 0 to 100).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.relative_humidity_polyline">
+<code class="sig-name descname">relative_humidity_polyline</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rh</span></em>, <em class="sig-param"><span class="n">subdivisions</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.relative_humidity_polyline"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.relative_humidity_polyline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Polyline2D for a given relative humidity value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rh</strong> – A number between 0 and 100 for the relative humidity line to draw.</p></li>
+<li><p><strong>subdivisions</strong> – Integer for the number of subdivisions for every 5
+degrees. (Default: 1).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.t_x_value">
+<code class="sig-name descname">t_x_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">temperature</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.t_x_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.t_x_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the X-coordinate associated with a certain temperature on the chart.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>temperature</strong> – A temperature value, which should be in Celsius if use_ip
+is False and Fahrenheit is use_ip is True.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychchart.html#PsychrometricChart.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get psychrometric chart as a dictionary.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.psychchart.PsychrometricChart.ACCEPTABLE_COLLECTIONS">
+<code class="sig-name descname">ACCEPTABLE_COLLECTIONS</code><em class="property"> = (&lt;class 'ladybug.datacollection.DailyCollection'&gt;, &lt;class 'ladybug.datacollection.HourlyContinuousCollection'&gt;, &lt;class 'ladybug.datacollection.HourlyDiscontinuousCollection'&gt;)</em><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.ACCEPTABLE_COLLECTIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.psychchart.PsychrometricChart.ENTH_TYPE">
+<code class="sig-name descname">ENTH_TYPE</code><em class="property"> = Enthalpy</em><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.ENTH_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.psychchart.PsychrometricChart.TEMP_TYPE">
+<code class="sig-name descname">TEMP_TYPE</code><em class="property"> = Temperature</em><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.TEMP_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.average_pressure">
+<em class="property">property </em><code class="sig-name descname">average_pressure</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.average_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>the average air pressure across the data plotted on the chart (Pa).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.base_point">
+<em class="property">property </em><code class="sig-name descname">base_point</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.base_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Point3D for the base point of this psychrometric chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.chart_border">
+<em class="property">property </em><code class="sig-name descname">chart_border</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.chart_border" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Polyline2D for the border of the chart (excluding saturation line).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.colored_mesh">
+<em class="property">property </em><code class="sig-name descname">colored_mesh</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.colored_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a colored mesh for the number of hours for each part of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.container">
+<em class="property">property </em><code class="sig-name descname">container</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the GraphicContainer for the colored mesh.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.data_points">
+<em class="property">property </em><code class="sig-name descname">data_points</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.data_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of Point2Ds for each of the temperature and humidity values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.enthalpy_label_points">
+<em class="property">property </em><code class="sig-name descname">enthalpy_label_points</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.enthalpy_label_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of Point2Ds for the humidity ratio labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.enthalpy_labels">
+<em class="property">property </em><code class="sig-name descname">enthalpy_labels</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.enthalpy_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of text for the enthalpy labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.enthalpy_lines">
+<em class="property">property </em><code class="sig-name descname">enthalpy_lines</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.enthalpy_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of LineSegment2Ds for the humidity ratio labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.hour_values">
+<em class="property">property </em><code class="sig-name descname">hour_values</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.hour_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple for the number of hours associated with each colored_mesh face.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.hr_label_points">
+<em class="property">property </em><code class="sig-name descname">hr_label_points</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.hr_label_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of Point2Ds for the humidity ratio labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.hr_labels">
+<em class="property">property </em><code class="sig-name descname">hr_labels</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.hr_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of text for the humidity ratio labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.hr_lines">
+<em class="property">property </em><code class="sig-name descname">hr_lines</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.hr_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of LineSegment2Ds for the humidity ratio labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.legend">
+<em class="property">property </em><code class="sig-name descname">legend</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.legend" title="Permalink to this definition">¶</a></dt>
+<dd><p>The legend assigned to this graphic.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.legend_parameters">
+<em class="property">property </em><code class="sig-name descname">legend_parameters</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.legend_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>The legend parameters customizing this psychrometric chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.max_humidity_ratio">
+<em class="property">property </em><code class="sig-name descname">max_humidity_ratio</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.max_humidity_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><p>A value for the maximum humidity ratio in kg water / kg air.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.max_temperature">
+<em class="property">property </em><code class="sig-name descname">max_temperature</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.max_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>An integer for the maximum temperature on the chart.</p>
+<p>Will be in celsius if use_ip is False and fahrenheit if use_ip is True.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.min_temperature">
+<em class="property">property </em><code class="sig-name descname">min_temperature</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.min_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>An integer for the minimum temperature on the chart.</p>
+<p>Will be in celsius if use_ip is False and fahrenheit if use_ip is True.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.relative_humidity">
+<em class="property">property </em><code class="sig-name descname">relative_humidity</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.relative_humidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The relative humidity assigned to this psychrometric chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.rh_label_points">
+<em class="property">property </em><code class="sig-name descname">rh_label_points</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.rh_label_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of Point2Ds for the relative humidity labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.rh_labels">
+<em class="property">property </em><code class="sig-name descname">rh_labels</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.rh_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of text for the relative humidity labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.rh_lines">
+<em class="property">property </em><code class="sig-name descname">rh_lines</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.rh_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of Polyline2Ds for the relative humidity labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.saturation_line">
+<em class="property">property </em><code class="sig-name descname">saturation_line</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.saturation_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Polyline2D for the saturation line of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.temperature">
+<em class="property">property </em><code class="sig-name descname">temperature</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>The temperature assigned to this psychrometric chart [C].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.temperature_label_points">
+<em class="property">property </em><code class="sig-name descname">temperature_label_points</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.temperature_label_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of Point2Ds for the temperature labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.temperature_labels">
+<em class="property">property </em><code class="sig-name descname">temperature_labels</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.temperature_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of text for the temperature labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.temperature_lines">
+<em class="property">property </em><code class="sig-name descname">temperature_lines</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.temperature_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of LineSegment2Ds for the temperature labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.time_matrix">
+<em class="property">property </em><code class="sig-name descname">time_matrix</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.time_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of of tuples where each sub-tuple is a row of the mesh.</p>
+<p>Each value in the resulting matrix corresponds to the number of temperature/
+humidity points in a given cell of the mesh.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.title_location">
+<em class="property">property </em><code class="sig-name descname">title_location</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.title_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for the title of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.title_text">
+<em class="property">property </em><code class="sig-name descname">title_text</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.title_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text for the title of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.use_ip">
+<em class="property">property </em><code class="sig-name descname">use_ip</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.use_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean for whether temperature should be in Fahrenheit or Celsius.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.wb_label_points">
+<em class="property">property </em><code class="sig-name descname">wb_label_points</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.wb_label_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of Point2Ds for the wet bulb labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.wb_labels">
+<em class="property">property </em><code class="sig-name descname">wb_labels</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.wb_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of text for the wet bulb labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.wb_lines">
+<em class="property">property </em><code class="sig-name descname">wb_lines</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.wb_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of LineSegment2Ds for the wet bulb temp labels on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.x_axis_location">
+<em class="property">property </em><code class="sig-name descname">x_axis_location</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.x_axis_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for the X-axis label of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.x_axis_text">
+<em class="property">property </em><code class="sig-name descname">x_axis_text</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.x_axis_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text for the X-axis label of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.x_dim">
+<em class="property">property </em><code class="sig-name descname">x_dim</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.x_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>The X dimension of each degree of temperature on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.y_axis_location">
+<em class="property">property </em><code class="sig-name descname">y_axis_location</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.y_axis_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for the Y-axis label of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.y_axis_text">
+<em class="property">property </em><code class="sig-name descname">y_axis_text</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.y_axis_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text for the Y-axis label of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.psychchart.PsychrometricChart.y_dim">
+<em class="property">property </em><code class="sig-name descname">y_dim</code><a class="headerlink" href="#ladybug.psychchart.PsychrometricChart.y_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Y dimension of a unity humidity ratio on the chart.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

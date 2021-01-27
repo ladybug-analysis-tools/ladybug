@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.psychrometrics module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.rootfinding module" href="ladybug.rootfinding.html" />
+    <link rel="prev" title="ladybug.psychchart module" href="ladybug.psychchart.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.psychchart.html" title="Previous Chapter: ladybug.psychchart module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.psych...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.rootfinding.html" title="Next Chapter: ladybug.rootfinding module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.rootf... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.psychrometrics.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.psychrometrics">
+<span id="ladybug-psychrometrics-module"></span><h1>ladybug.psychrometrics module<a class="headerlink" href="#module-ladybug.psychrometrics" title="Permalink to this headline">¶</a></h1>
+<p>Utility functions for converting between humidity metrics.</p>
+<dl class="py function">
+<dt id="ladybug.psychrometrics.db_temp_and_hr_from_wb_rh">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">db_temp_and_hr_from_wb_rh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wb_temp</span></em>, <em class="sig-param"><span class="n">rel_humid</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#db_temp_and_hr_from_wb_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.db_temp_and_hr_from_wb_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dry bulb temperature (C) from wet bulb temperature (C) and relative humidity (%).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wb_temp</strong> – Wet bulb temperature (C).</p></li>
+<li><p><strong>rel_humid</strong> – Relative humidity (%).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two values.</p>
+<ul class="simple">
+<li><p>Dry bulb temperature (C).</p></li>
+<li><p>Humidity ratio (kg water/kg air).</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017)</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.db_temp_from_enth_hr">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">db_temp_from_enth_hr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">enthalpy</span></em>, <em class="sig-param"><span class="n">humid_ratio</span></em>, <em class="sig-param"><span class="n">reference_temp</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#db_temp_from_enth_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.db_temp_from_enth_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dry bulb temperature (C) from enthalpy (kJ/kg) and humidity ratio (water/air).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>enthalpy</strong> – Enthalpy (kJ/kg).</p></li>
+<li><p><strong>humid_ratio</strong> – Humidity ratio (kg water/kg air).</p></li>
+<li><p><strong>reference_temp</strong> – Reference dry air temperature (C). Default is 0C,
+which is standard practice for SI enthalpy values. However, for
+IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for
+absolute thermodynamic enthalpy, one can input 0K (-273.15).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dry bulb temperature (C).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 30</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.db_temp_from_rh_hr">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">db_temp_from_rh_hr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rel_humid</span></em>, <em class="sig-param"><span class="n">humid_ratio</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#db_temp_from_rh_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.db_temp_from_rh_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dry bulb temperature (C) from relative humidity (%) and humidity ratio (water/air).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rel_humid</strong> – Relative humidity (%).</p></li>
+<li><p><strong>humid_ratio</strong> – Humidity ratio (kg water/kg air).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dry bulb temperature (C).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Antoine equation - Antoine, C. (1888), Vapor Pressure: a new relationship
+between pressure and temperature, 107: 681–684, 778–780, 836–837.
+<a class="reference external" href="https://en.wikipedia.org/wiki/Antoine_equation">https://en.wikipedia.org/wiki/Antoine_equation</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_enth">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">dew_point_from_db_enth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">enthalpy</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em>, <em class="sig-param"><span class="n">reference_temp</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_enth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_enth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew point temperature (C) from air temperature (C) and enthalpy (kJ/kg).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>enthalpy</strong> – Enthalpy (kJ/kg).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+<li><p><strong>reference_temp</strong> – Reference dry air temperature (C). Default is 0C,
+which is standard practice for SI enthalpy values. However, for
+IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for
+absolute thermodynamic enthalpy, one can input 0K (-273.15).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dew point temperature (C).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_hr">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">dew_point_from_db_hr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">humid_ratio</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew Point Temperature (C) from air temperature (C) and humidity ratio (water/air).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>humid_ratio</strong> – Humidity ratio (kg water/kg air).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dew point temperature (C).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_rh">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">dew_point_from_db_rh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">rel_humid</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew point temperature (C) from air temperature (C) and relative humidity (%).</p>
+<p>The dew point temperature is solved by inverting the equation giving water vapor
+pressure at saturation from temperature, which is relatively slow but ensures
+high accuracy down to 0.1 C at a wide range of dry bulb temperatures.
+The Newton-Raphson (NR) method is used on the logarithm of water vapour
+pressure as a function of temperature, which is a very smooth function
+Convergence is usually achieved in 3 to 5 iterations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>rel_humid</strong> – Relative humidity (%).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dew point temperature (C).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn. 5 and 6</p>
+<p>[2] Meyer et al., (2019). PsychroLib: a library of psychrometric
+functions to calculate thermodynamic properties of air. Journal of
+Open Source Software, 4(33), 1137, <a class="reference external" href="https://doi.org/10.21105/joss.01137">https://doi.org/10.21105/joss.01137</a>
+<a class="reference external" href="https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py">https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_rh_fast">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">dew_point_from_db_rh_fast</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">rel_humid</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_rh_fast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_rh_fast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew point temperature (C) from air temperature (C) and relative humidity (%).</p>
+<p>Note that the formula here is fast but is only accurate up to 90C. For accurate
+values at extreme temperatures, the dew_point_from_db_rh
+function should be used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>rel_humid</strong> – Relative humidity (%).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dew point temperature (C).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] J. Sullivan and L. D. Sanders. “Method for obtaining wet-bulb temperatures
+by modifying the psychrometric formula.” Center for Experiment Design and Data
+Analysis. NOAA - National Oceanic and Atmospheric Administration.
+<a class="reference external" href="https://www.weather.gov/epz/wxcalc_rh">https://www.weather.gov/epz/wxcalc_rh</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_wb">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">dew_point_from_db_wb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">wet_bulb</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_wb"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_wb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew point temperature (C) from dry bulb (C) and wet bulb temperature (C).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>wet_bulb</strong> – Wet bulb temperature (C).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dew point temperature (C).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.enthalpy_from_db_hr">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">enthalpy_from_db_hr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">humid_ratio</span></em>, <em class="sig-param"><span class="n">reference_temp</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#enthalpy_from_db_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.enthalpy_from_db_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enthalpy (kJ/kg) at a given humidity ratio (water/air) and dry bulb temperature (C).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>humid_ratio</strong> – Humidity ratio (kg water/kg air).</p></li>
+<li><p><strong>reference_temp</strong> – Reference dry air temperature (C). Default is 0C,
+which is standard practice for SI enthalpy values. However, for
+IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for
+absolute thermodynamic enthalpy, one can input 0K (-273.15).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Enthalpy (kJ/kg).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 30</p>
+<p>[2] Meyer et al., (2019). PsychroLib: a library of psychrometric
+functions to calculate thermodynamic properties of air. Journal of
+Open Source Software, 4(33), 1137, <a class="reference external" href="https://doi.org/10.21105/joss.01137">https://doi.org/10.21105/joss.01137</a>
+<a class="reference external" href="https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py">https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.humid_ratio_from_db_rh">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">humid_ratio_from_db_rh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">rel_humid</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#humid_ratio_from_db_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.humid_ratio_from_db_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Humidity ratio (kg water/kg air) from air temperature (C) and relative humidity (%).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>rel_humid</strong> – Relative humidity (%).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Humidity ratio (kg water/kg air).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 20</p>
+<p>[2] Meyer et al., (2019). PsychroLib: a library of psychrometric
+functions to calculate thermodynamic properties of air. Journal of
+Open Source Software, 4(33), 1137, <a class="reference external" href="https://doi.org/10.21105/joss.01137">https://doi.org/10.21105/joss.01137</a>
+<a class="reference external" href="https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py">https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.humid_ratio_from_db_wb">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">humid_ratio_from_db_wb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">wb_temp</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#humid_ratio_from_db_wb"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.humid_ratio_from_db_wb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Humidity ratio from air temperature (C) and wet bulb temperature (C).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>wb_temp</strong> – Wet bulb temperature (C).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Humidity ratio (kg water / kg air).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 36, solved for W</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_dpt">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">rel_humid_from_db_dpt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">dew_pt</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_dpt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_dpt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative humidity (%) from dry bulb temperature (C), and dew point temperature (C).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>dew_pt</strong> – Dew point temperature (C).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Relative humidity (%).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_enth">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">rel_humid_from_db_enth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">enthalpy</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em>, <em class="sig-param"><span class="n">reference_temp</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_enth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_enth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative Humidity (%) from air temperature (C) and enthalpy (kJ/kg).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>enthalpy</strong> – Enthalpy (kJ/kg).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+<li><p><strong>reference_temp</strong> – Reference dry air temperature (C). Default is 0C,
+which is standard practice for SI enthalpy values. However, for
+IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for
+absolute thermodynamic enthalpy, one can input 0K (-273.15).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Relative humidity (%).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_hr">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">rel_humid_from_db_hr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">humid_ratio</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative Humidity (%) from humidity ratio (water/air) and air temperature (C).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>humid_ratio</strong> – Humidity ratio (kg water/kg air).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Relative humidity (%).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_wb">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">rel_humid_from_db_wb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">wet_bulb</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_wb"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_wb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative humidity (%) from dry bulb temperature (C), and wet bulb temperature (C).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>wet_bulb</strong> – Wet bulb temperature (C).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Relative humidity (%).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.saturated_vapor_pressure">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">saturated_vapor_pressure</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t_kelvin</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#saturated_vapor_pressure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.saturated_vapor_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saturated vapor pressure (Pa) at a given dry bulb temperature (K).</p>
+<p>This function accounts for the different behavior above vs. below
+the freezing point of water.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>t_kelvin</strong> – Dry bulb temperature (K).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Saturated vapor pressure (Pa).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn. 5 and 6</p>
+<p>[2] Meyer et al., (2019). PsychroLib: a library of psychrometric
+functions to calculate thermodynamic properties of air. Journal of
+Open Source Software, 4(33), 1137, <a class="reference external" href="https://doi.org/10.21105/joss.01137">https://doi.org/10.21105/joss.01137</a>
+<a class="reference external" href="https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py">https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.wet_bulb_from_db_hr">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">wet_bulb_from_db_hr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">humid_ratio</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#wet_bulb_from_db_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.wet_bulb_from_db_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wet bulb temperature (C) from air temperature (C) and humidity ratio.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>humid_ratio</strong> – Humidity ratio (kg water/kg air).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Wet bulb temperature (C).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.wet_bulb_from_db_rh">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">wet_bulb_from_db_rh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">rel_humid</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#wet_bulb_from_db_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.wet_bulb_from_db_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wet bulb temperature (C) from air temperature (C) and relative humidity (%).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>rel_humid</strong> – Relative humidity (%).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Wet bulb temperature (C).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 33 and 35</p>
+<p>[2] Meyer et al., (2019). PsychroLib: a library of psychrometric
+functions to calculate thermodynamic properties of air. Journal of
+Open Source Software, 4(33), 1137, <a class="reference external" href="https://doi.org/10.21105/joss.01137">https://doi.org/10.21105/joss.01137</a>
+<a class="reference external" href="https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py">https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</a></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.psychrometrics.wet_bulb_from_db_rh_fast">
+<code class="sig-prename descclassname">ladybug.psychrometrics.</code><code class="sig-name descname">wet_bulb_from_db_rh_fast</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_temp</span></em>, <em class="sig-param"><span class="n">rel_humid</span></em>, <em class="sig-param"><span class="n">b_press</span><span class="o">=</span><span class="default_value">101325</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#wet_bulb_from_db_rh_fast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.wet_bulb_from_db_rh_fast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wet bulb temperature (C) from air temperature (C) and relative humidity (%).</p>
+<p>Note that the formula here is fast but is only accurate around temperatures
+of 20C and lower. For accurate values at extreme temperatures, the
+wet_bulb_from_db_rh function should be used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_temp</strong> – Dry bulb temperature (C).</p></li>
+<li><p><strong>rel_humid</strong> – Relative humidity (%).</p></li>
+<li><p><strong>b_press</strong> – Air pressure (Pa). Default is pressure at sea level (101325 Pa).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Wet bulb temperature (C).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] J. Sullivan and L. D. Sanders. “Method for obtaining wet-bulb temperatures
+by modifying the psychrometric formula.” Center for Experiment Design and Data
+Analysis. NOAA - National Oceanic and Atmospheric Administration.
+<a class="reference external" href="https://www.weather.gov/epz/wxcalc_rh">https://www.weather.gov/epz/wxcalc_rh</a></p>
+</div>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

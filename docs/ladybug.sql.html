@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.sql module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.stat module" href="ladybug.stat.html" />
+    <link rel="prev" title="ladybug.skymodel module" href="ladybug.skymodel.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.skymodel.html" title="Previous Chapter: ladybug.skymodel module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.skymo...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.stat.html" title="Next Chapter: ladybug.stat module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.stat module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.sql.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.sql">
+<span id="ladybug-sql-module"></span><h1>ladybug.sql module<a class="headerlink" href="#module-ladybug.sql" title="Permalink to this headline">¶</a></h1>
+<p>Module for parsing EnergyPlus SQLite result files into Ladybug DataCollections</p>
+<dl class="py class">
+<dt id="ladybug.sql.ComponentSize">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.sql.</code><code class="sig-name descname">ComponentSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sql_table_rows</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ComponentSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ComponentSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object for holding the sizing results of an individual HVAC components.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sql_table_rows</strong> – A list of list where each sub-list represents a row of
+the SQLite ComponentSizes table. These rows are all expected to have
+the same component name.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>component_type</p></li>
+<li><p>component_name</p></li>
+<li><p>descriptions</p></li>
+<li><p>properties</p></li>
+<li><p>values</p></li>
+<li><p>units</p></li>
+<li><p>properties_dict</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ComponentSize.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ComponentSize.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ComponentSize.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ComponentSize.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a ComponentSize from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – ComponentSize dictionary following the format below.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ComponentSize&quot;</span><span class="p">,</span>
+<span class="s2">&quot;component_type&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="s2">&quot;component_name&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[],</span>
+<span class="s2">&quot;values&quot;</span><span class="p">:</span> <span class="p">[],</span>
+<span class="s2">&quot;units&quot;</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ComponentSize.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ComponentSize.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get ComponentSize as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.component_name">
+<em class="property">property </em><code class="sig-name descname">component_name</code><a class="headerlink" href="#ladybug.sql.ComponentSize.component_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text for the name of component that this object represents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.component_type">
+<em class="property">property </em><code class="sig-name descname">component_type</code><a class="headerlink" href="#ladybug.sql.ComponentSize.component_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text for the type of component that this object represents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.descriptions">
+<em class="property">property </em><code class="sig-name descname">descriptions</code><a class="headerlink" href="#ladybug.sql.ComponentSize.descriptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple with text descriptions for all component properties.</p>
+<p>Descriptions are formatted as component_name-property-unit. They are
+aligned with the values on this object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.properties">
+<em class="property">property </em><code class="sig-name descname">properties</code><a class="headerlink" href="#ladybug.sql.ComponentSize.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple with text for all component properties.</p>
+<p>They are aligned with the values on this object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.properties_dict">
+<em class="property">property </em><code class="sig-name descname">properties_dict</code><a class="headerlink" href="#ladybug.sql.ComponentSize.properties_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a dictionary with the properties as keys and values as the values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.units">
+<em class="property">property </em><code class="sig-name descname">units</code><a class="headerlink" href="#ladybug.sql.ComponentSize.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple with text for all component property units.</p>
+<p>They are aligned with the values on this object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ComponentSize.values">
+<em class="property">property </em><code class="sig-name descname">values</code><a class="headerlink" href="#ladybug.sql.ComponentSize.values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple with numbers for all component property values.</p>
+<p>They are aligned with the properties on this object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ladybug.sql.SQLiteResult">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.sql.</code><code class="sig-name descname">SQLiteResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_path</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#SQLiteResult"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.SQLiteResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object for parsing EnergyPlus SQLite result files into Ladybug DataCollections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_path</strong> – Full path to an SQLite file that was generated by EnergyPlus.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>file_path</p></li>
+<li><p>location</p></li>
+<li><p>reporting_frequency</p></li>
+<li><p>run_periods</p></li>
+<li><p>run_period_names</p></li>
+<li><p>run_period_indices</p></li>
+<li><p>available_outputs</p></li>
+<li><p>available_outputs_info</p></li>
+<li><p>zone_cooling_sizes</p></li>
+<li><p>zone_heating_sizes</p></li>
+<li><p>component_sizes</p></li>
+<li><p>component_types</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#SQLiteResult.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.SQLiteResult.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.component_sizes_by_type">
+<code class="sig-name descname">component_sizes_by_type</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">component_type</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#SQLiteResult.component_sizes_by_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.SQLiteResult.component_sizes_by_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of ComponentSize objects for a specific type of HVAC component.</p>
+<p>This can be much faster than using the component_sizes property when
+there are a lot of components in the model and only one type of
+component is needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>component_type</strong> – Text for the type of component to be retrieved.
+(eg. ‘ZoneHVAC:IdealLoadsAirSystem’)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.data_collections_by_output_name">
+<code class="sig-name descname">data_collections_by_output_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_name</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#SQLiteResult.data_collections_by_output_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.SQLiteResult.data_collections_by_output_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of Ladybug DataCollections for a specified output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>output_name</strong> – The name of an EnergyPlus output to be retrieved from
+the SQLite result file. This can also be an array of output names
+for which all data collections should be retrieved.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of data collections of the requested output type. This will
+be an empty list if no output of the requested name was found in the
+file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.data_collections_by_output_name_run_period">
+<code class="sig-name descname">data_collections_by_output_name_run_period</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_name</span></em>, <em class="sig-param"><span class="n">run_period_index</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#SQLiteResult.data_collections_by_output_name_run_period"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.SQLiteResult.data_collections_by_output_name_run_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of Ladybug DataCollections for an output and a run period index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_name</strong> – The name of an EnergyPlus output to be retrieved from
+the SQLite result file as a string.</p></li>
+<li><p><strong>run_period_index</strong> – An integer taken from the run_period_indices property
+of this object, which will be used to select out data collections
+for just one run period in the SQL file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of data collections of the requested output type. This will
+be an empty list if no output of the requested name was found in the
+file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.tabular_column_names">
+<code class="sig-name descname">tabular_column_names</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">table_name</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#SQLiteResult.tabular_column_names"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.SQLiteResult.tabular_column_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the names of the columns for a table of a Summary Report.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>table_name</strong> – Text string for the name of a table within a summary
+report. (eg. ‘General’).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of the column names of the table</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.tabular_data_by_name">
+<code class="sig-name descname">tabular_data_by_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">table_name</span></em>, <em class="sig-param"><span class="n">j_to_kwh</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#SQLiteResult.tabular_data_by_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.SQLiteResult.tabular_data_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the data within a table of a Summary Report using the table name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_name</strong> – Text string for the name of a table within a summary
+report. (eg. ‘General’).</p></li>
+<li><p><strong>j_to_kwh</strong> – Boolean to note if any data in MJ or GJ should be
+converted to kWh upon import of the table. This will also mean
+that any area-normalized values will also be converted to kWh/m2.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An ordered dictionary representing a matrix (list of lists), where
+the keys of the dictionary represent the row names and each value
+is a row of the table. The output should mirror how the table appears
+in the HTML output.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.available_outputs">
+<em class="property">property </em><code class="sig-name descname">available_outputs</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.available_outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of strings for available timeseries outputs that can be requested.</p>
+<p>Any of these outputs when input to data_collections_by_output_name will
+yield a result with data collections.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.available_outputs_info">
+<em class="property">property </em><code class="sig-name descname">available_outputs_info</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.available_outputs_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of dictionaries with outputs within the SQL and their metadata.</p>
+<p>Each dictionary is formatted with the keys below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;output_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Zone Ideal Loads Supply Air Total Cooling Energy&quot;</span><span class="p">,</span>
+<span class="s2">&quot;object_type&quot;</span><span class="p">:</span> <span class="s2">&quot;Zone&quot;</span><span class="p">,</span>
+<span class="s2">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;kWh&quot;</span><span class="p">,</span>
+<span class="s2">&quot;data_type &quot;</span><span class="p">:</span> <span class="n">Energy</span>  <span class="c1"># this is a ladybug DataType object</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.component_sizes">
+<em class="property">property </em><code class="sig-name descname">component_sizes</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.component_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of ComponentSize objects for all HVAC components in the results.</p>
+<p>Each ComponentSize object contains several properties regarding the outcome
+of the sizing calculation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.component_types">
+<em class="property">property </em><code class="sig-name descname">component_types</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.component_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of text for all component types contained in the results.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.file_path">
+<em class="property">property </em><code class="sig-name descname">file_path</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.file_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the path to the .sql file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.location">
+<em class="property">property </em><code class="sig-name descname">location</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Ladybug Location object derived from the SQL data.</p>
+<p>This will be None if there was no AllSummary report in the SQL file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.reporting_frequency">
+<em class="property">property </em><code class="sig-name descname">reporting_frequency</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.reporting_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text for the output reporting frequency. Will be one of the following.</p>
+<ul class="simple">
+<li><p>Annual</p></li>
+<li><p>Monthly</p></li>
+<li><p>Daily</p></li>
+<li><p>Hourly</p></li>
+<li><p>An integer for the number of steps per hour</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.run_period_indices">
+<em class="property">property </em><code class="sig-name descname">run_period_indices</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.run_period_indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array integers used to identify the run periods in the time table.</p>
+<p>These will align with the run_periods property.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.run_period_names">
+<em class="property">property </em><code class="sig-name descname">run_period_names</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.run_period_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of text for the names of the run periods.</p>
+<p>These will align with the run_periods property. This will be None if
+there was no AllSummary report in the SQL file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.run_periods">
+<em class="property">property </em><code class="sig-name descname">run_periods</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.run_periods" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of Ladybug AnalysisPeriod objects for the simulation run periods.</p>
+<p>This will be None if there was no AllSummary report in the SQL file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.zone_cooling_sizes">
+<em class="property">property </em><code class="sig-name descname">zone_cooling_sizes</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.zone_cooling_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of ZoneSize objects for all conditioned zones in the model.</p>
+<p>Each ZoneSize object contains several properties regarding the outcome
+of the cooling sizing calculation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.SQLiteResult.zone_heating_sizes">
+<em class="property">property </em><code class="sig-name descname">zone_heating_sizes</code><a class="headerlink" href="#ladybug.sql.SQLiteResult.zone_heating_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of ZoneSize objects for all conditioned zones in the model.</p>
+<p>Each ZoneSize object contains several properties regarding the outcome
+of the heating sizing calculation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ladybug.sql.ZoneSize">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.sql.</code><code class="sig-name descname">ZoneSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sql_table_row</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ZoneSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ZoneSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object for holding the sizing results of an individual zone.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sql_table_row</strong> – A list that represents a row of the SQLite ZoneSizes table.
+This row contains all of the sizing information for a single conditioned
+zone (either heating or cooling).</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>zone_name</p></li>
+<li><p>load_type</p></li>
+<li><p>calculated_design_load</p></li>
+<li><p>final_design_load</p></li>
+<li><p>calculated_design_flow</p></li>
+<li><p>final_design_flow</p></li>
+<li><p>design_day_name</p></li>
+<li><p>peak_date_time</p></li>
+<li><p>peak_temperature</p></li>
+<li><p>peak_humidity_ratio</p></li>
+<li><p>peak_outdoor_air_flow</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ZoneSize.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ZoneSize.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ZoneSize.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ZoneSize.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a ZoneSize from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – ZoneSize dictionary following the format below.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ZoneSize&quot;</span><span class="p">,</span>
+<span class="s2">&quot;zone_name&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="s2">&quot;load_type&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="s2">&quot;calculated_design_load&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+<span class="s2">&quot;final_design_load&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+<span class="s2">&quot;calculated_design_flow&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+<span class="s2">&quot;final_design_flow&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+<span class="s2">&quot;design_day_name&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="s2">&quot;peak_date_time&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="s2">&quot;peak_temperature&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+<span class="s2">&quot;peak_humidity_ratio&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+<span class="s2">&quot;peak_outdoor_air_flow&quot;</span><span class="p">:</span> <span class="nb">float</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sql.html#ZoneSize.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sql.ZoneSize.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get ZoneSize as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.calculated_design_flow">
+<em class="property">property </em><code class="sig-name descname">calculated_design_flow</code><a class="headerlink" href="#ladybug.sql.ZoneSize.calculated_design_flow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the peak flow of the Zone computed by the EnergyPlus sizing calculation.</p>
+<p>Values are always in m3/s.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.calculated_design_load">
+<em class="property">property </em><code class="sig-name descname">calculated_design_load</code><a class="headerlink" href="#ladybug.sql.ZoneSize.calculated_design_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the peak load of the Zone computed by the EnergyPlus sizing calculation.</p>
+<p>Values are always in Watts.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.design_day_name">
+<em class="property">property </em><code class="sig-name descname">design_day_name</code><a class="headerlink" href="#ladybug.sql.ZoneSize.design_day_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the name of the design day on which the peak load occurred.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.final_design_flow">
+<em class="property">property </em><code class="sig-name descname">final_design_flow</code><a class="headerlink" href="#ladybug.sql.ZoneSize.final_design_flow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the peak flor of the Zone that is ultimately used to size the equipment.</p>
+<p>Values are always in m3/s. This accounts for the heating_factor and
+cooling_factor of the specified in the SizingParameter of the
+SimulationParameter object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.final_design_load">
+<em class="property">property </em><code class="sig-name descname">final_design_load</code><a class="headerlink" href="#ladybug.sql.ZoneSize.final_design_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the peak load of the Zone that is ultimately used to size the equipment.</p>
+<p>Values are always in Watts. This accounts for the heating_factor and
+cooling_factor of the specified in the SizingParameter of the
+SimulationParameter object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.load_type">
+<em class="property">property </em><code class="sig-name descname">load_type</code><a class="headerlink" href="#ladybug.sql.ZoneSize.load_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a text string that is either “Cooling” or “Heating”.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.peak_date_time">
+<em class="property">property </em><code class="sig-name descname">peak_date_time</code><a class="headerlink" href="#ladybug.sql.ZoneSize.peak_date_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a DateTime for the time at which the peak occurred.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.peak_humidity_ratio">
+<em class="property">property </em><code class="sig-name descname">peak_humidity_ratio</code><a class="headerlink" href="#ladybug.sql.ZoneSize.peak_humidity_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the outdoor humidity ratio at the time of the peak load (fractional).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.peak_outdoor_air_flow">
+<em class="property">property </em><code class="sig-name descname">peak_outdoor_air_flow</code><a class="headerlink" href="#ladybug.sql.ZoneSize.peak_outdoor_air_flow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the outdoor air flow into the zone at the time of the peak load (m3/s).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.peak_temperature">
+<em class="property">property </em><code class="sig-name descname">peak_temperature</code><a class="headerlink" href="#ladybug.sql.ZoneSize.peak_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the outdoor air temperature at the time of the peak load (C).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.sql.ZoneSize.zone_name">
+<em class="property">property </em><code class="sig-name descname">zone_name</code><a class="headerlink" href="#ladybug.sql.ZoneSize.zone_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the name of the zone to which this sizing information corresponds.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

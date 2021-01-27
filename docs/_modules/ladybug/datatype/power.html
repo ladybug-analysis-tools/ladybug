@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.datatype.power &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.datatype.power</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Generic data type.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">.base</span> <span class="kn">import</span> <span class="n">DataTypeBase</span>
+<span class="kn">from</span> <span class="nn">.energyflux</span> <span class="kn">import</span> <span class="n">EnergyFlux</span>
+<span class="kn">from</span> <span class="nn">.energy</span> <span class="kn">import</span> <span class="n">Energy</span>
+
+
+<div class="viewcode-block" id="Power"><a class="viewcode-back" href="../../../ladybug.datatype.power.html#ladybug.datatype.power.Power">[docs]</a><span class="k">class</span> <span class="nc">Power</span><span class="p">(</span><span class="n">DataTypeBase</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Power</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_units</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="s1">&#39;Btu/h&#39;</span><span class="p">,</span> <span class="s1">&#39;kW&#39;</span><span class="p">,</span> <span class="s1">&#39;kBtu/h&#39;</span><span class="p">,</span> <span class="s1">&#39;TR&#39;</span><span class="p">,</span> <span class="s1">&#39;hp&#39;</span><span class="p">)</span>
+    <span class="n">_si_units</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;kW&#39;</span><span class="p">,</span> <span class="s1">&#39;W&#39;</span><span class="p">)</span>
+    <span class="n">_ip_units</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Btu/h&#39;</span><span class="p">,</span> <span class="s1">&#39;kBtu/h&#39;</span><span class="p">,</span> <span class="s1">&#39;TR&#39;</span><span class="p">,</span> <span class="s1">&#39;hp&#39;</span><span class="p">)</span>
+    <span class="n">_abbreviation</span> <span class="o">=</span> <span class="s1">&#39;Q&#39;</span>
+    <span class="n">_point_in_time</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">_normalized_type</span> <span class="o">=</span> <span class="n">EnergyFlux</span>
+    <span class="n">_time_aggregated_type</span> <span class="o">=</span> <span class="n">Energy</span>
+    <span class="n">_time_aggregated_factor</span> <span class="o">=</span> <span class="mf">0.001</span>
+
+    <span class="k">def</span> <span class="nf">_W_to_Btu_h</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">3.41214</span>
+
+    <span class="k">def</span> <span class="nf">_W_to_kW</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">1000.</span>
+
+    <span class="k">def</span> <span class="nf">_W_to_kBtu_h</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">0.00341214</span>
+
+    <span class="k">def</span> <span class="nf">_W_to_TR</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">3516.85</span>
+
+    <span class="k">def</span> <span class="nf">_W_to_hp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">745.7</span>
+
+    <span class="k">def</span> <span class="nf">_Btu_h_to_W</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">3.41214</span>
+
+    <span class="k">def</span> <span class="nf">_kW_to_W</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">1000.</span>
+
+    <span class="k">def</span> <span class="nf">_kBtu_h_to_W</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">0.00341214</span>
+
+    <span class="k">def</span> <span class="nf">_TR_to_W</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">3516.85</span>
+
+    <span class="k">def</span> <span class="nf">_hp_to_W</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">745.7</span>
+
+<div class="viewcode-block" id="Power.to_unit"><a class="viewcode-back" href="../../../ladybug.datatype.power.html#ladybug.datatype.power.Power.to_unit">[docs]</a>    <span class="k">def</span> <span class="nf">to_unit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return values converted to the unit given the input from_unit.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_to_unit_base</span><span class="p">(</span><span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Power.to_ip"><a class="viewcode-back" href="../../../ladybug.datatype.power.html#ladybug.datatype.power.Power.to_ip">[docs]</a>    <span class="k">def</span> <span class="nf">to_ip</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return values in IP and the units to which the values have been converted.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">from_unit</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip_units</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">values</span><span class="p">,</span> <span class="n">from_unit</span>
+        <span class="k">elif</span> <span class="n">from_unit</span> <span class="o">==</span> <span class="s1">&#39;kW&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="s1">&#39;kBtu/h&#39;</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">),</span> <span class="s1">&#39;kBtu/h&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="s1">&#39;Btu/h&#39;</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">),</span> <span class="s1">&#39;Btu/h&#39;</span></div>
+
+<div class="viewcode-block" id="Power.to_si"><a class="viewcode-back" href="../../../ladybug.datatype.power.html#ladybug.datatype.power.Power.to_si">[docs]</a>    <span class="k">def</span> <span class="nf">to_si</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return values in SI and the units to which the values have been converted.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">from_unit</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">si_units</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">values</span><span class="p">,</span> <span class="n">from_unit</span>
+        <span class="k">elif</span> <span class="n">from_unit</span> <span class="o">==</span> <span class="s1">&#39;kBtu/h&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="s1">&#39;kW&#39;</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">),</span> <span class="s1">&#39;kW&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_unit</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">),</span> <span class="s1">&#39;W&#39;</span></div></div>
+
+
+<div class="viewcode-block" id="ActivityLevel"><a class="viewcode-back" href="../../../ladybug.datatype.power.html#ladybug.datatype.power.ActivityLevel">[docs]</a><span class="k">class</span> <span class="nc">ActivityLevel</span><span class="p">(</span><span class="n">Power</span><span class="p">):</span>
+    <span class="n">_abbreviation</span> <span class="o">=</span> <span class="s1">&#39;Activity&#39;</span>
+    <span class="n">_min</span> <span class="o">=</span> <span class="mi">0</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

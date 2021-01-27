@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.color &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.color</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Ladybug color, colorsets and colorrange.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Iterable</span>  <span class="c1"># python &lt; 3.7</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Iterable</span>  <span class="c1"># python &gt;= 3.8</span>
+
+
+<div class="viewcode-block" id="Color"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Color">[docs]</a><span class="k">class</span> <span class="nc">Color</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Ladybug RGBA color.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        r: red value 0-255, default: 0</span>
+<span class="sd">        g: green value 0-255, default: 0</span>
+<span class="sd">        b: blue red value 0-255, default: 0</span>
+<span class="sd">        a: alpha value 0-255. Alpha defines the opacity as a number between 0 (fully</span>
+<span class="sd">            transparent) and 255 (fully opaque). Default 255.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * r</span>
+<span class="sd">        * g</span>
+<span class="sd">        * b</span>
+<span class="sd">        * a</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_r&quot;</span><span class="p">,</span> <span class="s2">&quot;_g&quot;</span><span class="p">,</span> <span class="s2">&quot;_b&quot;</span><span class="p">,</span> <span class="s2">&quot;_a&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">g</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">255</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generate RGB Color.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">g</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
+
+<div class="viewcode-block" id="Color.from_dict"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Color.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a color from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">                {</span>
+<span class="sd">                &quot;r&quot;: 255,</span>
+<span class="sd">                &quot;g&quot;: 0,</span>
+<span class="sd">                &quot;b&quot;: 150,</span>
+<span class="sd">                &quot;a&quot;: 255</span>
+<span class="sd">                }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">255</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;r&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;g&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">],</span> <span class="n">a</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">r</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return R value.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_r</span>
+
+    <span class="nd">@r</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">r</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> is out of range. &quot;</span> <span class="o">%</span> <span class="n">value</span> <span class="o">+</span> \
+            <span class="s2">&quot;R value should be between 0-255&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return G value.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_g</span>
+
+    <span class="nd">@g</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> is out of range. &quot;</span> <span class="o">%</span> <span class="n">value</span> <span class="o">+</span> \
+            <span class="s2">&quot;G value should be between 0-255&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_g</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">b</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return B value.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span>
+
+    <span class="nd">@b</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">b</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> is out of range. &quot;</span> <span class="o">%</span> <span class="n">value</span> <span class="o">+</span> \
+            <span class="s2">&quot;B value should be between 0-255&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">a</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return A value.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a</span>
+
+    <span class="nd">@a</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">a</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> is out of range. &quot;</span> <span class="o">%</span> <span class="n">value</span> <span class="o">+</span> \
+            <span class="s2">&quot;B value should be between 0-255&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Color.duplicate"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Color.duplicate">[docs]</a>    <span class="k">def</span> <span class="nf">duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a copy of the current color.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__copy__</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Color.to_dict"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Color.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get color as a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="p">,</span>
+            <span class="s1">&#39;g&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="p">,</span>
+            <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span>
+            <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;Color&#39;</span>
+        <span class="p">}</span></div>
+
+    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Color</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">r</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">g</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">b</span> <span class="ow">and</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">a</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="fm">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">hash</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">4</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">)[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">iter</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">))</span>
+
+<div class="viewcode-block" id="Color.ToString"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Color.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return RGB values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;(R:</span><span class="si">%d</span><span class="s2">, G:</span><span class="si">%d</span><span class="s2">, B:</span><span class="si">%d</span><span class="s2">, A:</span><span class="si">%d</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_r</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_g</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a</span><span class="p">)</span></div>
+
+
+<span class="c1"># TODO: Add support for CMYK</span>
+<div class="viewcode-block" id="Colorset"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset">[docs]</a><span class="k">class</span> <span class="nc">Colorset</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Ladybug Color-range repository.</span>
+
+<span class="sd">    A list of default Ladybug colorsets for color range:</span>
+<span class="sd">        * 0 - original Ladybug</span>
+<span class="sd">        * 1 - nuanced Ladybug</span>
+<span class="sd">        * 2 - Multi-colored Ladybug</span>
+<span class="sd">        * 3 - View Analysis 1</span>
+<span class="sd">        * 4 - View Analysis 2 (Red,Green,Blue)</span>
+<span class="sd">        * 5 - Sunlight Hours</span>
+<span class="sd">        * 6 - ecotect</span>
+<span class="sd">        * 7 - thermal Comfort Percentage</span>
+<span class="sd">        * 8 - thermal Comfort Colors</span>
+<span class="sd">        * 9 - thermal Comfort Colors (UTCI)</span>
+<span class="sd">        * 10 - Hot Hours</span>
+<span class="sd">        * 11 - Cold Hours</span>
+<span class="sd">        * 12 - Shade Benefit/Harm</span>
+<span class="sd">        * 13 - thermal Comfort Colors v2 (UTCI)</span>
+<span class="sd">        * 14 - Shade Harm</span>
+<span class="sd">        * 15 - Shade Benefit</span>
+<span class="sd">        * 16 - Black to White</span>
+<span class="sd">        * 17 - CFD Colors 1</span>
+<span class="sd">        * 18 - CFD Colors 2</span>
+<span class="sd">        * 19 - Energy Balance</span>
+<span class="sd">        * 20 - THERM</span>
+<span class="sd">        * 21 - Cloud Cover</span>
+
+<span class="sd">    Usage:</span>
+
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        # initialize colorsets</span>
+<span class="sd">        cs = Colorset()</span>
+<span class="sd">        print(cs[0])</span>
+<span class="sd">        &gt;&gt; [&lt;R:75, G:107, B:169&gt;, &lt;R:115, G:147, B:202&gt;, &lt;R:170, G:200, B:247&gt;,</span>
+<span class="sd">            &lt;R:193, G:213, B:208&gt;, &lt;R:245, G:239, B:103&gt;, &lt;R:252, G:230, B:74&gt;,</span>
+<span class="sd">            &lt;R:239, G:156, B:21&gt;, &lt;R:234, G:123, B:0&gt;, &lt;R:234, G:74, B:0&gt;,</span>
+<span class="sd">            &lt;R:234, G:38, B:0&gt;]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># base color sets for which there are several variations</span>
+    <span class="n">_multicolored</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">145</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">224</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">232</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span>
+                     <span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">246</span><span class="p">,</span> <span class="mi">156</span><span class="p">),</span> <span class="p">(</span><span class="mi">166</span><span class="p">,</span> <span class="mi">249</span><span class="p">,</span> <span class="mi">86</span><span class="p">),</span> <span class="p">(</span><span class="mi">254</span><span class="p">,</span> <span class="mi">244</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                     <span class="p">(</span><span class="mi">239</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">138</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+    <span class="n">_thermalcomfort</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">136</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">225</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span>
+                       <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">230</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+    <span class="n">_benefitharm</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">191</span><span class="p">,</span> <span class="mi">48</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">238</span><span class="p">,</span> <span class="mi">184</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+    <span class="n">_shadebenefitharm</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">97</span><span class="p">),</span> <span class="p">(</span><span class="mi">33</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">172</span><span class="p">),</span> <span class="p">(</span><span class="mi">67</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">195</span><span class="p">),</span> <span class="p">(</span><span class="mi">146</span><span class="p">,</span> <span class="mi">197</span><span class="p">,</span> <span class="mi">222</span><span class="p">),</span>
+                         <span class="p">(</span><span class="mi">209</span><span class="p">,</span> <span class="mi">229</span><span class="p">,</span> <span class="mi">240</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">253</span><span class="p">,</span> <span class="mi">219</span><span class="p">,</span> <span class="mi">199</span><span class="p">),</span>
+                         <span class="p">(</span><span class="mi">244</span><span class="p">,</span> <span class="mi">165</span><span class="p">,</span> <span class="mi">130</span><span class="p">),</span> <span class="p">(</span><span class="mi">214</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="mi">77</span><span class="p">),</span> <span class="p">(</span><span class="mi">178</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">43</span><span class="p">),</span> <span class="p">(</span><span class="mi">103</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">31</span><span class="p">)]</span>
+
+    <span class="c1"># dictionary of all color sets together</span>
+    <span class="n">_colors</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="mi">0</span><span class="p">:</span> <span class="p">[(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">169</span><span class="p">),</span> <span class="p">(</span><span class="mi">115</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">202</span><span class="p">),</span> <span class="p">(</span><span class="mi">170</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">247</span><span class="p">),</span> <span class="p">(</span><span class="mi">193</span><span class="p">,</span> <span class="mi">213</span><span class="p">,</span> <span class="mi">208</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">245</span><span class="p">,</span> <span class="mi">239</span><span class="p">,</span> <span class="mi">103</span><span class="p">),</span> <span class="p">(</span><span class="mi">252</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">74</span><span class="p">),</span> <span class="p">(</span><span class="mi">239</span><span class="p">,</span> <span class="mi">156</span><span class="p">,</span> <span class="mi">21</span><span class="p">),</span> <span class="p">(</span><span class="mi">234</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">234</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">234</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="p">[(</span><span class="mi">49</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">149</span><span class="p">),</span> <span class="p">(</span><span class="mi">69</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">180</span><span class="p">),</span> <span class="p">(</span><span class="mi">116</span><span class="p">,</span> <span class="mi">173</span><span class="p">,</span> <span class="mi">209</span><span class="p">),</span> <span class="p">(</span><span class="mi">171</span><span class="p">,</span> <span class="mi">217</span><span class="p">,</span> <span class="mi">233</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">224</span><span class="p">,</span> <span class="mi">243</span><span class="p">,</span> <span class="mi">248</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">191</span><span class="p">),</span> <span class="p">(</span><span class="mi">254</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">144</span><span class="p">),</span> <span class="p">(</span><span class="mi">253</span><span class="p">,</span> <span class="mi">174</span><span class="p">,</span> <span class="mi">97</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">244</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">67</span><span class="p">),</span> <span class="p">(</span><span class="mi">215</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">39</span><span class="p">),</span> <span class="p">(</span><span class="mi">165</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">38</span><span class="p">)],</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="n">_multicolored</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">53</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">202</span><span class="p">),</span> <span class="p">(</span><span class="mi">107</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">148</span><span class="p">),</span> <span class="p">(</span><span class="mi">160</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">95</span><span class="p">),</span> <span class="p">(</span><span class="mi">214</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">41</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">173</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">226</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="p">[(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">147</span><span class="p">),</span> <span class="p">(</span><span class="mi">240</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">145</span><span class="p">),</span> <span class="p">(</span><span class="mi">203</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">139</span><span class="p">),</span> <span class="p">(</span><span class="mi">160</span><span class="p">,</span> <span class="mi">196</span><span class="p">,</span> <span class="mi">133</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">132</span><span class="p">,</span> <span class="mi">248</span><span class="p">,</span> <span class="mi">129</span><span class="p">),</span> <span class="p">(</span><span class="mi">124</span><span class="p">,</span> <span class="mi">253</span><span class="p">,</span> <span class="mi">132</span><span class="p">),</span> <span class="p">(</span><span class="mi">96</span><span class="p">,</span> <span class="mi">239</span><span class="p">,</span> <span class="mi">160</span><span class="p">),</span> <span class="p">(</span><span class="mi">53</span><span class="p">,</span> <span class="mi">217</span><span class="p">,</span> <span class="mi">203</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">198</span><span class="p">,</span> <span class="mi">240</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">191</span><span class="p">,</span> <span class="mi">255</span><span class="p">)],</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="p">[(</span><span class="mi">55</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">55</span><span class="p">),</span> <span class="p">(</span><span class="mi">235</span><span class="p">,</span> <span class="mi">235</span><span class="p">,</span> <span class="mi">235</span><span class="p">)],</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="p">[(</span><span class="mi">156</span><span class="p">,</span> <span class="mi">217</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">243</span><span class="p">,</span> <span class="mi">77</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">115</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">153</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">102</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)],</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="n">_thermalcomfort</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">136</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">67</span><span class="p">,</span> <span class="mi">176</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">134</span><span class="p">,</span> <span class="mi">215</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">174</span><span class="p">,</span> <span class="mi">228</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">215</span><span class="p">,</span> <span class="mi">242</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">243</span><span class="p">,</span> <span class="mi">243</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="n">_thermalcomfort</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span>
+        <span class="mi">11</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">_thermalcomfort</span><span class="p">[:</span><span class="mi">3</span><span class="p">])),</span>
+        <span class="mi">12</span><span class="p">:</span> <span class="n">_benefitharm</span><span class="p">,</span>
+        <span class="mi">13</span><span class="p">:</span> <span class="n">_benefitharm</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span>
+        <span class="mi">14</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">_benefitharm</span><span class="p">[:</span><span class="mi">2</span><span class="p">])),</span>
+        <span class="mi">15</span><span class="p">:</span> <span class="n">_shadebenefitharm</span><span class="p">,</span>
+        <span class="mi">16</span><span class="p">:</span> <span class="n">_shadebenefitharm</span><span class="p">[</span><span class="mi">5</span><span class="p">:],</span>
+        <span class="mi">17</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">_shadebenefitharm</span><span class="p">[:</span><span class="mi">6</span><span class="p">])),</span>
+        <span class="mi">18</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">_multicolored</span><span class="p">)),</span>
+        <span class="mi">19</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">_multicolored</span><span class="p">))</span> <span class="o">+</span> <span class="p">[(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">64</span><span class="p">)],</span>
+        <span class="mi">20</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">137</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">139</span><span class="p">),</span> <span class="p">(</span><span class="mi">218</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">218</span><span class="p">),</span> <span class="p">(</span><span class="mi">196</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">198</span><span class="p">,</span> <span class="mi">252</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">244</span><span class="p">,</span> <span class="mi">215</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">101</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">193</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">115</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">249</span><span class="p">,</span> <span class="mi">251</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">254</span><span class="p">,</span> <span class="mi">178</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">253</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">135</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)],</span>
+        <span class="mi">21</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">251</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">217</span><span class="p">,</span> <span class="mi">217</span><span class="p">,</span> <span class="mi">217</span><span class="p">),</span> <span class="p">(</span><span class="mi">83</span><span class="p">,</span> <span class="mi">114</span><span class="p">,</span> <span class="mi">115</span><span class="p">)],</span>
+        <span class="mi">22</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)],</span>
+        <span class="mi">23</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+        <span class="mi">24</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="p">(</span><span class="mi">38</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">160</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">222</span><span class="p">),</span> <span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">109</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">59</span><span class="p">,</span> <span class="mi">183</span><span class="p">,</span> <span class="mi">35</span><span class="p">),</span> <span class="p">(</span><span class="mi">143</span><span class="p">,</span> <span class="mi">209</span><span class="p">,</span> <span class="mi">19</span><span class="p">),</span> <span class="p">(</span><span class="mi">228</span><span class="p">,</span> <span class="mi">215</span><span class="p">,</span> <span class="mi">29</span><span class="p">),</span> <span class="p">(</span><span class="mi">246</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">17</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">243</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+        <span class="mi">25</span><span class="p">:</span> <span class="p">[(</span><span class="mi">69</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">166</span><span class="p">),</span> <span class="p">(</span><span class="mi">66</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">167</span><span class="p">),</span> <span class="p">(</span><span class="mi">62</span><span class="p">,</span> <span class="mi">176</span><span class="p">,</span> <span class="mi">168</span><span class="p">),</span> <span class="p">(</span><span class="mi">78</span><span class="p">,</span> <span class="mi">181</span><span class="p">,</span> <span class="mi">137</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">188</span><span class="p">,</span> <span class="mi">59</span><span class="p">),</span> <span class="p">(</span><span class="mi">139</span><span class="p">,</span> <span class="mi">184</span><span class="p">,</span> <span class="mi">46</span><span class="p">),</span> <span class="p">(</span><span class="mi">197</span><span class="p">,</span> <span class="mi">157</span><span class="p">,</span> <span class="mi">54</span><span class="p">),</span> <span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">144</span><span class="p">,</span> <span class="mi">57</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">228</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">59</span><span class="p">),</span> <span class="p">(</span><span class="mi">233</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">60</span><span class="p">)],</span>
+        <span class="mi">26</span><span class="p">:</span> <span class="p">[(</span><span class="mi">230</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">60</span><span class="p">),</span> <span class="p">(</span><span class="mi">230</span><span class="p">,</span> <span class="mi">215</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span> <span class="p">(</span><span class="mi">165</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span> <span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span> <span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="p">(</span><span class="mi">160</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">190</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span>
+             <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize Color-sets.&quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+<div class="viewcode-block" id="Colorset.original"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.original">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">original</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Original Ladybug colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.nuanced"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.nuanced">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">nuanced</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Nuanced Ladybug colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.multi_colored"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.multi_colored">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">multi_colored</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Multi-colored legend.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.ecotect"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.ecotect">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">ecotect</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Ecotect colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.view_study"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.view_study">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">view_study</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;View analysis colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.shadow_study"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.shadow_study">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">shadow_study</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Shadow study colors (dark to light grey).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.glare_study"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.glare_study">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">glare_study</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Useful for depicting spatial glare (light blue to yellow, red, black).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.annual_comfort"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.annual_comfort">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">annual_comfort</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Good for annual metrics like UDI and thermal comfort percent.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.thermal_comfort"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.thermal_comfort">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">thermal_comfort</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Thermal comfort colors (blue to white to red).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.thermal_comfort_utci"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.thermal_comfort_utci">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">thermal_comfort_utci</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Thermal comfort colors weighted for the UTCI scale (heat more than cold).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">9</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.heat_sensation"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.heat_sensation">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">heat_sensation</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Red colors for heat sensation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">10</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.cold_sensation"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.cold_sensation">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">cold_sensation</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Blue colors for cold sensation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">11</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.benefit_harm"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.benefit_harm">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">benefit_harm</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Benefit / harm study colors (red to light yellow to green).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">12</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.harm"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.harm">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">harm</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Harm colors (light yellow to red).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">13</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.benefit"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.benefit">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">benefit</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Benefit colors (light yellow to green).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">14</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.shade_benefit_harm"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.shade_benefit_harm">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">shade_benefit_harm</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Shade benefit / harm colors (dark red to white to dark blue).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">15</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.shade_harm"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.shade_harm">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">shade_harm</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Shade harm colors (white to dark red).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">16</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.shade_benefit"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.shade_benefit">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">shade_benefit</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Shade benefit colors (white to dark blue).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">17</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.energy_balance"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.energy_balance">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">energy_balance</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Energy Balance colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">18</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.energy_balance_storage"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.energy_balance_storage">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">energy_balance_storage</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Energy Balance colors with a brown color for storage term.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">19</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.therm"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.therm">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">therm</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;THERM colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">20</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.cloud_cover"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.cloud_cover">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">cloud_cover</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Cloud cover colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">21</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.black_to_white"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.black_to_white">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">black_to_white</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Black to white colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">22</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.blue_green_red"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.blue_green_red">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">blue_green_red</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Blue to Green to Red colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">23</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.multicolored_2"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.multicolored_2">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">multicolored_2</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Multi-colored colors with less saturation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">24</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.multicolored_3"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.multicolored_3">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">multicolored_3</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Multi-colored colors with the least saturation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">25</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Colorset.openstudio_palette"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.openstudio_palette">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">openstudio_palette</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Standard color set for the OpenStudio surface types. Ordered as follows.</span>
+
+<span class="sd">        Exterior Wall, Interior Wall, Underground Wall,</span>
+<span class="sd">        Roof, Ceiling, Underground Roof,</span>
+<span class="sd">        Exposed Floor, Interior Floor, Ground Floor,</span>
+<span class="sd">        Window, Door, Shade, Air</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">26</span><span class="p">])</span></div>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return length of currently installed color sets.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return one of the color sets.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+
+<div class="viewcode-block" id="Colorset.ToString"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.Colorset.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Colorset representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> currently installed Colorsets&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="ColorRange"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.ColorRange">[docs]</a><span class="k">class</span> <span class="nc">ColorRange</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Ladybug Color Range. Used to generate colors from numerical values.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        colors: A list of colors. Colors should be input as objects with</span>
+<span class="sd">            R, G, B values. Default is Ladybug&#39;s original colorset.</span>
+<span class="sd">        domain: A list of at least two numbers to set the lower and upper</span>
+<span class="sd">            boundary of the color range. This can also be a list of more than</span>
+<span class="sd">            two values, which can be used to approximate logarithmic or other types</span>
+<span class="sd">            of color scales. However, the number of values in the domain must</span>
+<span class="sd">            always be less than or equal to the number of colors.</span>
+<span class="sd">            Default: [0, 1].</span>
+<span class="sd">        continuous_colors: Boolean. If True, the colors generated from the</span>
+<span class="sd">            color range will be in a continuous gradient. If False,</span>
+<span class="sd">            they will be categorized in incremental groups according to the</span>
+<span class="sd">            number_of_segments. Default: True for continuous colors.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * colors</span>
+<span class="sd">        * continuous_colors</span>
+<span class="sd">        * domain</span>
+
+<span class="sd">    Usage:</span>
+
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        1.</span>
+<span class="sd">            color_range = ColorRange(continuous_colors=False)</span>
+<span class="sd">            color_range.domain = [100, 2000]</span>
+<span class="sd">            color_range.colors = [Color(75, 107, 169), Color(245, 239, 103),</span>
+<span class="sd">                Color(234, 38, 0)]</span>
+<span class="sd">            print(color_range.color(99))</span>
+<span class="sd">            print(color_range.color(100))</span>
+<span class="sd">            print(color_range.color(2000))</span>
+<span class="sd">            print(color_range.color(2001))</span>
+<span class="sd">            &gt;&gt; (R:75, G:107, B:169)</span>
+<span class="sd">            &gt;&gt; (R:245, G:239, B:103)</span>
+<span class="sd">            &gt;&gt; (R:245, G:239, B:103)</span>
+<span class="sd">            &gt;&gt; (R:234, G:38, B:0)</span>
+
+<span class="sd">        2.</span>
+<span class="sd">            color_range = ColorRange(continuous_colors=False)</span>
+<span class="sd">            color_range.domain = [100, 2000]</span>
+<span class="sd">            color_range.colors = [Color(75, 107, 169), Color(245, 239, 103),</span>
+<span class="sd">                Color(234, 38, 0)]</span>
+<span class="sd">            color_range.color(300)</span>
+<span class="sd">            &gt;&gt; (R:245, G:239, B:103)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">continuous_colors</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initiate Ladybug color range.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_continuous_colors</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">continuous_colors</span> <span class="ow">is</span> <span class="kc">None</span> \
+            <span class="k">else</span> <span class="n">continuous_colors</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_continuous_colors</span><span class="p">,</span> <span class="nb">bool</span><span class="p">),</span> \
+            <span class="s2">&quot;continuous_colors should be a Boolean.</span><span class="se">\n</span><span class="s2">Got </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="nb">type</span><span class="p">(</span><span class="n">continuous_colors</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_domain_set</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">colors</span> <span class="o">=</span> <span class="n">colors</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">domain</span> <span class="o">=</span> <span class="n">domain</span>
+
+<div class="viewcode-block" id="ColorRange.from_dict"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.ColorRange.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a color range from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;colors&quot;: [{&#39;r&#39;: 0, &#39;g&#39;: 0, &#39;b&#39;: 0}, {&#39;r&#39;: 255, &#39;g&#39;: 255, &#39;b&#39;: 255}],</span>
+<span class="sd">            &quot;domain&quot;: [0, 100],</span>
+<span class="sd">            &quot;continuous_colors&quot;: True</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">optional_keys</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;colors&#39;</span><span class="p">,</span> <span class="s1">&#39;domain&#39;</span><span class="p">,</span> <span class="s1">&#39;continuous_colors&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">optional_keys</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;colors&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">Color</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;colors&#39;</span><span class="p">]]</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">colors</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;domain&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;continuous_colors&#39;</span><span class="p">])</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">colors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set the colors defining the color range.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span>
+
+    <span class="nd">@colors</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">colors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cols</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">cols</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span> <span class="o">=</span> <span class="n">Colorset</span><span class="o">.</span><span class="n">original</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span> \
+                <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">)),</span> \
+                <span class="s1">&#39;Colors should be a list or tuple. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cols</span><span class="p">))</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">cols</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">col</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">Color</span><span class="p">)</span> <span class="k">else</span> <span class="n">Color</span><span class="p">(</span>
+                    <span class="n">col</span><span class="o">.</span><span class="n">R</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">G</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">B</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">cols</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="n">col</span><span class="o">.</span><span class="n">Red</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">Green</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">Blue</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is not a valid list of colors&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cols</span><span class="p">))</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_domain_set</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">domain</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">domain</span>  <span class="c1"># re-check the domain against new colors</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span> <span class="o">=</span> <span class="n">cols</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">domain</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set the domain defining the color range.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_domain</span>
+
+    <span class="nd">@domain</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">domain</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dom</span><span class="p">):</span>
+        <span class="c1"># check and prepare domain</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">dom</span><span class="p">:</span>
+            <span class="n">dom</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dom</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span> \
+                <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dom</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">)),</span> \
+                <span class="s1">&#39;Domain should be a list or tuple. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">dom</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">dom</span><span class="p">:</span>
+                <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">)),</span> <span class="s1">&#39;Values of a domain must be &#39;</span> \
+                    <span class="s1">&#39;numbers. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">val</span><span class="p">))</span>
+            <span class="n">dom</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">dom</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_continuous_colors</span><span class="p">:</span>  <span class="c1"># continuous</span>
+            <span class="c1"># if type is continuous domain can only be 2 values</span>
+            <span class="c1"># or at least 1 value less than number of colors</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">dom</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="c1"># remap domain based on colors</span>
+                <span class="n">_step</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">dom</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">dom</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">_n</span> <span class="o">=</span> <span class="n">dom</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">dom</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">_n</span> <span class="o">+</span> <span class="n">c</span> <span class="o">*</span> <span class="n">_step</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">)))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dom</span><span class="p">),</span> \
+                    <span class="s2">&quot;For a continuous color range, the length of the domain should &quot;</span> \
+                    <span class="s2">&quot;be 2 or greater than the number of colors.&quot;</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># segmented</span>
+            <span class="c1"># Number of colors should be at least one more than number of domain values</span>
+            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">dom</span><span class="p">),</span> \
+                <span class="s2">&quot;For a segmented color range, the length of colors &quot;</span> <span class="o">+</span> \
+                <span class="s2">&quot;should be more than the number of domain values .&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_domain_set</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_domain</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">dom</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">continuous_colors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean noting whether colors generated are continuous or discrete.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_continuous_colors</span>
+
+<div class="viewcode-block" id="ColorRange.color"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.ColorRange.color">[docs]</a>    <span class="k">def</span> <span class="nf">color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate a color along the range for an input value.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_domain</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_domain</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="c1"># find the index of the value in domain</span>
+        <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_domain</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">d</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_domain</span><span class="p">[</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_continuous_colors</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cal_color</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="ColorRange.duplicate"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.ColorRange.duplicate">[docs]</a>    <span class="k">def</span> <span class="nf">duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a copy of the current color range.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__copy__</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="ColorRange.to_dict"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.ColorRange.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get color range as a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;colors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">col</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">colors</span><span class="p">],</span>
+            <span class="s1">&#39;domain&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">domain</span><span class="p">,</span>
+            <span class="s1">&#39;continuous_colors&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">continuous_colors</span><span class="p">,</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;ColorRange&#39;</span>
+        <span class="p">}</span></div>
+
+    <span class="k">def</span> <span class="nf">_cal_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">color_index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Blend between two colors based on input value.&quot;&quot;&quot;</span>
+        <span class="n">range_min_p</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_domain</span><span class="p">[</span><span class="n">color_index</span><span class="p">]</span>
+        <span class="n">range_p</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_domain</span><span class="p">[</span><span class="n">color_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">range_min_p</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">factor</span> <span class="o">=</span> <span class="p">(</span><span class="n">value</span> <span class="o">-</span> <span class="n">range_min_p</span><span class="p">)</span> <span class="o">/</span> <span class="n">range_p</span>
+        <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+            <span class="n">factor</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">min_color</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">colors</span><span class="p">[</span><span class="n">color_index</span><span class="p">]</span>
+        <span class="n">max_color</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">colors</span><span class="p">[</span><span class="n">color_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">red</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">factor</span> <span class="o">*</span> <span class="p">(</span><span class="n">max_color</span><span class="o">.</span><span class="n">r</span> <span class="o">-</span> <span class="n">min_color</span><span class="o">.</span><span class="n">r</span><span class="p">)</span> <span class="o">+</span> <span class="n">min_color</span><span class="o">.</span><span class="n">r</span><span class="p">)</span>
+        <span class="n">green</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">factor</span> <span class="o">*</span> <span class="p">(</span><span class="n">max_color</span><span class="o">.</span><span class="n">g</span> <span class="o">-</span> <span class="n">min_color</span><span class="o">.</span><span class="n">g</span><span class="p">)</span> <span class="o">+</span> <span class="n">min_color</span><span class="o">.</span><span class="n">g</span><span class="p">)</span>
+        <span class="n">blue</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">factor</span> <span class="o">*</span> <span class="p">(</span><span class="n">max_color</span><span class="o">.</span><span class="n">b</span> <span class="o">-</span> <span class="n">min_color</span><span class="o">.</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="n">min_color</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">Color</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">colors</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">domain</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">continuous_colors</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return length of colors.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return key item from the color list.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Use colors to iterate.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">iter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">)</span>
+
+<div class="viewcode-block" id="ColorRange.ToString"><a class="viewcode-back" href="../../ladybug.color.html#ladybug.color.ColorRange.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Color Range representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Color Range (</span><span class="si">{}</span><span class="s2"> colors) (domain </span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">domain</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

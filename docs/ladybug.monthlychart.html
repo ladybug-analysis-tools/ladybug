@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.monthlychart module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.psychchart module" href="ladybug.psychchart.html" />
+    <link rel="prev" title="ladybug.logutil module" href="ladybug.logutil.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.logutil.html" title="Previous Chapter: ladybug.logutil module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.logut...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.psychchart.html" title="Next Chapter: ladybug.psychchart module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.psych... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.monthlychart.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.monthlychart">
+<span id="ladybug-monthlychart-module"></span><h1>ladybug.monthlychart module<a class="headerlink" href="#module-ladybug.monthlychart" title="Permalink to this headline">¶</a></h1>
+<p>Module for visualization of data collections in monthly intervals.</p>
+<dl class="py class">
+<dt id="ladybug.monthlychart.MonthlyChart">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.monthlychart.</code><code class="sig-name descname">MonthlyChart</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_collections</span></em>, <em class="sig-param"><span class="n">legend_parameters</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">base_point</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">x_dim</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">y_dim</span><span class="o">=</span><span class="default_value">40</span></em>, <em class="sig-param"><span class="n">stack</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">percentile</span><span class="o">=</span><span class="default_value">34</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/monthlychart.html#MonthlyChart"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object for visualization of data collections in monthly intervals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_collections</strong> – An array of data collections, which will be plotted
+on the monthly chart.</p></li>
+<li><p><strong>legend_parameters</strong> – An optional LegendParameter object to change the display
+of the HourlyPlot (Default: None).</p></li>
+<li><p><strong>base_point</strong> – An optional Point2D to be used as a starting point to generate
+the geometry of the plot (Default: (0, 0)).</p></li>
+<li><p><strong>x_dim</strong> – An optional number to set the X dimension of each month of the
+chart. (Default: 10).</p></li>
+<li><p><strong>y_dim</strong> – An optional number to set the Y dimension of the chart (Default: 40).</p></li>
+<li><p><strong>stack</strong> – Boolean to note whether multiple connected data collections with
+the same cumulative data type should be stacked on top of each other.
+Otherwise, all bars for cumulative monthly/daily data will be placed
+next to each other and all meshes for cumulative hourly data will
+be overlapped on top of one another. Note that this input has no effect
+on data collections that do not have a cumulative data type or do
+not have a time aggregated data type that is cumulative. (Default: False).</p></li>
+<li><p><strong>percentile</strong> – An optional number between 0 and 50 to be used for the percentile
+difference from the mean that hourly data meshes display at. For example,
+using 34 will generate hourly data meshes with a range of one standard
+deviation from the mean. Note that this input only has significance when
+the input data collections are hourly. (Default: 34)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>data_collections</p></li>
+<li><p>legend_parameters</p></li>
+<li><p>base_point</p></li>
+<li><p>x_dim</p></li>
+<li><p>y_dim</p></li>
+<li><p>stack</p></li>
+<li><p>percentile</p></li>
+<li><p>data_meshes</p></li>
+<li><p>data_polylines</p></li>
+<li><p>legend</p></li>
+<li><p>chart_border</p></li>
+<li><p>y_axis_lines</p></li>
+<li><p>y_axis_label_points1</p></li>
+<li><p>y_axis_label_points2</p></li>
+<li><p>y_axis_labels1</p></li>
+<li><p>y_axis_labels2</p></li>
+<li><p>month_lines</p></li>
+<li><p>month_label_points</p></li>
+<li><p>month_labels</p></li>
+<li><p>y_axis_title_text1</p></li>
+<li><p>y_axis_title_location1</p></li>
+<li><p>y_axis_title_text2</p></li>
+<li><p>y_axis_title_location2</p></li>
+<li><p>title_text</p></li>
+<li><p>lower_title_location</p></li>
+<li><p>upper_title_location</p></li>
+<li><p>time_interval</p></li>
+<li><p>analysis_period</p></li>
+<li><p>colors</p></li>
+<li><p>data_types</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.set_maximum_by_index">
+<code class="sig-name descname">set_maximum_by_index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">maximum_value</span></em>, <em class="sig-param"><span class="n">data_type_index</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/monthlychart.html#MonthlyChart.set_maximum_by_index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.set_maximum_by_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the maximum value of the Y-axis given the index of a data_type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>maximum_value</strong> – The value to be set as the maximum of the Y-axis.</p></li>
+<li><p><strong>data_type_index</strong> – An integer for the index of the data type to set
+the maximum_value for. This corresponds to one of the data types
+in the data_types property of this class. Using 0 indicates the
+left-side axis maximum and using 1 indicated the right-side
+axis maximum. (Default: 0).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.set_minimum_by_index">
+<code class="sig-name descname">set_minimum_by_index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">minimum_value</span></em>, <em class="sig-param"><span class="n">data_type_index</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/monthlychart.html#MonthlyChart.set_minimum_by_index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.set_minimum_by_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the minimum value of the Y-axis given the index of a data_type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum_value</strong> – The value to be set as the minimum of the Y-axis.</p></li>
+<li><p><strong>data_type_index</strong> – An integer for the index of the data type to set
+the minimum_value for. This corresponds to one of the data types
+in the data_types property of this class. Using 0 indicates the
+left-side axis minimum and using 1 indicated the right-side
+axis minimum. (Default: 0).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.analysis_period">
+<em class="property">property </em><code class="sig-name descname">analysis_period</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.analysis_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>The AnalysisPeriod assigned to the hourly plot’s data collection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.base_point">
+<em class="property">property </em><code class="sig-name descname">base_point</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.base_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for the base point of this monthly chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.chart_border">
+<em class="property">property </em><code class="sig-name descname">chart_border</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.chart_border" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Polyline2D for the border of the plot.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.colors">
+<em class="property">property </em><code class="sig-name descname">colors</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>An array of colors in the legend with one color per input data collection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.data_collections">
+<em class="property">property </em><code class="sig-name descname">data_collections</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.data_collections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the data collections assigned to this monthly chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.data_meshes">
+<em class="property">property </em><code class="sig-name descname">data_meshes</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.data_meshes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of colored Mesh2D for the data of this graphic.</p>
+<p>These meshes will resemble a bar chart in the case of monthly or daily data
+and will resemble a band between two ranges for hourly and sub-hourly data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.data_polylines">
+<em class="property">property </em><code class="sig-name descname">data_polylines</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.data_polylines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Polyline2D for the data of this graphic.</p>
+<p>These meshes will display the percentile borders of the data and the mean
+in the case of hourly data.  It will display a single line in the case of
+monthly-per-hour data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.data_types">
+<em class="property">property </em><code class="sig-name descname">data_types</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.data_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>A array of all the unique data types among the input collections.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.legend">
+<em class="property">property </em><code class="sig-name descname">legend</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.legend" title="Permalink to this definition">¶</a></dt>
+<dd><p>The legend assigned to this graphic.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.legend_parameters">
+<em class="property">property </em><code class="sig-name descname">legend_parameters</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.legend_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the legend parameters customizing this monthly chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.lower_title_location">
+<em class="property">property </em><code class="sig-name descname">lower_title_location</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.lower_title_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Plane for the lower location of title text.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.month_label_points">
+<em class="property">property </em><code class="sig-name descname">month_label_points</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.month_label_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Point2Ds for the month text labels for the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.month_labels">
+<em class="property">property </em><code class="sig-name descname">month_labels</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.month_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of text strings for the month labels for the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.month_lines">
+<em class="property">property </em><code class="sig-name descname">month_lines</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.month_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of LineSegment2D for the month intervals of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.percentile">
+<em class="property">property </em><code class="sig-name descname">percentile</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.percentile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a number for the percentile difference from the mean for hourly data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.stack">
+<em class="property">property </em><code class="sig-name descname">stack</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.stack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean for whether cumulative data should be stacked on top of each other.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.time_interval">
+<em class="property">property </em><code class="sig-name descname">time_interval</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.time_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text for the time interval of the input data collections.</p>
+<p>This determines how the data displays on the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.title_text">
+<em class="property">property </em><code class="sig-name descname">title_text</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.title_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text string for the suggested title of the monthly chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.upper_title_location">
+<em class="property">property </em><code class="sig-name descname">upper_title_location</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.upper_title_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Plane for the upper location of title text.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.x_dim">
+<em class="property">property </em><code class="sig-name descname">x_dim</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.x_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a number for the X dimension of each month of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_label_points1">
+<em class="property">property </em><code class="sig-name descname">y_axis_label_points1</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_label_points1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Point2Ds for the left-side labels of the Y-axis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_label_points2">
+<em class="property">property </em><code class="sig-name descname">y_axis_label_points2</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_label_points2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Point2Ds for the right-side labels of the Y-axis.</p>
+<p>This will be None if all of the input data collections are of the same
+data type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_labels1">
+<em class="property">property </em><code class="sig-name descname">y_axis_labels1</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_labels1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of text strings for the left-side labels of the Y-axis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_labels2">
+<em class="property">property </em><code class="sig-name descname">y_axis_labels2</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_labels2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of text strings for the right-side labels of the Y-axis.</p>
+<p>This will be None if all of the input data collections are of the same
+data type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_lines">
+<em class="property">property </em><code class="sig-name descname">y_axis_lines</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of LineSegment2D for the Y-axis values of the chart.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_title_location1">
+<em class="property">property </em><code class="sig-name descname">y_axis_title_location1</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_title_location1" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Plane for the location of left Y-axis title text.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_title_location2">
+<em class="property">property </em><code class="sig-name descname">y_axis_title_location2</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_title_location2" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Plane for the location of right Y-axis title text.</p>
+<p>This will be None if all of the input data collections are of the same
+data type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_title_text1">
+<em class="property">property </em><code class="sig-name descname">y_axis_title_text1</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_title_text1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text string for the suggested title of the left-side Y-axis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_axis_title_text2">
+<em class="property">property </em><code class="sig-name descname">y_axis_title_text2</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_axis_title_text2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text string for the suggested title of the right-side Y-axis.</p>
+<p>This will be None if all of the input data collections are of the same
+data type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.monthlychart.MonthlyChart.y_dim">
+<em class="property">property </em><code class="sig-name descname">y_dim</code><a class="headerlink" href="#ladybug.monthlychart.MonthlyChart.y_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a number for the Y dimension of the chart.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

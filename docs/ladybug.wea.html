@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.wea module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.windrose module" href="ladybug.windrose.html" />
+    <link rel="prev" title="ladybug.viewsphere module" href="ladybug.viewsphere.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.viewsphere.html" title="Previous Chapter: ladybug.viewsphere module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.views...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.windrose.html" title="Next Chapter: ladybug.windrose module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.windr... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.wea.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.wea">
+<span id="ladybug-wea-module"></span><h1>ladybug.wea module<a class="headerlink" href="#module-ladybug.wea" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="ladybug.wea.Wea">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.wea.</code><code class="sig-name descname">Wea</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">direct_normal_irradiance</span></em>, <em class="sig-param"><span class="n">diffuse_horizontal_irradiance</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A WEA object containing hourly or sub-hourly solar irradiance.</p>
+<p>This object and its corresponding .wea file type is what the Radiance gendaymtx
+function uses to generate the sky.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> – Ladybug location object.</p></li>
+<li><p><strong>direct_normal_irradiance</strong> – A HourlyContinuousCollection or a
+HourlyDiscontinuousCollection for direct normal irradiance. The
+collection must be aligned with the diffuse_horizontal_irradiance.</p></li>
+<li><p><strong>diffuse_horizontal_irradiance</strong> – A HourlyContinuousCollection or a
+HourlyDiscontinuousCollection for diffuse horizontal irradiance, The
+collection must be aligned with the direct_normal_irradiance.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>datetimes</p></li>
+<li><p>direct_normal_irradiance</p></li>
+<li><p>diffuse_horizontal_irradiance</p></li>
+<li><p>direct_horizontal_irradiance</p></li>
+<li><p>global_horizontal_irradiance</p></li>
+<li><p>header</p></li>
+<li><p>hoys</p></li>
+<li><p>timestep</p></li>
+<li><p>is_leap_year</p></li>
+<li><p>is_continuous</p></li>
+<li><p>is_annual</p></li>
+<li><p>location</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.wea.Wea.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.directional_irradiance">
+<code class="sig-name descname">directional_irradiance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">altitude</span><span class="o">=</span><span class="default_value">90</span></em>, <em class="sig-param"><span class="n">azimuth</span><span class="o">=</span><span class="default_value">180</span></em>, <em class="sig-param"><span class="n">ground_reflectance</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">isotropic</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.directional_irradiance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.directional_irradiance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the irradiance components for a surface facing a given direction.</p>
+<p>Note this method computes unobstructed solar flux facing a given
+altitude and azimuth. The default is set to return the global horizontal
+irradiance, assuming an altitude facing straight up (90 degrees).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>altitude</strong> – A number between -90 and 90 that represents the
+altitude at which irradiance is being evaluated in degrees.</p></li>
+<li><p><strong>azimuth</strong> – A number between 0 and 360 that represents the
+azimuth at which irradiance is being evaluated in degrees.</p></li>
+<li><p><strong>ground_reflectance</strong> – <p>A number between 0 and 1 that represents the
+reflectance of the ground. Default is set to 0.2. Some
+common ground reflectances are:</p>
+<ul>
+<li><p>urban: 0.18</p></li>
+<li><p>grass: 0.20</p></li>
+<li><p>fresh grass: 0.26</p></li>
+<li><p>soil: 0.17</p></li>
+<li><p>sand: 0.40</p></li>
+<li><p>snow: 0.65</p></li>
+<li><p>fresh_snow: 0.75</p></li>
+<li><p>asphalt: 0.12</p></li>
+<li><p>concrete: 0.30</p></li>
+<li><p>sea: 0.06</p></li>
+</ul>
+</p></li>
+<li><p><strong>isotropic</strong> – A boolean value that sets whether an isotropic sky is
+used (as opposed to an anisotropic sky). An isotropic sky
+assumes an even distribution of diffuse irradiance across the
+sky while an anisotropic sky places more diffuse irradiance
+near the solar disc. (Default: True).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple of four elements</p>
+<ul class="simple">
+<li><p>total_irradiance: A data collection of total solar irradiance.</p></li>
+<li><p>direct_irradiance: A data collection of direct solar irradiance.</p></li>
+<li><p>diffuse_irradiance: A data collection of diffuse sky solar irradiance.</p></li>
+<li><p>reflected_irradiance: A data collection of ground reflected solar
+irradiance.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.estimate_illuminance_components">
+<code class="sig-name descname">estimate_illuminance_components</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dew_point</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.estimate_illuminance_components"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.estimate_illuminance_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get estimated direct, diffuse, and global illuminance from this Wea.</p>
+<p>Note that this method should only be used when there are no measured
+illuminance values that correspond to this Wea’s irradiance values.
+Because the illuminance components calculated here are simply estimated
+using a model by Perez [1], they are not as accurate as true measured values.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Perez R. (1990). ‘Modeling Daylight Availability and Irradiance
+Components from Direct and Global Irradiance’. Solar Energy.
+Vol. 44. No. 5, pp. 271-289. USA.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dew_point</strong> – A data collection of dewpoint temperature in degrees C. This
+data collection must align with the irradiance data on this object.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with four elements</p>
+<ul class="simple">
+<li><p>global_horiz_ill: Data collection of Global Horizontal Illuminance
+in lux.</p></li>
+<li><p>direct_normal_ill: Data collection of Direct Normal Illuminance in lux.</p></li>
+<li><p>diffuse_horizontal_ill: Data collection of  Diffuse Horizontal
+Illuminance in lux.</p></li>
+<li><p>zenith_lum: Data collection of Zenith Luminance in lux.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.filter_by_analysis_period">
+<code class="sig-name descname">filter_by_analysis_period</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">analysis_period</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.filter_by_analysis_period"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.filter_by_analysis_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new filtered Wea from this Wea based on an analysis period.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>period</strong> (<em>analysis</em>) – A Ladybug analysis period.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new Wea filtered by the analysis period.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.filter_by_hoys">
+<code class="sig-name descname">filter_by_hoys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hoys</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.filter_by_hoys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.filter_by_hoys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new filtered Wea from this Wea using a list of hours of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hoys</strong> – A List of hours of the year 0..8759.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new Wea with filtered data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.filter_by_moys">
+<code class="sig-name descname">filter_by_moys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">moys</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.filter_by_moys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.filter_by_moys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new filtered Wea from this Wea based on a list of minutes of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>moys</strong> – A List of minutes of the year [0..8759 * 60].</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new Wea with filtered data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.filter_by_pattern">
+<code class="sig-name descname">filter_by_pattern</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.filter_by_pattern"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.filter_by_pattern" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new filtered Wea from this Wea using a list of booleans.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pattern</strong> – An array of True/False values. This array should usually
+have a length matching the number of irradiance values in the Wea
+but it can also be a pattern to be repeated over the data.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new Wea filtered by the analysis period.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.filter_by_sun_up">
+<code class="sig-name descname">filter_by_sun_up</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_altitude</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.filter_by_sun_up"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.filter_by_sun_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new filtered Wea from this Wea based on whether the sun is up</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>min_altitude</strong> – A number for the minimum altitude above the horizon at
+which the sun is considered up in degrees. Setting this to 0 will
+filter values for all hours where the sun is physically above the
+horizon. By setting this to a negative number (eg. -6), various levels
+of twilight can be used to filter the data (eg. civil twilight).
+Positive numbers can be used to discount low sun angles (Default: 0).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new Wea with filtered data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_annual_values">
+<em class="property">classmethod </em><code class="sig-name descname">from_annual_values</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">direct_normal_irradiance</span></em>, <em class="sig-param"><span class="n">diffuse_horizontal_irradiance</span></em>, <em class="sig-param"><span class="n">timestep</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">is_leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_annual_values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_annual_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an annual Wea from an array of irradiance values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> – Ladybug location object.</p></li>
+<li><p><strong>direct_normal_irradiance</strong> – An array of values for direct normal irradiance.
+The length of this list should be same as diffuse_horizontal_irradiance
+and should represent an entire year of values at the input timestep.</p></li>
+<li><p><strong>diffuse_horizontal_irradiance</strong> – A HourlyContinuousCollection or a
+HourlyDiscontinuousCollection for diffuse horizontal irradiance, The
+collection must be aligned with the direct_normal_irradiance.</p></li>
+<li><p><strong>timestep</strong> – An integer to set the number of time steps per hour.
+Default is 1 for one value per hour.</p></li>
+<li><p><strong>is_leap_year</strong> – A boolean to indicate if values are for a leap
+year. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_ashrae_clear_sky">
+<em class="property">classmethod </em><code class="sig-name descname">from_ashrae_clear_sky</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">sky_clearness</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">timestep</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">is_leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_ashrae_clear_sky"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_ashrae_clear_sky" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a wea object representing an original ASHRAE Clear Sky.</p>
+<p>The original ASHRAE Clear Sky is intended to determine peak solar load
+and sizing parmeters for HVAC systems.  It is not the sky model
+currently recommended by ASHRAE since it usually overestimates the
+amount of solar irradiance in comparison to the newer ASHRAE Revised
+Clear Sky (“Tau Model”). However, the original model here is still
+useful for cases where monthly optical depth values are not known. For
+more information on the ASHRAE Clear Sky model, see the EnergyPlus
+Engineering Reference:
+<a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html">https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> – Ladybug location object.</p></li>
+<li><p><strong>sky_clearness</strong> – A factor that will be multiplied by the output of
+the model. This is to help account for locations where clear,
+dry skies predominate (e.g., at high elevations) or,
+conversely, where hazy and humid conditions are frequent. See
+Threlkeld and Jordan (1958) for recommended values. Typical
+values range from 0.95 to 1.05 and are usually never more
+than 1.2. Default is set to 1.0.</p></li>
+<li><p><strong>timestep</strong> – An optional integer to set the number of time steps per
+hour. Default is 1 for one value per hour.</p></li>
+<li><p><strong>is_leap_year</strong> – A boolean to indicate if values are for a leap
+year. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_ashrae_revised_clear_sky">
+<em class="property">classmethod </em><code class="sig-name descname">from_ashrae_revised_clear_sky</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">monthly_tau_beam</span></em>, <em class="sig-param"><span class="n">monthly_tau_diffuse</span></em>, <em class="sig-param"><span class="n">timestep</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">is_leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_ashrae_revised_clear_sky"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_ashrae_revised_clear_sky" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a wea object representing an ASHRAE Revised Clear Sky (“Tau Model”)</p>
+<p>ASHRAE Revised Clear Skies are intended to determine peak solar load
+and sizing parmeters for HVAC systems.  The revised clear sky is
+currently the default recommended sky model used to autosize HVAC
+systems in EnergyPlus. For more information on the ASHRAE Revised Clear
+Sky model, see the EnergyPlus Engineering Reference:
+<a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html">https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> – Ladybug location object.</p></li>
+<li><p><strong>monthly_tau_beam</strong> – A list of 12 float values indicating the beam
+optical depth of the sky at each month of the year.</p></li>
+<li><p><strong>monthly_tau_diffuse</strong> – A list of 12 float values indicating the
+diffuse optical depth of the sky at each month of the year.</p></li>
+<li><p><strong>timestep</strong> – An optional integer to set the number of time steps per
+hour. Default is 1 for one value per hour.</p></li>
+<li><p><strong>is_leap_year</strong> – A boolean to indicate if values are for a leap
+year. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_daysim_file">
+<em class="property">classmethod </em><code class="sig-name descname">from_daysim_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wea_file</span></em>, <em class="sig-param"><span class="n">timestep</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">is_leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_daysim_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_daysim_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Wea object from a .wea file produced by DAYSIM.</p>
+<p>Note that this method is only required when the .wea file generated from
+DAYSIM has a timestep greater than 1, which results in the file using
+times of day greater than 23:59. DAYSIM wea’s with a timestep of 1 can
+use the from_file method without issues.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wea_file</strong> – Full path to .wea file.</p></li>
+<li><p><strong>timestep</strong> – An optional integer to set the number of time steps per hour.
+Default is 1 for one value per hour.</p></li>
+<li><p><strong>is_leap_year</strong> – A boolean to indicate if values are for a leap
+year. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Wea from a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Wea&quot;</span><span class="p">,</span>
+<span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug location dictionary</span>
+<span class="s2">&quot;direct_normal_irradiance&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># direct normal irradiance values</span>
+<span class="s2">&quot;diffuse_horizontal_irradiance&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># diffuse horizontal irradiance values</span>
+<span class="s2">&quot;timestep&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># optional timestep between measurements</span>
+<span class="s2">&quot;is_leap_year&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>  <span class="c1"># optional boolean for leap year</span>
+<span class="s2">&quot;datetimes&quot;</span><span class="p">:</span> <span class="p">[]</span>  <span class="c1"># array of datetime arrays; only required when not annual</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_epw_file">
+<em class="property">classmethod </em><code class="sig-name descname">from_epw_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">epw_file</span></em>, <em class="sig-param"><span class="n">timestep</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_epw_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_epw_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a wea object using the solar irradiance values in an epw file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epw_file</strong> – Full path to epw weather file.</p></li>
+<li><p><strong>timestep</strong> – An optional integer to set the number of time steps per hour.
+Default is 1 for one value per hour. Note that this input
+will only do a linear interpolation over the data in the EPW
+file.  While such linear interpolations are suitable for most
+thermal simulations, where thermal lag “smooths over” the effect
+of momentary increases in solar energy, it is not recommended
+for daylight simulations, where momentary increases in solar
+energy can mean the difference between glare and visual comfort.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_file">
+<em class="property">classmethod </em><code class="sig-name descname">from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wea_file</span></em>, <em class="sig-param"><span class="n">timestep</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">is_leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Wea object from a .wea file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wea_file</strong> – Full path to .wea file.</p></li>
+<li><p><strong>timestep</strong> – An optional integer to set the number of time steps per hour.
+Default is 1 for one value per hour. If the wea file has a time step
+smaller than an hour, adjust this input accordingly.</p></li>
+<li><p><strong>is_leap_year</strong> – A boolean to indicate if values are for a leap
+year. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_stat_file">
+<em class="property">classmethod </em><code class="sig-name descname">from_stat_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">statfile</span></em>, <em class="sig-param"><span class="n">timestep</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">is_leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_stat_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_stat_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an ASHRAE Revised Clear Sky Wea object from data in .stat file.</p>
+<p>The .stat file must have monthly sky optical depths within it in order to
+create a Wea this way.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>statfile</strong> – Full path to the .stat file.</p></li>
+<li><p><strong>timestep</strong> – An optional integer to set the number of time steps per
+hour. Default is 1 for one value per hour.</p></li>
+<li><p><strong>is_leap_year</strong> – A boolean to indicate if values are for a leap
+year. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.from_zhang_huang_solar">
+<em class="property">classmethod </em><code class="sig-name descname">from_zhang_huang_solar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">cloud_cover</span></em>, <em class="sig-param"><span class="n">relative_humidity</span></em>, <em class="sig-param"><span class="n">dry_bulb_temperature</span></em>, <em class="sig-param"><span class="n">wind_speed</span></em>, <em class="sig-param"><span class="n">atmospheric_pressure</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">use_disc</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.from_zhang_huang_solar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.from_zhang_huang_solar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Wea object from climate data using the Zhang-Huang model.</p>
+<p>The Zhang-Huang solar model was developed to estimate solar
+irradiance for weather stations that lack such values, which are
+typically colleted with a pyranometer. Using total cloud cover,
+dry-bulb temperature, relative humidity, and wind speed as
+inputs the Zhang-Huang estimates global horizontal irradiance
+by means of a regression model across these variables.
+For more information on the Zhang-Huang model, see the
+EnergyPlus Engineering Reference:
+<a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/climate-calculations.html#zhang-huang-solar-model">https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/climate-calculations.html#zhang-huang-solar-model</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> – Ladybug location object.</p></li>
+<li><p><strong>cloud_cover</strong> – A hourly continuous data collection with values for the
+fraction of the sky dome covered in clouds (0 = clear;
+1 = completely overcast).</p></li>
+<li><p><strong>relative_humidity</strong> – A hourly continuous data collection with values for
+the relative humidity in percent.</p></li>
+<li><p><strong>dry_bulb_temperature</strong> – A hourly continuous data collection with values
+for the dry bulb temperature in degrees Celsius.</p></li>
+<li><p><strong>wind_speed</strong> – A hourly continuous data collection with values for the
+wind speed in meters per second.</p></li>
+<li><p><strong>atmospheric_pressure</strong> – An optional hourly continuous data collection
+with values for the atmospheric pressure in Pa. If None, pressure
+at sea level will be used (101325 Pa). (Default: None)</p></li>
+<li><p><strong>use_disc</strong> – Boolean to note whether the original DISC model as opposed to the
+newer and more accurate DIRINT model. (Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.get_irradiance_value">
+<code class="sig-name descname">get_irradiance_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">day</span></em>, <em class="sig-param"><span class="n">hour</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.get_irradiance_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.get_irradiance_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get direct and diffuse irradiance values for a point in time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – Integer for month of the year [1 - 12].</p></li>
+<li><p><strong>day</strong> – Integer for the day of the month [1 - 31].</p></li>
+<li><p><strong>hour</strong> – Float for hour of the day [0 - 23].</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.get_irradiance_value_for_hoy">
+<code class="sig-name descname">get_irradiance_value_for_hoy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hoy</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.get_irradiance_value_for_hoy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.get_irradiance_value_for_hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get direct and diffuse irradiance values for a hoy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hoy</strong> – Float for hour of the year [0 - 8759].</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the Wea as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_path</span></em>, <em class="sig-param"><span class="n">write_hours</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/wea.html#Wea.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.wea.Wea.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the Wea object to a .wea file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_path</strong> – Text string for the path to where the .wea file should be written.</p></li>
+<li><p><strong>write_hours</strong> – Boolean to note whether a .hrs file should be written
+next to the .wea file, which lists the hours of the year (hoys)
+contained within the .wea file.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.analysis_period">
+<em class="property">property </em><code class="sig-name descname">analysis_period</code><a class="headerlink" href="#ladybug.wea.Wea.analysis_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an AnalysisPeriod for the Wea data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.datetimes">
+<em class="property">property </em><code class="sig-name descname">datetimes</code><a class="headerlink" href="#ladybug.wea.Wea.datetimes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the datetimes in the Wea as a tuple of datetimes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.diffuse_horizontal_irradiance">
+<em class="property">property </em><code class="sig-name descname">diffuse_horizontal_irradiance</code><a class="headerlink" href="#ladybug.wea.Wea.diffuse_horizontal_irradiance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a hourly data collection for the diffuse horizontal irradiance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.direct_horizontal_irradiance">
+<em class="property">property </em><code class="sig-name descname">direct_horizontal_irradiance</code><a class="headerlink" href="#ladybug.wea.Wea.direct_horizontal_irradiance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a data collection for the direct irradiance on a horizontal surface.</p>
+<p>Note that this is different from the direct_normal_irradiance needed
+to construct a Wea, which is NORMAL and not HORIZONTAL.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.direct_normal_irradiance">
+<em class="property">property </em><code class="sig-name descname">direct_normal_irradiance</code><a class="headerlink" href="#ladybug.wea.Wea.direct_normal_irradiance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a hourly data collection for the direct normal irradiance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.global_horizontal_irradiance">
+<em class="property">property </em><code class="sig-name descname">global_horizontal_irradiance</code><a class="headerlink" href="#ladybug.wea.Wea.global_horizontal_irradiance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a data collection for the global horizontal irradiance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.header">
+<em class="property">property </em><code class="sig-name descname">header</code><a class="headerlink" href="#ladybug.wea.Wea.header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the Wea header as a string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.hoys">
+<em class="property">property </em><code class="sig-name descname">hoys</code><a class="headerlink" href="#ladybug.wea.Wea.hoys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the hours of the year in Wea as a tuple of floats.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.is_annual">
+<em class="property">property </em><code class="sig-name descname">is_annual</code><a class="headerlink" href="#ladybug.wea.Wea.is_annual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a boolean for whether the irradiance data is for an entire year.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.is_continuous">
+<em class="property">property </em><code class="sig-name descname">is_continuous</code><a class="headerlink" href="#ladybug.wea.Wea.is_continuous" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a boolean for whether the irradiance data is continuous.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.is_leap_year">
+<em class="property">property </em><code class="sig-name descname">is_leap_year</code><a class="headerlink" href="#ladybug.wea.Wea.is_leap_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a boolean for whether the irradiance data is for a leap year.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.location">
+<em class="property">property </em><code class="sig-name descname">location</code><a class="headerlink" href="#ladybug.wea.Wea.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a Ladybug Location object for the Wea.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.wea.Wea.metadata">
+<code class="sig-name descname">metadata</code><a class="headerlink" href="#ladybug.wea.Wea.metadata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.wea.Wea.timestep">
+<em class="property">property </em><code class="sig-name descname">timestep</code><a class="headerlink" href="#ladybug.wea.Wea.timestep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the timesteps per hour of the Wea as an integer.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.psychrometrics &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.psychrometrics</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Utility functions for converting between humidity metrics.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+
+
+<div class="viewcode-block" id="saturated_vapor_pressure"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.saturated_vapor_pressure">[docs]</a><span class="k">def</span> <span class="nf">saturated_vapor_pressure</span><span class="p">(</span><span class="n">t_kelvin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Saturated vapor pressure (Pa) at a given dry bulb temperature (K).</span>
+
+<span class="sd">    This function accounts for the different behavior above vs. below</span>
+<span class="sd">    the freezing point of water.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        t_kelvin: Dry bulb temperature (K).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Saturated vapor pressure (Pa).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn. 5 and 6</span>
+
+<span class="sd">        [2] Meyer et al., (2019). PsychroLib: a library of psychrometric</span>
+<span class="sd">        functions to calculate thermodynamic properties of air. Journal of</span>
+<span class="sd">        Open Source Software, 4(33), 1137, https://doi.org/10.21105/joss.01137</span>
+<span class="sd">        https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">t_kelvin</span> <span class="o">&lt;=</span> <span class="mf">273.15</span><span class="p">):</span>  <span class="c1"># saturation vapor pressure below freezing</span>
+        <span class="n">ln_p_ws</span> <span class="o">=</span> <span class="o">-</span><span class="mf">5.6745359E+03</span> <span class="o">/</span> <span class="n">t_kelvin</span> <span class="o">+</span> <span class="mf">6.3925247</span> <span class="o">-</span> <span class="mf">9.677843E-03</span> <span class="o">*</span> <span class="n">t_kelvin</span> <span class="o">+</span> \
+            <span class="mf">6.2215701E-07</span> <span class="o">*</span> <span class="n">t_kelvin</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">2.0747825E-09</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">t_kelvin</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">-</span> \
+            <span class="mf">9.484024E-13</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">t_kelvin</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="mf">4.1635019</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">t_kelvin</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>  <span class="c1"># saturation vapor pressure above freezing</span>
+        <span class="n">ln_p_ws</span> <span class="o">=</span> <span class="o">-</span><span class="mf">5.8002206E+03</span> <span class="o">/</span> <span class="n">t_kelvin</span> <span class="o">+</span> <span class="mf">1.3914993</span> <span class="o">-</span> <span class="mf">4.8640239E-02</span> <span class="o">*</span> <span class="n">t_kelvin</span> <span class="o">+</span> \
+            <span class="mf">4.1764768E-05</span> <span class="o">*</span> <span class="n">t_kelvin</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mf">1.4452093E-08</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">t_kelvin</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> \
+            <span class="mf">6.5459673</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">t_kelvin</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">ln_p_ws</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="humid_ratio_from_db_rh"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.humid_ratio_from_db_rh">[docs]</a><span class="k">def</span> <span class="nf">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Humidity ratio (kg water/kg air) from air temperature (C) and relative humidity (%).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        rel_humid: Relative humidity (%).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Humidity ratio (kg water/kg air).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 20</span>
+
+<span class="sd">        [2] Meyer et al., (2019). PsychroLib: a library of psychrometric</span>
+<span class="sd">        functions to calculate thermodynamic properties of air. Journal of</span>
+<span class="sd">        Open Source Software, 4(33), 1137, https://doi.org/10.21105/joss.01137</span>
+<span class="sd">        https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">p_ws</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">db_temp</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>  <span class="c1"># saturation pressure</span>
+    <span class="n">p_w</span> <span class="o">=</span> <span class="n">p_ws</span> <span class="o">*</span> <span class="p">(</span><span class="n">rel_humid</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># partial pressure</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">p_w</span> <span class="o">*</span> <span class="mf">0.621945</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">b_press</span> <span class="o">-</span> <span class="n">p_w</span><span class="p">)</span>  <span class="c1"># humidity ratio</span></div>
+
+
+<div class="viewcode-block" id="enthalpy_from_db_hr"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.enthalpy_from_db_hr">[docs]</a><span class="k">def</span> <span class="nf">enthalpy_from_db_hr</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">reference_temp</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Enthalpy (kJ/kg) at a given humidity ratio (water/air) and dry bulb temperature (C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        humid_ratio: Humidity ratio (kg water/kg air).</span>
+<span class="sd">        reference_temp: Reference dry air temperature (C). Default is 0C,</span>
+<span class="sd">            which is standard practice for SI enthalpy values. However, for</span>
+<span class="sd">            IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for</span>
+<span class="sd">            absolute thermodynamic enthalpy, one can input 0K (-273.15).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Enthalpy (kJ/kg).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 30</span>
+
+<span class="sd">        [2] Meyer et al., (2019). PsychroLib: a library of psychrometric</span>
+<span class="sd">        functions to calculate thermodynamic properties of air. Journal of</span>
+<span class="sd">        Open Source Software, 4(33), 1137, https://doi.org/10.21105/joss.01137</span>
+<span class="sd">        https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">correct_temp</span> <span class="o">=</span> <span class="n">db_temp</span> <span class="o">-</span> <span class="n">reference_temp</span>
+    <span class="n">enthalpy</span> <span class="o">=</span> <span class="mf">1.006</span> <span class="o">*</span> <span class="n">correct_temp</span> <span class="o">+</span> <span class="n">humid_ratio</span> <span class="o">*</span> <span class="p">(</span><span class="mf">2501.</span> <span class="o">+</span> <span class="mf">1.86</span> <span class="o">*</span> <span class="n">correct_temp</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">enthalpy</span> <span class="k">if</span> <span class="n">enthalpy</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span></div>
+
+
+<div class="viewcode-block" id="dew_point_from_db_rh"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.dew_point_from_db_rh">[docs]</a><span class="k">def</span> <span class="nf">dew_point_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dew point temperature (C) from air temperature (C) and relative humidity (%).</span>
+
+<span class="sd">    The dew point temperature is solved by inverting the equation giving water vapor</span>
+<span class="sd">    pressure at saturation from temperature, which is relatively slow but ensures</span>
+<span class="sd">    high accuracy down to 0.1 C at a wide range of dry bulb temperatures.</span>
+<span class="sd">    The Newton-Raphson (NR) method is used on the logarithm of water vapour</span>
+<span class="sd">    pressure as a function of temperature, which is a very smooth function</span>
+<span class="sd">    Convergence is usually achieved in 3 to 5 iterations.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        rel_humid: Relative humidity (%).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dew point temperature (C).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn. 5 and 6</span>
+
+<span class="sd">        [2] Meyer et al., (2019). PsychroLib: a library of psychrometric</span>
+<span class="sd">        functions to calculate thermodynamic properties of air. Journal of</span>
+<span class="sd">        Open Source Software, 4(33), 1137, https://doi.org/10.21105/joss.01137</span>
+<span class="sd">        https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">p_ws</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">db_temp</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>  <span class="c1"># saturation pressure</span>
+    <span class="n">p_w</span> <span class="o">=</span> <span class="n">p_ws</span> <span class="o">*</span> <span class="p">(</span><span class="n">rel_humid</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># partial pressure</span>
+
+    <span class="c1"># We use NR to approximate the solution.</span>
+    <span class="n">td</span> <span class="o">=</span> <span class="n">db_temp</span>  <span class="c1"># First guess for dew point temperature (solved for iteratively)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">ln_vp</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">p_w</span><span class="p">)</span>  <span class="c1"># partial pressure of water vapor in moist air</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>  <span class="c1"># relative humidity of 0, return absolute zero</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mf">273.15</span>
+
+    <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">td_iter</span> <span class="o">=</span> <span class="n">td</span>   <span class="c1"># td used in NR calculation</span>
+        <span class="n">ln_vp_iter</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">td_iter</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">))</span>
+        <span class="n">d_ln_vp</span> <span class="o">=</span> <span class="n">_d_ln_p_ws</span><span class="p">(</span><span class="n">td_iter</span><span class="p">)</span>  <span class="c1"># Derivative of function, calculated analytically</span>
+        <span class="n">td</span> <span class="o">=</span> <span class="n">td_iter</span> <span class="o">-</span> <span class="p">(</span><span class="n">ln_vp_iter</span> <span class="o">-</span> <span class="n">ln_vp</span><span class="p">)</span> <span class="o">/</span> <span class="n">d_ln_vp</span>  <span class="c1"># New estimate</span>
+
+        <span class="k">if</span> <span class="p">((</span><span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">td</span> <span class="o">-</span> <span class="n">td_iter</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mf">0.1</span><span class="p">)):</span>  <span class="c1"># 0.1 is degree C tolerance</span>
+            <span class="k">break</span>  <span class="c1"># solution has been found</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">index</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">):</span>  <span class="c1"># 100 is the max iterations (usually only 3-5 are needed)</span>
+            <span class="k">break</span>  <span class="c1"># max number of iterations has been exceeded</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">td</span><span class="p">,</span> <span class="n">db_temp</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="wet_bulb_from_db_rh"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.wet_bulb_from_db_rh">[docs]</a><span class="k">def</span> <span class="nf">wet_bulb_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wet bulb temperature (C) from air temperature (C) and relative humidity (%).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        rel_humid: Relative humidity (%).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Wet bulb temperature (C).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 33 and 35</span>
+
+<span class="sd">        [2] Meyer et al., (2019). PsychroLib: a library of psychrometric</span>
+<span class="sd">        functions to calculate thermodynamic properties of air. Journal of</span>
+<span class="sd">        Open Source Software, 4(33), 1137, https://doi.org/10.21105/joss.01137</span>
+<span class="sd">        https://github.com/psychrometrics/psychrolib/blob/master/src/python/psychrolib.py</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">humid_ratio</span> <span class="o">=</span> <span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span>
+    <span class="c1"># Initial guesses</span>
+    <span class="n">wb_temp_sup</span> <span class="o">=</span> <span class="n">db_temp</span>
+    <span class="n">wb_temp_inf</span> <span class="o">=</span> <span class="n">dew_point_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">)</span>
+    <span class="n">wb_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">wb_temp_inf</span> <span class="o">+</span> <span class="n">wb_temp_sup</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+
+    <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="p">((</span><span class="n">wb_temp_sup</span> <span class="o">-</span> <span class="n">wb_temp_inf</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.1</span><span class="p">):</span>  <span class="c1"># 0.1 is degree C tolerance</span>
+        <span class="c1"># Compute humidity ratio at temperature Tstar</span>
+        <span class="n">w_star</span> <span class="o">=</span> <span class="n">humid_ratio_from_db_wb</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">wb_temp</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span>
+        <span class="c1"># Get new bounds</span>
+        <span class="k">if</span> <span class="n">w_star</span> <span class="o">&gt;</span> <span class="n">humid_ratio</span><span class="p">:</span>
+            <span class="n">wb_temp_sup</span> <span class="o">=</span> <span class="n">wb_temp</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">wb_temp_inf</span> <span class="o">=</span> <span class="n">wb_temp</span>
+        <span class="c1"># New guess of wet bulb temperature</span>
+        <span class="n">wb_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">wb_temp_sup</span> <span class="o">+</span> <span class="n">wb_temp_inf</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="k">break</span>  <span class="c1"># 100 is the max iterations (usually only 3-5 are needed)</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">wb_temp</span></div>
+
+
+<div class="viewcode-block" id="wet_bulb_from_db_hr"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.wet_bulb_from_db_hr">[docs]</a><span class="k">def</span> <span class="nf">wet_bulb_from_db_hr</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wet bulb temperature (C) from air temperature (C) and humidity ratio.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        humid_ratio: Humidity ratio (kg water/kg air).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Wet bulb temperature (C).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rh</span> <span class="o">=</span> <span class="n">rel_humid_from_db_hr</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wet_bulb_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rh</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="rel_humid_from_db_hr"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.rel_humid_from_db_hr">[docs]</a><span class="k">def</span> <span class="nf">rel_humid_from_db_hr</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Relative Humidity (%) from humidity ratio (water/air) and air temperature (C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        humid_ratio: Humidity ratio (kg water/kg air).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Relative humidity (%).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pw</span> <span class="o">=</span> <span class="p">(</span><span class="n">humid_ratio</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">*</span> <span class="n">b_press</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">621.9907</span> <span class="o">+</span> <span class="p">(</span><span class="n">humid_ratio</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">))</span>
+    <span class="n">pws</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">db_temp</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">pw</span> <span class="o">/</span> <span class="n">pws</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span></div>
+
+
+<div class="viewcode-block" id="rel_humid_from_db_enth"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.rel_humid_from_db_enth">[docs]</a><span class="k">def</span> <span class="nf">rel_humid_from_db_enth</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">enthalpy</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">,</span> <span class="n">reference_temp</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Relative Humidity (%) from air temperature (C) and enthalpy (kJ/kg).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        enthalpy: Enthalpy (kJ/kg).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+<span class="sd">        reference_temp: Reference dry air temperature (C). Default is 0C,</span>
+<span class="sd">            which is standard practice for SI enthalpy values. However, for</span>
+<span class="sd">            IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for</span>
+<span class="sd">            absolute thermodynamic enthalpy, one can input 0K (-273.15).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Relative humidity (%).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">correct_temp</span> <span class="o">=</span> <span class="n">db_temp</span> <span class="o">-</span> <span class="n">reference_temp</span>
+    <span class="n">hr</span> <span class="o">=</span> <span class="p">(</span><span class="n">enthalpy</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.006</span> <span class="o">*</span> <span class="n">correct_temp</span><span class="p">))</span> <span class="o">/</span> <span class="p">((</span><span class="mf">1.86</span> <span class="o">*</span> <span class="n">correct_temp</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2501</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">rel_humid_from_db_hr</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">hr</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="rel_humid_from_db_dpt"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.rel_humid_from_db_dpt">[docs]</a><span class="k">def</span> <span class="nf">rel_humid_from_db_dpt</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">dew_pt</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Relative humidity (%) from dry bulb temperature (C), and dew point temperature (C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        dew_pt: Dew point temperature (C).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Relative humidity (%).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pws_ta</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">db_temp</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    <span class="n">pws_td</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">dew_pt</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">100</span> <span class="o">*</span> <span class="p">(</span><span class="n">pws_td</span> <span class="o">/</span> <span class="n">pws_ta</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="rel_humid_from_db_wb"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.rel_humid_from_db_wb">[docs]</a><span class="k">def</span> <span class="nf">rel_humid_from_db_wb</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">wet_bulb</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Relative humidity (%) from dry bulb temperature (C), and wet bulb temperature (C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        wet_bulb: Wet bulb temperature (C).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Relative humidity (%).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Calculate saturation pressures</span>
+    <span class="n">p_ws</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">db_temp</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    <span class="n">p_ws_wb</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">wet_bulb</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    <span class="c1"># calculate partial vapor pressure</span>
+    <span class="n">p_w</span> <span class="o">=</span> <span class="n">p_ws_wb</span> <span class="o">-</span> <span class="p">(</span><span class="n">b_press</span> <span class="o">*</span> <span class="mf">0.000662</span> <span class="o">*</span> <span class="p">(</span><span class="n">db_temp</span> <span class="o">-</span> <span class="n">wet_bulb</span><span class="p">))</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">p_w</span> <span class="o">/</span> <span class="n">p_ws</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span></div>
+
+
+<div class="viewcode-block" id="dew_point_from_db_hr"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.dew_point_from_db_hr">[docs]</a><span class="k">def</span> <span class="nf">dew_point_from_db_hr</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dew Point Temperature (C) from air temperature (C) and humidity ratio (water/air).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        humid_ratio: Humidity ratio (kg water/kg air).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dew point temperature (C).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rh</span> <span class="o">=</span> <span class="n">rel_humid_from_db_hr</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dew_point_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rh</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="dew_point_from_db_enth"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.dew_point_from_db_enth">[docs]</a><span class="k">def</span> <span class="nf">dew_point_from_db_enth</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">enthalpy</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">,</span> <span class="n">reference_temp</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dew point temperature (C) from air temperature (C) and enthalpy (kJ/kg).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        enthalpy: Enthalpy (kJ/kg).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+<span class="sd">        reference_temp: Reference dry air temperature (C). Default is 0C,</span>
+<span class="sd">            which is standard practice for SI enthalpy values. However, for</span>
+<span class="sd">            IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for</span>
+<span class="sd">            absolute thermodynamic enthalpy, one can input 0K (-273.15).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dew point temperature (C).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rh</span> <span class="o">=</span> <span class="n">rel_humid_from_db_enth</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">enthalpy</span><span class="p">,</span> <span class="n">b_press</span><span class="p">,</span> <span class="n">reference_temp</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dew_point_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rh</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="dew_point_from_db_wb"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.dew_point_from_db_wb">[docs]</a><span class="k">def</span> <span class="nf">dew_point_from_db_wb</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">wet_bulb</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dew point temperature (C) from dry bulb (C) and wet bulb temperature (C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        wet_bulb: Wet bulb temperature (C).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dew point temperature (C).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rh</span> <span class="o">=</span> <span class="n">rel_humid_from_db_wb</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">wet_bulb</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dew_point_from_db_rh</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rh</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="humid_ratio_from_db_wb"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.humid_ratio_from_db_wb">[docs]</a><span class="k">def</span> <span class="nf">humid_ratio_from_db_wb</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">wb_temp</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Humidity ratio from air temperature (C) and wet bulb temperature (C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        wb_temp: Wet bulb temperature (C).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Humidity ratio (kg water / kg air).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 36, solved for W</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">p_ws</span> <span class="o">=</span> <span class="n">saturated_vapor_pressure</span><span class="p">(</span><span class="n">wb_temp</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    <span class="n">p_ws_star</span> <span class="o">=</span> <span class="mf">0.621945</span> <span class="o">*</span> <span class="n">p_ws</span> <span class="o">/</span> <span class="p">(</span><span class="n">b_press</span> <span class="o">-</span> <span class="n">p_ws</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">wb_temp</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">humid_ratio</span> <span class="o">=</span> <span class="p">((</span><span class="mf">2501.</span> <span class="o">-</span> <span class="mf">2.326</span> <span class="o">*</span> <span class="n">wb_temp</span><span class="p">)</span> <span class="o">*</span> <span class="n">p_ws_star</span> <span class="o">-</span> <span class="mf">1.006</span> <span class="o">*</span> <span class="p">(</span><span class="n">db_temp</span> <span class="o">-</span> <span class="n">wb_temp</span><span class="p">))</span> \
+            <span class="o">/</span> <span class="p">(</span><span class="mf">2501.</span> <span class="o">+</span> <span class="mf">1.86</span> <span class="o">*</span> <span class="n">db_temp</span> <span class="o">-</span> <span class="mf">4.186</span> <span class="o">*</span> <span class="n">wb_temp</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">humid_ratio</span> <span class="o">=</span> <span class="p">((</span><span class="mf">2830.</span> <span class="o">-</span> <span class="mf">0.24</span> <span class="o">*</span> <span class="n">wb_temp</span><span class="p">)</span> <span class="o">*</span> <span class="n">p_ws_star</span> <span class="o">-</span> <span class="mf">1.006</span> <span class="o">*</span> <span class="p">(</span><span class="n">db_temp</span> <span class="o">-</span> <span class="n">wb_temp</span><span class="p">))</span> \
+            <span class="o">/</span> <span class="p">(</span><span class="mf">2830.</span> <span class="o">+</span> <span class="mf">1.86</span> <span class="o">*</span> <span class="n">db_temp</span> <span class="o">-</span> <span class="mf">2.1</span> <span class="o">*</span> <span class="n">wb_temp</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">humid_ratio</span></div>
+
+
+<div class="viewcode-block" id="db_temp_from_enth_hr"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.db_temp_from_enth_hr">[docs]</a><span class="k">def</span> <span class="nf">db_temp_from_enth_hr</span><span class="p">(</span><span class="n">enthalpy</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">reference_temp</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dry bulb temperature (C) from enthalpy (kJ/kg) and humidity ratio (water/air).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        enthalpy: Enthalpy (kJ/kg).</span>
+<span class="sd">        humid_ratio: Humidity ratio (kg water/kg air).</span>
+<span class="sd">        reference_temp: Reference dry air temperature (C). Default is 0C,</span>
+<span class="sd">            which is standard practice for SI enthalpy values. However, for</span>
+<span class="sd">            IP enthalpy, this is typically at 0F (-17.78C). Alternatively, for</span>
+<span class="sd">            absolute thermodynamic enthalpy, one can input 0K (-273.15).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dry bulb temperature (C).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017) ch. 1 eqn 30</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">db_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">enthalpy</span> <span class="o">-</span> <span class="mf">2501.</span> <span class="o">*</span> <span class="n">humid_ratio</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.006</span> <span class="o">+</span> <span class="mf">1.86</span> <span class="o">*</span> <span class="n">humid_ratio</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">db_temp</span> <span class="o">+</span> <span class="n">reference_temp</span></div>
+
+
+<div class="viewcode-block" id="db_temp_from_rh_hr"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.db_temp_from_rh_hr">[docs]</a><span class="k">def</span> <span class="nf">db_temp_from_rh_hr</span><span class="p">(</span><span class="n">rel_humid</span><span class="p">,</span> <span class="n">humid_ratio</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dry bulb temperature (C) from relative humidity (%) and humidity ratio (water/air).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        rel_humid: Relative humidity (%).</span>
+<span class="sd">        humid_ratio: Humidity ratio (kg water/kg air).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dry bulb temperature (C).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] Antoine equation - Antoine, C. (1888), Vapor Pressure: a new relationship</span>
+<span class="sd">        between pressure and temperature, 107: 681–684, 778–780, 836–837.</span>
+<span class="sd">        https://en.wikipedia.org/wiki/Antoine_equation</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">p_w</span> <span class="o">=</span> <span class="p">(</span><span class="n">b_press</span> <span class="o">*</span> <span class="n">humid_ratio</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">0.621945</span> <span class="o">+</span> <span class="n">humid_ratio</span><span class="p">)</span>  <span class="c1"># partial pressure</span>
+    <span class="n">p_ws</span> <span class="o">=</span> <span class="n">p_w</span> <span class="o">/</span> <span class="p">(</span><span class="n">rel_humid</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># saturation pressure</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mf">1730.63</span> <span class="o">/</span> <span class="p">(</span><span class="mf">8.07131</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">p_ws</span> <span class="o">/</span> <span class="mf">133.322</span><span class="p">)))</span> <span class="o">-</span> <span class="mf">233.426</span></div>
+
+
+<div class="viewcode-block" id="db_temp_and_hr_from_wb_rh"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.db_temp_and_hr_from_wb_rh">[docs]</a><span class="k">def</span> <span class="nf">db_temp_and_hr_from_wb_rh</span><span class="p">(</span><span class="n">wb_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dry bulb temperature (C) from wet bulb temperature (C) and relative humidity (%).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        wb_temp: Wet bulb temperature (C).</span>
+<span class="sd">        rel_humid: Relative humidity (%).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A tuple with two values.</span>
+
+<span class="sd">        -   Dry bulb temperature (C).</span>
+
+<span class="sd">        -   Humidity ratio (kg water/kg air).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Handbook - Fundamentals (2017)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">hr</span> <span class="o">=</span> <span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">wb_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span>
+    <span class="n">hr_sat</span> <span class="o">=</span> <span class="n">humid_ratio_from_db_rh</span><span class="p">(</span><span class="n">wb_temp</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">b_press</span><span class="p">)</span>
+    <span class="n">db_temp</span> <span class="o">=</span> <span class="p">(((</span><span class="n">hr_sat</span> <span class="o">-</span> <span class="n">hr</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2260000</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1005</span><span class="p">)</span> <span class="o">+</span> <span class="n">wb_temp</span>
+    <span class="k">return</span> <span class="n">db_temp</span><span class="p">,</span> <span class="n">hr</span></div>
+
+
+<div class="viewcode-block" id="dew_point_from_db_rh_fast"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.dew_point_from_db_rh_fast">[docs]</a><span class="k">def</span> <span class="nf">dew_point_from_db_rh_fast</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dew point temperature (C) from air temperature (C) and relative humidity (%).</span>
+
+<span class="sd">    Note that the formula here is fast but is only accurate up to 90C. For accurate</span>
+<span class="sd">    values at extreme temperatures, the dew_point_from_db_rh</span>
+<span class="sd">    function should be used.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        rel_humid: Relative humidity (%).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dew point temperature (C).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] J. Sullivan and L. D. Sanders. &quot;Method for obtaining wet-bulb temperatures</span>
+<span class="sd">        by modifying the psychrometric formula.&quot; Center for Experiment Design and Data</span>
+<span class="sd">        Analysis. NOAA - National Oceanic and Atmospheric Administration.</span>
+<span class="sd">        https://www.weather.gov/epz/wxcalc_rh</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">es</span> <span class="o">=</span> <span class="mf">6.112</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="p">((</span><span class="mf">17.67</span> <span class="o">*</span> <span class="n">db_temp</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">db_temp</span> <span class="o">+</span> <span class="mf">243.5</span><span class="p">))</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="n">es</span> <span class="o">*</span> <span class="n">rel_humid</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mf">243.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">e</span> <span class="o">/</span> <span class="mf">6.112</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mf">17.67</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">e</span> <span class="o">/</span> <span class="mf">6.112</span><span class="p">))</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>  <span class="c1"># relative humidity of 0, return absolute zero</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mf">273.15</span></div>
+
+
+<div class="viewcode-block" id="wet_bulb_from_db_rh_fast"><a class="viewcode-back" href="../../ladybug.psychrometrics.html#ladybug.psychrometrics.wet_bulb_from_db_rh_fast">[docs]</a><span class="k">def</span> <span class="nf">wet_bulb_from_db_rh_fast</span><span class="p">(</span><span class="n">db_temp</span><span class="p">,</span> <span class="n">rel_humid</span><span class="p">,</span> <span class="n">b_press</span><span class="o">=</span><span class="mi">101325</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wet bulb temperature (C) from air temperature (C) and relative humidity (%).</span>
+
+<span class="sd">    Note that the formula here is fast but is only accurate around temperatures</span>
+<span class="sd">    of 20C and lower. For accurate values at extreme temperatures, the</span>
+<span class="sd">    wet_bulb_from_db_rh function should be used.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp: Dry bulb temperature (C).</span>
+<span class="sd">        rel_humid: Relative humidity (%).</span>
+<span class="sd">        b_press: Air pressure (Pa). Default is pressure at sea level (101325 Pa).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Wet bulb temperature (C).</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] J. Sullivan and L. D. Sanders. &quot;Method for obtaining wet-bulb temperatures</span>
+<span class="sd">        by modifying the psychrometric formula.&quot; Center for Experiment Design and Data</span>
+<span class="sd">        Analysis. NOAA - National Oceanic and Atmospheric Administration.</span>
+<span class="sd">        https://www.weather.gov/epz/wxcalc_rh</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">es</span> <span class="o">=</span> <span class="mf">6.112</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="p">((</span><span class="mf">17.67</span> <span class="o">*</span> <span class="n">db_temp</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">db_temp</span> <span class="o">+</span> <span class="mf">243.5</span><span class="p">))</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="n">es</span> <span class="o">*</span> <span class="n">rel_humid</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span>
+    <span class="n">t_w</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">increse</span> <span class="o">=</span> <span class="mf">10.0</span>
+    <span class="n">previoussign</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">e_d</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">e_d</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.005</span><span class="p">:</span>
+        <span class="n">e_wg</span> <span class="o">=</span> <span class="mf">6.112</span> <span class="o">*</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="p">((</span><span class="mf">17.67</span> <span class="o">*</span> <span class="n">t_w</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">t_w</span> <span class="o">+</span> <span class="mf">243.5</span><span class="p">)))</span>
+        <span class="n">eg</span> <span class="o">=</span> <span class="n">e_wg</span> <span class="o">-</span> <span class="p">(</span><span class="n">b_press</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">db_temp</span> <span class="o">-</span> <span class="n">t_w</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.00066</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="mf">0.00155</span> <span class="o">*</span> <span class="n">t_w</span><span class="p">))</span>
+        <span class="n">e_d</span> <span class="o">=</span> <span class="n">e</span> <span class="o">-</span> <span class="n">eg</span>
+        <span class="k">if</span> <span class="n">e_d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">e_d</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">cursign</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+                <span class="k">if</span> <span class="n">cursign</span> <span class="o">!=</span> <span class="n">previoussign</span><span class="p">:</span>
+                    <span class="n">previoussign</span> <span class="o">=</span> <span class="n">cursign</span>
+                    <span class="n">increse</span> <span class="o">=</span> <span class="n">increse</span> <span class="o">/</span> <span class="mi">10</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">increse</span> <span class="o">=</span> <span class="n">increse</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">cursign</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">if</span> <span class="n">cursign</span> <span class="o">!=</span> <span class="n">previoussign</span><span class="p">:</span>
+                    <span class="n">previoussign</span> <span class="o">=</span> <span class="n">cursign</span>
+                    <span class="n">increse</span> <span class="o">=</span> <span class="n">increse</span> <span class="o">/</span> <span class="mi">10</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">increse</span> <span class="o">=</span> <span class="n">increse</span>
+        <span class="n">t_w</span> <span class="o">=</span> <span class="n">t_w</span> <span class="o">+</span> <span class="n">increse</span> <span class="o">*</span> <span class="n">previoussign</span>
+    <span class="k">return</span> <span class="n">t_w</span></div>
+
+
+<span class="k">def</span> <span class="nf">_d_ln_p_ws</span><span class="p">(</span><span class="n">db_temp</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Helper function for the derivative of the log of saturation vapor pressure.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        db_temp : Dry bulb temperature (C).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Derivative of natural log of vapor pressure of saturated air in Pa.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">T</span> <span class="o">=</span> <span class="n">db_temp</span> <span class="o">+</span> <span class="mf">273.15</span>  <span class="c1"># temperature in kelvin</span>
+    <span class="k">if</span> <span class="n">db_temp</span> <span class="o">&lt;=</span> <span class="mf">0.</span><span class="p">:</span>
+        <span class="n">d_ln_p_ws</span> <span class="o">=</span> <span class="mf">5.6745359E+03</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mf">9.677843E-03</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> \
+            <span class="mf">6.2215701E-07</span> <span class="o">*</span> <span class="n">T</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mf">2.0747825E-09</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> \
+            <span class="mf">9.484024E-13</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mf">4.1635019</span> <span class="o">/</span> <span class="n">T</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">d_ln_p_ws</span> <span class="o">=</span> <span class="mf">5.8002206E+03</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mf">4.8640239E-02</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> \
+            <span class="mf">4.1764768E-05</span> <span class="o">*</span> <span class="n">T</span> <span class="o">-</span> <span class="mi">3</span> <span class="o">*</span> <span class="mf">1.4452093E-08</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> \
+            <span class="mf">6.5459673</span> <span class="o">/</span> <span class="n">T</span>
+    <span class="k">return</span> <span class="n">d_ln_p_ws</span>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.stat &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.stat</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">codecs</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">platform</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">from</span> <span class="nn">.analysisperiod</span> <span class="kn">import</span> <span class="n">AnalysisPeriod</span>
+<span class="kn">from</span> <span class="nn">.designday</span> <span class="kn">import</span> <span class="n">ASHRAEClearSky</span>
+<span class="kn">from</span> <span class="nn">.designday</span> <span class="kn">import</span> <span class="n">ASHRAETau</span>
+<span class="kn">from</span> <span class="nn">.designday</span> <span class="kn">import</span> <span class="n">DesignDay</span>
+<span class="kn">from</span> <span class="nn">.designday</span> <span class="kn">import</span> <span class="n">DryBulbCondition</span>
+<span class="kn">from</span> <span class="nn">.designday</span> <span class="kn">import</span> <span class="n">HumidityCondition</span>
+<span class="kn">from</span> <span class="nn">.designday</span> <span class="kn">import</span> <span class="n">WindCondition</span>
+<span class="kn">from</span> <span class="nn">.dt</span> <span class="kn">import</span> <span class="n">Date</span>
+<span class="kn">from</span> <span class="nn">.location</span> <span class="kn">import</span> <span class="n">Location</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">izip</span> <span class="k">as</span> <span class="nb">zip</span>  <span class="c1"># python 2</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">xrange</span> <span class="o">=</span> <span class="nb">range</span>  <span class="c1"># python 3</span>
+
+
+<div class="viewcode-block" id="STAT"><a class="viewcode-back" href="../../ladybug.stat.html#ladybug.stat.STAT">[docs]</a><span class="k">class</span> <span class="nc">STAT</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Import data from a local .stat file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        file_path: Address to a local .stat file.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * location</span>
+<span class="sd">        * ashrae_climate_zone</span>
+<span class="sd">        * koppen_climate_zone</span>
+<span class="sd">        * extreme_cold_week</span>
+<span class="sd">        * extreme_hot_week</span>
+<span class="sd">        * typical_winter_week</span>
+<span class="sd">        * typical_spring_week</span>
+<span class="sd">        * typical_summer_week</span>
+<span class="sd">        * typical_autumn_week</span>
+<span class="sd">        * other_typical_weeks</span>
+<span class="sd">        * annual_heating_design_day_996</span>
+<span class="sd">        * annual_heating_design_day_990</span>
+<span class="sd">        * annual_cooling_design_day_004</span>
+<span class="sd">        * annual_cooling_design_day_010</span>
+<span class="sd">        * monthly_cooling_design_days_100</span>
+<span class="sd">        * monthly_cooling_design_days_050</span>
+<span class="sd">        * monthly_cooling_design_days_020</span>
+<span class="sd">        * monthly_cooling_design_days_004</span>
+<span class="sd">        * monthly_db_temp_050</span>
+<span class="sd">        * monthly_wb_temp_050</span>
+<span class="sd">        * monthly_db_temp_range_050</span>
+<span class="sd">        * monthly_wb_temp_range_050</span>
+<span class="sd">        * monthly_found</span>
+<span class="sd">        * standard_pressure_at_elev</span>
+<span class="sd">        * monthly_wind_conditions</span>
+<span class="sd">        * monthly_ws_avg</span>
+<span class="sd">        * monthly_wind_dirs</span>
+<span class="sd">        * monthly_clear_sky_conditions</span>
+<span class="sd">        * monthly_tau_beam</span>
+<span class="sd">        * monthly_tau_diffuse</span>
+<span class="sd">        * file_path</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># categories used for parsing text</span>
+    <span class="n">_months</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span> <span class="s1">&#39;Jul&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">)</span>
+    <span class="n">_wind_dirs</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">225</span><span class="p">,</span> <span class="mi">270</span><span class="p">,</span> <span class="mi">315</span><span class="p">)</span>
+    <span class="n">_wind_dir_names</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;North&#39;</span><span class="p">,</span> <span class="s1">&#39;NorthEast&#39;</span><span class="p">,</span> <span class="s1">&#39;East&#39;</span><span class="p">,</span> <span class="s1">&#39;SouthEast&#39;</span><span class="p">,</span> <span class="s1">&#39;South&#39;</span><span class="p">,</span>
+                       <span class="s1">&#39;SouthWest&#39;</span><span class="p">,</span> <span class="s1">&#39;West&#39;</span><span class="p">,</span> <span class="s1">&#39;NorthWest&#39;</span><span class="p">)</span>
+    <span class="c1"># compiled strings for identifying data in the file</span>
+    <span class="n">_coord_pattern1</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;{([NSEW])(\s*\d*)deg(\s*\d*)&quot;</span><span class="p">)</span>
+    <span class="n">_coord_pattern2</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;{([NSEW])(\s*\d*) (\s*\d*)&quot;</span><span class="p">)</span>
+    <span class="n">_elev_pattern1</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Elevation\s*[-]*\s*(\d*)m\s*(\S*)&quot;</span><span class="p">)</span>
+    <span class="n">_elev_pattern2</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Elevation\s*[-]*\s*(\d*)\s*m\s*(\S*)&quot;</span><span class="p">)</span>
+    <span class="n">_timez_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;{GMT\s*(\S*)\s*Hours}&quot;</span><span class="p">)</span>
+    <span class="n">_press_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Elevation\s*[-]*\s*(\d*)&quot;</span><span class="p">)</span>
+    <span class="n">_ashraecz_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Climate type\s&quot;(\S*)&quot;\s\(A&#39;</span><span class="p">)</span>
+    <span class="n">_koppencz_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Climate type\s&quot;(\S*)&quot;\s\(K&#39;</span><span class="p">)</span>
+    <span class="n">_hotweek_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Extreme Hot Week Period selected:&quot;</span>
+                                  <span class="sa">r</span><span class="s2">&quot;\s*(\w</span><span class="si">{3}</span><span class="s2">)\s*(\d{1,2}):\s*(\w</span><span class="si">{3}</span><span class="s2">)\s*(\d{1,2}),&quot;</span><span class="p">)</span>
+    <span class="n">_coldweek_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Extreme Cold Week Period selected:&quot;</span>
+                                   <span class="sa">r</span><span class="s2">&quot;\s*(\w</span><span class="si">{3}</span><span class="s2">)\s*(\d{1,2}):\s*(\w</span><span class="si">{3}</span><span class="s2">)\s*(\d{1,2}),&quot;</span><span class="p">)</span>
+    <span class="n">_typweek_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\S*)\s*Typical Week Period selected:&quot;</span>
+                                  <span class="sa">r</span><span class="s2">&quot;\s*(\w</span><span class="si">{3}</span><span class="s2">)\s*(\d{1,2}):\s*(\w</span><span class="si">{3}</span><span class="s2">)\s*(\d{1,2}),&quot;</span><span class="p">)</span>
+    <span class="n">_heat_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Heating\s(\d.*)&quot;</span><span class="p">)</span>
+    <span class="n">_cool_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Cooling\s(\d.*)&quot;</span><span class="p">)</span>
+    <span class="n">_tau_beam_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;taub \(beam\)(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_tau_diffuse_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;taud \(diffuse\)(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_db_50_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Drybulb 5.0%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_wb_50_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Coincident Wetbulb 5.0%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_db_100_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Drybulb 10.%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_wb_100_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Coincident Wetbulb 10.%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_db_20_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Drybulb 2.0%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_wb_20_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Coincident Wetbulb 2.0%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_db_04_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Drybulb 0.4%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_wb_04_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Coincident Wetbulb 0.4%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_db_range_50_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Drybulb range - DB 5%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_wb_range_50_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Wetbulb range - DB 5%(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_winds_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Monthly Statistics for Wind Speed[\s\S]*Daily Avg(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_windd_patterns</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s2">&quot;Monthly Wind Direction %[\s\S]*&quot;</span> <span class="o">+</span> <span class="nb">dir</span> <span class="o">+</span> <span class="sa">r</span><span class="s2">&quot;\s(.*)&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">_wind_dir_names</span><span class="p">)</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_file_path&#39;</span><span class="p">,</span> <span class="s1">&#39;_winter_des_day_dict&#39;</span><span class="p">,</span> <span class="s1">&#39;_summer_des_day_dict&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_monthly_wind_dirs&#39;</span><span class="p">,</span> <span class="s1">&#39;_location&#39;</span><span class="p">,</span> <span class="s1">&#39;_ashrae_climate_zone&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_koppen_climate_zone&#39;</span><span class="p">,</span> <span class="s1">&#39;_extreme_cold_week&#39;</span><span class="p">,</span> <span class="s1">&#39;_extreme_hot_week&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_typical_weeks&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_db_50&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_wb_50&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_db_range_50&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_monthly_wb_range_50&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_db_100&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_wb_100&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_db_20&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_monthly_wb_20&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_db_04&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_wb_04&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_wind&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_stand_press_at_elev&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_tau_beam&#39;</span><span class="p">,</span> <span class="s1">&#39;_monthly_tau_diffuse&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;_header&#39;</span><span class="p">,</span> <span class="s1">&#39;_body&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize the class.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">file_path</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                    <span class="s1">&#39;Cannot find an stat file at </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_path</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">file_path</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;stat&#39;</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not an .stat file.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_path</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+        <span class="c1"># defaults empty state for certain parameters</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_winter_des_day_dict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind_dirs</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="c1"># import the data from the file</span>
+        <span class="k">if</span> <span class="n">file_path</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_import_data</span><span class="p">()</span>
+
+<div class="viewcode-block" id="STAT.from_dict"><a class="viewcode-back" href="../../ladybug.stat.html#ladybug.stat.STAT.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Create Stat from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">                {</span>
+<span class="sd">                &quot;location&quot;: {},  # ladybug location schema</span>
+<span class="sd">                &quot;ashrae_climate_zone&quot;: &quot;&quot;5A,  # str</span>
+<span class="sd">                &quot;koppen_climate_zone&quot;: &quot;Dfa&quot;, # str</span>
+<span class="sd">                &quot;extreme_cold_week&quot;: {},  # ladybug analysis period schema</span>
+<span class="sd">                &quot;extreme_hot_week&quot;: {},  # ladybug analysis period schema</span>
+<span class="sd">                &quot;typical_weeks&quot;: {},  # dict of ladybug analysis period schemas</span>
+<span class="sd">                &quot;heating_dict&quot;: {},  # dict containing heating design conditions</span>
+<span class="sd">                &quot;cooling_dict&quot;: {},  # dict containing cooling design conditions</span>
+<span class="sd">                &quot;monthly_db_50&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_wb_50&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_db_range_50&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_wb_range_50&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_db_100&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_wb_100&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_db_20&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_wb_20&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_db_04&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_wb_04&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_wind&quot;: [],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_wind_dirs&quot;: [],  # matrix with 12 cols for months of the year</span>
+<span class="sd">                                          #and 8 rows for the cardinal directions.</span>
+<span class="sd">                &quot;standard_pressure_at_elev&quot;: 101325,  # float value for pressure in Pa</span>
+<span class="sd">                &quot;monthly_tau_beam&quot;:[],  # list of 12 float values for each month</span>
+<span class="sd">                &quot;monthly_tau_diffuse&quot;: []  # list of 12 float values for each month</span>
+<span class="sd">                }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Initialize the class with all data missing</span>
+        <span class="n">stat_ob</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+
+        <span class="c1"># Check required and optional keys</span>
+        <span class="n">option_keys_none</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;ashrae_climate_zone&#39;</span><span class="p">,</span> <span class="s1">&#39;koppen_climate_zone&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;extreme_cold_week&#39;</span><span class="p">,</span> <span class="s1">&#39;extreme_hot_week&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;standard_pressure_at_elev&#39;</span><span class="p">)</span>
+        <span class="n">option_keys_list</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;monthly_db_50&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_wb_50&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;monthly_db_range_50&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_wb_range_50&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;monthly_db_100&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_wb_100&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_db_20&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;monthly_wb_20&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_db_04&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_wb_04&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;monthly_wind&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_wind_dirs&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;monthly_tau_beam&#39;</span><span class="p">,</span> <span class="s1">&#39;monthly_tau_diffuse&#39;</span><span class="p">)</span>
+        <span class="n">option_keys_dict</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;typical_weeks&#39;</span><span class="p">,</span> <span class="s1">&#39;heating_dict&#39;</span><span class="p">,</span> <span class="s1">&#39;cooling_dict&#39;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="s1">&#39;location&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">,</span> <span class="s1">&#39;Required key &quot;location&quot; is missing!&#39;</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">option_keys_none</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">option_keys_list</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">option_keys_dict</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="c1"># assign the properties of the dictionary to the stat object.</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_location</span> <span class="o">=</span> <span class="n">Location</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">])</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_ashrae_climate_zone</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;ashrae_climate_zone&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_koppen_climate_zone</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;koppen_climate_zone&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_extreme_cold_week</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;extreme_cold_week&#39;</span><span class="p">])</span>\
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;extreme_cold_week&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="kc">None</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_extreme_hot_week</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;extreme_hot_week&#39;</span><span class="p">])</span>\
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;extreme_hot_week&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="kc">None</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_typical_weeks</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;typical_weeks&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">stat_ob</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AnalysisPeriod</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">val</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">stat_ob</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">AnalysisPeriod</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_winter_des_day_dict</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;heating_dict&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_summer_des_day_dict</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;cooling_dict&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_db_50</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_db_50&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_wb_50</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_wb_50&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_db_range_50</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_db_range_50&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_wb_range_50</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_wb_range_50&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_db_100</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_db_100&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_wb_100</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_wb_100&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_db_20</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_db_20&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_wb_20</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_wb_20&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_db_04</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_db_04&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_wb_04</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_wb_04&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_wind</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_wind&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_wind_dirs</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_wind_dirs&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_stand_press_at_elev</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;standard_pressure_at_elev&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_tau_beam</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_tau_beam&#39;</span><span class="p">]</span>
+        <span class="n">stat_ob</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;monthly_tau_diffuse&#39;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">stat_ob</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">file_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the path to the stat file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_file_path</span>
+
+    <span class="k">def</span> <span class="nf">_import_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Import data from a stat file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># set default state to ironpython for very old ironpython (2.7.0)</span>
+        <span class="n">iron_python</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">iron_python</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">platform</span><span class="o">.</span><span class="n">python_implementation</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;IronPython&#39;</span> \
+                <span class="k">else</span> <span class="kc">False</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="c1"># older versions of IronPython fail to parse version correctly</span>
+            <span class="c1"># failed to parse IronPython sys.version: &#39;2.7.5 (IronPython 2.7.5 (2.7.5.0)</span>
+            <span class="c1"># on .NET 4.0.30319.42000 (64-bit))&#39;</span>
+            <span class="k">if</span> <span class="s1">&#39;IronPython&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+                <span class="n">iron_python</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">if</span> <span class="n">iron_python</span><span class="p">:</span>
+            <span class="n">statwin</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">statwin</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="n">statwin</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+            <span class="c1"># import header with location</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_header</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">statwin</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">9</span><span class="p">)]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_body</span> <span class="o">=</span> <span class="n">statwin</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">traceback</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()))</span>
+        <span class="k">else</span><span class="p">:</span>
+
+            <span class="c1"># import location data</span>
+            <span class="n">loc_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Location -- &#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s1">&#39; - &#39;</span> <span class="ow">in</span> <span class="n">loc_name</span><span class="p">:</span>
+                <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">loc_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; - &#39;</span><span class="p">)[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># for US stat files it is full name separated by spaces</span>
+                <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">loc_name</span><span class="o">.</span><span class="n">split</span><span class="p">()[:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+            <span class="n">country</span> <span class="o">=</span> <span class="n">loc_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">source</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Data Source -- &#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">station_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;WMO Station &#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">iron_python</span><span class="p">:</span>  <span class="c1"># IronPython</span>
+                <span class="n">matches</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_coord_pattern1</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\xb0</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;deg&#39;</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># CPython</span>
+                <span class="n">matches</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_coord_pattern2</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+            <span class="n">lat_sign</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">matches</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span> <span class="k">else</span> <span class="mi">1</span>
+            <span class="n">latitude</span> <span class="o">=</span> <span class="n">lat_sign</span> <span class="o">*</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">matches</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">matches</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span> <span class="o">/</span> <span class="mi">60</span><span class="p">))</span>
+            <span class="n">lon_sign</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">matches</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span> <span class="k">else</span> <span class="mi">1</span>
+            <span class="n">longitude</span> <span class="o">=</span> <span class="n">lon_sign</span> <span class="o">*</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">matches</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">matches</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span> <span class="o">/</span> <span class="mi">60</span><span class="p">))</span>
+            <span class="n">time_zone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_check</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_timez_pattern</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+            <span class="n">elev_matches</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elev_pattern1</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">elev_matches</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">elev_matches</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_elev_pattern2</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+            <span class="n">elev_sign</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">elev_matches</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;below&#39;</span> <span class="k">else</span> <span class="mi">1</span>
+            <span class="n">elevation</span> <span class="o">=</span> <span class="n">elev_sign</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">elev_matches</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span> <span class="o">=</span> <span class="n">Location</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">city</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">country</span> <span class="o">=</span> <span class="n">country</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="n">source</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">station_id</span> <span class="o">=</span> <span class="n">station_id</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">latitude</span> <span class="o">=</span> <span class="n">latitude</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">longitude</span> <span class="o">=</span> <span class="n">longitude</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">time_zone</span> <span class="o">=</span> <span class="n">time_zone</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="o">.</span><span class="n">elevation</span> <span class="o">=</span> <span class="n">elevation</span>
+
+            <span class="c1"># pull out individual properties</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_check</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_press_pattern</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ashrae_climate_zone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_check</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_ashraecz_pattern</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_koppen_climate_zone</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_check</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_koppencz_pattern</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="p">)</span>
+
+            <span class="c1"># pull out extreme and seasonal weeks.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extreme_hot_week</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_week_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_hotweek_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_extreme_cold_week</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_week_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_coldweek_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_typical_weeks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_typical_week_parse</span><span class="p">()</span>
+
+            <span class="c1"># pull out annual design days</span>
+            <span class="n">winter_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_heat_pattern</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">DesignDay</span><span class="o">.</span><span class="n">HEATING_KEYS</span><span class="p">,</span> <span class="n">winter_vals</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_winter_des_day_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">val</span>
+            <span class="n">summer_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cool_pattern</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">DesignDay</span><span class="o">.</span><span class="n">COOLING_KEYS</span><span class="p">,</span> <span class="n">summer_vals</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">val</span>
+
+            <span class="c1"># Pull out relevant monthly information</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tau_beam_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tau_diffuse_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_50</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_db_50_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_50</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wb_50_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_100</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_db_100_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_100</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wb_100_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_20</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_db_20_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_20</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wb_20_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_04</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_db_04_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_04</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wb_04_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_db_range_50_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_range_50</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_wb_range_50_pattern</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_winds_pattern</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">direction</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_windd_patterns</span><span class="p">:</span>
+                <span class="n">dirs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_parse</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">dirs</span> <span class="o">!=</span> <span class="p">[]:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind_dirs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dirs</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind_dirs</span> <span class="o">==</span> <span class="p">[]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind_dirs</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">12</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">8</span><span class="p">)]</span>
+
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">statwin</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_regex_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regex_pattern</span><span class="p">,</span> <span class="n">search_space</span><span class="p">):</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="n">regex_pattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">search_space</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">matches</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">matches</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">_regex_week</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">match</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">match</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">st_mon</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="n">end_mon</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="n">st_day</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">end_day</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="k">return</span> <span class="n">AnalysisPeriod</span><span class="p">(</span><span class="n">st_mon</span><span class="p">,</span> <span class="n">st_day</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">end_mon</span><span class="p">,</span> <span class="n">end_day</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">_regex_week_parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regex_pattern</span><span class="p">):</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="n">regex_pattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_week</span><span class="p">(</span><span class="n">matches</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">_regex_typical_week_parse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">typ_weeks</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;other&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_typweek_pattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
+            <span class="n">a_per</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_regex_week</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+            <span class="k">if</span> <span class="s1">&#39;winter&#39;</span> <span class="ow">in</span> <span class="n">match</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="n">typ_weeks</span><span class="p">[</span><span class="s1">&#39;winter&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_per</span>
+            <span class="k">elif</span> <span class="s1">&#39;spring&#39;</span> <span class="ow">in</span> <span class="n">match</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="n">typ_weeks</span><span class="p">[</span><span class="s1">&#39;spring&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_per</span>
+            <span class="k">elif</span> <span class="s1">&#39;summer&#39;</span> <span class="ow">in</span> <span class="n">match</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="n">typ_weeks</span><span class="p">[</span><span class="s1">&#39;summer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_per</span>
+            <span class="k">elif</span> <span class="s1">&#39;autumn&#39;</span> <span class="ow">in</span> <span class="n">match</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="n">typ_weeks</span><span class="p">[</span><span class="s1">&#39;autumn&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_per</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">typ_weeks</span><span class="p">[</span><span class="s1">&#39;other&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_per</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">typ_weeks</span>
+
+    <span class="k">def</span> <span class="nf">_regex_parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regex_pattern</span><span class="p">):</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="n">regex_pattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">raw_txt</span> <span class="o">=</span> <span class="n">matches</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="s1">&#39;N&#39;</span> <span class="k">else</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">raw_txt</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">raw_txt</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_found</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span> <span class="o">!=</span> <span class="p">[]</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_range_50</span> <span class="o">!=</span> <span class="p">[]</span> \
+            <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind</span> <span class="o">!=</span> <span class="p">[]</span> \
+                <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return ladybug location object.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ashrae_climate_zone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a text string indicating the ASHRAE climate zone.</span>
+
+<span class="sd">        Numbers in the zone denote average temperature (0 = Hottest; 8 = Coldest)</span>
+<span class="sd">        Letters in the zone denote wetness (A = Humid; B = Dry; C = Marine)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ashrae_climate_zone</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">koppen_climate_zone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a text string indicating the Koppen climate zone.</span>
+
+<span class="sd">        The Koppen climate classification is the most widely used climate</span>
+<span class="sd">        classification system and combines average annual and monthly</span>
+<span class="sd">        temperatures, precipitation, and the seasonality of precipitation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_koppen_climate_zone</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extreme_cold_week</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;AnalysisPeriod for the coldest week within the corresponding EPW.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extreme_cold_week</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extreme_hot_week</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;AnalysisPeriod for the hottest week within the corresponding EPW.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extreme_hot_week</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">typical_winter_week</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;AnalysisPeriod for a typical winter week within the corresponding EPW.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">[</span><span class="s1">&#39;winter&#39;</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">typical_spring_week</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;AnalysisPeriod for a typical spring week within the corresponding EPW.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">[</span><span class="s1">&#39;spring&#39;</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">typical_summer_week</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;AnalysisPeriod for a typical summer week within the corresponding EPW.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">[</span><span class="s1">&#39;summer&#39;</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">typical_autumn_week</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;AnalysisPeriod for a typical autumn week within the corresponding EPW.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">[</span><span class="s1">&#39;autumn&#39;</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">other_typical_weeks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;List of AnalysisPeriods for typical weeks outside of the seasonal weeks.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">[</span><span class="s1">&#39;other&#39;</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">annual_heating_design_day_996</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A design day object representing the annual 99.6% heating design day.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_winter_des_day_dict</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">DesignDay</span><span class="o">.</span><span class="n">from_ashrae_dict_heating</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_winter_des_day_dict</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">annual_heating_design_day_990</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A design day object representing the annual 99.0% heating design day.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_winter_des_day_dict</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">DesignDay</span><span class="o">.</span><span class="n">from_ashrae_dict_heating</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_winter_des_day_dict</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">annual_cooling_design_day_004</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A design day object representing the annual 0.4% cooling design day.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">):</span>
+            <span class="n">tau</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="n">month_num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">[</span><span class="s1">&#39;Month&#39;</span><span class="p">])</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span> <span class="o">!=</span> <span class="p">[]</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span> <span class="o">!=</span> <span class="p">[]</span> \
+                <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> \
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">tau</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span>
+                       <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="k">return</span> <span class="n">DesignDay</span><span class="o">.</span><span class="n">from_ashrae_dict_cooling</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">,</span> <span class="n">tau</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">annual_cooling_design_day_010</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A design day object representing the annual 1.0% cooling design day.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">):</span>
+            <span class="n">tau</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="n">month_num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">[</span><span class="s1">&#39;Month&#39;</span><span class="p">])</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span> <span class="o">!=</span> <span class="p">[]</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span> <span class="o">!=</span> <span class="p">[]</span> \
+                <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> \
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">tau</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span>
+                       <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span><span class="p">[</span><span class="n">month_num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="k">return</span> <span class="n">DesignDay</span><span class="o">.</span><span class="n">from_ashrae_dict_cooling</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">,</span> <span class="n">tau</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_cooling_design_days_050</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 objects representing monthly 5.0% cooling design days.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_found</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_50</span> <span class="o">==</span> <span class="p">[]</span> \
+                <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_50</span> <span class="o">==</span> <span class="p">[]:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">db_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">DryBulbCondition</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_50</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span><span class="p">)]</span>
+            <span class="n">hu_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">HumidityCondition</span><span class="p">(</span>
+                <span class="s1">&#39;Wetbulb&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_50</span><span class="p">]</span>
+            <span class="n">ws_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_wind_conditions</span>
+            <span class="n">sky_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_clear_sky_conditions</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">DesignDay</span><span class="p">(</span>
+                <span class="s1">&#39;5% Cooling Design Day for </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span>
+                <span class="s1">&#39;SummerDesignDay&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="p">,</span>
+                <span class="n">db_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">hu_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ws_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sky_conds</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">12</span><span class="p">)]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_cooling_design_days_100</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 objects representing monthly 10.0% cooling design days.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_found</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_100</span> <span class="o">==</span> <span class="p">[]</span> \
+                <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_100</span> <span class="o">==</span> <span class="p">[]:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">db_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">DryBulbCondition</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_100</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span><span class="p">)]</span>
+            <span class="n">hu_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">HumidityCondition</span><span class="p">(</span>
+                <span class="s1">&#39;Wetbulb&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_100</span><span class="p">]</span>
+            <span class="n">ws_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_wind_conditions</span>
+            <span class="n">sky_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_clear_sky_conditions</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">DesignDay</span><span class="p">(</span>
+                <span class="s1">&#39;10% Cooling Design Day for </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span>
+                <span class="s1">&#39;SummerDesignDay&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="p">,</span>
+                <span class="n">db_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">hu_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ws_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sky_conds</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">12</span><span class="p">)]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_cooling_design_days_020</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 objects representing monthly 2.0% cooling design days.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_found</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_20</span> <span class="o">==</span> <span class="p">[]</span> \
+                <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_20</span> <span class="o">==</span> <span class="p">[]:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">db_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">DryBulbCondition</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_20</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span><span class="p">)]</span>
+            <span class="n">hu_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">HumidityCondition</span><span class="p">(</span>
+                <span class="s1">&#39;Wetbulb&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_20</span><span class="p">]</span>
+            <span class="n">ws_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_wind_conditions</span>
+            <span class="n">sky_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_clear_sky_conditions</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">DesignDay</span><span class="p">(</span>
+                <span class="s1">&#39;2% Cooling Design Day for </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span>
+                <span class="s1">&#39;SummerDesignDay&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="p">,</span>
+                <span class="n">db_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">hu_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ws_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sky_conds</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">12</span><span class="p">)]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_cooling_design_days_004</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 objects representing monthly 0.4% cooling design days.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_found</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_04</span> <span class="o">==</span> <span class="p">[]</span> \
+                <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_04</span> <span class="o">==</span> <span class="p">[]:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">db_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">DryBulbCondition</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_04</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span><span class="p">)]</span>
+            <span class="n">hu_conds</span> <span class="o">=</span> <span class="p">[</span><span class="n">HumidityCondition</span><span class="p">(</span>
+                <span class="s1">&#39;Wetbulb&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_04</span><span class="p">]</span>
+            <span class="n">ws_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_wind_conditions</span>
+            <span class="n">sky_conds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_clear_sky_conditions</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">DesignDay</span><span class="p">(</span>
+                <span class="s1">&#39;0.4% Cooling Design Day for </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_months</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span>
+                <span class="s1">&#39;SummerDesignDay&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location</span><span class="p">,</span>
+                <span class="n">db_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">hu_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ws_conds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sky_conds</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">12</span><span class="p">)]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_db_temp_050</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 float values for monthly 5.0% dry bulb temperature.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_50</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_wb_temp_050</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 float values for monthly 5.0% wet bulb temperature.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_50</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_db_temp_range_050</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 values for monthly ranges of dry bulb temperatures at 5.0%.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_wb_temp_range_050</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 values for monthly ranges of wet bulb temperatures at 5.0%.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_range_50</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">standard_pressure_at_elev</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The standard pressure on pascals at the elevation of the location.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stand_press_at_elev</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_wind_conditions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 monthly wind conditions that are used on the design days.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">WindCondition</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_wind_dirs</span><span class="p">)]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_ws_avg</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 float values for monthly average wind speeds.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_wind_dirs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of prevailing wind directions for each month.&quot;&quot;&quot;</span>
+        <span class="n">mwd</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind_dirs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_wind_dirs</span><span class="p">[</span><span class="n">mon</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">mon</span><span class="p">))]</span> <span class="k">for</span> <span class="n">mon</span> <span class="ow">in</span> <span class="n">mwd</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_clear_sky_conditions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 monthly clear sky conditions that are used on the design days.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span> <span class="ow">is</span> <span class="p">[]</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span> <span class="ow">is</span> <span class="p">[]:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">ASHRAEClearSky</span><span class="p">(</span><span class="n">Date</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">21</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">ASHRAETau</span><span class="p">(</span><span class="n">Date</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">21</span><span class="p">),</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+            <span class="nb">list</span><span class="p">(</span><span class="n">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">)),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span><span class="p">)]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_tau_beam</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A list of 12 float values for monthly beam optical depth.</span>
+
+<span class="sd">        These values can be used to generate ASHRAE Revised Clear Skies, which</span>
+<span class="sd">        are intended to determine peak solar load and sizing parmeters for</span>
+<span class="sd">        HVAC systems.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_beam</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">monthly_tau_diffuse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a list of 12 float values for monthly diffuse optical depth.</span>
+
+<span class="sd">        These values can be used to generate ASHRAE Revised Clear Skies, which</span>
+<span class="sd">        are intended to determine peak solar load and sizing parmeters for</span>
+<span class="sd">        HVAC systems.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_tau_diffuse</span>
+
+<div class="viewcode-block" id="STAT.to_dict"><a class="viewcode-back" href="../../ladybug.stat.html#ladybug.stat.STAT.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Convert the stat object to a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">def</span> <span class="nf">dictify_dict</span><span class="p">(</span><span class="n">base_dict</span><span class="p">):</span>
+            <span class="n">new_dict</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">base_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                    <span class="n">new_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">val</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">new_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">new_dict</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;location&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+            <span class="s1">&#39;ashrae_climate_zone&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">ashrae_climate_zone</span><span class="p">,</span>
+            <span class="s1">&#39;koppen_climate_zone&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">koppen_climate_zone</span><span class="p">,</span>
+            <span class="s1">&#39;extreme_cold_week&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">extreme_cold_week</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">extreme_cold_week</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="s1">&#39;extreme_hot_week&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">extreme_hot_week</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">extreme_cold_week</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="s1">&#39;typical_weeks&#39;</span><span class="p">:</span> <span class="n">dictify_dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_typical_weeks</span><span class="p">),</span>
+            <span class="s1">&#39;heating_dict&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_winter_des_day_dict</span><span class="p">,</span>
+            <span class="s1">&#39;cooling_dict&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_summer_des_day_dict</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_db_50&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_50</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_wb_50&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_50</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_db_range_50&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_range_50</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_wb_range_50&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_range_50</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_db_100&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_100</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_wb_100&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_100</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_db_20&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_20</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_wb_20&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_20</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_db_04&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_db_04</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_wb_04&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wb_04</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_wind&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_wind_dirs&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monthly_wind_dirs</span><span class="p">,</span>
+            <span class="s2">&quot;standard_pressure_at_elev&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">standard_pressure_at_elev</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_tau_beam&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_tau_beam</span><span class="p">,</span>
+            <span class="s2">&quot;monthly_tau_diffuse&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthly_tau_diffuse</span><span class="p">,</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s1">&#39;STAT&#39;</span>
+        <span class="p">}</span></div>
+
+<div class="viewcode-block" id="STAT.ToString"><a class="viewcode-back" href="../../ladybug.stat.html#ladybug.stat.STAT.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;stat file representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;STAT [</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">city</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

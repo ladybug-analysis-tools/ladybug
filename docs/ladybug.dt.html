@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.dt module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.epw module" href="ladybug.epw.html" />
+    <link rel="prev" title="ladybug.designday module" href="ladybug.designday.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.designday.html" title="Previous Chapter: ladybug.designday module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.desig...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.epw.html" title="Next Chapter: ladybug.epw module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.epw module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.dt.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.dt">
+<span id="ladybug-dt-module"></span><h1>ladybug.dt module<a class="headerlink" href="#module-ladybug.dt" title="Permalink to this headline">¶</a></h1>
+<p>Ladybug datetime.</p>
+<dl class="py class">
+<dt id="ladybug.dt.Date">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.dt.</code><code class="sig-name descname">Date</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">day</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></p>
+<p>Ladybug Date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – A value for month between 1-12. Default: 1.</p></li>
+<li><p><strong>day</strong> – A value for day between 1-31. Default: 1.</p></li>
+<li><p><strong>leap_year</strong> – A boolean to indicate if date is for a leap year. Default: False.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>day</p></li>
+<li><p>doy</p></li>
+<li><p>leap_year</p></li>
+<li><p>month</p></li>
+<li><p>year</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.dt.Date.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.ctime">
+<code class="sig-name descname">ctime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.ctime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return ctime() style string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.from_array">
+<em class="property">classmethod </em><code class="sig-name descname">from_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date_array</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date.from_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date.from_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Date from am array of integers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>datetime_array</strong> – An array of 2 integers (and optional leap_year boolean)
+ordered as follows: (month, day, leap_year)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.from_date_string">
+<em class="property">classmethod </em><code class="sig-name descname">from_date_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date_string</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date.from_date_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date.from_date_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Date from a Date string.</p>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">Date</span><span class="o">.</span><span class="n">from_date_string</span><span class="p">(</span><span class="s2">&quot;31 Dec&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create date from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># A value for month between 1-12. (Default: 1)</span>
+<span class="s1">&#39;day&#39;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># A value for day between 1-31. (Default: 1)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.from_doy">
+<em class="property">classmethod </em><code class="sig-name descname">from_doy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doy</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date.from_doy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date.from_doy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Date from an day of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>doy</strong> – An int value 0 &lt;= and &lt; 366</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.fromisoformat">
+<code class="sig-name descname">fromisoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.fromisoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>str -&gt; Construct a date from the output of date.isoformat()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.fromordinal">
+<code class="sig-name descname">fromordinal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.fromordinal" title="Permalink to this definition">¶</a></dt>
+<dd><p>int -&gt; date corresponding to a proleptic Gregorian ordinal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.fromtimestamp">
+<code class="sig-name descname">fromtimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.fromtimestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>timestamp -&gt; local date from a POSIX timestamp (like time.time()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.isocalendar">
+<code class="sig-name descname">isocalendar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.isocalendar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a 3-tuple containing ISO year, week number, and weekday.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.isoformat">
+<code class="sig-name descname">isoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.isoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return string in ISO 8601 format, YYYY-MM-DD.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.isoweekday">
+<code class="sig-name descname">isoweekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.isoweekday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the day of the week represented by the date.
+Monday == 1 … Sunday == 7</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.replace">
+<code class="sig-name descname">replace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return date with new specified fields.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.strftime">
+<code class="sig-name descname">strftime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.strftime" title="Permalink to this definition">¶</a></dt>
+<dd><p>format -&gt; strftime() style string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.timetuple">
+<code class="sig-name descname">timetuple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.timetuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time tuple, compatible with time.localtime().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.to_array">
+<code class="sig-name descname">to_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date.to_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return date as an array of values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Date.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Date.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get date as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.today">
+<code class="sig-name descname">today</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.today" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current date or datetime:  same as self.__class__.fromtimestamp(time.time()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.toordinal">
+<code class="sig-name descname">toordinal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.toordinal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return proleptic Gregorian ordinal.  January 1 of year 1 is day 1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.weekday">
+<code class="sig-name descname">weekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Date.weekday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the day of the week represented by the date.
+Monday == 0 … Sunday == 6</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Date.day">
+<code class="sig-name descname">day</code><a class="headerlink" href="#ladybug.dt.Date.day" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.doy">
+<em class="property">property </em><code class="sig-name descname">doy</code><a class="headerlink" href="#ladybug.dt.Date.doy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate day of the year for this date.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Date.leap_year">
+<em class="property">property </em><code class="sig-name descname">leap_year</code><a class="headerlink" href="#ladybug.dt.Date.leap_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean to note whether Date belongs to a leap year or not.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Date.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.date(9999, 12, 31)</em><a class="headerlink" href="#ladybug.dt.Date.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Date.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.date(1, 1, 1)</em><a class="headerlink" href="#ladybug.dt.Date.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Date.month">
+<code class="sig-name descname">month</code><a class="headerlink" href="#ladybug.dt.Date.month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Date.resolution">
+<code class="sig-name descname">resolution</code><em class="property"> = datetime.timedelta(days=1)</em><a class="headerlink" href="#ladybug.dt.Date.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Date.year">
+<code class="sig-name descname">year</code><a class="headerlink" href="#ladybug.dt.Date.year" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ladybug.dt.DateTime">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.dt.</code><code class="sig-name descname">DateTime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">day</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">hour</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">minute</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></p>
+<p>Create Ladybug Date time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – A value for month between 1-12 (Default: 1).</p></li>
+<li><p><strong>day</strong> – A value for day between 1-31 (Default: 1).</p></li>
+<li><p><strong>hour</strong> – A value for hour between 0-23 (Default: 0).</p></li>
+<li><p><strong>minute</strong> – A value for month between 0-59 (Default: 0).</p></li>
+<li><p><strong>leap_year</strong> – A boolean to indicate if datetime is for a leap year
+(Default: False).</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>month</p></li>
+<li><p>day</p></li>
+<li><p>hour</p></li>
+<li><p>leap_year</p></li>
+<li><p>doy</p></li>
+<li><p>hoy</p></li>
+<li><p>int_hoy</p></li>
+<li><p>minute</p></li>
+<li><p>moy</p></li>
+<li><p>float_hour</p></li>
+<li><p>tzinfo</p></li>
+<li><p>year</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.add_hour">
+<code class="sig-name descname">add_hour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hour</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.add_hour"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.add_hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new DateTime from this time + timedelta.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hour</strong> – A float value in hours (e.g. .5 = half an hour)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.add_minute">
+<code class="sig-name descname">add_minute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">minute</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.add_minute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.add_minute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new DateTime after the minutes are added.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>minute</strong> – An integer value for minutes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.astimezone">
+<code class="sig-name descname">astimezone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.astimezone" title="Permalink to this definition">¶</a></dt>
+<dd><p>tz -&gt; convert to local time in new timezone tz</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.combine">
+<code class="sig-name descname">combine</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.combine" title="Permalink to this definition">¶</a></dt>
+<dd><p>date, time -&gt; datetime with same date and time fields</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.ctime">
+<code class="sig-name descname">ctime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.ctime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return ctime() style string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.dst">
+<code class="sig-name descname">dst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.dst(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_array">
+<em class="property">classmethod </em><code class="sig-name descname">from_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datetime_array</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug DateTime from am array of integers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>datetime_array</strong> – An array of 4 integers (and optional leap_year boolean)
+ordered as follows: (month, day, hour, minute, leap_year)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_date_and_time">
+<em class="property">classmethod </em><code class="sig-name descname">from_date_and_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em>, <em class="sig-param"><span class="n">time</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_date_and_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_date_and_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug DateTime from a Date and a Time object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>date</strong> – A ladybug Date object.</p></li>
+<li><p><strong>time</strong> – A ladybug Time object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_date_time_string">
+<em class="property">classmethod </em><code class="sig-name descname">from_date_time_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datetime_string</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_date_time_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_date_time_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug DateTime from a DateTime string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datetime_string</strong> – A text string representing a DateTime
+(ie. “21 Jun 12:00”)</p></li>
+<li><p><strong>leap_year</strong> – Boolean to note whether the Date Time is a part of a
+leap year. Default: False.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">DateTime</span><span class="o">.</span><span class="n">from_date_time_string</span><span class="p">(</span><span class="s2">&quot;31 Dec 12:00&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create datetime from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1">#A value for month between 1-12. (Default: 1)</span>
+<span class="s1">&#39;day&#39;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># A value for day between 1-31. (Default: 1)</span>
+<span class="s1">&#39;hour&#39;</span><span class="p">:</span> <span class="mi">0</span>  <span class="c1"># A value for hour between 0-23. (Default: 0)</span>
+<span class="s1">&#39;minute&#39;</span><span class="p">:</span> <span class="mi">0</span>  <span class="c1"># A value for month between 0-59. (Default: 0)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_first_hour">
+<em class="property">classmethod </em><code class="sig-name descname">from_first_hour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_first_hour"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_first_hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug DateTime for the first hour of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>leap_year</strong> – Boolean to note whether the Date Time is a part of a
+leap year. Default: False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_hoy">
+<em class="property">classmethod </em><code class="sig-name descname">from_hoy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hoy</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_hoy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Datetime from an hour of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hoy</strong> – A float value 0 &lt;= and &lt; 8760</p></li>
+<li><p><strong>leap_year</strong> – Boolean to note whether the Date Time is a part of a
+leap year. Default: False.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_last_hour">
+<em class="property">classmethod </em><code class="sig-name descname">from_last_hour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_last_hour"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_last_hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug DateTime for the last hour of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>leap_year</strong> – Boolean to note whether the Date Time is a part of a
+leap year. Default: False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.from_moy">
+<em class="property">classmethod </em><code class="sig-name descname">from_moy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">moy</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.from_moy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.from_moy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Datetime from a minute of the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>moy</strong> – An integer value 0 &lt;= and &lt; 525600</p></li>
+<li><p><strong>leap_year</strong> – Boolean to note whether the Date Time is a part of a
+leap year. Default: False.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.fromisoformat">
+<code class="sig-name descname">fromisoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.fromisoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>string -&gt; datetime from datetime.isoformat() output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.fromordinal">
+<code class="sig-name descname">fromordinal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.fromordinal" title="Permalink to this definition">¶</a></dt>
+<dd><p>int -&gt; date corresponding to a proleptic Gregorian ordinal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.fromtimestamp">
+<code class="sig-name descname">fromtimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.fromtimestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>timestamp[, tz] -&gt; tz’s local time from POSIX timestamp.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.isocalendar">
+<code class="sig-name descname">isocalendar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.isocalendar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a 3-tuple containing ISO year, week number, and weekday.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.isoformat">
+<code class="sig-name descname">isoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.isoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>[sep] -&gt; string in ISO 8601 format, YYYY-MM-DDT[HH[:MM[:SS[.mmm[uuu]]]]][+HH:MM].
+sep is used to separate the year from the time, and defaults to ‘T’.
+timespec specifies what components of the time to include (allowed values are ‘auto’, ‘hours’, ‘minutes’, ‘seconds’, ‘milliseconds’, and ‘microseconds’).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.isoweekday">
+<code class="sig-name descname">isoweekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.isoweekday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the day of the week represented by the date.
+Monday == 1 … Sunday == 7</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.now">
+<code class="sig-name descname">now</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.now" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns new datetime object representing current time local to tz.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>tz</dt><dd><p>Timezone object.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>If no tz is specified, uses local timezone.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.replace">
+<code class="sig-name descname">replace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return datetime with new specified fields.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.strftime">
+<code class="sig-name descname">strftime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.strftime" title="Permalink to this definition">¶</a></dt>
+<dd><p>format -&gt; strftime() style string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.strptime">
+<code class="sig-name descname">strptime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.strptime" title="Permalink to this definition">¶</a></dt>
+<dd><p>string, format -&gt; new datetime parsed from a string (like time.strptime()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.sub_hour">
+<code class="sig-name descname">sub_hour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hour</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.sub_hour"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.sub_hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new DateTime from this time - timedelta.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hour</strong> – A float value in hours (e.g. .5 is half an hour and 2 is two hours).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.sub_minute">
+<code class="sig-name descname">sub_minute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">minute</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.sub_minute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.sub_minute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new DateTime after the minutes are subtracted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>minute</strong> – An integer value for the number of minutes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.timestamp">
+<code class="sig-name descname">timestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return POSIX timestamp as float.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.timetuple">
+<code class="sig-name descname">timetuple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.timetuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time tuple, compatible with time.localtime().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.timetz">
+<code class="sig-name descname">timetz</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.timetz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time object with same time and tzinfo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.to_array">
+<code class="sig-name descname">to_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.to_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return datetime as an array of values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get datetime as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.to_simple_string">
+<code class="sig-name descname">to_simple_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">separator</span><span class="o">=</span><span class="default_value">'_'</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#DateTime.to_simple_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.DateTime.to_simple_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a simplified string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.today">
+<code class="sig-name descname">today</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.today" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current date or datetime:  same as self.__class__.fromtimestamp(time.time()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.toordinal">
+<code class="sig-name descname">toordinal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.toordinal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return proleptic Gregorian ordinal.  January 1 of year 1 is day 1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.tzname">
+<code class="sig-name descname">tzname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.tzname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.tzname(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.utcfromtimestamp">
+<code class="sig-name descname">utcfromtimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.utcfromtimestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct a naive UTC datetime from a POSIX timestamp.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.utcnow">
+<code class="sig-name descname">utcnow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.utcnow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new datetime representing UTC day and time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.utcoffset">
+<code class="sig-name descname">utcoffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.utcoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.utcoffset(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.utctimetuple">
+<code class="sig-name descname">utctimetuple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.utctimetuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return UTC time tuple, compatible with time.localtime().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.weekday">
+<code class="sig-name descname">weekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.DateTime.weekday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the day of the week represented by the date.
+Monday == 0 … Sunday == 6</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.date">
+<em class="property">property </em><code class="sig-name descname">date</code><a class="headerlink" href="#ladybug.dt.DateTime.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Date object associated with this DateTime.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.day">
+<code class="sig-name descname">day</code><a class="headerlink" href="#ladybug.dt.DateTime.day" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.doy">
+<em class="property">property </em><code class="sig-name descname">doy</code><a class="headerlink" href="#ladybug.dt.DateTime.doy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate day of the year for this date time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.float_hour">
+<em class="property">property </em><code class="sig-name descname">float_hour</code><a class="headerlink" href="#ladybug.dt.DateTime.float_hour" title="Permalink to this definition">¶</a></dt>
+<dd><ol class="arabic simple" start="15">
+<li></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Get hour and minute as a float value, e.g. 6.25 for 6</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.fold">
+<code class="sig-name descname">fold</code><a class="headerlink" href="#ladybug.dt.DateTime.fold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.hour">
+<code class="sig-name descname">hour</code><a class="headerlink" href="#ladybug.dt.DateTime.hour" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.hoy">
+<em class="property">property </em><code class="sig-name descname">hoy</code><a class="headerlink" href="#ladybug.dt.DateTime.hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate hour of the year for this date time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.int_hoy">
+<em class="property">property </em><code class="sig-name descname">int_hoy</code><a class="headerlink" href="#ladybug.dt.DateTime.int_hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate hour of the year for this date time as an integer.</p>
+<p>This output assumes the minute is 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.leap_year">
+<em class="property">property </em><code class="sig-name descname">leap_year</code><a class="headerlink" href="#ladybug.dt.DateTime.leap_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean to note whether DateTime belongs to a leap year or not.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.datetime(9999, 12, 31, 23, 59, 59, 999999)</em><a class="headerlink" href="#ladybug.dt.DateTime.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.microsecond">
+<code class="sig-name descname">microsecond</code><a class="headerlink" href="#ladybug.dt.DateTime.microsecond" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.datetime(1, 1, 1, 0, 0)</em><a class="headerlink" href="#ladybug.dt.DateTime.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.minute">
+<code class="sig-name descname">minute</code><a class="headerlink" href="#ladybug.dt.DateTime.minute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.month">
+<code class="sig-name descname">month</code><a class="headerlink" href="#ladybug.dt.DateTime.month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.moy">
+<em class="property">property </em><code class="sig-name descname">moy</code><a class="headerlink" href="#ladybug.dt.DateTime.moy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate minute of the year for this date time.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.resolution">
+<code class="sig-name descname">resolution</code><em class="property"> = datetime.timedelta(microseconds=1)</em><a class="headerlink" href="#ladybug.dt.DateTime.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.second">
+<code class="sig-name descname">second</code><a class="headerlink" href="#ladybug.dt.DateTime.second" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.DateTime.time">
+<em class="property">property </em><code class="sig-name descname">time</code><a class="headerlink" href="#ladybug.dt.DateTime.time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Time object associated with this DateTime.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.tzinfo">
+<code class="sig-name descname">tzinfo</code><a class="headerlink" href="#ladybug.dt.DateTime.tzinfo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.DateTime.year">
+<code class="sig-name descname">year</code><a class="headerlink" href="#ladybug.dt.DateTime.year" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ladybug.dt.Time">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.dt.</code><code class="sig-name descname">Time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hour</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">minute</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.time</span></code></p>
+<p>Create Ladybug Time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hour</strong> – A value for hour between 0-23 (Default: 0).</p></li>
+<li><p><strong>minute</strong> – A value for month between 0-59 (Default: 0).</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>hour</p></li>
+<li><p>minute</p></li>
+<li><p>mod</p></li>
+<li><p>second</p></li>
+<li><p>tzinfo</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.dt.Time.ToString">
+<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.dst">
+<code class="sig-name descname">dst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Time.dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.dst(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.from_array">
+<em class="property">classmethod </em><code class="sig-name descname">from_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">time_array</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time.from_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time.from_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Time from am array of integers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>datetime_array</strong> – An array of 2 integers ordered as follows: (hour, minute)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.from_dict">
+<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create time from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A python dictionary in the following format</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s1">&#39;hour&#39;</span><span class="p">:</span> <span class="mi">0</span>  <span class="c1"># A value for hour between 0-23. (Default: 0)</span>
+<span class="s1">&#39;minute&#39;</span><span class="p">:</span> <span class="mi">0</span>  <span class="c1"># A value for month between 0-59. (Default: 0)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.from_mod">
+<em class="property">classmethod </em><code class="sig-name descname">from_mod</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mod</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time.from_mod"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time.from_mod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Time from a minute of the day.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>mod</strong> – An int value 0 &lt;= and &lt; 1440</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.from_time_string">
+<em class="property">classmethod </em><code class="sig-name descname">from_time_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">time_string</span></em>, <em class="sig-param"><span class="n">leap_year</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time.from_time_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time.from_time_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Ladybug Time from a Time string.</p>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">Time</span><span class="o">.</span><span class="n">from_time_string</span><span class="p">(</span><span class="s2">&quot;12:00&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.fromisoformat">
+<code class="sig-name descname">fromisoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Time.fromisoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>string -&gt; time from time.isoformat() output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.isoformat">
+<code class="sig-name descname">isoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Time.isoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return string in ISO 8601 format, [HH[:MM[:SS[.mmm[uuu]]]]][+HH:MM].</p>
+<p>timespec specifies what components of the time to include.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.replace">
+<code class="sig-name descname">replace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Time.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time with new specified fields.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.strftime">
+<code class="sig-name descname">strftime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Time.strftime" title="Permalink to this definition">¶</a></dt>
+<dd><p>format -&gt; strftime() style string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.to_array">
+<code class="sig-name descname">to_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time.to_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time as an array of values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.to_dict">
+<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/dt.html#Time.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.dt.Time.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get time as a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.tzname">
+<code class="sig-name descname">tzname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Time.tzname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.tzname(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.utcoffset">
+<code class="sig-name descname">utcoffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.dt.Time.utcoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.utcoffset(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.float_hour">
+<em class="property">property </em><code class="sig-name descname">float_hour</code><a class="headerlink" href="#ladybug.dt.Time.float_hour" title="Permalink to this definition">¶</a></dt>
+<dd><ol class="arabic simple" start="15">
+<li></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Get hour and minute as a float value, e.g. 6.25 for 6</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.fold">
+<code class="sig-name descname">fold</code><a class="headerlink" href="#ladybug.dt.Time.fold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.hour">
+<code class="sig-name descname">hour</code><a class="headerlink" href="#ladybug.dt.Time.hour" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.time(23, 59, 59, 999999)</em><a class="headerlink" href="#ladybug.dt.Time.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.microsecond">
+<code class="sig-name descname">microsecond</code><a class="headerlink" href="#ladybug.dt.Time.microsecond" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.time(0, 0)</em><a class="headerlink" href="#ladybug.dt.Time.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.minute">
+<code class="sig-name descname">minute</code><a class="headerlink" href="#ladybug.dt.Time.minute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.dt.Time.mod">
+<em class="property">property </em><code class="sig-name descname">mod</code><a class="headerlink" href="#ladybug.dt.Time.mod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate minute of the day for this time.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.resolution">
+<code class="sig-name descname">resolution</code><em class="property"> = datetime.timedelta(microseconds=1)</em><a class="headerlink" href="#ladybug.dt.Time.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.second">
+<code class="sig-name descname">second</code><a class="headerlink" href="#ladybug.dt.Time.second" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.dt.Time.tzinfo">
+<code class="sig-name descname">tzinfo</code><a class="headerlink" href="#ladybug.dt.Time.tzinfo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

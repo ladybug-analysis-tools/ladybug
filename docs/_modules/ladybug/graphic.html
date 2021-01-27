@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.graphic &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.graphic</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">.legend</span> <span class="kn">import</span> <span class="n">Legend</span><span class="p">,</span> <span class="n">LegendParameters</span><span class="p">,</span> <span class="n">LegendParametersCategorized</span>
+
+<span class="kn">from</span> <span class="nn">.datatype.base</span> <span class="kn">import</span> <span class="n">DataTypeBase</span>
+
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.pointvector</span> <span class="kn">import</span> <span class="n">Point3D</span>
+<span class="kn">from</span> <span class="nn">ladybug_geometry.geometry3d.plane</span> <span class="kn">import</span> <span class="n">Plane</span>
+
+
+<div class="viewcode-block" id="GraphicContainer"><a class="viewcode-back" href="../../ladybug.graphic.html#ladybug.graphic.GraphicContainer">[docs]</a><span class="k">class</span> <span class="nc">GraphicContainer</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Graphic container used to get legends, title locations, and colors for any graphic.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        values: A List or Tuple of numerical values that will be used to</span>
+<span class="sd">            generate the legend and colors.</span>
+<span class="sd">        min_point: A Point3D object for the minimum of the bounding box</span>
+<span class="sd">            around the graphic geometry.</span>
+<span class="sd">        max_point: A Point3D object for the maximum of the  bounding box</span>
+<span class="sd">            around the graphic geometry.</span>
+<span class="sd">        legend_parameters: An Optional LegendParameter object to override</span>
+<span class="sd">            default parameters of the legend.</span>
+<span class="sd">        data_type: Optional DataType from the ladybug datatype module, which</span>
+<span class="sd">            will be used to assign default legend properties. (ie. Temperature())</span>
+<span class="sd">        unit: Optional text string for the units of the values. (ie. &#39;C&#39;)</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * values</span>
+<span class="sd">        * min_point</span>
+<span class="sd">        * max_point</span>
+<span class="sd">        * legend_parameters</span>
+<span class="sd">        * data_type</span>
+<span class="sd">        * unit</span>
+<span class="sd">        * legend</span>
+<span class="sd">        * value_colors</span>
+<span class="sd">        * lower_title_location</span>
+<span class="sd">        * upper_title_location</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;_legend&#39;</span><span class="p">,</span> <span class="s1">&#39;_min_point&#39;</span><span class="p">,</span> <span class="s1">&#39;_max_point&#39;</span><span class="p">,</span> <span class="s1">&#39;_data_type&#39;</span><span class="p">,</span> <span class="s1">&#39;_unit&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">min_point</span><span class="p">,</span> <span class="n">max_point</span><span class="p">,</span>
+                 <span class="n">legend_parameters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize graphic container.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># check the inputs</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">min_point</span><span class="p">,</span> <span class="n">Point3D</span><span class="p">),</span> \
+            <span class="s1">&#39;min_point should be a ladybug Point3D. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">min_point</span><span class="p">))</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">max_point</span><span class="p">,</span> <span class="n">Point3D</span><span class="p">),</span> \
+            <span class="s1">&#39;max_point should be a ladybug Point3D. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">max_point</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span> <span class="o">=</span> <span class="n">Legend</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">legend_parameters</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span> <span class="o">=</span> <span class="n">min_point</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span> <span class="o">=</span> <span class="n">max_point</span>
+
+        <span class="c1"># set default legend parameters based on input data_type and unit</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_data_type</span> <span class="o">=</span> <span class="n">data_type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="n">unit</span>
+        <span class="k">if</span> <span class="n">data_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_type</span><span class="p">,</span> <span class="n">DataTypeBase</span><span class="p">),</span> \
+                <span class="s1">&#39;data_type should be a ladybug DataType. Got </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data_type</span><span class="p">))</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">is_title_default</span><span class="p">:</span>
+                <span class="n">unit</span> <span class="o">=</span> <span class="n">data_type</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">unit</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">unit</span>
+                <span class="n">data_type</span><span class="o">.</span><span class="n">is_unit_acceptable</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">unit</span> <span class="k">if</span> \
+                    <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">vertical</span> \
+                    <span class="k">else</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> (</span><span class="si">{}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data_type</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">data_type</span><span class="o">.</span><span class="n">unit_descr</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> \
+                    <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">ordinal_dictionary</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="ow">not</span> \
+                    <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="p">,</span> <span class="n">LegendParametersCategorized</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">ordinal_dictionary</span> <span class="o">=</span> <span class="n">data_type</span><span class="o">.</span><span class="n">unit_descr</span>
+                <span class="n">sorted_keys</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data_type</span><span class="o">.</span><span class="n">unit_descr</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend</span><span class="o">.</span><span class="n">is_min_default</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">min</span> <span class="o">=</span> <span class="n">sorted_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend</span><span class="o">.</span><span class="n">is_max_default</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">max</span> <span class="o">=</span> <span class="n">sorted_keys</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">is_segment_count_default</span><span class="p">:</span>
+                    <span class="k">try</span><span class="p">:</span>  <span class="c1"># try to set the number of segments to align with ordinal text</span>
+                        <span class="n">min_i</span> <span class="o">=</span> <span class="n">sorted_keys</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">min</span><span class="p">)</span>
+                        <span class="n">max_i</span> <span class="o">=</span> <span class="n">sorted_keys</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">max</span><span class="p">)</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_count</span> <span class="o">=</span> \
+                            <span class="nb">len</span><span class="p">(</span><span class="n">sorted_keys</span><span class="p">[</span><span class="n">min_i</span><span class="p">:</span><span class="n">max_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+                    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                        <span class="k">pass</span>
+        <span class="k">elif</span> <span class="n">unit</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">is_title_default</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="nb">str</span><span class="p">),</span> \
+                <span class="s1">&#39;Expected string for unit. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">unit</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">unit</span>
+
+        <span class="c1"># set the default segment_height</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">is_segment_height_default</span><span class="p">:</span>
+            <span class="n">s_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_count</span>
+            <span class="n">denom</span> <span class="o">=</span> <span class="n">s_count</span> <span class="k">if</span> <span class="n">s_count</span> <span class="o">&gt;=</span> <span class="mi">8</span> <span class="k">else</span> <span class="mi">8</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">vertical</span><span class="p">:</span>
+                <span class="n">seg_height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">denom</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">seg_height</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">seg_height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="n">denom</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">seg_height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">denom</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+                <span class="k">if</span> <span class="n">seg_height</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">seg_height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">denom</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_height</span> <span class="o">=</span> <span class="n">seg_height</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">_is_segment_height_default</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="c1"># set the default segment_width</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">is_segment_width_default</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">vertical</span><span class="p">:</span>
+                <span class="n">seg_width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_height</span> <span class="o">/</span> <span class="mi">2</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">seg_width</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span> <span class="o">*</span> \
+                    <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">max</span><span class="p">)))</span> <span class="o">+</span>
+                     <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">decimal_count</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_width</span> <span class="o">=</span> <span class="n">seg_width</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">_is_segment_width_default</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="c1"># set the default base point</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">is_base_plane_default</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">vertical</span><span class="p">:</span>
+                <span class="n">base_pt</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">segment_width</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">z</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">base_pt</span> <span class="o">=</span> <span class="n">Point3D</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">z</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">base_plane</span> <span class="o">=</span> <span class="n">Plane</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">base_pt</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">_is_base_plane_default</span> <span class="o">=</span> <span class="kc">True</span>
+
+<div class="viewcode-block" id="GraphicContainer.from_dict"><a class="viewcode-back" href="../../ladybug.graphic.html#ladybug.graphic.GraphicContainer.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a graphic container from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;values&quot;: [0, 10],</span>
+<span class="sd">            &quot;min_point&quot;: {&quot;x&quot;: 0, &quot;y&quot;: 0, &quot;z&quot;: 0},</span>
+<span class="sd">            &quot;max_point&quot;: {&quot;x&quot;: 10, &quot;y&quot;: 10, &quot;z&quot;: 0},</span>
+<span class="sd">            &quot;legend_parameters&quot;: None,</span>
+<span class="sd">            &quot;data_type&quot;: None,</span>
+<span class="sd">            &quot;unit&quot;: None</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">legend_parameters</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="s1">&#39;legend_parameters&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;legend_parameters&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;legend_parameters&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;LegendParametersCategorized&#39;</span><span class="p">:</span>
+                <span class="n">legend_parameters</span> <span class="o">=</span> <span class="n">LegendParametersCategorized</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span>
+                    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;legend_parameters&#39;</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">legend_parameters</span> <span class="o">=</span> <span class="n">LegendParameters</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;legend_parameters&#39;</span><span class="p">])</span>
+
+        <span class="n">data_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="s1">&#39;data_type&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;data_type&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">data_type</span> <span class="o">=</span> <span class="n">DataTypeBase</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;data_type&#39;</span><span class="p">])</span>
+        <span class="n">unit</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;unit&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;unit&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;values&#39;</span><span class="p">],</span> <span class="n">Point3D</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;min_point&#39;</span><span class="p">]),</span>
+                   <span class="n">Point3D</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;max_point&#39;</span><span class="p">]),</span>
+                   <span class="n">legend_parameters</span><span class="p">,</span> <span class="n">data_type</span><span class="p">,</span> <span class="n">unit</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The assigned data set of values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">values</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">min_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Point3D for the minimum of the bounding box around referenced geometry.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Point3D for the maximum of the bounding box around referenced geometry.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">legend_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The legend parameters assigned to this graphic.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">_legend_par</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">data_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The data_type input to this object (if it exists).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">unit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The unit input to this object (if it exists).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unit</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">legend</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The legend assigned to this graphic.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">value_colors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A List of colors associated with the assigned values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">value_colors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">lower_title_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A Plane for the lower location of title text.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Plane</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">Point3D</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">z</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">upper_title_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A Plane for the upper location of title text.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Plane</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">Point3D</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">x</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_max_point</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">text_height</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_min_point</span><span class="o">.</span><span class="n">z</span><span class="p">))</span>
+
+<div class="viewcode-block" id="GraphicContainer.to_dict"><a class="viewcode-back" href="../../ladybug.graphic.html#ladybug.graphic.GraphicContainer.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get graphic container as a dictionary.&quot;&quot;&quot;</span>
+        <span class="n">data_type</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_type</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_type</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+            <span class="s1">&#39;min_point&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_point</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+            <span class="s1">&#39;max_point&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_point</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+            <span class="s1">&#39;legend_parameters&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">legend_parameters</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+            <span class="s1">&#39;data_type&#39;</span><span class="p">:</span> <span class="n">data_type</span><span class="p">,</span>
+            <span class="s1">&#39;unit&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit</span><span class="p">,</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;GraphicContainer&#39;</span>
+        <span class="p">}</span></div>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return length of values on the object.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return one of the values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">_values</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Iterate through the values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">iter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">_values</span><span class="p">)</span>
+
+<div class="viewcode-block" id="GraphicContainer.ToString"><a class="viewcode-back" href="../../ladybug.graphic.html#ladybug.graphic.GraphicContainer.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;ResultMesh representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;Ladybug Result Mesh (</span><span class="si">{}</span><span class="s1"> values)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

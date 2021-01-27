@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.compass module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.config module" href="ladybug.config.html" />
+    <link rel="prev" title="ladybug.color module" href="ladybug.color.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.color.html" title="Previous Chapter: ladybug.color module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.color module</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.config.html" title="Next Chapter: ladybug.config module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.config module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.compass.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.compass">
+<span id="ladybug-compass-module"></span><h1>ladybug.compass module<a class="headerlink" href="#module-ladybug.compass" title="Permalink to this headline">¶</a></h1>
+<p>Module for computing geometry for the compass used by a variety of graphics.</p>
+<dl class="py class">
+<dt id="ladybug.compass.Compass">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.compass.</code><code class="sig-name descname">Compass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">Point2D(0.0, 0.0)</span></em>, <em class="sig-param"><span class="n">north_angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">spacing_factor</span><span class="o">=</span><span class="default_value">0.15</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object for computing geometry for the compass used by a variety of graphics.</p>
+<p>Methods to project points to orthograhpic and stereographic projectsions are
+also within this class so that “domed” visualizations can be synchronized with
+the compass in the 2D plane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> – A positive number for the radius of the compass. (Default: 100).</p></li>
+<li><p><strong>center</strong> – A ladybug_geometry Point2D for the center of the compass
+in the scene. (Default: (0, 0) for the World origin).</p></li>
+<li><p><strong>north_angle</strong> – A number between -360 and 360 for the counterclockwise
+difference between the North and the positive Y-axis in degrees.
+90 is West and 270 is East (Default: 0).</p></li>
+<li><p><strong>spacing_factor</strong> – A positive number for the fraction of the radius that
+labels and tick marks occupy around the compass. (Default: 0.15)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>radius</p></li>
+<li><p>center</p></li>
+<li><p>north_angle</p></li>
+<li><p>north_vector</p></li>
+<li><p>spacing_factor</p></li>
+<li><p>min_point</p></li>
+<li><p>max_point</p></li>
+<li><p>inner_boundary_circle</p></li>
+<li><p>all_boundary_circles</p></li>
+<li><p>major_azimuth_points</p></li>
+<li><p>major_azimuth_ticks</p></li>
+<li><p>minor_azimuth_points</p></li>
+<li><p>minor_azimuth_ticks</p></li>
+<li><p>orthographic_altitude_circles</p></li>
+<li><p>orthographic_altitude_points</p></li>
+<li><p>stereographic_altitude_circles</p></li>
+<li><p>stereographic_altitude_points</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ladybug.compass.Compass.duplicate">
+<code class="sig-name descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass.duplicate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a copy of this object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.label_points_from_angles">
+<code class="sig-name descname">label_points_from_angles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angles</span></em>, <em class="sig-param"><span class="n">factor</span><span class="o">=</span><span class="default_value">0.8</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass.label_points_from_angles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass.label_points_from_angles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of label points from a list of angles between 0 and 360.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>angles</strong> – An array of numbers between 0 and 360 for the angles of
+custom angle labels to be generated for the compass.</p></li>
+<li><p><strong>factor</strong> – A number between 0 and 1 for the fraction of the spacing_factor
+at which the points should be generated.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.max_point3d">
+<code class="sig-name descname">max_point3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass.max_point3d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass.max_point3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point3D for the minimum around the entire compass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.min_point3d">
+<code class="sig-name descname">min_point3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass.min_point3d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass.min_point3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point3D for the minimum around the entire compass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.point3d_to_orthographic">
+<em class="property">static </em><code class="sig-name descname">point3d_to_orthographic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass.point3d_to_orthographic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass.point3d_to_orthographic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for a given Point3D using a orthographic projection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>point</strong> – A ladybug_geometry Point3D to be projected into 2D space via
+stereographic projection.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.point3d_to_stereographic">
+<em class="property">static </em><code class="sig-name descname">point3d_to_stereographic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">origin</span><span class="o">=</span><span class="default_value">Point3D(0.0, 0.0, 0.0)</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass.point3d_to_stereographic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass.point3d_to_stereographic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for a given Point3D using a stereographic projection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>point</strong> – A ladybug_geometry Point3D to be projected into 2D space via
+stereographic projection.</p></li>
+<li><p><strong>radius</strong> – A positive number for the radius of the sphere on which the
+point exists. (Default: 100).</p></li>
+<li><p><strong>origin</strong> – An optional ladybug_geometry Point3D representing the origin
+of the coordinate system in which the projection is happening.
+(eg. the center of the compass).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.ticks_from_angles">
+<code class="sig-name descname">ticks_from_angles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angles</span></em>, <em class="sig-param"><span class="n">factor</span><span class="o">=</span><span class="default_value">0.3</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/compass.html#Compass.ticks_from_angles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.compass.Compass.ticks_from_angles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Linesegment2Ds from a list of angles between 0 and 360.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.compass.Compass.ALTITUDES">
+<code class="sig-name descname">ALTITUDES</code><em class="property"> = (10, 20, 30, 40, 50, 60, 70, 80)</em><a class="headerlink" href="#ladybug.compass.Compass.ALTITUDES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.compass.Compass.MAJOR_AZIMUTHS">
+<code class="sig-name descname">MAJOR_AZIMUTHS</code><em class="property"> = (0, 90, 180, 270)</em><a class="headerlink" href="#ladybug.compass.Compass.MAJOR_AZIMUTHS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.compass.Compass.MAJOR_TEXT">
+<code class="sig-name descname">MAJOR_TEXT</code><em class="property"> = ('N', 'E', 'S', 'W')</em><a class="headerlink" href="#ladybug.compass.Compass.MAJOR_TEXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.compass.Compass.MINOR_AZIMUTHS">
+<code class="sig-name descname">MINOR_AZIMUTHS</code><em class="property"> = (22.5, 45, 67.5, 112.5, 135, 157.5, 202.5, 225, 247.5, 292.5, 315, 337.5)</em><a class="headerlink" href="#ladybug.compass.Compass.MINOR_AZIMUTHS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.compass.Compass.MINOR_TEXT">
+<code class="sig-name descname">MINOR_TEXT</code><em class="property"> = ('NNE', 'NE', 'ENE', 'ESE', 'SE', 'SSE', 'SSW', 'SW', 'WSW', 'WNW', 'NW', 'NNW')</em><a class="headerlink" href="#ladybug.compass.Compass.MINOR_TEXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.compass.Compass.PI">
+<code class="sig-name descname">PI</code><em class="property"> = 3.141592653589793</em><a class="headerlink" href="#ladybug.compass.Compass.PI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.all_boundary_circles">
+<em class="property">property </em><code class="sig-name descname">all_boundary_circles</code><a class="headerlink" href="#ladybug.compass.Compass.all_boundary_circles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an array of 3 Arc2Ds for the circles of the compass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.center">
+<em class="property">property </em><code class="sig-name descname">center</code><a class="headerlink" href="#ladybug.compass.Compass.center" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a Point2D for the center of the compass in the scene.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.inner_boundary_circle">
+<em class="property">property </em><code class="sig-name descname">inner_boundary_circle</code><a class="headerlink" href="#ladybug.compass.Compass.inner_boundary_circle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Arc2D for the inner circle of the compass.</p>
+<p>This is essentially a circle with the compass radius.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.major_azimuth_points">
+<em class="property">property </em><code class="sig-name descname">major_azimuth_points</code><a class="headerlink" href="#ladybug.compass.Compass.major_azimuth_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Point2Ds for the major azimuth labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.major_azimuth_ticks">
+<em class="property">property </em><code class="sig-name descname">major_azimuth_ticks</code><a class="headerlink" href="#ladybug.compass.Compass.major_azimuth_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of LineSegment2Ds for the major azimuth labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.max_point">
+<em class="property">property </em><code class="sig-name descname">max_point</code><a class="headerlink" href="#ladybug.compass.Compass.max_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for the minimum around the entire compass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.min_point">
+<em class="property">property </em><code class="sig-name descname">min_point</code><a class="headerlink" href="#ladybug.compass.Compass.min_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Point2D for the minimum around the entire compass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.minor_azimuth_points">
+<em class="property">property </em><code class="sig-name descname">minor_azimuth_points</code><a class="headerlink" href="#ladybug.compass.Compass.minor_azimuth_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Point2Ds for the minor azimuth labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.minor_azimuth_ticks">
+<em class="property">property </em><code class="sig-name descname">minor_azimuth_ticks</code><a class="headerlink" href="#ladybug.compass.Compass.minor_azimuth_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of LineSegment2Ds for the minor azimuth labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.north_angle">
+<em class="property">property </em><code class="sig-name descname">north_angle</code><a class="headerlink" href="#ladybug.compass.Compass.north_angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a number between -360 and 360 for the north_angle in degrees.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.north_vector">
+<em class="property">property </em><code class="sig-name descname">north_vector</code><a class="headerlink" href="#ladybug.compass.Compass.north_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a ladybug_geometry Vector2D for the north direction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.orthographic_altitude_circles">
+<em class="property">property </em><code class="sig-name descname">orthographic_altitude_circles</code><a class="headerlink" href="#ladybug.compass.Compass.orthographic_altitude_circles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of circles for the orthographic altitude labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.orthographic_altitude_points">
+<em class="property">property </em><code class="sig-name descname">orthographic_altitude_points</code><a class="headerlink" href="#ladybug.compass.Compass.orthographic_altitude_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Point2Ds for the orthographic altitude labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.radius">
+<em class="property">property </em><code class="sig-name descname">radius</code><a class="headerlink" href="#ladybug.compass.Compass.radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a positive number for the radius of the compass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.spacing_factor">
+<em class="property">property </em><code class="sig-name descname">spacing_factor</code><a class="headerlink" href="#ladybug.compass.Compass.spacing_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a number for the fraction of radius occupied by labels and ticks.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.stereographic_altitude_circles">
+<em class="property">property </em><code class="sig-name descname">stereographic_altitude_circles</code><a class="headerlink" href="#ladybug.compass.Compass.stereographic_altitude_circles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of circles for the stereographic altitude labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.compass.Compass.stereographic_altitude_points">
+<em class="property">property </em><code class="sig-name descname">stereographic_altitude_points</code><a class="headerlink" href="#ladybug.compass.Compass.stereographic_altitude_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Point2Ds for the stereographic altitude labels.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

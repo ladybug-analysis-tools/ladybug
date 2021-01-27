@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.windrose module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ladybug.wea module" href="ladybug.wea.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.wea.html" title="Previous Chapter: ladybug.wea module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.wea module</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.windrose.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.windrose">
+<span id="ladybug-windrose-module"></span><h1>ladybug.windrose module<a class="headerlink" href="#module-ladybug.windrose" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="ladybug.windrose.WindRose">
+<em class="property">class </em><code class="sig-prename descclassname">ladybug.windrose.</code><code class="sig-name descname">WindRose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction_data_collection</span></em>, <em class="sig-param"><span class="n">analysis_data_collection</span></em>, <em class="sig-param"><span class="n">number_of_directions</span><span class="o">=</span><span class="default_value">8</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/windrose.html#WindRose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.windrose.WindRose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Module for calculation and visualization of wind data collection by orientation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>direction_data_collection</strong> – A HourlyContinuousCollection or
+HourlyDiscontinuousCollection of wind directions which will be used to
+generate the “bin” intervals for the windrose.</p></li>
+<li><p><strong>analysis_data_collection</strong> – A HourlyContinuousCollection or
+HourlyDiscontinuousCollection of wind values, corresponding to the wind
+directions, which is “binned” by the calculated direction intervals.</p></li>
+<li><p><strong>number_of_directions</strong> – A number greater then zero that determines the number
+of directions to “bin” the wind data by. The number of directions must
+be greater then three to plot the wind rose (Default: 8).</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>direction_data_collection</p></li>
+<li><p>analysis_data_collection</p></li>
+<li><p>direction_values</p></li>
+<li><p>analysis_values</p></li>
+<li><p>analysis_period</p></li>
+<li><p>north</p></li>
+<li><p>histogram_data</p></li>
+<li><p>angles</p></li>
+<li><p>legend</p></li>
+<li><p>legend_parameters</p></li>
+<li><p>base_point</p></li>
+<li><p>radius</p></li>
+<li><p>compass</p></li>
+<li><p>container</p></li>
+<li><p>prevailing_direction</p></li>
+<li><p>compass_radius</p></li>
+<li><p>colored_mesh</p></li>
+<li><p>color_range</p></li>
+<li><p>orientation_lines</p></li>
+<li><p>frequency_lines</p></li>
+<li><p>windrose_lines</p></li>
+<li><p>frequency_spacing_distance</p></li>
+<li><p>frequency_intervals_compass</p></li>
+<li><p>frequency_intervals_mesh</p></li>
+<li><p>frequency_maximum</p></li>
+<li><p>frequency_hours</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="ladybug.windrose.WindRose.DEFAULT_BASE_POINT">
+<code class="sig-name descname">DEFAULT_BASE_POINT</code><em class="property"> = Point2D (0.00, 0.00)</em><a class="headerlink" href="#ladybug.windrose.WindRose.DEFAULT_BASE_POINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.windrose.WindRose.DEFAULT_FREQUENCY_HOURS">
+<code class="sig-name descname">DEFAULT_FREQUENCY_HOURS</code><em class="property"> = 200.0</em><a class="headerlink" href="#ladybug.windrose.WindRose.DEFAULT_FREQUENCY_HOURS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.windrose.WindRose.DEFAULT_FREQUENCY_SPACING">
+<code class="sig-name descname">DEFAULT_FREQUENCY_SPACING</code><em class="property"> = 10.0</em><a class="headerlink" href="#ladybug.windrose.WindRose.DEFAULT_FREQUENCY_SPACING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="ladybug.windrose.WindRose.DEFAULT_NORTH">
+<code class="sig-name descname">DEFAULT_NORTH</code><em class="property"> = 0.0</em><a class="headerlink" href="#ladybug.windrose.WindRose.DEFAULT_NORTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.analysis_data_collection">
+<em class="property">property </em><code class="sig-name descname">analysis_data_collection</code><a class="headerlink" href="#ladybug.windrose.WindRose.analysis_data_collection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the analysis data collection assigned to this windrose plot.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.analysis_period">
+<em class="property">property </em><code class="sig-name descname">analysis_period</code><a class="headerlink" href="#ladybug.windrose.WindRose.analysis_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the AnalysisPeriod assigned to the hourly plot’s data collection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.analysis_values">
+<em class="property">property </em><code class="sig-name descname">analysis_values</code><a class="headerlink" href="#ladybug.windrose.WindRose.analysis_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the hourly wind analysis values to bin by direction (i.e wind speed).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.angles">
+<em class="property">property </em><code class="sig-name descname">angles</code><a class="headerlink" href="#ladybug.windrose.WindRose.angles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of orientation angles used to bin analysis values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.base_point">
+<em class="property">property </em><code class="sig-name descname">base_point</code><a class="headerlink" href="#ladybug.windrose.WindRose.base_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a Point2D used as the center point of the windrose geometry.</p>
+<p>(Default: Point3D(0, 0, 0)).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.bin_vectors">
+<em class="property">property </em><code class="sig-name descname">bin_vectors</code><a class="headerlink" href="#ladybug.windrose.WindRose.bin_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get vectors for orientation intervals.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.color_range">
+<em class="property">property </em><code class="sig-name descname">color_range</code><a class="headerlink" href="#ladybug.windrose.WindRose.color_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the color range associated with this legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.colored_mesh">
+<em class="property">property </em><code class="sig-name descname">colored_mesh</code><a class="headerlink" href="#ladybug.windrose.WindRose.colored_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the colored Mesh2D for this graphic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A Mesh2D of the wind rose plot.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.compass">
+<em class="property">property </em><code class="sig-name descname">compass</code><a class="headerlink" href="#ladybug.windrose.WindRose.compass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the compass object for the windrose plot.</p>
+<p>Since the setable properties of basepoint, frequency_spacing_distance, and
+legend_parameters all influence the initiation of this object, this property
+is to None if any of those properties are edited by the user.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.compass_radius">
+<em class="property">property </em><code class="sig-name descname">compass_radius</code><a class="headerlink" href="#ladybug.windrose.WindRose.compass_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the radius of the windrose compass.</p>
+<p>This value is different from the compass_radius if the frequency_maximum is
+greater then the maximum frequency in the histogram data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.container">
+<em class="property">property </em><code class="sig-name descname">container</code><a class="headerlink" href="#ladybug.windrose.WindRose.container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the GraphicContainer for the windrose mesh.</p>
+<p>Since the setable properties of basepoint, frequency_spacing_distance, and
+legend_parameters all influence the initiation of this object, this property
+is to None if any of those properties are edited by the user.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.direction_data_collection">
+<em class="property">property </em><code class="sig-name descname">direction_data_collection</code><a class="headerlink" href="#ladybug.windrose.WindRose.direction_data_collection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the direction data collection assigned to this windrose plot.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.direction_values">
+<em class="property">property </em><code class="sig-name descname">direction_values</code><a class="headerlink" href="#ladybug.windrose.WindRose.direction_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the direction data values in this windrose plot.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.frequency_hours">
+<em class="property">property </em><code class="sig-name descname">frequency_hours</code><a class="headerlink" href="#ladybug.windrose.WindRose.frequency_hours" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set number of hours to bin analysis values, per direction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.frequency_intervals_compass">
+<em class="property">property </em><code class="sig-name descname">frequency_intervals_compass</code><a class="headerlink" href="#ladybug.windrose.WindRose.frequency_intervals_compass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the number of intervals in the windrose compass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.frequency_intervals_mesh">
+<em class="property">property </em><code class="sig-name descname">frequency_intervals_mesh</code><a class="headerlink" href="#ladybug.windrose.WindRose.frequency_intervals_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the number of intervals in the windrose mesh.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.frequency_lines">
+<em class="property">property </em><code class="sig-name descname">frequency_lines</code><a class="headerlink" href="#ladybug.windrose.WindRose.frequency_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the frequency lines for windrose as Polygon2D lists.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.frequency_maximum">
+<em class="property">property </em><code class="sig-name descname">frequency_maximum</code><a class="headerlink" href="#ladybug.windrose.WindRose.frequency_maximum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get maximum frequency to represent in the windrose plot.</p>
+<p>Default: number of items in largest windrose histogram bin.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.frequency_spacing_distance">
+<em class="property">property </em><code class="sig-name descname">frequency_spacing_distance</code><a class="headerlink" href="#ladybug.windrose.WindRose.frequency_spacing_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>10 model units).</p>
+<p>To maintain fixed radius, this can be set to: 1.0 / self._legend_segment_count</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Get or set distance for frequency lines (Default</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.frequency_spacing_hypot_distance">
+<em class="property">property </em><code class="sig-name descname">frequency_spacing_hypot_distance</code><a class="headerlink" href="#ladybug.windrose.WindRose.frequency_spacing_hypot_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Length of radius of windrose assuming perpendicular frequency spacing.</p>
+<p>The limit of the frequency_spacing_hypot_distance as number of directions
+approaches infinity equals the frequency_spacing_distance (as is the case
+with a circle).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.histogram_data">
+<em class="property">property </em><code class="sig-name descname">histogram_data</code><a class="headerlink" href="#ladybug.windrose.WindRose.histogram_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a histogram of wind analysis values binned by wind direction.</p>
+<p>This histogram will not contain any zero values, so the total amount of hours
+may not add up to hours in the year. The histogram values per bin will be
+reduced to equal the frequency_maximum property which may occur if the
+frequency_intervals_compass property results in maximum hours less then the
+actual binned data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.legend">
+<em class="property">property </em><code class="sig-name descname">legend</code><a class="headerlink" href="#ladybug.windrose.WindRose.legend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the Legend object for this plot</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.legend_parameters">
+<em class="property">property </em><code class="sig-name descname">legend_parameters</code><a class="headerlink" href="#ladybug.windrose.WindRose.legend_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the LegendParameters object for this plot.</p>
+<p>Default segment count is 10.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.mesh_radius">
+<em class="property">property </em><code class="sig-name descname">mesh_radius</code><a class="headerlink" href="#ladybug.windrose.WindRose.mesh_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the radius of the windrose mesh (with zero values).</p>
+<p>This number will not neccessarily align to the frequency spacing intervals,
+since fractional values are permitted.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.north">
+<em class="property">property </em><code class="sig-name descname">north</code><a class="headerlink" href="#ladybug.windrose.WindRose.north" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set north orientation for windrose by degrees.</p>
+<p>This must be a number between -360 and 360. 0 is North, 90 is West and 270
+is East. The rotation is applied counterclockwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.orientation_lines">
+<em class="property">property </em><code class="sig-name descname">orientation_lines</code><a class="headerlink" href="#ladybug.windrose.WindRose.orientation_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the orientation lines for windrose as a LineSegment2D list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.prevailing_direction">
+<em class="property">property </em><code class="sig-name descname">prevailing_direction</code><a class="headerlink" href="#ladybug.windrose.WindRose.prevailing_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of the predominant directions of the wind values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.real_freq_max">
+<em class="property">property </em><code class="sig-name descname">real_freq_max</code><a class="headerlink" href="#ladybug.windrose.WindRose.real_freq_max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the maximum hours of wind in the largest histogram bin.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.show_freq">
+<em class="property">property </em><code class="sig-name descname">show_freq</code><a class="headerlink" href="#ladybug.windrose.WindRose.show_freq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set property to control displays of frequency of values per direction.</p>
+<p>(Default: True).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.show_zeros">
+<em class="property">property </em><code class="sig-name descname">show_zeros</code><a class="headerlink" href="#ladybug.windrose.WindRose.show_zeros" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set property to control if windrose displays zero values or not.</p>
+<p>(Default: True).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.windrose_lines">
+<em class="property">property </em><code class="sig-name descname">windrose_lines</code><a class="headerlink" href="#ladybug.windrose.WindRose.windrose_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the windrose lines as Polygon2D lists.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.zero_count">
+<em class="property">property </em><code class="sig-name descname">zero_count</code><a class="headerlink" href="#ladybug.windrose.WindRose.zero_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the number of wind analysis values equal to zero.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ladybug.windrose.WindRose.zeros_per_bin">
+<em class="property">property </em><code class="sig-name descname">zeros_per_bin</code><a class="headerlink" href="#ladybug.windrose.WindRose.zeros_per_bin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the number of analysis values equal to zero, per orientation bin.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

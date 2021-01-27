@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.skymodel module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.sql module" href="ladybug.sql.html" />
+    <link rel="prev" title="ladybug.rootfinding module" href="ladybug.rootfinding.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.rootfinding.html" title="Previous Chapter: ladybug.rootfinding module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.rootf...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.sql.html" title="Next Chapter: ladybug.sql module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.sql module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.skymodel.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.skymodel">
+<span id="ladybug-skymodel-module"></span><h1>ladybug.skymodel module<a class="headerlink" href="#module-ladybug.skymodel" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="ladybug.skymodel.ashrae_clear_sky">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">ashrae_clear_sky</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">altitudes</span></em>, <em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">sky_clearness</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#ashrae_clear_sky"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.ashrae_clear_sky" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate solar flux for an original ASHRAE Clear Sky.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] American Society of Heating Refrigerating and Air-Conditioning Engineers.
+2005. 2005 ASHRAE Handbook: Fundamentals. Atlanta, GA. Chapter 31.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>altitudes</strong> – A list of solar altitudes in degrees</p></li>
+<li><p><strong>month</strong> – An integer (1-12) indicating the month the altitudes belong to</p></li>
+<li><p><strong>sky_clearness</strong> – A factor that will be multiplied by the output of
+the model. This is to help account for locations where clear,
+dry skies predominate (e.g., at high elevations) or,
+conversely, where hazy and humid conditions are frequent. See
+Threlkeld and Jordan (1958) for recommended values. Typical
+values range from 0.95 to 1.05 and are usually never more
+than 1.2. Default is set to 1.0.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two elements</p>
+<ul class="simple">
+<li><p>dir_norm_rad: A list of direct normal radiation values for each
+of the connected altitudes in W/m2.</p></li>
+<li><p>dif_horiz_rad: A list of diffuse horizontall radiation values for each
+of the connected altitudes in W/m2.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.ashrae_revised_clear_sky">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">ashrae_revised_clear_sky</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">altitudes</span></em>, <em class="sig-param"><span class="n">tb</span></em>, <em class="sig-param"><span class="n">td</span></em>, <em class="sig-param"><span class="n">use_2017_model</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#ashrae_revised_clear_sky"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.ashrae_revised_clear_sky" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate solar flux for an ASHRAE Revised Clear Sky (“Tau Model”).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] American Society of Heating, Refrigerating and Air-Conditioning Engineers.
+2009. 2009 Ashrae Handbook: Fundamentals. Atlanta, GA.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>altitudes</strong> – A list of solar altitudes in degrees.</p></li>
+<li><p><strong>tb</strong> – A value indicating the beam optical depth of the sky.</p></li>
+<li><p><strong>td</strong> – A value indicating the diffuse optical depth of the sky.</p></li>
+<li><p><strong>use_2017_model</strong> – Set to True to use coefficients associated with
+the new version of the Tau model released in the 2013 and 2017 HOF.
+Note that the correct use of the new version requires updated
+tb and td values. At present, all .stat files
+distributed by the US DoE are using the older (2009) values
+for tb and td and so this input defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two elements</p>
+<ul class="simple">
+<li><p>dir_norm_rad: A list of direct normal radiation values for each
+of the connected altitudes in W/m2.</p></li>
+<li><p>dif_horiz_rad: A list of diffuse horizontall radiation values for each
+of the connected altitudes in W/m2.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.calc_horizontal_infrared">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">calc_horizontal_infrared</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sky_cover</span></em>, <em class="sig-param"><span class="n">dry_bulb</span></em>, <em class="sig-param"><span class="n">dew_point</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#calc_horizontal_infrared"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.calc_horizontal_infrared" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate horizontal infrared radiation intensity.</p>
+<p>See EnergyPlus Engineering Reference for more information:
+<a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html#sky-radiation-modeling">https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html#sky-radiation-modeling</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Walton, G. N. 1983. Thermal Analysis Research Program Reference Manual.
+NBSSIR 83-2655. National Bureau of Standards, p. 21.</p>
+<p>[2] Clark, G. and C. Allen, “The Estimation of Atmospheric Radiation for
+Clear and Cloudy Skies,” Proceedings 2nd National Passive Solar Conference
+(AS/ISES), 1978, pp. 675-678.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sky_cover</strong> – A float value between 0 and 10 that represents the opaque
+sky cover in tenths (0 = clear; 10 = completely overcast)</p></li>
+<li><p><strong>dry_bulb</strong> – A float value that represents the dry bulb temperature
+in degrees C.</p></li>
+<li><p><strong>dew_point</strong> – A float value that represents the dew point temperature
+in degrees C.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>horiz_ir – A horizontal infrared radiation intensity value in W/m2.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.calc_sky_temperature">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">calc_sky_temperature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">horiz_ir</span></em>, <em class="sig-param"><span class="n">source_emissivity</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#calc_sky_temperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.calc_sky_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate sky temperature in Celsius.</p>
+<p>See EnergyPlus Engineering Reference for more information:
+<a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/">https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/</a>
+climate-calculations.html#energyplus-sky-temperature-calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>horiz_ir</strong> – A float value that represents horizontal infrared radiation
+intensity in W/m2.</p></li>
+<li><p><strong>source_emissivity</strong> – A float value between 0 and 1 indicating the emissivity
+of the heat source that is radiating to the sky. Default is 1 for
+most outdoor surfaces.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>sky_temp – A sky temperature value in C.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.clearness_index">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">clearness_index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ghi</span></em>, <em class="sig-param"><span class="n">altitude</span></em>, <em class="sig-param"><span class="n">extra_radiation</span></em>, <em class="sig-param"><span class="n">min_sin_altitude</span><span class="o">=</span><span class="default_value">0.065</span></em>, <em class="sig-param"><span class="n">max_clearness_index</span><span class="o">=</span><span class="default_value">2.0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#clearness_index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.clearness_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the clearness index.</p>
+<p>The clearness index is the ratio of global to extraterrestrial
+irradiance on a horizontal plane.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Maxwell, E. L., “A Quasi-Physical Model for Converting Hourly
+Global Horizontal to Direct Normal Insolation”, Technical
+Report No. SERI/TR-215-3087, Golden, CO: Solar Energy Research
+Institute, 1987.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ghi</strong> – numeric
+Global horizontal irradiance in W/m^2.</p></li>
+<li><p><strong>altitude</strong> – numeric
+True (not refraction-corrected) solar altitude angle in decimal
+degrees.</p></li>
+<li><p><strong>extra_radiation</strong> – numeric
+Irradiance incident at the top of the atmosphere</p></li>
+<li><p><strong>min_sin_altitude</strong> – numeric, default 0.065
+Minimum value of sin(altitude) to allow when calculating global
+clearness index <cite>kt</cite>. Equivalent to altitude = 3.727 degrees.</p></li>
+<li><p><strong>max_clearness_index</strong> – numeric, default 2.0
+Maximum value of the clearness index. The default, 2.0, allows
+for over-irradiance events typically seen in sub-hourly data.
+NREL’s SRRL Fortran code used 0.82 for hourly data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>kt – numeric.
+Clearness index</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.clearness_index_zenith_independent">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">clearness_index_zenith_independent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clearness_index</span></em>, <em class="sig-param"><span class="n">airmass</span></em>, <em class="sig-param"><span class="n">max_clearness_index</span><span class="o">=</span><span class="default_value">2.0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#clearness_index_zenith_independent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.clearness_index_zenith_independent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the zenith angle independent clearness index.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Perez, R., P. Ineichen, E. Maxwell, R. Seals and A. Zelenka,
+(1992). “Dynamic Global-to-Direct Irradiance Conversion Models”.
+ASHRAE Transactions-Research Series, pp. 354-369</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>clearness_index</strong> – numeric.
+Ratio of global to extraterrestrial irradiance on a horizontal
+plane</p></li>
+<li><p><strong>airmass</strong> – numeric
+Airmass</p></li>
+<li><p><strong>max_clearness_index</strong> – numeric, default 2.0
+Maximum value of the clearness index. The default, 2.0, allows
+for over-irradiance events typically seen in sub-hourly data.
+NREL’s SRRL Fortran code used 0.82 for hourly data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>kt_prime – numeric.
+Zenith independent clearness index</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.dirint">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">dirint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ghi</span></em>, <em class="sig-param"><span class="n">altitudes</span></em>, <em class="sig-param"><span class="n">doys</span></em>, <em class="sig-param"><span class="n">pressures</span></em>, <em class="sig-param"><span class="n">use_delta_kt_prime</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">temp_dew</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">min_sin_altitude</span><span class="o">=</span><span class="default_value">0.065</span></em>, <em class="sig-param"><span class="n">min_altitude</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#dirint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.dirint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine DNI from GHI using the DIRINT modification of the DISC
+model.</p>
+<p>Implements the modified DISC model known as “DIRINT” introduced in
+[1]. DIRINT predicts direct normal irradiance (DNI) from measured
+global horizontal irradiance (GHI). DIRINT improves upon the DISC
+model by using time-series GHI data and dew point temperature
+information. The effectiveness of the DIRINT model improves with
+each piece of information provided.</p>
+<p>The pvlib implementation limits the clearness index to 1.
+The DIRINT model requires time series data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Perez, R., P. Ineichen, E. Maxwell, R. Seals and A. Zelenka,
+(1992). “Dynamic Global-to-Direct Irradiance Conversion Models”.
+ASHRAE Transactions-Research Series, pp. 354-369</p>
+<p>[2] Maxwell, E. L., “A Quasi-Physical Model for Converting Hourly
+Global Horizontal to Direct Normal Insolation”, Technical Report No.
+SERI/TR-215-3087, Golden, CO: Solar Energy Research Institute, 1987.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ghi</strong> – array-like
+Global horizontal irradiance in W/m^2.</p></li>
+<li><p><strong>altitudes</strong> – array-like
+True (not refraction-corrected) solar altitude angles in decimal
+degrees.</p></li>
+<li><p><strong>doys</strong> – array-like
+Integers representing the day of the year.</p></li>
+<li><p><strong>pressures</strong> – array-like
+The site pressure in Pascal. Pressure may be measured or an
+average pressure may be calculated from site altitude.</p></li>
+<li><p><strong>use_delta_kt_prime</strong> – bool, default True
+If True, indicates that the stability index delta_kt_prime is
+included in the model. The stability index adjusts the estimated
+DNI in response to dynamics in the time series of GHI. It is
+recommended that delta_kt_prime is not used if the time between
+GHI points is 1.5 hours or greater. If use_delta_kt_prime=True,
+input data must be Series.</p></li>
+<li><p><strong>temp_dew</strong> – None or array-like, default None
+Surface dew point temperatures, in degrees C. Values of temp_dew
+must be numeric. If temp_dew is not provided, then dew point
+improvements are not applied.</p></li>
+<li><p><strong>min_sin_altitude</strong> – numeric, default 0.065
+Minimum value of sin(altitude) to allow when calculating global
+clearness index <cite>kt</cite>. Equivalent to altitude = 3.727 degrees.</p></li>
+<li><p><strong>min_altitude</strong> – numeric, default 87
+Minimum value of altitude to allow in DNI calculation. DNI will be
+set to 0 for times with altitude values smaller than <cite>min_altitude</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dni – array-like.
+The modeled direct normal irradiance in W/m^2 provided by the
+DIRINT model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.disc">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">disc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ghi</span></em>, <em class="sig-param"><span class="n">altitude</span></em>, <em class="sig-param"><span class="n">doy</span></em>, <em class="sig-param"><span class="n">pressure</span><span class="o">=</span><span class="default_value">101325</span></em>, <em class="sig-param"><span class="n">min_sin_altitude</span><span class="o">=</span><span class="default_value">0.065</span></em>, <em class="sig-param"><span class="n">min_altitude</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">max_airmass</span><span class="o">=</span><span class="default_value">12</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#disc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.disc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate Direct Normal Irradiance from Global Horizontal Irradiance
+using the DISC model.</p>
+<p>The DISC algorithm converts global horizontal irradiance to direct
+normal irradiance through empirical relationships between the global
+and direct clearness indices.</p>
+<p>This implementation limits the clearness index to 1 by default.</p>
+<p>The original report describing the DISC model [1] uses the
+relative air mass rather than the absolute (pressure-corrected)
+air mass. However, the NREL implementation of the DISC model [2]
+uses absolute air mass. PVLib Matlab also uses the absolute air mass.
+pvlib python defaults to absolute air mass, but the relative airmass
+can be used by supplying <cite>pressure=None</cite>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Maxwell, E. L., “A Quasi-Physical Model for Converting Hourly
+Global Horizontal to Direct Normal Insolation”, Technical
+Report No. SERI/TR-215-3087, Golden, CO: Solar Energy Research
+Institute, 1987.</p>
+<p>[2] Maxwell, E. “DISC Model”, Excel Worksheet.
+<a class="reference external" href="https://www.nrel.gov/grid/solar-resource/disc.html">https://www.nrel.gov/grid/solar-resource/disc.html</a></p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ghi</strong> – numeric
+Global horizontal irradiance in W/m^2.</p></li>
+<li><p><strong>altitude</strong> – numeric
+True (not refraction-corrected) solar altitude angles in decimal
+degrees.</p></li>
+<li><p><strong>doy</strong> – An integer representing the day of the year.</p></li>
+<li><p><strong>pressure</strong> – None or numeric, default 101325
+Site pressure in Pascal. If None, relative air mass is used
+instead of absolute (pressure-corrected) air mass.</p></li>
+<li><p><strong>min_sin_altitude</strong> – numeric, default 0.065
+Minimum value of sin(altitude) to allow when calculating global
+clearness index <cite>kt</cite>. Equivalent to altitude = 3.727 degrees.</p></li>
+<li><p><strong>min_altitude</strong> – numeric, default 87
+Minimum value of altitude to allow in DNI calculation. DNI will be
+set to 0 for times with altitude values smaller than <cite>min_altitude</cite>.</p></li>
+<li><p><strong>max_airmass</strong> – numeric, default 12
+Maximum value of the air mass to allow in Kn calculation.
+Default value (12) comes from range over which Kn was fit
+to air mass in the original paper.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two elements</p>
+<ul class="simple">
+<li><p>dni: The modeled direct normal irradiance
+in W/m^2 provided by the
+Direct Insolation Simulation Code (DISC) model.</p></li>
+<li><p>kt: Ratio of global to extraterrestrial
+irradiance on a horizontal plane.</p></li>
+<li><p>am: Airmass</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.estimate_illuminance_from_irradiance">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">estimate_illuminance_from_irradiance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">altitude</span></em>, <em class="sig-param"><span class="n">ghi</span></em>, <em class="sig-param"><span class="n">dni</span></em>, <em class="sig-param"><span class="n">dhi</span></em>, <em class="sig-param"><span class="n">dew_point</span></em>, <em class="sig-param"><span class="n">rel_airmass</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#estimate_illuminance_from_irradiance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.estimate_illuminance_from_irradiance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate sky illuminance components from irradiance components.</p>
+<p>This function uses actual zenith rather than apparent zenith.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Perez R. (1990). ‘Modeling Daylight Availability and Irradiance
+Components from Direct and Global Irradiance’. Solar Energy.
+Vol. 44. No. 5, pp. 271-289. USA.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>altitude</strong> – Solar altitude angle in degrees.</p></li>
+<li><p><strong>ghi</strong> – Number for Global Horizontal Irradiance in W/m2.</p></li>
+<li><p><strong>dni</strong> – Number for Direct Normal Irradiance in W/m2.</p></li>
+<li><p><strong>dhi</strong> – Number for Diffuse Horizontal Irradiance in W/m2.</p></li>
+<li><p><strong>dew_point</strong> – Surface dewpoint in degrees C.</p></li>
+<li><p><strong>rel_airmass</strong> – A number between 1 and ~38 representing the ratio of air mass
+between the sun and the observer and the air mass that is directly above
+the observer. Default is None, which will simply use the input solar
+altitude and the get_relative_airmass function in this module with
+the kastenyoung1989 model to compute this value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with four elements</p>
+<ul class="simple">
+<li><p>gh_ill: Value for Global Horizontal Illuminance in lux.</p></li>
+<li><p>dn_ill: Value for Direct Normal Illuminance in lux.</p></li>
+<li><p>dh_ill: Value for Diffuse Horizontal Illuminance in lux.</p></li>
+<li><p>z_lum: Value for Zenith Luminance in lux.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.get_absolute_airmass">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">get_absolute_airmass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">airmass_relative</span></em>, <em class="sig-param"><span class="n">pressure</span><span class="o">=</span><span class="default_value">101325.0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#get_absolute_airmass"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.get_absolute_airmass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine absolute (pressure corrected) airmass from relative
+airmass and atmospheric pressure.</p>
+<p>Gives the airmass for locations not at sea-level (i.e. not at
+standard pressure). The input argument airmass_relative is the relative
+air mass. The input argument pressure is the pressure (in Pascals)
+at the location of interest and must be greater than 0. The
+calculation for absolute air mass is
+<cite>absolute airmass = (relative airmass)*pressure/101325</cite></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] C. Gueymard, “Critical analysis and performance assessment of
+clear sky solar irradiance models using theoretical and measured
+data,” Solar Energy, vol. 51, pp. 121-138, 1993.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>airmass_relative</strong> – numeric.
+The air mass at sea-level.</p></li>
+<li><p><strong>pressure</strong> – numeric, default 101325
+The site pressure in Pascal.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>airmass_absolute – numeric.
+Absolute (pressure corrected) air mass</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.get_extra_radiation">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">get_extra_radiation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doy</span></em>, <em class="sig-param"><span class="n">solar_constant</span><span class="o">=</span><span class="default_value">1366.1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#get_extra_radiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.get_extra_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine extraterrestrial radiation from day of year (using the spencer method).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] M. Reno, C. Hansen, and J. Stein, “Global Horizontal Irradiance
+Clear Sky Models: Implementation and Analysis”, Sandia National
+Laboratories, SAND2012-2389, 2012.</p>
+<p>[2] &lt;<a class="reference external" href="http://solardat.uoregon.edu/SolarRadiationBasics.html">http://solardat.uoregon.edu/SolarRadiationBasics.html</a>&gt;, Eqs.
+SR1 and SR2</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doy</strong> – array of integers representing the days of the year.</p></li>
+<li><p><strong>solar_constant</strong> – float, default 1366.1
+The solar constant.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dni_extra – float, array, or Series.
+The extraterrestrial radiation present in watts per square meter
+on a surface which is normal to the sun. Pandas Timestamp and
+DatetimeIndex inputs will yield a Pandas TimeSeries. All other
+inputs will yield a float or an array of floats.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.get_relative_airmass">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">get_relative_airmass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">altitude</span></em>, <em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">'kastenyoung1989'</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#get_relative_airmass"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.get_relative_airmass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives the relative (not pressure-corrected) airmass.</p>
+<p>Gives the airmass at sea-level when given a sun altitude angle (in
+degrees). The <cite>model</cite> variable allows selection of different
+airmass models (described below). If <cite>model</cite> is not included or is
+not valid, the default model is ‘kastenyoung1989’.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Fritz Kasten. “A New Table and Approximation Formula for the
+Relative Optical Air Mass”. Technical Report 136, Hanover, N.H.:
+U.S. Army Material Command, CRREL.
+[2] A. T. Young and W. M. Irvine, “Multicolor Photoelectric
+Photometry of the Brighter Planets,” The Astronomical Journal, vol.
+72, pp. 945-950, 1967.
+[3] Fritz Kasten and Andrew Young. “Revised optical air mass tables
+and approximation formula”. Applied Optics 28:4735-4738
+[4] C. Gueymard, “Critical analysis and performance assessment of
+clear sky solar irradiance models using theoretical and measured
+data,” Solar Energy, vol. 51, pp. 121-138, 1993.
+[5] A. T. Young, “AIR-MASS AND REFRACTION,” Applied Optics, vol. 33,
+pp. 1108-1110, Feb 1994.
+[6] Keith A. Pickering. “The Ancient Star Catalog”. DIO 12:1, 20,
+[7] Matthew J. Reno, Clifford W. Hansen and Joshua S. Stein, “Global
+Horizontal Irradiance Clear Sky Models: Implementation and Analysis”
+Sandia Report, (2012).</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>altitude</strong> – numeric
+Altitude angle of the sun in degrees. Note that some models use
+the apparent (refraction corrected) altitude angle, and some
+models use the true (not refraction-corrected) altitude angle. See
+model descriptions to determine which type of altitude angle is
+required. Apparent altitude angles must be calculated at sea level.</p></li>
+<li><p><strong>model</strong> – <p>string, default ‘kastenyoung1989’</p>
+<p>Available models include the following:</p>
+<ul>
+<li><p>’simple’ - secant(apparent altitude angle) -
+Note that this gives -inf at altitude=0</p></li>
+<li><p>’kasten1966’ - See reference [1] -
+requires apparent sun altitude</p></li>
+<li><p>’youngirvine1967’ - See reference [2] -
+requires true sun altitude</p></li>
+<li><p>’kastenyoung1989’ - See reference [3] -
+requires apparent sun altitude</p></li>
+<li><p>’gueymard1993’ - See reference [4] -
+requires apparent sun altitude</p></li>
+<li><p>’young1994’ - See reference [5] -
+requires true sun altitude</p></li>
+<li><p>’pickering2002’ - See reference [6] -
+requires apparent sun altitude</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>airmass_relative – Relative airmass at sea level. Will return None for any
+altitude angle smaller than 0 degrees.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.zhang_huang_solar">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">zhang_huang_solar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alt</span></em>, <em class="sig-param"><span class="n">cloud_cover</span></em>, <em class="sig-param"><span class="n">relative_humidity</span></em>, <em class="sig-param"><span class="n">dry_bulb_present</span></em>, <em class="sig-param"><span class="n">dry_bulb_t3_hrs</span></em>, <em class="sig-param"><span class="n">wind_speed</span></em>, <em class="sig-param"><span class="n">irr_0</span><span class="o">=</span><span class="default_value">1355</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#zhang_huang_solar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.zhang_huang_solar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate global horizontal solar irradiance using the Zhang-Huang model.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Zhang, Q.Y. and Huang, Y.J. 2002. “Development of typical year weather files
+for Chinese locations”, LBNL-51436, ASHRAE Transactions, Vol. 108, Part 2.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>alt</strong> – A solar altitude in degrees.</p></li>
+<li><p><strong>cloud_cover</strong> – A float value between 0 and 10 that represents the sky cloud cover
+in tenths (0 = clear; 10 = completely overcast)</p></li>
+<li><p><strong>relative_humidity</strong> – A float value between 0 and 100 that represents
+the relative humidity in percent.</p></li>
+<li><p><strong>dry_bulb_present</strong> – A float value that represents the dry bulb
+temperature at the time of interest (in degrees C).</p></li>
+<li><p><strong>dry_bulb_t3_hrs</strong> – A float value that represents the dry bulb
+temperature at three hours before the time of interest (in degrees C).</p></li>
+<li><p><strong>wind_speed</strong> – A float value that represents the wind speed in m/s.</p></li>
+<li><p><strong>= Optional extraterrestrial solar constant</strong> (<em>irr_0</em>) – Default is to use the average value over the earth’s orbit (1355).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>glob_ir – A global horizontall radiation value in W/m2.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ladybug.skymodel.zhang_huang_solar_split">
+<code class="sig-prename descclassname">ladybug.skymodel.</code><code class="sig-name descname">zhang_huang_solar_split</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">altitudes</span></em>, <em class="sig-param"><span class="n">doys</span></em>, <em class="sig-param"><span class="n">cloud_cover</span></em>, <em class="sig-param"><span class="n">relative_humidity</span></em>, <em class="sig-param"><span class="n">dry_bulb_present</span></em>, <em class="sig-param"><span class="n">dry_bulb_t3_hrs</span></em>, <em class="sig-param"><span class="n">wind_speed</span></em>, <em class="sig-param"><span class="n">atm_pressure</span></em>, <em class="sig-param"><span class="n">use_disc</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/skymodel.html#zhang_huang_solar_split"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.skymodel.zhang_huang_solar_split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate direct and diffuse solar irradiance using the Zhang-Huang model.</p>
+<p>By default, this function uses the DIRINT method (aka. Perez split) to split global
+irradiance into direct and diffuse.  This is the same method used by EnergyPlus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>altitudes</strong> – A list of solar altitudes in degrees.</p></li>
+<li><p><strong>doys</strong> – A list of days of the year that correspond to the altitudes.</p></li>
+<li><p><strong>cloud_cover</strong> – A list of float values between 0 and 10 that represents cloud cover
+in tenths (0 = clear; 10 = completely overcast)</p></li>
+<li><p><strong>relative_humidity</strong> – A list of float values between 0 and 100 that represents
+the relative humidity in percent.</p></li>
+<li><p><strong>dry_bulb_present</strong> – A list of float values that represents the dry bulb
+temperature at the time of interest (in degrees C).</p></li>
+<li><p><strong>dry_bulb_t3_hrs</strong> – A list of float values that represents the dry bulb
+temperature at three hours before the time of interest (in degrees C).</p></li>
+<li><p><strong>wind_speed</strong> – A list of float values that represents the wind speed in m/s.</p></li>
+<li><p><strong>atm_pressure</strong> – A list of float values that represent the
+atmospheric pressure in Pa.</p></li>
+<li><p><strong>use_disc</strong> – Set to True to use the original DISC model as opposed to the
+newer and more accurate DIRINT model. Default: False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>A tuple with two elements</p>
+<ul class="simple">
+<li><p>dir_norm_rad: A list of direct normal radiation values for each
+of the connected altitudes in W/m2.</p></li>
+<li><p>dif_horiz_rad: A list of diffuse horizontall radiation values for each
+of the connected altitudes in W/m2.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

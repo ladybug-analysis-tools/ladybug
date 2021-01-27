@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ladybug.dt &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.time.html">ladybug.datatype.time module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../ladybug.datatype.volumeflowrateintensity.html">ladybug.datatype.volumeflowrateintensity module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.climatezone.html">ladybug.climatezone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.compass.html">ladybug.compass module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.config.html">ladybug.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.ddy.html">ladybug.ddy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.hourlyplot.html">ladybug.hourlyplot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.logutil.html">ladybug.logutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.monthlychart.html">ladybug.monthlychart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychchart.html">ladybug.psychchart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.rootfinding.html">ladybug.rootfinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sql.html">ladybug.sql module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.viewsphere.html">ladybug.viewsphere module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.wea.html">ladybug.wea module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ladybug.windrose.html">ladybug.windrose module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ladybug.html">ladybug package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for ladybug.dt</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Ladybug datetime.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">time</span>
+
+<span class="n">MONTHNAMES</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span> <span class="s1">&#39;Jul&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="DateTime"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime">[docs]</a><span class="k">class</span> <span class="nc">DateTime</span><span class="p">(</span><span class="n">datetime</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Create Ladybug Date time.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        month: A value for month between 1-12 (Default: 1).</span>
+<span class="sd">        day: A value for day between 1-31 (Default: 1).</span>
+<span class="sd">        hour: A value for hour between 0-23 (Default: 0).</span>
+<span class="sd">        minute: A value for month between 0-59 (Default: 0).</span>
+<span class="sd">        leap_year: A boolean to indicate if datetime is for a leap year</span>
+<span class="sd">            (Default: False).</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * month</span>
+<span class="sd">        * day</span>
+<span class="sd">        * hour</span>
+<span class="sd">        * leap_year</span>
+<span class="sd">        * doy</span>
+<span class="sd">        * hoy</span>
+<span class="sd">        * int_hoy</span>
+<span class="sd">        * minute</span>
+<span class="sd">        * moy</span>
+<span class="sd">        * float_hour</span>
+<span class="sd">        * tzinfo</span>
+<span class="sd">        * year</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">hour</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">minute</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug datetime.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">year</span> <span class="o">=</span> <span class="mi">2016</span> <span class="k">if</span> <span class="n">leap_year</span> <span class="k">else</span> <span class="mi">2017</span>
+        <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="n">Time</span><span class="o">.</span><span class="n">_calculate_hour_and_minute</span><span class="p">(</span><span class="n">hour</span> <span class="o">+</span> <span class="n">minute</span> <span class="o">/</span> <span class="mf">60.0</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">datetime</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">:</span><span class="se">\n\t</span><span class="s2">(</span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2">@</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">)(m/d@h:m)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">e</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span>
+            <span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__reduce_ex__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">protocol</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Call the __new__() constructor when the class instance is unpickled.</span>
+
+<span class="sd">        This method is necessary for the pickle.loads() call to work.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">))</span>
+
+<div class="viewcode-block" id="DateTime.from_dict"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create datetime from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">                {</span>
+<span class="sd">                &#39;month&#39;: 1  #A value for month between 1-12. (Default: 1)</span>
+<span class="sd">                &#39;day&#39;: 1  # A value for day between 1-31. (Default: 1)</span>
+<span class="sd">                &#39;hour&#39;: 0  # A value for hour between 0-23. (Default: 0)</span>
+<span class="sd">                &#39;minute&#39;: 0  # A value for month between 0-59. (Default: 0)</span>
+<span class="sd">                }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">month</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;month&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="n">day</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;day&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="n">hour</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;hour&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;hour&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">minute</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;minute&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;minute&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">leap_year</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;leap_year&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;leap_year&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.from_hoy"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_hoy">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_hoy</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">hoy</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Datetime from an hour of the year.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            hoy: A float value 0 &lt;= and &lt; 8760</span>
+<span class="sd">            leap_year: Boolean to note whether the Date Time is a part of a</span>
+<span class="sd">                leap year. Default: False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">from_moy</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">hoy</span> <span class="o">*</span> <span class="mi">60</span><span class="p">),</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.from_moy"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_moy">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_moy</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">moy</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Datetime from a minute of the year.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            moy: An integer value 0 &lt;= and &lt; 525600</span>
+<span class="sd">            leap_year: Boolean to note whether the Date Time is a part of a</span>
+<span class="sd">                leap year. Default: False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">leap_year</span><span class="p">:</span>
+            <span class="n">num_of_minutes_until_month</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">44640</span><span class="p">,</span> <span class="mi">84960</span><span class="p">,</span> <span class="mi">129600</span><span class="p">,</span> <span class="mi">172800</span><span class="p">,</span> <span class="mi">217440</span><span class="p">,</span>
+                                          <span class="mi">260640</span><span class="p">,</span> <span class="mi">305280</span><span class="p">,</span> <span class="mi">349920</span><span class="p">,</span> <span class="mi">393120</span><span class="p">,</span> <span class="mi">437760</span><span class="p">,</span>
+                                          <span class="mi">480960</span><span class="p">,</span> <span class="mi">525600</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">num_of_minutes_until_month</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">44640</span><span class="p">,</span> <span class="mi">84960</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span> <span class="mi">129600</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span>
+                                          <span class="mi">172800</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span> <span class="mi">217440</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span> <span class="mi">260640</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span>
+                                          <span class="mi">305280</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span> <span class="mi">349920</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span> <span class="mi">393120</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span>
+                                          <span class="mi">437760</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span> <span class="mi">480960</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">,</span> <span class="mi">525600</span> <span class="o">+</span> <span class="mi">1440</span><span class="p">)</span>
+        <span class="c1"># find month</span>
+        <span class="n">moy</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">moy</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">month_count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">moy</span> <span class="o">&lt;</span> <span class="n">num_of_minutes_until_month</span><span class="p">[</span><span class="n">month_count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                <span class="n">month</span> <span class="o">=</span> <span class="n">month_count</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="k">break</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">day</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">moy</span> <span class="o">-</span> <span class="n">num_of_minutes_until_month</span><span class="p">[</span><span class="n">month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">except</span> <span class="ne">UnboundLocalError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;moy must be positive and smaller than 525600. Invalid input </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">moy</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">hour</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">moy</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span> <span class="o">%</span> <span class="mi">24</span><span class="p">)</span>
+            <span class="n">minute</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">moy</span> <span class="o">%</span> <span class="mi">60</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.from_date_time_string"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_date_time_string">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_date_time_string</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">datetime_string</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug DateTime from a DateTime string.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            datetime_string: A text string representing a DateTime</span>
+<span class="sd">                (ie. &quot;21 Jun 12:00&quot;)</span>
+<span class="sd">            leap_year: Boolean to note whether the Date Time is a part of a</span>
+<span class="sd">                leap year. Default: False.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            dt = DateTime.from_date_time_string(&quot;31 Dec 12:00&quot;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">datetime_string</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> %b %H:%M&#39;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>  <span class="c1"># older Python version before strptime</span>
+            <span class="n">vals</span> <span class="o">=</span> <span class="n">datetime_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+            <span class="n">tim</span> <span class="o">=</span> <span class="n">vals</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span> <span class="n">MONTHNAMES</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+                          <span class="nb">int</span><span class="p">(</span><span class="n">tim</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">tim</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">dt</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">dt</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">dt</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.from_array"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_array">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_array</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">datetime_array</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug DateTime from am array of integers.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            datetime_array: An array of 4 integers (and optional leap_year boolean)</span>
+<span class="sd">                ordered as follows: (month, day, hour, minute, leap_year)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="o">*</span><span class="n">datetime_array</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.from_date_and_time"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_date_and_time">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_date_and_time</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug DateTime from a Date and a Time object.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            date: A ladybug Date object.</span>
+<span class="sd">            time: A ladybug Time object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.from_first_hour"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_first_hour">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_first_hour</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug DateTime for the first hour of the year.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            leap_year: Boolean to note whether the Date Time is a part of a</span>
+<span class="sd">                leap year. Default: False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.from_last_hour"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.from_last_hour">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_last_hour</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug DateTime for the last hour of the year.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            leap_year: Boolean to note whether the Date Time is a part of a</span>
+<span class="sd">                leap year. Default: False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="n">leap_year</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">leap_year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean to note whether DateTime belongs to a leap year or not.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="mi">2016</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">doy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate day of the year for this date time.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">timetuple</span><span class="p">()</span><span class="o">.</span><span class="n">tm_yday</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hoy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate hour of the year for this date time.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">doy</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">float_hour</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">moy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate minute of the year for this date time.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">int_hoy</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span>  <span class="c1"># minute of the year</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">float_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get hour and minute as a float value, e.g. 6.25 for 6:15.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span> <span class="o">/</span> <span class="mf">60.0</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">int_hoy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate hour of the year for this date time as an integer.</span>
+
+<span class="sd">        This output assumes the minute is 0.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">doy</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Date object associated with this DateTime.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Date</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">leap_year</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a Time object associated with this DateTime.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Time</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
+
+<div class="viewcode-block" id="DateTime.add_minute"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.add_minute">[docs]</a>    <span class="k">def</span> <span class="nf">add_minute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">minute</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a new DateTime after the minutes are added.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            minute: An integer value for minutes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_moy</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">moy</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">minute</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">from_moy</span><span class="p">(</span><span class="n">_moy</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.sub_minute"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.sub_minute">[docs]</a>    <span class="k">def</span> <span class="nf">sub_minute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">minute</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a new DateTime after the minutes are subtracted.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            minute: An integer value for the number of minutes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_minute</span><span class="p">(</span><span class="o">-</span><span class="n">minute</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.add_hour"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.add_hour">[docs]</a>    <span class="k">def</span> <span class="nf">add_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hour</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a new DateTime from this time + timedelta.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            hour: A float value in hours (e.g. .5 = half an hour)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_minute</span><span class="p">(</span><span class="n">hour</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.sub_hour"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.sub_hour">[docs]</a>    <span class="k">def</span> <span class="nf">sub_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hour</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a new DateTime from this time - timedelta.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            hour: A float value in hours (e.g. .5 is half an hour and 2 is two hours).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_hour</span><span class="p">(</span><span class="o">-</span><span class="n">hour</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.to_simple_string"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.to_simple_string">[docs]</a>    <span class="k">def</span> <span class="nf">to_simple_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">separator</span><span class="o">=</span><span class="s2">&quot;_&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a simplified string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">_%b_%H_%M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="n">separator</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.to_array"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.to_array">[docs]</a>    <span class="k">def</span> <span class="nf">to_array</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return datetime as an array of values.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">leap_year</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DateTime.to_dict"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get datetime as a dictionary.&quot;&quot;&quot;</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span>
+            <span class="s1">&#39;day&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+            <span class="s1">&#39;hour&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+            <span class="s1">&#39;minute&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;DateTime&#39;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">leap_year</span><span class="p">:</span>
+            <span class="n">base</span><span class="p">[</span><span class="s1">&#39;leap_year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="n">base</span></div>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return date time as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> %b %H:%M&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="DateTime.ToString"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.DateTime.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return date time as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="Date"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date">[docs]</a><span class="k">class</span> <span class="nc">Date</span><span class="p">(</span><span class="n">date</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Ladybug Date.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        month: A value for month between 1-12. Default: 1.</span>
+<span class="sd">        day: A value for day between 1-31. Default: 1.</span>
+<span class="sd">        leap_year: A boolean to indicate if date is for a leap year. Default: False.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * day</span>
+<span class="sd">        * doy</span>
+<span class="sd">        * leap_year</span>
+<span class="sd">        * month</span>
+<span class="sd">        * year</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Date.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">year</span> <span class="o">=</span> <span class="mi">2016</span> <span class="k">if</span> <span class="n">leap_year</span> <span class="k">else</span> <span class="mi">2017</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">date</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">:</span><span class="se">\n\t</span><span class="s2">(</span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2">)(m/d)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__reduce_ex__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">protocol</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Call the __new__() constructor when the class instance is unpickled.</span>
+
+<span class="sd">        This method is necessary for the pickle.loads() call to work.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">leap_year</span><span class="p">))</span>
+
+<div class="viewcode-block" id="Date.from_dict"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create date from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">                {</span>
+<span class="sd">                &#39;month&#39;: 1  # A value for month between 1-12. (Default: 1)</span>
+<span class="sd">                &#39;day&#39;: 1  # A value for day between 1-31. (Default: 1)</span>
+<span class="sd">                }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">month</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;month&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="n">day</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;day&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="n">leap_year</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;leap_year&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;leap_year&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Date.from_doy"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date.from_doy">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_doy</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">doy</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Date from an day of the year.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            doy: An int value 0 &lt;= and &lt; 366</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">leap_year</span><span class="p">:</span>
+            <span class="n">days_until_month</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">151</span><span class="p">,</span> <span class="mi">181</span><span class="p">,</span>
+                                <span class="mi">212</span><span class="p">,</span> <span class="mi">243</span><span class="p">,</span> <span class="mi">273</span><span class="p">,</span> <span class="mi">304</span><span class="p">,</span> <span class="mi">334</span><span class="p">,</span> <span class="mi">366</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">days_until_month</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">152</span><span class="p">,</span> <span class="mi">182</span><span class="p">,</span>
+                                <span class="mi">213</span><span class="p">,</span> <span class="mi">244</span><span class="p">,</span> <span class="mi">274</span><span class="p">,</span> <span class="mi">305</span><span class="p">,</span> <span class="mi">335</span><span class="p">,</span> <span class="mi">367</span><span class="p">)</span>
+
+        <span class="n">doy</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">doy</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">month_count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">):</span>  <span class="c1"># find month</span>
+            <span class="k">if</span> <span class="n">doy</span> <span class="o">&lt;</span> <span class="n">days_until_month</span><span class="p">[</span><span class="n">month_count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                <span class="n">month</span> <span class="o">=</span> <span class="n">month_count</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="k">break</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">day</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">doy</span> <span class="o">-</span> <span class="n">days_until_month</span><span class="p">[</span><span class="n">month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">day</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">month</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">day</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">doy</span> <span class="o">-</span> <span class="n">days_until_month</span><span class="p">[</span><span class="n">month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="k">except</span> <span class="ne">UnboundLocalError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;doy must be positive and smaller than 366. Invalid input </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">doy</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Date.from_date_string"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date.from_date_string">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_date_string</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">date_string</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Date from a Date string.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            dt = Date.from_date_string(&quot;31 Dec&quot;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">date_string</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> %b&#39;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>  <span class="c1"># older Python version before strptime</span>
+            <span class="n">vals</span> <span class="o">=</span> <span class="n">date_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span> <span class="n">MONTHNAMES</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">dt</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">leap_year</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Date.from_array"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date.from_array">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_array</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">date_array</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Date from am array of integers.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            datetime_array: An array of 2 integers (and optional leap_year boolean)</span>
+<span class="sd">                ordered as follows: (month, day, leap_year)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="o">*</span><span class="n">date_array</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">leap_year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Boolean to note whether Date belongs to a leap year or not.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="mi">2016</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">doy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate day of the year for this date.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">timetuple</span><span class="p">()</span><span class="o">.</span><span class="n">tm_yday</span>
+
+<div class="viewcode-block" id="Date.to_array"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date.to_array">[docs]</a>    <span class="k">def</span> <span class="nf">to_array</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return date as an array of values.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">leap_year</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Date.to_dict"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get date as a dictionary.&quot;&quot;&quot;</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="s1">&#39;day&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;Date&#39;</span><span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">leap_year</span><span class="p">:</span>
+            <span class="n">base</span><span class="p">[</span><span class="s1">&#39;leap_year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="n">base</span></div>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return date as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> %b&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Date.ToString"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Date.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return date as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="Time"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time">[docs]</a><span class="k">class</span> <span class="nc">Time</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Create Ladybug Time.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        hour: A value for hour between 0-23 (Default: 0).</span>
+<span class="sd">        minute: A value for month between 0-59 (Default: 0).</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * hour</span>
+<span class="sd">        * minute</span>
+<span class="sd">        * mod</span>
+<span class="sd">        * second</span>
+<span class="sd">        * tzinfo</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">hour</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">minute</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Time.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_calculate_hour_and_minute</span><span class="p">(</span><span class="n">hour</span> <span class="o">+</span> <span class="n">minute</span> <span class="o">/</span> <span class="mf">60.0</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">:</span><span class="se">\n\t</span><span class="s2">(</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">)(h:m)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__reduce_ex__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">protocol</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Call the __new__() constructor when the class instance is unpickled.</span>
+
+<span class="sd">        This method is necessary for the pickle.loads() call to work.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">))</span>
+
+<div class="viewcode-block" id="Time.from_dict"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create time from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A python dictionary in the following format</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">                {</span>
+<span class="sd">                &#39;hour&#39;: 0  # A value for hour between 0-23. (Default: 0)</span>
+<span class="sd">                &#39;minute&#39;: 0  # A value for month between 0-59. (Default: 0)</span>
+<span class="sd">                }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">hour</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;hour&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;hour&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">minute</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;minute&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;minute&#39;</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Time.from_mod"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time.from_mod">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_mod</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">mod</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Time from a minute of the day.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            mod: An int value 0 &lt;= and &lt; 1440</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_calculate_hour_and_minute</span><span class="p">(</span><span class="n">mod</span> <span class="o">/</span> <span class="mf">60.0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Time.from_time_string"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time.from_time_string">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_time_string</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">time_string</span><span class="p">,</span> <span class="n">leap_year</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Time from a Time string.</span>
+
+<span class="sd">        Usage:</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            dt = Time.from_time_string(&quot;12:00&quot;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">time_string</span><span class="p">,</span> <span class="s1">&#39;%H:%M&#39;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>  <span class="c1"># older Python version before strptime</span>
+            <span class="n">vals</span> <span class="o">=</span> <span class="n">time_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">dt</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Time.from_array"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time.from_array">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_array</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">time_array</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Ladybug Time from am array of integers.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            datetime_array: An array of 2 integers ordered as follows: (hour, minute)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="o">*</span><span class="n">time_array</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">mod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate minute of the day for this time.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">float_hour</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get hour and minute as a float value, e.g. 6.25 for 6:15.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span> <span class="o">/</span> <span class="mf">60.0</span>
+
+<div class="viewcode-block" id="Time.to_array"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time.to_array">[docs]</a>    <span class="k">def</span> <span class="nf">to_array</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return time as an array of values.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Time.to_dict"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get time as a dictionary.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;hour&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="s1">&#39;minute&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;Time&#39;</span><span class="p">}</span></div>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_calculate_hour_and_minute</span><span class="p">(</span><span class="n">float_hour</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate hour and minutes as integers from a float hour.&quot;&quot;&quot;</span>
+        <span class="n">hour</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">float_hour</span><span class="p">)</span>
+        <span class="n">minute</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">((</span><span class="n">float_hour</span> <span class="o">-</span> <span class="n">hour</span><span class="p">)</span> <span class="o">*</span> <span class="mi">60</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">minute</span> <span class="o">==</span> <span class="mi">60</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">hour</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return time as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%H:%M&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Time.ToString"><a class="viewcode-back" href="../../ladybug.dt.html#ladybug.dt.Time.ToString">[docs]</a>    <span class="k">def</span> <span class="nf">ToString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite .NET ToString.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return time as a string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
